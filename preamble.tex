@@ -1,0 +1,148 @@
+\documentclass[a4paper,11pt]{book}
+
+\usepackage{ifthen}
+\usepackage{datetime}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false]{hyperref}
+\usepackage[switch,running]{lineno}
+\usepackage{mciteplus}
+\newboolean{articletitles}
+\setboolean{articletitles}{true}
+
+\renewcommand{\bibname}{References}
+
+\newcommand{\ud}{\mathrm{d}}
+\renewcommand{\vec}{\bm}
+
+\newcommand{\invfb}{fb$^{-1}$}
+\newcommand{\invps}{ps$^{-1}$}
+\newcommand{\MeV}{MeV/c$^2$}
+\newcommand{\GeV}{GeV/c$^2$}
+\newcommand{\pT}{p_\mathrm{T}}
+\newcommand{\Bd}{\text{B}^0}
+\newcommand{\Bs}{\text{B}_\text{s}^0}
+\newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+\newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
+\newcommand{\Jpsi}{\text{J}/\uppsi}
+\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
+\newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
+\newcommand{\mumu}{\upmu^+\upmu^-}
+\newcommand{\hh}{\text{h}^+\text{h}^-}
+\newcommand{\KK}{\text{K}^+\text{K}^-}
+\newcommand{\pipi}{\uppi^+\uppi^-}
+\newcommand{\Kpi}{\text{K}^+\uppi^-}
+\newcommand{\mumuhh}{\mumu\,\hh}
+\newcommand{\mumuKK}{\mumu\,\KK}
+\newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
+\newcommand{\BstoJpsihh}{$\Bs \to \Jpsi\,\hh$}
+\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\upphi$}
+\newcommand{\BstoJpsiKK}{$\Bs \to \Jpsi\,\KK$}
+\newcommand{\BstoJpsimumuKK}{$\Bs \to \Jpsi(\to\mumu)\,\KK$}
+\newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\upphi(\to\KK)$}
+\newcommand{\BstoJpsipipi}{$\Bs \to \Jpsi\,\pipi$}
+\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\uppi^+$}
+\newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
+\newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
+\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\uppi^-$}
+
+\newcommand{\BH}{\text{B}_\text{s,H}^0}
+\newcommand{\BL}{\text{B}_\text{s,L}^0}
+\newcommand{\BE}{\text{B}_\text{s,E}^0}
+\newcommand{\BO}{\text{B}_\text{s,O}^0}
+\newcommand{\mmix}{M_{12}}
+\newcommand{\gmix}{\Gamma_{12}}
+\newcommand{\phim}{\phi_\text{M}}
+\newcommand{\phimix}{\phi_{12}}
+\newcommand{\phis}{\phi_\text{s}}
+\newcommand{\phisccs}{\phi_\text{s}^{\text{c}\bar{\text{c}}\text{s}}}
+\newcommand{\lam}{\lambda}
+\newcommand{\lamAbs}{|\lambda|}
+\newcommand{\lamSq}{\lamAbs^2}
+\newcommand{\Gam}{\Gamma_\text{s}}
+\newcommand{\DelGam}{\Delta\Gamma_\text{s}}
+\newcommand{\Delm}{\Delta m_\text{s}}
+\newcommand{\eGt}{e^{-\Gam\,t}}
+\newcommand{\eGtal}{e^{-\Gam\,\alert{t}}}
+\newcommand{\cDG}{\cosh\left(\tfrac{1}{2}\DelGam\, t\right)}
+\newcommand{\cDGal}{\cosh\left(\tfrac{1}{2}\DelGam\, \alert{t}\right)}
+\newcommand{\sDG}{\sinh\left(\tfrac{1}{2}\DelGam\, t\right)}
+\newcommand{\sDGal}{\sinh\left(\tfrac{1}{2}\DelGam\, \alert{t}\right)}
+\newcommand{\cDm}{\cos\left(\Delm\, t\right)}
+\newcommand{\cDmal}{\cos\left(\Delm\, \alert{t}\right)}
+\newcommand{\sDm}{\sin\left(\Delm\, t\right)}
+\newcommand{\sDmal}{\sin\left(\Delm\, \alert{t}\right)}
+
+\newcommand{\thetaK}{\theta_{\text{K}}}
+\newcommand{\thetal}{\theta_{\upmu}}
+\newcommand{\cthetaK}{\cos\thetaK}
+\newcommand{\cthetal}{\cos\thetal}
+\newcommand{\phihel}{\phi_{\text{h}}}
+\newcommand{\psitr}{\psi_{\text{tr}}}
+\newcommand{\thetatr}{\theta_{\text{tr}}}
+\newcommand{\cpsitr}{\cos\psitr}
+\newcommand{\cthetatr}{\cos\thetatr}
+\newcommand{\phitr}{\phi_{\text{tr}}}
+\newcommand{\Azero}{A_0}
+\newcommand{\Apar}{A_\parallel}
+\newcommand{\Aperp}{A_\perp}
+\newcommand{\AS}{A_\text{S}}
+\newcommand{\FS}[1][]{F_\text{S}#1}
+\newcommand{\magzero}[1][]{|A_0#1|}
+\newcommand{\magpar}[1][]{|A_\parallel#1|}
+\newcommand{\magperp}[1][]{|A_\perp#1|}
+\newcommand{\magS}[1][]{|A_\text{S}#1|}
+\newcommand{\delzero}[1][]{\delta_0#1}
+\newcommand{\delpar}[1][]{\delta_\parallel#1}
+\newcommand{\delperp}[1][]{\delta_\perp#1}
+\newcommand{\delS}[1][]{\delta_\text{S}#1}
+
+\newcommand{\qf}{{q_\text{flav}}}
+\newcommand{\qt}{q_\text{tag}}
+\newcommand{\qtOS}{{\qt^\text{OS}}}
+\newcommand{\qtSS}{{\qt^\text{SS}}}
+\newcommand{\AbarA}[1][i]{\tfrac{\overline{A}_{#1}}{A_{#1}}}
+\newcommand{\qp}{\frac{q}{p}}
+\newcommand{\pq}{\frac{p}{q}}
+\newcommand{\qpAbs}{\left|\qp\right|}
+\newcommand{\qpAbsAlt}{\big|\qp\big|}
+\newcommand{\pqAbs}{\left|\pq\right|}
+\newcommand{\Af}[1][\text{f}]{A_{#1}}
+\newcommand{\AstA}{A_i^*A_j}
+\newcommand{\AstAt}{A_i(t)^*A_j(t)}
+\newcommand{\AstAArg}[2]{A_{#1}^*A_{#2}}
+\newcommand{\AstAtArg}[2]{A_{#1}(t)^*A_{#2}(t)}
+\newcommand{\Cm}{C_\text{m}}
+\newcommand{\Dm}{D_\text{m}}
+\newcommand{\Sm}{S_\text{m}}
+\newcommand{\Ppl}{P^+_{ij}}
+\newcommand{\Pmn}{P^-_{ij}}
+\newcommand{\Pre}{P^\Re_{ij}}
+\newcommand{\Pim}{P^\Im_{ij}}
+\newcommand{\Hpl}{H^+_{ij}}
+\newcommand{\Hmn}{H^-_{ij}}
+\newcommand{\Hre}{H^\Re_{ij}}
+\newcommand{\Him}{H^\Im_{ij}}
+
+\newcommand{\tagCatCoef}[1][]{\varepsilon_{#1}}
+\newcommand{\wTag}[1][]{w_{#1}}
+\newcommand{\wTagBar}[1][]{\kern 0.07em \overline{\kern -0.07em w_{#1} \kern -0.01em} \kern 0.01em}
+\newcommand{\dil}[1][]{\mathcal{D}_{#1}}
+\newcommand{\AProd}{\nu_\text{p}}
+\newcommand{\ANorm}{\nu_\text{N}}
+\newcommand{\ATagEff}[1][]{\delta_{#1}}
+\newcommand{\ADilWTag}[1][]{\Delta_{#1}}
+
+\newcommand{\Rlamb}{\Re(\lam)}
+\newcommand{\Ilamb}{\Im(\lam)}
+\newcommand{\even}{\mathcal{E}}
+\newcommand{\odd}{\mathcal{O}}
+\newcommand{\CEven}[1][]{{\ensuremath{C_{\even_{#1}}}}}
+\newcommand{\COdd}[1][]{{\ensuremath{C_{\odd_{#1}}}}}
+\newcommand{\avgCEven}[1][]{{\ensuremath{C_{\even_{#1}}^{\text{avg}}}}}
+\newcommand{\avgCOdd}[1][]{{\ensuremath{C_{\odd_{#1}}^{\text{avg}}}}}

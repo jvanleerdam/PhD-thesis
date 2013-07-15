@@ -1,0 +1,152 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{a4wide}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,backgrounds}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=blue,%
+            plainpages=false]{hyperref}
+
+\newcommand{\ud}{\,\mathrm{d}}
+\renewcommand{\vec}{\bm}
+
+\newcommand{\invfb}{fb$^{-1}$}
+\newcommand{\invps}{ps$^{-1}$}
+\newcommand{\MeV}{MeV/c$^2$}
+\newcommand{\Bd}{\text{B}^0}
+\newcommand{\Bs}{\text{B}_\text{s}^0}
+\newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+\newcommand{\Jpsi}{\text{J}/\uppsi}
+\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
+\newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
+\newcommand{\mumu}{\upmu^+\upmu^-}
+\newcommand{\hh}{\text{h}^+\text{h}^-}
+\newcommand{\KK}{\text{K}^+\text{K}^-}
+\newcommand{\pipi}{\uppi^+\uppi^-}
+\newcommand{\Kpi}{\text{K}^+\uppi^-}
+\newcommand{\mumuhh}{\mumu\,\hh}
+\newcommand{\mumuKK}{\mumu\,\KK}
+\newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
+\newcommand{\BstoJpsihh}{$\Bs \to \Jpsi\,\hh$}
+\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\upphi$}
+\newcommand{\BstoJpsiKK}{$\Bs \to \Jpsi\,\KK$}
+\newcommand{\BstoJpsimumuKK}{$\Bs \to \Jpsi(\to\mumu)\,\KK$}
+\newcommand{\BstoJpsipipi}{$\Bs \to \Jpsi\,\pipi$}
+\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\uppi^+$}
+\newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
+\newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
+\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\uppi^-$}
+\newcommand{\lamb}{|\lambda_\text{s}|}
+\newcommand{\phis}{\phi_\text{s}}
+\newcommand{\phisccs}{\phi_\text{s}^{\text{c}\bar{\text{c}}\text{s}}}
+\newcommand{\Gam}{\Gamma_\text{s}}
+\newcommand{\GamH}{\Gamma_\text{s,H}}
+\newcommand{\GamL}{\Gamma_\text{s,L}}
+\newcommand{\DelGam}{\Delta\Gamma_\text{s}}
+\newcommand{\Delm}{\Delta m_\text{s}}
+\newcommand{\AzeroSq}{|A_0|^2}
+\newcommand{\AparaSq}{|A_\parallel|^2}
+\newcommand{\AperpSq}{|A_\perp|^2}
+\newcommand{\FS}{F_\text{S}}
+\newcommand{\fS}{f_\text{S}}
+\newcommand{\delzero}{\delta_0}
+\newcommand{\delpara}{\delta_\parallel}
+\newcommand{\delperp}{\delta_\perp}
+\newcommand{\delS}{\delta_\text{S}}
+\newcommand{\CSP}{C_\text{SP}}
+
+\newcommand{\ai}{a_i}
+\newcommand{\aS}{a_\text{S}}
+\newcommand{\Ai}{A_i}
+\newcommand{\AS}{A_\text{S}}
+\newcommand{\Ti}{T_i}
+\newcommand{\TS}{T_\text{S}}
+\newcommand{\Oi}{O_i}
+\newcommand{\OS}{O_\text{S}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent{\LARGE Measurement of CP violation with the decay \BstoJpsiphi}
+
+\vspace*{30pt}
+
+\section{Introduction}
+  Overview of measurement, including aspects I won't discuss any further. Not too much detail, references to papers and to subsequent
+  chapters.
+  \begin{enumerate}
+    \item The Standard Model and beyond
+    \item Mixing and CP violation in the $\Bs$--$\Bsbar$ system
+    \item The \BstoJpsiphi\ decay
+    \item The Large Hadron Collider
+    \item The LHCb experiment
+  \end{enumerate}
+
+\section{Theoretical Aspects}
+  Detailed discussion of the differential decay rate.
+  \begin{enumerate}
+    \item Mixing and decay of the $\Bs$--$\Bsbar$ system
+    \item \BstoJpsiphi\ decay amplitude
+    \item Decay angle distributions
+    \item Decay time distributions
+    \item $\KK$ invariant mass distribution
+  \end{enumerate}
+
+\section{Experimental Aspects}
+  Detailed discussion of the measurement: resolution, acceptance, tagging.
+  \begin{enumerate}
+    \item Event selection
+    \item Background events
+    \item Decay time measurement
+    \item Decay angle measurement
+    \item Flavour tagging
+  \end{enumerate}
+
+\newpage
+
+\section{Data Analysis Techniques}
+  Description of analysis of selected events to extract physics parameters.
+  \begin{enumerate}
+    \item Parameter estimation
+      \begin{enumerate}
+        \item Fitting
+        \item Statistical errors
+      \end{enumerate}
+    \item Background subtraction
+    \item Modelling
+      \begin{enumerate}
+        \item Invariant masses
+        \item Decay time and angles
+        \item $\KK$ mass bins
+        \item Decay time acceptance
+        \item Angular acceptance
+        \item Decay time resolution
+        \item Flavour tagging
+      \end{enumerate}
+    \item Simulation
+    \item Systematic errors
+  \end{enumerate}
+
+\section{Results}
+  First the ``nominal'' results. Then results with some alternative models.
+  \begin{enumerate}
+    \item Parameter estimates
+    \item Systematic errors
+    \item Unconstrained $\Delm$
+    \item Narrow $\KK$ mass window
+    \item Alternative flavour tagging parameterizations
+      \begin{enumerate}
+        \item Untagged analysis
+        \item Analysis in estimated wrong-tag probability bins
+      \end{enumerate}
+    \item $\Bs$--$\Bsbar$ asymmetries
+  \end{enumerate}
+
+\end{document}
