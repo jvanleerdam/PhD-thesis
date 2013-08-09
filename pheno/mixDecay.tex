@@ -1,3 +1,167 @@
 \section{Mixing and Decay of the \BsBsbar{} System}
 
+A meson produced in a pure $\Bs$ or $\Bsbar$ state will evolve in time and become a mixture of these two flavour states. The state of this
+\BsBsbar{} system at a point in time $t$ is expressed as
+\begin{equation}
+  \label{eq:timeEvolBBbarState}
+  |\Psi(t)\rangle = a(t)\,\Bsst + b(t)\,\Bsbarst
+  \ .
+\end{equation}
+The states $\Bsst\equiv|\text{s}\bar{\text{b}}\rangle$ and $\Bsbarst\equiv|\bar{\text{s}}\text{b}\rangle$ are the \emph{flavour
+eigenstates} of the system and $a$ and $b$ are coefficients that describe its time dependence.
 
+Assuming that the time scale of interest is much larger than the time scale of strong interactions, the Weisskopf-Wigner
+approximation~\cite{Weisskopf:1930au,*Weisskopf:1930ps,*Lee:1957qq} can be used and the decay of the system has an exponential time
+dependence. The time evolution then follows from a Schr\"odinger equation with a constant Hamiltonian, which is given by:\footnote{All
+equations in this chapter are written in \emph{natural units}, where the reduced Planck constant and the speed of light are equal to one
+($\hbar \equiv c \equiv 1$)}
+\begin{equation}
+  \label{eq:timeEvolSchr}
+  i\; \frac{\partial}{\partial t} \begin{pmatrix} a(t) \\ b(t) \end{pmatrix}
+    = \vec{H} \begin{pmatrix} a(t) \\ b(t) \end{pmatrix}
+    \ .
+\end{equation}
+
+Without loss of generality, the Hamiltonian matrix $\vec{H}$ can be written as the sum of a Hermitian matrix and an anti-Hermitian matrix:
+$\vec{H} \equiv \vec{M} - \tfrac{i}{2}\,\vec{\Gamma}$, where the \emph{mass matrix} $\vec{M}$ and the \emph{decay matrix} $\vec{\Gamma}$
+are both Hermitian. Assuming CPT invariance, the mass and lifetime of a particle are equal to the respective mass and lifetime of its
+anti-particle. This results in equal diagonal elements of both the mass and decay matrices:
+\begin{equation}
+  \label{eq:timeEvolHamil}
+  \vec{H}
+    \equiv \begin{pmatrix} H_0 & H_{12} \\ H_{21} & H_0 \end{pmatrix}
+    = \vec{M} - \tfrac{i}{2}\,\vec{\Gamma}
+    \equiv \begin{pmatrix} \ms & \mmix \\ \mmix^* & \ms \end{pmatrix}
+      - \tfrac{i}{2} \begin{pmatrix} \Gams & \gmix \\ \gmix^* & \Gams \end{pmatrix}
+    \ ,
+\end{equation}
+where $\ms$ is the $\Bs$ mass, $\Gams=\frac{1}{\taus}$ the $\Bs$ decay width and $\taus$ the $\Bs$ mean lifetime.
+
+Mixing of the $\Bs$ and $\Bsbar$ states is governed by the off-diagonal elements of the Hamiltonian. The parameter $\mmix$ is the
+\emph{dispersive} part of $H_{12}$. This part originates from contributions of virtual intermediate states to the mixing process.
+$\gmix$ is the \emph{absorptive} part, which originates from contributions of real states into which both $\Bs$ and $\Bsbar$ can decay.
+% say something about the relative magnitudes M12, Gamma12 (and also relative to Ms and Gammas?)
+
+To solve Equation~\ref{eq:timeEvolSchr} and obtain expressions for the time evolution of the $\Bs$ and $\Bsbar$ states, the system is
+decoupled with a transformation of the flavour eigenstates that diagonalizes the Hamiltonian matrix. The decoupled states are \emph{mass
+eigenstates}, which have definite mass and lifetime. With transformation matrix $\vec{P}$, diagonalized Hamiltonian $\vec{H'}$ and
+mass-eigenstate coefficients $a'$ and $b'$, the transformation is specified by
+\begin{equation}
+  \label{eq:timeEvolTrans}
+  \vec{H'} = \vec{P}^{-1}\,\vec{H}\,\vec{P}
+  \qquad \text{and} \qquad
+  \begin{pmatrix} a(t) \\ b(t) \end{pmatrix}
+    = \vec{P}\, \begin{pmatrix} a'(t) \\ b'(t) \end{pmatrix}
+  \ .
+\end{equation}
+The two eigenvalues of $\vec{H}$ become the diagonal elements of the decoupled Hamiltonian $\vec{H'}$ and the transformation matrix is
+constructed from the corresponding eigenvectors:
+\begin{subequations}
+  \label{eq:timeEvolMassStates}
+  \begin{align}
+    \vec{H'} &\equiv \begin{pmatrix} \mL & 0 \\ 0 & \mH \end{pmatrix}
+             - \tfrac{i}{2}\, \begin{pmatrix} \GamL & 0 \\ 0 & \GamH \end{pmatrix}
+    \label{eq:timeEvolMassStatesHamil1} \\
+    &= \begin{pmatrix} H_0 - \sqrt{H_{12} H_{21}} & 0 \\ 0 & H_0 + \sqrt{H_{12} H_{21}} \end{pmatrix}
+    \label{eq:timeEvolMassStatesHamil2} \\
+    \vec{P}  &= \begin{pmatrix*}[r]
+                   \alpha\sqrt{H_{12}} &  \beta\sqrt{H_{12}} \\
+                  -\alpha\sqrt{H_{21}} & +\beta\sqrt{H_{21}}
+                \end{pmatrix*}
+    \label{eq:timeEvolMassTrans}
+    \ ,
+  \end{align}
+\end{subequations}
+where the subscript L (light) is used for the state with the smaller mass and the subscript H (heavy) for the state with the larger mass.
+The parameters $\alpha$ and $\beta$ are arbitrary constants as far as diagonalizing the Hamiltonian is concerned.
+
+Mass and decay parameters of $\Bs$ and $\Bsbar$ are related to the masses and decay widths of $\BL$ and $\BH$ by
+Equations~\ref{eq:timeEvolMassStatesHamil1} and \ref{eq:timeEvolMassStatesHamil2}: $H_0 = \tfrac{1}{2}\,(\mH+\mL) -
+\tfrac{i}{4}\,(\GamL+\GamH)$ and $\sqrt{H_{12} H_{21}} = \tfrac{1}{2}\,(\mH-\mL) + \tfrac{i}{4}\,(\GamL-\GamH)$. Using also
+Equation~\ref{eq:timeEvolHamil}:
+\begin{subequations}
+  \begin{alignat}{2}
+    \ms   &\,=\,&     \Re(H_0) &\,=\, \tfrac{1}{2}\,(\mH+\mL)     \\
+    \Gams &\,=\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GamL+\GamH)
+  \end{alignat}%
+  \begin{align}
+    \Delms   &\equiv \mH-\mL = 2\,\Re\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
+             &= 2\,\Re\!\left(\sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}\right) \\
+    \DelGams &\equiv \GamL-\GamH = 4\,\Im\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
+             &= 4\,\Im\!\left(\sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}\right)
+  \end{align}
+\end{subequations}
+
+To find the transformation between flavour eigenstates and mass eigenstates, the state of Equation~\ref{eq:timeEvolBBbarState} is expressed
+in matrix form and the transformation of Equation~\ref{eq:timeEvolTrans} is applied:
+\begin{equation}
+  \label{eq:timeEvolBLBHState}
+  \begin{split}
+    |\Psi(t)\rangle &= \begin{pmatrix} a'(t) & b'(t) \end{pmatrix} \begin{pmatrix} \BLst \\ \BHst \end{pmatrix} \\
+                    &= \begin{pmatrix} a(t) & b(t) \end{pmatrix} \begin{pmatrix} \Bsst \\ \Bsbarst \end{pmatrix}
+                     = \begin{pmatrix} a'(t) & b'(t) \end{pmatrix} \vec{P}^\text{T} \begin{pmatrix} \Bsst \\ \Bsbarst \end{pmatrix}
+    \ .
+  \end{split}
+\end{equation}
+By comparing the first and second line of Equation~\ref{eq:timeEvolBLBHState} it can be seen that the transformation matrix between flavour
+eigenstates and mass eigenstates is the transpose of the matrix that diagonalizes the Hamiltonian (Equation~\ref{eq:timeEvolMassTrans}).
+
+Taking into account normalization of the mass eigenstates, the transformation to flavour eigenstates can be expressed as
+% fix a phase convention?
+\begin{equation}
+  \label{eq:timeEvolTransInv}
+  \begin{pmatrix} \BLst \\ \BHst \end{pmatrix}
+    = \vec{P}^\text{T} \begin{pmatrix} \Bsst \\ \Bsbarst \end{pmatrix}
+    = \begin{pmatrix} p & +q \\ p & -q \end{pmatrix}
+      \begin{pmatrix} \Bsst \\ \Bsbarst \end{pmatrix}
+  \qquad
+  \text{with } |p|^2+|q|^2\equiv1
+  \ .
+\end{equation}
+From Equations~\ref{eq:timeEvolMassTrans} and \ref{eq:timeEvolTransInv} it now follows that $\alpha=\beta$ and, also with
+Equation~\ref{eq:timeEvolHamil},
+\begin{equation}
+  \qp = -\sqrt{\frac{H_{21}}{H_{12}}} = -\sqrt{\frac{\mmix^*-\tfrac{i}{2}\,\gmix^*}{\mmix-\tfrac{i}{2}\,\gmix}}
+  \quad .
+\end{equation}
+
+The time evolution of the mass eigenstates is obtained by solving the Schr\"o\-ding\-er equation with the diagonal Hamiltonian of
+Equation~\ref{eq:timeEvolMassStates}, which gives decoupled exponential decays for $\BL$ and $\BH$. Transforming back to the flavour
+basis then gives the coupled time evolution of $\Bs$ and $\Bsbar$:
+\begin{subequations}
+  \label{eq:timeEvolTimeCoefs}
+  \begin{equation}
+    \begin{split}
+      \begin{pmatrix} a(t) \\ b(t) \end{pmatrix}
+        &= e^{-i\,\vec{H}\,t} \begin{pmatrix} a(0) \\ b(0) \end{pmatrix} \\
+        &= \vec{P} \begin{pmatrix} a'(t) \\ b'(t) \end{pmatrix}
+         = \vec{P}\, e^{-i\,\vec{H'}\,t} \begin{pmatrix} a'(0) \\ b'(0) \end{pmatrix}
+         = \vec{P}\, e^{-i\,\vec{H'}\,t}\, \vec{P}^{-1} \begin{pmatrix} a(0) \\ b(0) \end{pmatrix}
+    \end{split}
+  \end{equation}%
+  \begin{align}
+    e^{-i\,\vec{H}\,t} &= \vec{P}\, e^{-i\,\vec{H'}\,t}\, \vec{P}^{-1} \nonumber\\
+                       &= \begin{pmatrix*}[r] p & p \\ q & -q \end{pmatrix*}\!
+                          \begin{pmatrix} e^{-i\,(\mL-i\,\GamL/2)\,t} & 0 \\ 0 & e^{-i\,(\mH-i\,\GamH/2)\,t} \end{pmatrix}\!
+                          \begin{pmatrix*}[r] q & p \\ q & -p \end{pmatrix*} \frac{1}{2\,p\,q} \nonumber\\
+                       &= \begin{pmatrix*}[r] g_+(t) & \pq\,g_-(t) \\ \qp\,g_-(t) & g_+(t) \end{pmatrix*}
+    \ ,
+  \end{align}
+\end{subequations}
+where the functions $g_\pm$ are given by
+\begin{align}
+  g_\pm(t) &= \tfrac{1}{2}\, \left( e^{-i\,(\mL-i\,\GamL/2)\,t} \pm e^{-i\,(\mH-i\,\GamH/2)\,t} \right) \\
+           &= \tfrac{1}{2}\, e^{-i\,\ms\,t}\, e^{-\Gams/2\,t}
+                         \left( e^{+i\,\Delms/2\,t}\, e^{-\DelGams/4\,t}
+                                \pm e^{-i\,\Delms/2\,t}\, e^{+\DelGams/4\,t} \right) \nonumber
+           \ .
+\end{align}
+
+The time evolution for mesons produced as $\Bs$ ($a(0)=1$ and $b(0)=0$) and mesons produced as $\Bsbar$ ($a(0)=0$ and $b(0)=1$) can now be
+inferred from Equations~\ref{eq:timeEvolBBbarState} and \ref{eq:timeEvolTimeCoefs}:
+\begin{subequations}
+  \begin{align}
+    |\Psi_{\Bs}(t)\rangle    = g_+(t)\,\Bsst    + \qp\,g_-(t)\,\Bsbarst \\
+    |\Psi_{\Bsbar}(t)\rangle = g_+(t)\,\Bsbarst + \pq\,g_-(t)\,\Bsst
+  \end{align}
+\end{subequations}
