@@ -1,5 +1,9 @@
 \section{Mixing and Decay of the \BsBsbar{} System}
 
+%%%%%%%%%%%%%%%%%%%
+\subsection{Mixing}
+%%%%%%%%%%%%%%%%%%%
+
 A meson produced in a pure $\Bs$ or $\Bsbar$ state will evolve in time and become a mixture of these two flavour states. The state of this
 \BsBsbar{} system at a point in time $t$ is expressed as
 \begin{equation}
@@ -12,7 +16,7 @@ eigenstates} of the system and $a$ and $b$ are coefficients that describe its ti
 
 Assuming that the time scale of interest is much larger than the time scale of strong interactions, the Weisskopf-Wigner
 approximation~\cite{Weisskopf:1930au,*Weisskopf:1930ps,*Lee:1957qq} can be used and the decay of the system has an exponential time
-dependence. The time evolution then follows from a Schr\"odinger equation with a constant Hamiltonian, which is given by:\footnote{All
+dependence. The time evolution then follows from a Schr\"odinger equation with a constant Hamiltonian, which is given by\footnote{All
 equations in this chapter are written in \emph{natural units}, where the reduced Planck constant and the speed of light are equal to one
 ($\hbar \equiv c \equiv 1$)}
 \begin{equation}
@@ -150,18 +154,153 @@ basis then gives the coupled time evolution of $\Bs$ and $\Bsbar$:
 \end{subequations}
 where the functions $g_\pm$ are given by
 \begin{align}
-  g_\pm(t) &= \tfrac{1}{2}\, \left( e^{-i\,(\mL-i\,\GamL/2)\,t} \pm e^{-i\,(\mH-i\,\GamH/2)\,t} \right) \\
+  \label{eq:timeEvolQp}
+  g_\pm(t) &\equiv \tfrac{1}{2}\, \left( e^{-i\,(\mL-i\,\GamL/2)\,t} \pm e^{-i\,(\mH-i\,\GamH/2)\,t} \right) \\
            &= \tfrac{1}{2}\, e^{-i\,\ms\,t}\, e^{-\Gams/2\,t}
-                         \left( e^{+i\,\Delms/2\,t}\, e^{-\DelGams/4\,t}
-                                \pm e^{-i\,\Delms/2\,t}\, e^{+\DelGams/4\,t} \right) \nonumber
+                \left( e^{+i\,\Delms/2\,t}\, e^{-\DelGams/4\,t} \pm e^{-i\,\Delms/2\,t}\, e^{+\DelGams/4\,t} \right) \nonumber
            \ .
 \end{align}
 
 The time evolution for mesons produced as $\Bs$ ($a(0)=1$ and $b(0)=0$) and mesons produced as $\Bsbar$ ($a(0)=0$ and $b(0)=1$) can now be
 inferred from Equations~\ref{eq:timeEvolBBbarState} and \ref{eq:timeEvolTimeCoefs}:
 \begin{subequations}
+  \label{eq:timeEvolBBbarStateInit}
   \begin{align}
     |\Psi_{\Bs}(t)\rangle    = g_+(t)\,\Bsst    + \qp\,g_-(t)\,\Bsbarst \\
     |\Psi_{\Bsbar}(t)\rangle = g_+(t)\,\Bsbarst + \pq\,g_-(t)\,\Bsst
   \end{align}
 \end{subequations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mixing and decay}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Time-dependent amplitudes for mixing and decay of the \BsBsbar{} system are obtained by combining the state of
+Equation~\ref{eq:timeEvolBBbarState} with the amplitudes for the decays of $\Bsst$ and $\Bsbarst$. Assuming the system is produced as
+either $\Bsst$ or $\Bsbarst$, the required time-dependent states are given by Equation~\ref{eq:timeEvolBBbarStateInit}. Using the
+orthogonality of $\Bsst$ and $\Bsbarst$ and labelling the amplitude of a decay of $\Bsst$ into a final state $\fst$ by $\Af$, the amplitude
+for a system produced as a $\Bs$, being in a $\Bs$ state at the time of decay and decaying into $\fst$ is given by
+$\langle\Bs|\Psi_{\Bs}(t)\rangle\,\Af \propto g_+(t)\,\Af$.
+
+If also $\Bsbarst$ can decay into the final state there is a second contribution to the $\Bstof$ process, which is proportional to the
+amplitude labelled by $\Abarf$. Also considering decays into the CP conjugate of the final state, $\fbarst$, the amplitudes of the four
+possible combinations of initial and final states are given by
+\begin{equation}
+  \label{eq:mixDecayAmps}
+  \begin{alignedat}{4}
+    \mathcal{A}(\Bstof) &\propto& & g_+\, \Af + \qp\, g_-\, \Abarf &
+    \quad
+    \mathcal{A}(\Bstofbar) &\propto& \;\qp \Big( & g_-\, \Abarfbar + \pq\, g_+\, \Afbar \Big)
+    \\
+    \mathcal{A}(\Bsbartof) &\propto& \;\pq \Big( & g_-\, \Af + \qp\, g_+\, \Abarf \Big) &
+    \mathcal{A}(\Bsbartofbar) &\propto& & g_+\, \Abarfbar + \pq\, g_-\, \Afbar
+    \ .
+  \end{alignedat}
+\end{equation}
+
+Note that the amplitudes for the processes with final state $\fbarst$ have the same structure as the amplitudes for the processes with
+final state $\fst$. $\mathcal{A}(\Bsbartofbar)$ and $\mathcal{A}(\Bsbartof)$ can be obtained from $\mathcal{A}(\Bstof)$ and
+$\mathcal{A}(\Bstofbar)$, respectively, by interchanging $p$ and $q$, replacing $\Af$ by $\Abarfbar$ and replacing $\Abarf$ by $\Afbar$.
+The amplitude for $\Bstofbar$ ($\Bsbartof$) is obtained from the amplitude for $\Bstof$ ($\Bsbartofbar$) by interchanging $g_+$ and $g_-$
+and multiplying with a factor $\pq$ $\big(\qp\big)$.
+
+The absolute values of the amplitudes in Equation~\ref{eq:mixDecayAmps} are squared to get an expression for the differential decay rates
+in time. For the $\Bstof$ amplitude this yields
+\begin{align}
+    &\frac{\ud\Gamma(\Bstof)}{\ud t} \propto \left| \mathcal{A}(\Bstof) \right|^2 \nonumber\\
+    &\qquad\propto |g_+|^2\, |\Af|^2 + \Big|\qp\Big|^2\,|g_-|^2\, |\Abarf|^2
+      + \qp\, g_+^*\,g_-\, \Af^*\,\Abarf + \left( \qp\, g_+^*\,g_-\, \Af^*\,\Abarf \right)^* \nonumber\\
+    &\qquad\propto |g_+|^2\, |\Af|^2 + \Big|\qp\Big|^2\,|g_-|^2\, |\Abarf|^2 \nonumber\\
+      &\qquad\qquad + 2\,\Re(g_+^*\,g_-)\, \Re\!\left(\qp\,\Af^*\,\Abarf\right)
+                    - 2\,\Im(g_+^*\,g_-)\, \Im\!\left(\qp\,\Af^*\,\Abarf\right)
+    \ .
+\end{align}
+Using the definition of $g_\pm$ from Equation~\ref{eq:timeEvolQp}, the required products of $g_+$ and $g_-$ are given by
+\begin{subequations}
+  \label{eq:mixDecayQpSq}
+  \begin{alignat}{4}
+    |g_\pm|^2  &\,=\,& \tfrac{1}{2}\, e^{-\Gams\,t} \Big[ & & \cDGs\, & & \pm\,  & \cDms \Big] \\
+    g_+^*\,g_- &\,=\,& \tfrac{1}{2}\, e^{-\Gams\,t} \Big[ &-& \sDGs\, & & +\,i\, & \sDms \Big]
+    \ ,
+  \end{alignat}
+\end{subequations}
+which yields
+\begin{equation}
+  \label{eq:mixDecayDiffRate}
+  \begin{aligned}
+    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, e^{-\Gams\,t}
+      \bigg[ &   \left(|\Af|^2 + \Big|\qp\Big|^2\, |\Abarf|^2\right)\,\cDGs \\
+             & + \left(|\Af|^2 - \Big|\qp\Big|^2\, |\Abarf|^2\right)\,\cDms \\
+             & - 2\,\Re\!\left(\qp\,\Af^*\,\Abarf\right)\,\sDGs \\
+             & - 2\,\Im\!\left(\qp\,\Af^*\,\Abarf\right)\,\sDms
+    \bigg]
+    \ .
+  \end{aligned}
+\end{equation}
+With the definitions
+\begin{subequations}
+\begin{equation}
+  \label{eq:mixDecayLamfDef}
+  \lamf\equiv\qp\frac{\Abarf}{\Af}
+\end{equation}
+\begin{equation}
+  \label{eq:mixDecayCDS}
+  \Cf \equiv \frac{1-\lamfSq}{1+\lamfSq}
+  \qquad \Df \equiv -\frac{2\,\Re(\lamf)}{1+\lamfSq}
+  \qquad \Sf \equiv  \frac{2\,\Im(\lamf)}{1+\lamfSq}
+  \ ,
+\end{equation}
+\end{subequations}
+the differential decay rate can be expressed as
+\begin{equation}
+  \label{eq:mixDecayDiffRateLambda}
+  \begin{aligned}
+    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, |\Af|^2\, &(1+\lamfSq)\, e^{-\Gams\,t} \\
+      \times \Big[ &\cDGs + \Cf\,\cDms \\
+      &+ \Df\,\sDGs - \Sf\,\sDms \Big]
+    \ ,
+  \end{aligned}
+\end{equation}
+
+Expressions for the differential rates of the remaining three processes can be obtained by applying the aforementioned relations between
+the four amplitudes. From Equation~\ref{eq:mixDecayQpSq} it can be seen that interchanging $g_+$ and $g_-$ results in a sign change of the
+$\cDms$ and $\sDms$ terms. For the $\fbarst$ final state, the parameter $\lamf$ goes to $\lamfbar$, which is defined as
+\begin{equation}
+  \lamfbar\equiv\pq\frac{\Afbar}{\Abarfbar}
+  \ .
+\end{equation}
+With $\lamfbar$ parameters $\Cfbar$, $\Dfbar$ and $\Sfbar$ are defined similar to $\Cf$, $\Df$ and $\Sf$ in Equation~\ref{eq:mixDecayCDS}
+with $\lamf$.
+
+With Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayDiffRateLambda}, the differential rates are given by
+\begin{subequations}
+  \label{eq:mixDecayDiffRateAll}
+  \begin{align}
+    \label{eq:mixDecayDiffRateB}
+    \frac{\ud\Gamma(\text{f})}{\ud t}
+      &\propto \tfrac{1}{2}\, |\Af|^2\, (1+\lamfSq)\, \frac{1+\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gams\,t} \nonumber\\
+      &\qquad\quad\times \Big[ \cDGs + \qf\,\Cf\,\cDms \nonumber\\
+      &\qquad\qquad\quad + \Df\,\sDGs - \qf\,\Sf\,\sDms \Big]
+  \end{align}
+  \begin{align}
+    \label{eq:mixDecayDiffRateBbar}
+    \frac{\ud\Gamma\!\left(\overline{\text{f}}\right)}{\ud t}
+      &\propto \tfrac{1}{2}\, |\Abarfbar|^2\, (1+\lamfbarSq)\, \frac{1-\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gams\,t} \nonumber\\
+      &\qquad\quad\times \Big[ \cDGs - \qf\,\Cfbar\,\cDms \nonumber\\
+      &\qquad\qquad\quad + \Dfbar\,\sDGs + \qf\,\Sfbar\,\sDms \Big]
+    \ ,
+  \end{align}
+\end{subequations}
+where the variable $\qf$ takes the value $+1$ for a $\Bs$ initial state and $-1$ for a $\Bsbar$ initial state and the parameter for CP
+violation in mixing $\Cm$ is given by
+\begin{equation}
+  \Cm \equiv \frac{1-\qpAbsAlt^2}{1+\qpAbsAlt^2}
+  \ .
+\end{equation}
+
+For flavour-specific final states, where $\Bsst$ can only decay into $\fst$ and $\Bsbarst$ only into $\fbarst$, the parameters $\lamf$ and
+$\lamfbar$ vanish. In that case $\Df$, $\Sf$, $\Dfbar$ and $\Sfbar$ are equal to zero and $\Cf$ and $\Cfbar$ are equal to one. Only the
+$\cDGs$ and $\cDms$ terms then remain in the expressions for the differential decay rates. An example of this case are the CP-conjugate
+processes $\Bs \to \text{D}_\text{s}^-\, \text{π}^+$ and $\Bsbar \to \text{D}_\text{s}^+\, \text{π}^-$.
+
+Another special case is

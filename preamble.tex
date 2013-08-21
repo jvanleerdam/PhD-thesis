@@ -37,6 +37,8 @@
 \newcommand{\Bsbarst}{|\Bsbar\rangle}
 \newcommand{\BLst}{|\BL\rangle}
 \newcommand{\BHst}{|\BH\rangle}
+\newcommand{\fst}{|\text{f}\rangle}
+\newcommand{\fbarst}{|\overline{\text{f}}\rangle}
 \newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
 \newcommand{\Jpsi}{\text{J}/\text{ψ}}
 \newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
@@ -48,6 +50,10 @@
 \newcommand{\Kpi}{\text{K}^+\uppi^-}
 \newcommand{\mumuhh}{\mumu\,\hh}
 \newcommand{\mumuKK}{\mumu\,\KK}
+\newcommand{\Bstof}[1][\text{f}]{\Bs\!\to\!{#1}}
+\newcommand{\Bsbartof}[1][\text{f}]{\Bsbar\!\to\!{#1}}
+\newcommand{\Bstofbar}[1][\text{f}]{\Bs\!\to\!\overline{#1}}
+\newcommand{\Bsbartofbar}[1][\text{f}]{\Bsbar\!\to\!\overline{#1}}
 \newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
 \newcommand{\BstoJpsihh}{$\Bs \to \Jpsi\,\hh$}
 \newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\text{ϕ}$}
@@ -66,9 +72,12 @@
 \newcommand{\phimix}{\phi_{12}}
 \newcommand{\phis}{\phi_\text{s}}
 \newcommand{\phisccs}{\phi_\text{s}^{\text{c}\bar{\text{c}}\text{s}}}
-\newcommand{\lam}{\lambda}
-\newcommand{\lamAbs}{|\lambda|}
-\newcommand{\lamSq}{\lamAbs^2}
+\newcommand{\lamf}[1][\text{f}]{\lambda_\text{#1}}
+\newcommand{\lamfAbs}[1][\text{f}]{|{\lamf[#1]}|}
+\newcommand{\lamfSq}[1][\text{f}]{{\lamfAbs[#1]}^2}
+\newcommand{\lamfbar}[1][\text{f}]{{\kern 0.06em \overline{\kern -0.06em \lambda \kern -0.03em}\kern 0.03em}_{\overline{\text{#1}}}}
+\newcommand{\lamfbarAbs}[1][\text{f}]{|{\lamfbar[#1]}|}
+\newcommand{\lamfbarSq}[1][\text{f}]{{\lamfbarAbs[#1]}^2}
 \newcommand{\taus}{\tau_\text{s}}
 \newcommand{\ms}{M_\text{s}}
 \newcommand{\mL}{M_\text{L}}
@@ -81,14 +90,10 @@
 \newcommand{\Delms}{\Delta m_\text{s}}
 \newcommand{\eGst}{e^{-\Gams\,t}}
 \newcommand{\eGstal}{e^{-\Gams\,\alert{t}}}
-\newcommand{\cDGs}{\cosh\left(\tfrac{1}{2}\DelGams\, t\right)}
-\newcommand{\cDGsal}{\cosh\left(\tfrac{1}{2}\DelGams\, \alert{t}\right)}
-\newcommand{\sDGs}{\sinh\left(\tfrac{1}{2}\DelGams\, t\right)}
-\newcommand{\sDGsal}{\sinh\left(\tfrac{1}{2}\DelGams\, \alert{t}\right)}
-\newcommand{\cDms}{\cos\left(\Delms\, t\right)}
-\newcommand{\cDmsal}{\cos\left(\Delms\, \alert{t}\right)}
-\newcommand{\sDms}{\sin\left(\Delms\, t\right)}
-\newcommand{\sDmsal}{\sin\left(\Delms\, \alert{t}\right)}
+\newcommand{\cDGs}{\cosh\!\left(\tfrac{1}{2}\DelGams\, t\right)}
+\newcommand{\sDGs}{\sinh\!\left(\tfrac{1}{2}\DelGams\, t\right)}
+\newcommand{\cDms}{\cos\!\left(\Delms\, t\right)}
+\newcommand{\sDms}{\sin\!\left(\Delms\, t\right)}
 
 \newcommand{\thetaK}{\theta_{\text{K}}}
 \newcommand{\thetal}{\theta_{\text{μ}}}
@@ -118,13 +123,15 @@
 \newcommand{\qt}{q_\text{tag}}
 \newcommand{\qtOS}{{\qt^\text{OS}}}
 \newcommand{\qtSS}{{\qt^\text{SS}}}
-\newcommand{\AbarA}[1][i]{\tfrac{\overline{A}_{#1}}{A_{#1}}}
 \newcommand{\qp}{\frac{q}{p}}
 \newcommand{\pq}{\frac{p}{q}}
 \newcommand{\qpAbs}{\left|\qp\right|}
 \newcommand{\qpAbsAlt}{\big|\qp\big|}
 \newcommand{\pqAbs}{\left|\pq\right|}
 \newcommand{\Af}[1][\text{f}]{A_{#1}}
+\newcommand{\Abarf}[1][\text{f}]{\kern 0.23em \overline{\kern -0.23em A}_{#1}}
+\newcommand{\Afbar}[1][\text{f}]{\Af[\overline{#1}]}
+\newcommand{\Abarfbar}[1][\text{f}]{\Abarf[\overline{#1}]}
 \newcommand{\AstA}{A_i^*A_j}
 \newcommand{\AstAt}{A_i(t)^*A_j(t)}
 \newcommand{\AstAArg}[2]{A_{#1}^*A_{#2}}
@@ -132,6 +139,12 @@
 \newcommand{\Cm}{C_\text{m}}
 \newcommand{\Dm}{D_\text{m}}
 \newcommand{\Sm}{S_\text{m}}
+\newcommand{\Cf}[1][\text{f}]{C_{#1}}
+\newcommand{\Df}[1][\text{f}]{D_{#1}}
+\newcommand{\Sf}[1][\text{f}]{S_{#1}}
+\newcommand{\Cfbar}[1][\text{f}]{C_{\overline{#1}}}
+\newcommand{\Dfbar}[1][\text{f}]{D_{\overline{#1}}}
+\newcommand{\Sfbar}[1][\text{f}]{S_{\overline{#1}}}
 \newcommand{\Ppl}{P^+_{ij}}
 \newcommand{\Pmn}{P^-_{ij}}
 \newcommand{\Pre}{P^\Re_{ij}}
