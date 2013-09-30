@@ -3,9 +3,10 @@ The differential decay rate for the \BstoJpsiKK{} process can be obtained by wor
 $\Af^*\,\Abarf$ and combining these with the decay time dependence of Equation~\ref{eq:mixDecayDiffRate}. See Reference~\cite{Zhang:2012zk}
 for an example of this approach for $\text{B}_q^0\to\Jpsi\,\text{h}^+\text{h}^-$ processes in general.
 
-It is often more convenient to order terms in the expression for the differential decay rate by intermediate resonant or angular-momentum
-state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For this approach it is
-necessary to go back to the expression for the $\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay amplitudes:
+However, it is often more convenient to order terms in the expression for the differential decay rate by intermediate resonant or
+angular-momentum state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For this
+approach it is necessary to go back to the expression for the $\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay
+amplitudes:
 \begin{equation}
   \mathcal{A}(\Bstof) \propto g_+\, \Af + \qp\, g_-\, \Abarf = g_+\, \sum_i\Af[i] + \qp\, g_-\, \sum_j\Abarf[j]
   \ ,
@@ -15,9 +16,17 @@ respectively.
 
 The dependence of the $\Bsst$ decay amplitude on final state kinematics is given by
 \begin{equation}
-  \Af[i] = \Ai\; \mathcal{H}_i(\Omega)\; B_{L_{\text{B},i}}(|p_{\Jpsi}|)\; B_{L_{\text{KK},i}}(|p_{\text{K}^+}|)\; \mathcal{T}_i(\mKK)
-  \ .
+  \Af[i] = \Ai\; \mathcal{H}_i(\Omega)\; B_{L_{\Jpsi\text{KK},i}}(|p_{\Jpsi}|)\; B_{L_{\text{KK},i}}(|p_{\text{K}^+}|)\;
+           \mathcal{T}_i(\mKK)
+  \ ,
 \end{equation}
+where $\Ai$ is the complex-valued coefficient for amplitude $\Af[i]$, $\mathcal{H}_i$ is the amplitude's dependence on decay angles
+$\Omega$ and $\mathcal{T}_i$ is a phenomenological model of the dependence on the invariant mass of the $\KK$ pair, $\mKK$. The factors
+$B_i$ are Blatt-Weisskopf barrier factors~\cite{Blatt,*VonHippel:1972fg}, which depend on the orbital angular momenta of the $\Jpsi\,\KK$
+and $\KK$ systems ($L_{\Jpsi\text{KK}}$ and $L_\text{KK}$, respectively), the magnitude of the $\Jpsi$ linear momentum in the $\Bs$ rest
+frame ($|p_{\Jpsi}|$) and the magnitude of the $\text{K}^+$ linear momentum in the $\KK$ rest frame ($|p_{\text{K}^+}|$). These factors
+model a suppression due to the maximum orbital angular momentum in the decay of a resonance, which is limited by the linear momenta of the
+decay products.
 
 It is assumed that the $\Bsbarst$ decay proceeds through the same intermediate states as the $\Bsst$ decay and that the respective
 amplitudes have the same kinematic dependence. The $\Bsbarst$ amplitude is obtained by replacing the coefficient $\Ai$ with $\Abari$. The
@@ -45,7 +54,7 @@ Equation~\ref{eq:amplitudeAmpLami}.  With $|g_\pm|^2$ and $g_+^*\,g_-$ from Equa
                                                       - i (\lamf[i]^* - \lamf[j])\,   \sDms \Big] \ . \nonumber
 \end{align}
 
-The differential decay rate of the $\Bstof$ process is given by \cite{Beringer:1900zz}:
-\begin{equation}
-  \ud\Gamma = \frac{1}{32\, (2\pi)^3\, \sqrt{\mBs^3}}\, |\mathcal{A}(\Bstof)|^2\, \ud\mpsiK^2\, \ud\mKK^2
-\end{equation}
+%The differential decay rate of the $\Bstof$ process is given by \cite{Beringer:1900zz}:
+%\begin{equation}
+%  \ud\Gamma = \frac{1}{32\, (2\pi)^3\, \sqrt{\mBs^3}}\, |\mathcal{A}(\Bstof)|^2\, \ud\mpsiK^2\, \ud\mKK^2
+%\end{equation}
