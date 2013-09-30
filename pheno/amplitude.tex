@@ -1,0 +1,51 @@
+\section{Amplitude for the \BstoJpsiKK{} Decay}
+The differential decay rate for the \BstoJpsiKK{} process can be obtained by working out expressions for $|\Af|^2$, $|\Abarf|^2$ and
+$\Af^*\,\Abarf$ and combining these with the decay time dependence of Equation~\ref{eq:mixDecayDiffRate}. See Reference~\cite{Zhang:2012zk}
+for an example of this approach for $\text{B}_q^0\to\Jpsi\,\text{h}^+\text{h}^-$ processes in general.
+
+It is often more convenient to order terms in the expression for the differential decay rate by intermediate resonant or angular-momentum
+state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For this approach it is
+necessary to go back to the expression for the $\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay amplitudes:
+\begin{equation}
+  \mathcal{A}(\Bstof) \propto g_+\, \Af + \qp\, g_-\, \Abarf = g_+\, \sum_i\Af[i] + \qp\, g_-\, \sum_j\Abarf[j]
+  \ ,
+\end{equation}
+where $\Af[i]$ and $\Abarf[j]$ are the amplitudes for the $\Bsst$ and $\Bsbarst$ decays through intermediate states $i$ and $j$,
+respectively.
+
+The dependence of the $\Bsst$ decay amplitude on final state kinematics is given by
+\begin{equation}
+  \Af[i] = \Ai\; \mathcal{H}_i(\Omega)\; B_{L_{\text{B},i}}(|p_{\Jpsi}|)\; B_{L_{\text{KK},i}}(|p_{\text{K}^+}|)\; \mathcal{T}_i(\mKK)
+  \ .
+\end{equation}
+
+It is assumed that the $\Bsbarst$ decay proceeds through the same intermediate states as the $\Bsst$ decay and that the respective
+amplitudes have the same kinematic dependence. The $\Bsbarst$ amplitude is obtained by replacing the coefficient $\Ai$ with $\Abari$. The
+total $\Bstof$ amplitude can now be expressed as
+\begin{equation}
+  \label{eq:amplitudeAmpLami}
+  \mathcal{A}(\Bstof) \propto \sum_i g_+\, \Af[i] + \qp\, g_-\, \Abarf[i] = \sum_i \left( g_+ + \lamf[i]\, g_- \right) \Af[i]
+  \ .
+\end{equation}
+The parameter $\lamf[i]$ is defined in accordance with $\lamf$ (Equation~\ref{eq:mixDecayLamfDef}):
+\begin{equation}
+  \label{eq:amplitudeLamiDef}
+  \lamf[i]\equiv\qp\frac{\Abari}{\Ai}
+  \ .
+\end{equation}
+
+Squaring the magnitude of $\mathcal{A}(\Bstof)$ gives an expression that contains the products of the terms in
+Equation~\ref{eq:amplitudeAmpLami}.  With $|g_\pm|^2$ and $g_+^*\,g_-$ from Equation~\ref{eq:mixDecayQpSq}, these products are given by
+\begin{align}
+  &\Af[i]^*\,\Af[j] \left[ |g_+|^2 + \lamf[i]^*\,\lamf[j]\, |g_-|^2 + \lamf[i]^*\, (g_+^*\,g_-)^* + \lamf[j]\, g_+^*\,g_- \right]
+      = \nonumber \\
+  &\Af[i]^*\,\Af[j] \cdot \tfrac{1}{2}\, \eGst\, \Big[    (1+\lamf[i]^*\lamf[j]) \, \cDGs
+                                                      +   (1-\lamf[i]^*\lamf[j]) \, \cDms \\
+  &\qquad\qquad\qquad\ \                              -   (\lamf[i]^* + \lamf[j])\,   \sDGs
+                                                      - i (\lamf[i]^* - \lamf[j])\,   \sDms \Big] \ . \nonumber
+\end{align}
+
+The differential decay rate of the $\Bstof$ process is given by \cite{Beringer:1900zz}:
+\begin{equation}
+  \ud\Gamma = \frac{1}{32\, (2\pi)^3\, \sqrt{\mBs^3}}\, |\mathcal{A}(\Bstof)|^2\, \ud\mpsiK^2\, \ud\mKK^2
+\end{equation}
