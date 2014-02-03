@@ -1,20 +1,34 @@
 \documentclass[a4paper,11pt]{book}
 
-\usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false,unicode]{hyperref}
+\usepackage{feynmp}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false,unicode=false,pdfencoding=auto]{hyperref}
 \usepackage{ifthen}
 \usepackage{datetime}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{upgreek}
+\usepackage{bbold}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{bm}
 \usepackage[switch,running]{lineno}
 \usepackage{mciteplus}
-\usepackage{libertine}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,backgrounds}
+
+\usepackage[ttscale=.875]{libertine}
+%\usepackage{unicode-math}
+%\setmathfont{texgyrepagella-math.otf}
+%\renewcommand*\ttdefault{lcmtt}
+\setmonofont[Scale=MatchLowercase]{DejaVuSansMono.ttf}
+
 \newboolean{articletitles}
-\setboolean{articletitles}{true}
+\setboolean{articletitles}{false}
+
+\DeclareGraphicsRule{*}{eps}{*}{}
 
 \renewcommand{\bibname}{References}
 
@@ -26,6 +40,19 @@
 \newcommand{\MeV}{MeV/c$^2$}
 \newcommand{\GeV}{GeV/c$^2$}
 \newcommand{\pT}{p_\mathrm{T}}
+
+\newcommand{\lepe}[1][]{\text{e}^{#1}}
+\newcommand{\lmu}[1][]{\text{μ}^{#1}}
+\newcommand{\ltau}[1][]{\text{τ}^{#1}}
+\newcommand{\nul}[1][]{\text{ν}_\text{#1}}
+\newcommand{\nue}{\nul[e]}
+\newcommand{\numu}{\nul[μ]}
+\newcommand{\nutau}{\nul[τ]}
+\newcommand{\pimes}[1][]{\text{π}^{#1}}
+\newcommand{\phimes}{\text{ϕ}}
+\newcommand{\Jpsi}{\text{J}/\text{ψ}}
+\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
+\newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
 \newcommand{\Bd}{\text{B}^0}
 \newcommand{\Bs}{\text{B}_\text{s}^0}
 \newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
@@ -40,14 +67,11 @@
 \newcommand{\fst}{|\text{f}\rangle}
 \newcommand{\fbarst}{|\overline{\text{f}}\rangle}
 \newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
-\newcommand{\Jpsi}{\text{J}/\text{ψ}}
-\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
-\newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
 \newcommand{\mumu}{\text{μ}^+\text{μ}^-}
 \newcommand{\hh}{\text{h}^+\text{h}^-}
 \newcommand{\KK}{\text{K}^+\text{K}^-}
-\newcommand{\pipi}{\uppi^+\uppi^-}
-\newcommand{\Kpi}{\text{K}^+\uppi^-}
+\newcommand{\pipi}{\pimes[+]\pimes[-]}
+\newcommand{\Kpi}{\text{K}^+\pimes[-]}
 \newcommand{\mumuhh}{\mumu\,\hh}
 \newcommand{\mumuKK}{\mumu\,\KK}
 \newcommand{\Bstof}[1][\text{f}]{\Bs\!\to\!{#1}}
@@ -56,15 +80,36 @@
 \newcommand{\Bsbartofbar}[1][\text{f}]{\Bsbar\!\to\!\overline{#1}}
 \newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
 \newcommand{\BstoJpsihh}{$\Bs \to \Jpsi\,\hh$}
-\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\text{ϕ}$}
+\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\phimes$}
 \newcommand{\BstoJpsiKK}{$\Bs \to \Jpsi\,\KK$}
 \newcommand{\BstoJpsimumuKK}{$\Bs \to \Jpsi(\to\mumu)\,\KK$}
-\newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\text{ϕ}(\to\KK)$}
+\newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\phimes(\to\KK)$}
 \newcommand{\BstoJpsipipi}{$\Bs \to \Jpsi\,\pipi$}
-\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\uppi^+$}
+\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\pimes[+]$}
 \newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
 \newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
-\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\uppi^-$}
+\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\pimes[-]$}
+
+\newcommand{\VCKM}{V_\text{CKM}}
+\newcommand{\lam}{\lambda}
+\newcommand{\rbar}{\overline{r}}
+\newcommand{\rsbar}{\overline{r}_\text{s}}
+\newcommand{\rhobar}{\kern 0.07em \overline{\kern -0.07em \rho \kern 0.05em}\kern -0.05em}
+\newcommand{\etabar}{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}
+\newcommand{\rhosbar}{{\kern 0.07em \overline{\kern -0.07em \rho \kern 0.05em}\kern -0.05em}_\text{s}}
+\newcommand{\etasbar}{{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}_\text{s}}
+\newcommand{\Vud}{V_\text{ud}}
+\newcommand{\Vus}{V_\text{us}}
+\newcommand{\Vub}{V_\text{ub}}
+\newcommand{\Vcd}{V_\text{cd}}
+\newcommand{\Vcs}{V_\text{cs}}
+\newcommand{\Vcb}{V_\text{cb}}
+\newcommand{\Vtd}{V_\text{td}}
+\newcommand{\Vts}{V_\text{ts}}
+\newcommand{\Vtb}{V_\text{tb}}
+\newcommand{\as}{\alpha_\text{s}}
+\newcommand{\bs}{\beta_\text{s}}
+\newcommand{\gs}{\gamma_\text{s}}
 
 \newcommand{\mmix}{M_{12}}
 \newcommand{\gmix}{\Gamma_{12}}
@@ -98,12 +143,12 @@
 \newcommand{\thetal}{\theta_{\text{μ}}}
 \newcommand{\cthetaK}{\cos\thetaK}
 \newcommand{\cthetal}{\cos\thetal}
-\newcommand{\phihel}{ϕ_{\text{h}}}
+\newcommand{\phihel}{\phi_{\text{h}}}
 \newcommand{\psitr}{\psi_{\text{tr}}}
 \newcommand{\thetatr}{\theta_{\text{tr}}}
 \newcommand{\cpsitr}{\cos\psitr}
 \newcommand{\cthetatr}{\cos\thetatr}
-\newcommand{\phitr}{ϕ_{\text{tr}}}
+\newcommand{\phitr}{\phi_{\text{tr}}}
 \newcommand{\mBs}{m_{\Bs}}
 \newcommand{\mKK}{m_{\text{KK}}}
 \newcommand{\mpsiK}{m_{\Jpsi\text{K}^+}}
