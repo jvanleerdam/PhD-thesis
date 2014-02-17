@@ -1,0 +1,59 @@
+\documentclass{standalone}
+\usepackage{xltxtra}
+\usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections,arrows,calc}
+% \tikzstyle{every picture}+=[thick]
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+
+\def\Vud{\ensuremath{V^{\phantom{*}}_{ud}}}
+\def\Vubst{\ensuremath{V^{*}_{ub}}}
+\def\Vcd{\ensuremath{V^{\phantom{*}}_{cd}}}
+\def\Vcbst{\ensuremath{V^{*}_{cb}}}
+\def\Vtd{\ensuremath{V^{\phantom{*}}_{td}}}
+\def\Vtbst{\ensuremath{V^{*}_{tb}}}
+
+\begin{document}
+\begin{tikzpicture}[scale=3]
+  \begin{scope}[>=latex]
+    \draw [name path=real,blue,->] (-180:0.15) -- ( 0:1.2) node[above] {\(\Re\)} ; % Real axis
+    \draw [name path=imag,blue,->] ( -90:0.15) -- (90:1.2) node[right] {\(\Im\)} ; % Imag axis
+
+    \node [scale=0.75] at (0.6,0.9) {
+      \(\Vud\Vubst + \Vcd\Vcbst + \Vtd\Vtbst = 0\)
+    };
+
+    % triangle base, side with β, side with γ
+    \path (0:0)    coordinate (origin);
+    \path (0:1)    coordinate (unity);
+    \path (65:0.6) coordinate (closing);
+
+    \fill [blue] (origin) circle (0.01); % origin
+
+    \draw [black,thick] (origin) -- (unity) -- (closing) -- cycle; % triangle
+
+    % vertex labels
+    \path (origin) +(-0.1,0) node [below] {\footnotesize{(0,0)}};
+    \path (unity)            node [below] {\footnotesize{(1,0)}};
+    \path (closing)          node [above] {\footnotesize{(ρ,η)}};
+
+    % side labels
+    \path (unity)  -- node[above,midway,sloped] {\(\frac{\Vtd\Vtbst}{\Vcd\Vcbst}\)} (closing);
+    \path (origin) -- node[above,midway,sloped] {\(\frac{\Vud\Vubst}{\Vcd\Vcbst}\)} (closing);
+
+    % angles
+    \draw [black] (origin)  +(0:0.2)   arc (0:65:0.2); % 65 degrees
+    \draw [black] (unity)   +(180:0.2) arc (180:143:0.2); % 37 degrees
+    \draw [black] (closing) +(245:0.2) arc (245:323:0.2); % 78 degrees
+
+    % angle labels
+    \path (origin)  +(33:0.13)  node {\(\gamma\)};
+    \path (unity)   +(162:0.25) node {\(\beta\)} ;
+    \path (closing) +(284:0.13) node {\(\alpha\)};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

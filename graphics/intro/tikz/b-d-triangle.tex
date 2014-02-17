@@ -1,0 +1,65 @@
+\documentclass[11pt]{standalone}
+\usepackage{amsmath}
+\usepackage{xltxtra}
+\usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections,arrows,calc}
+% \tikzstyle{every picture}+=[thick]
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{1pt}%
+
+\def\Vud{\ensuremath{V^{\phantom{*}}_\text{ud}}}
+\def\Vubst{\ensuremath{V^{*}_\text{ub}}}
+\def\Vcd{\ensuremath{V^{\phantom{*}}_\text{cd}}}
+\def\Vcbst{\ensuremath{V^{*}_\text{cb}}}
+\def\Vtd{\ensuremath{V^{\phantom{*}}_\text{td}}}
+\def\Vtbst{\ensuremath{V^{*}_\text{tb}}}
+\def\rhobar{\ensuremath{\kern 0.07em \overline{\kern -0.07em \rho \kern 0.05em}\kern -0.05em}}
+\def\etabar{\ensuremath{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}}
+
+\begin{document}
+\begin{tikzpicture}[scale=4]
+  \begin{scope}[>=latex]
+    \draw [name path=real,black,->] (-180:0.15) -- ( 0:1.15) node[below] {\(\Re\)}; % Real axis
+    \draw [name path=imag,black,->] ( -90:0.15) -- (90:0.65) node[left]  {\(\Im\)}; % Imag axis
+
+    %\node [scale=0.75] at (0.6,0.9) {
+    %  \(\Vud\Vubst + \Vcd\Vcbst + \Vtd\Vtbst = 0\)
+    %};
+
+    % triangle base, side with β, side with γ
+    \path (0:0)     coordinate (origin);
+    \path (0:1)     coordinate (unity);
+    \path (53:0.60) coordinate (apex);
+
+    \fill [black] (origin) circle (0.01); % origin
+
+    \draw [black,thick] (origin) -- (unity) -- (apex) -- cycle; % triangle
+    %\draw [black,thick,->] (origin) -- (unity);
+    %\draw [black,thick,->] (unity)  -- (apex);
+    %\draw [black,thick,->] (apex)   -- (origin);
+
+    % vertex labels
+    \path (origin) +(-0.1,0) node [below] {\footnotesize{(\(0\),\(0\))}};
+    \path (unity)            node [below] {\footnotesize{(\(1\),\(0\))}};
+    \path (apex)             node [above] {\footnotesize{(\(\rhobar\),\(\etabar\))}};
+
+    % side labels
+    \path (unity)  -- node[above,sloped,midway]   {\(\frac{\Vtd\Vtbst}{\Vcd\Vcbst}\)} (apex);
+    \path (origin) -- node[above,sloped,pos=0.68] {\(\frac{\Vud\Vubst}{\Vcd\Vcbst}\)} (apex);
+
+    % angles
+    \draw [black] (apex)   +(-37:0.09) arc (-37:-127:0.09); % α: 90 degrees
+    \draw [black] (unity)  +(180:0.17) arc (180:143:0.17);  % β: 37 degrees
+    \draw [black] (origin) +(0:0.10)   arc (0:53:0.10);     % γ: 53 degrees
+
+    % angle labels
+    \path (apex)   +(-83:0.135) node {\(\alpha\)};
+    \path (unity)  +(163:0.22)  node {\(\beta\)} ;
+    \path (origin) +(26:0.145)  node {\(\gamma\)};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

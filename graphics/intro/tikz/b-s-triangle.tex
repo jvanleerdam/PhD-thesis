@@ -1,0 +1,62 @@
+\documentclass[11pt]{standalone}
+\usepackage{amsmath}
+\usepackage{xltxtra}
+\usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections,arrows,calc}
+% \tikzstyle{every picture}+=[thick]
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{1pt}%
+
+\def\Vus{\ensuremath{V^{\phantom{*}}_\text{us}}}
+\def\Vubst{\ensuremath{V^{*}_\text{ub}}}
+\def\Vcs{\ensuremath{V^{\phantom{*}}_\text{cs}}}
+\def\Vcbst{\ensuremath{V^{*}_\text{cb}}}
+\def\Vts{\ensuremath{V^{\phantom{*}}_\text{ts}}}
+\def\Vtbst{\ensuremath{V^{*}_\text{tb}}}
+\def\rhosbar{\ensuremath{{\kern 0.07em \overline{\kern -0.07em \rho \kern 0.05em}\kern -0.05em}_\text{s}}}
+\def\etasbar{\ensuremath{{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}_\text{s}}}
+
+\begin{document}
+\begin{tikzpicture}[scale=4]
+  \begin{scope}[>=latex]
+    \draw [name path=real,black,->] (-180:0.15) -- ( 0:1.15) node[below] {\(\Re\)}; % Real axis
+    \draw [name path=imag,black,->] ( -90:0.51) -- (90:0.29) node[left]  {\(\Im\)}; % Imag axis
+
+    %\node [scale=0.75] at (0.6,-0.85) {
+    %  \(\Vus\Vubst + \Vcs\Vcbst + \Vts\Vtbst = 0\)
+    %};
+
+    % triangle base, side with β_s, side with γ_s
+    \path (0:0)       coordinate (origin);
+    \path (0:1)       coordinate (unity);
+    \path (-115:0.4) coordinate (apex);
+
+    \fill [black] (origin) circle (0.01); % origin
+
+    \draw [black,thick] (origin) -- (unity) -- (apex) -- cycle; % triangle
+
+    % vertex labels
+    \path (origin) +(0.09,0) node [above] {\footnotesize{(\(0\),\(0\))}};
+    \path (unity)            node [above] {\footnotesize{(\(1\),\(0\))}};
+    \path (apex)             node [below] {\footnotesize{(\(\rhosbar\),\(\etasbar\))}};
+
+    % side labels
+    \path (unity)  -- node[below,sloped,midway]   {\(\frac{\Vts\Vtbst}{\Vcs\Vcbst}\)} (apex);
+    \path (origin) -- node[above,sloped,pos=0.55] {\(\frac{\Vus\Vubst}{\Vcs\Vcbst}\)} (apex);
+
+    % angles
+    \draw [black] (apex)   +(17:0.09)   arc (17:65:0.09);     % α_s: 48 degrees
+    \draw [black] (unity)  +(-180:0.37) arc (-180:-163:0.37); % β_s: 17 degrees
+    \draw [black] (origin) +(0:0.08)    arc (0:-115:0.08);    % γ_s: 115 degrees
+
+    % angle labels
+    \path (apex)   +(40:0.145)  node {\(\alpha_\text{s}\)};
+    \path (unity)  +(-172:0.43) node {\(\beta_\text{s}\)};
+    \path (origin) +(-47:0.145) node {\(\gamma_\text{s}\)};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

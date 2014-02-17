@@ -1,4 +1,4 @@
-% graphics/feynman/WCouplings/charm.mp -- do not edit, generated automatically by thesis.tex
+% graphics/intro/feynman/WCouplings/up.mp -- do not edit, generated automatically by thesis.tex
 input feynmp
 require_RCS_revision "1.30";
 beginchar(1, 60*1.0pt#, 35*1.0pt#, 0);
@@ -12,8 +12,8 @@ vtop (__id, __ou);
 vbottom (__iW);
 vconnect ("fermion", __id, __v, __ou);
 vconnect ("boson", __iW, __v);
-vlabel ("s$_\text {L}^\prime $", __id);
-vlabel ("c$_\text {L}$", __ou);
+vlabel ("d$_\text {L}^\prime $", __id);
+vlabel ("u$_\text {L}$", __ou);
 vlabel ("W", __iW);
 vfreeze;
 vdraw;

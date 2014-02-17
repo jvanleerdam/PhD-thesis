@@ -1,0 +1,57 @@
+\documentclass{standalone}
+\usepackage{xltxtra}
+\usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections,arrows,calc}
+% \tikzstyle{every picture}+=[thick]
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+
+\def\Vus{\ensuremath{V^{\phantom{*}}_{us}}}
+\def\Vubst{\ensuremath{V^{*}_{ub}}}
+\def\Vcs{\ensuremath{V^{\phantom{*}}_{cs}}}
+\def\Vcbst{\ensuremath{V^{*}_{cb}}}
+\def\Vts{\ensuremath{V^{\phantom{*}}_{ts}}}
+\def\Vtbst{\ensuremath{V^{*}_{tb}}}
+
+\begin{document}
+\begin{tikzpicture}[scale=3]
+  \begin{scope}[>=latex]
+    \draw [name path=real,blue,->] (-180:0.15) -- ( 0:1.2)  node[above] {\(\Re\)} ; % Real axis
+    \draw [name path=imag,blue,->] ( -90:1.15) -- (90:0.2) node[right] {\(\Im\)} ; % Imag axis
+
+    \node [scale=0.75] at (0.6,-0.85) {
+      \(\Vus\Vubst + \Vcs\Vcbst + \Vts\Vtbst = 0\)
+    };
+
+    % triangle base, side with β, side with γ
+    \path (0:0)      coordinate (origin);
+    \path (0:1)      coordinate (unity);
+    \path (-105:0.6) coordinate (closing);
+
+    \fill [blue] (origin) circle (0.01); % origin
+
+    \draw [black,thick] (origin) -- (unity) -- (closing) -- cycle; % triangle
+
+    % vertex labels
+    \path (origin) +(-0.1,0) node [above] {\footnotesize{(0,0)}};
+    \path (unity)            node [above] {\footnotesize{(1,0)}};
+    \path (closing)          node [below] {\footnotesize{(ρ,η)}};
+
+    % side labels
+    \path (unity)  -- node[below,midway,sloped] {\(\frac{\Vts\Vtbst}{\Vcs\Vcbst}\)} (closing);
+    \path (origin) -- node[above,midway,sloped] {\(\frac{\Vus\Vubst}{\Vcs\Vcbst}\)} (closing);
+
+    % angles
+    \draw [black] (unity)   +(180:0.2) arc (180:208:0.2); % 28 degrees
+    \draw [black] (closing) +(75:0.2)  arc (75:27:0.2);   % 47 degrees
+
+    % angle labels
+    \path (unity)   +(194:0.33) node {\(\beta_s\)} ;
+    \path (closing) +(47:0.33) node {\(\pi-\gamma\)};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

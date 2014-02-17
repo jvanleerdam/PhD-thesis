@@ -1,4 +1,4 @@
-% graphics/feynman/WCouplings/top.mp -- do not edit, generated automatically by thesis.tex
+% graphics/intro/feynman/WCouplings/top.mp -- do not edit, generated automatically by thesis.tex
 input feynmp
 require_RCS_revision "1.30";
 beginchar(1, 60*1.0pt#, 35*1.0pt#, 0);
