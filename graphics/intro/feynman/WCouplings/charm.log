@@ -1,4 +1,4 @@
-This is MetaPost, version 1.803 (kpathsea version 6.1.1)  15 NOV 2013 13:54
+This is MetaPost, version 1.803 (kpathsea version 6.1.1)  17 FEB 2014 21:03
 **charm.mp
 (mpost.mp
 (/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/metapost/base/plain.mp
@@ -7,9 +7,9 @@ Preloading the plain mem file, version 1.004) ) (./charm.mp
 .mp) [1] )
  
 Here is how much of MetaPost's memory you used:
- 338 strings using 5251 characters
+ 338 strings using 5335 characters
  1475232 bytes of node memory
  923 symbolic tokens
- 14i,77n,28p,108b,3f stack positions out of 16i,96n,32p,200b,4f
+ 14i,77n,28p,114b,3f stack positions out of 16i,96n,32p,200b,4f
 1 output file written: charm.1
 

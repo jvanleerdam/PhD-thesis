@@ -13,7 +13,7 @@ vbottom (__iW);
 vconnect ("fermion", __id, __v, __ou);
 vconnect ("boson", __iW, __v);
 vlabel ("d$_\text {L}^\prime $", __id);
-vlabel ("u$_\text {L}$", __ou);
+vlabel ("u$_\text {L}^{\phantom {\prime }}$", __ou);
 vlabel ("W", __iW);
 vfreeze;
 vdraw;
