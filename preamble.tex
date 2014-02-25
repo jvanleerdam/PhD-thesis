@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,12pt]{book}
 
 \usepackage{feynmp}
 \usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false,unicode=false,pdfencoding=auto]{hyperref}
@@ -8,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{wrapfig}
 \usepackage{upgreek}
 \usepackage{bbold}
 \usepackage{amsmath}
@@ -15,9 +17,12 @@
 \usepackage{mathtools}
 \usepackage{bm}
 \usepackage[switch,running]{lineno}
+\usepackage{cite}
 \usepackage{mciteplus}
 \usepackage{tikz}
 \usetikzlibrary{arrows,shapes,backgrounds}
+%\usepackage{setspace}
+%\doublespacing
 
 \usepackage[ttscale=.875]{libertine}
 %\usepackage{unicode-math}
@@ -37,8 +42,8 @@
 
 \newcommand{\invfb}{fb$^{-1}$}
 \newcommand{\invps}{ps$^{-1}$}
-\newcommand{\MeV}{MeV/c$^2$}
-\newcommand{\GeV}{GeV/c$^2$}
+\newcommand{\MeV}{MeV/$c^2$}
+\newcommand{\GeV}{GeV/$c^2$}
 \newcommand{\pT}{p_\mathrm{T}}
 
 \newcommand{\lepe}[1][]{\text{e}^{#1}}
@@ -48,14 +53,20 @@
 \newcommand{\nue}{\nul[e]}
 \newcommand{\numu}{\nul[μ]}
 \newcommand{\nutau}{\nul[τ]}
+\newcommand{\qbar}[1][b]{\overline{\text{#1}}}
+\newcommand{\btoccs}{\text{b}\to\text{c}\qbar[c]\text{s}}
 \newcommand{\pimes}[1][]{\text{π}^{#1}}
-\newcommand{\phimes}{\text{ϕ}}
+\newcommand{\phimes}{\text{ϕ}\text{(1020)}}
+\newcommand{\phimesalt}{\text{ϕ}}
+\newcommand{\fzero}{\text{f}_\text{0}\text{(980)}}
+\newcommand{\ftwop}{\text{f}_\text{2}^{\,\prime}\text{(1525)}}
 \newcommand{\Jpsi}{\text{J}/\text{ψ}}
 \newcommand{\Kp}{\text{K}^+}
 \newcommand{\Km}{\text{K}^-}
 \newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
 \newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
 \newcommand{\Bd}{\text{B}^0}
+\newcommand{\Bdbar}{\kern 0.06em \overline{\kern -0.06em \Bd \kern -0.32em} \kern 0.32em}
 \newcommand{\Bs}{\text{B}_\text{s}^0}
 \newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
 \newcommand{\BH}{\text{B}_\text{H}}
@@ -66,6 +77,7 @@
 \newcommand{\Bsbarst}{|\Bsbar\rangle}
 \newcommand{\BLst}{|\BL\rangle}
 \newcommand{\BHst}{|\BH\rangle}
+\newcommand{\fp}{\text{f}^{\,\prime}}
 \newcommand{\fst}{|\text{f}\rangle}
 \newcommand{\fbarst}{|\overline{\text{f}}\rangle}
 \newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
@@ -80,15 +92,21 @@
 \newcommand{\Bsbartof}[1][\text{f}]{\Bsbar\!\to\!{#1}}
 \newcommand{\Bstofbar}[1][\text{f}]{\Bs\!\to\!\overline{#1}}
 \newcommand{\Bsbartofbar}[1][\text{f}]{\Bsbar\!\to\!\overline{#1}}
+\newcommand{\Jpsiphi}{\Jpsi\,\phimesalt}
+\newcommand{\Jpsihh}{\Jpsi\,\hh}
+\newcommand{\JpsiKK}{\Jpsi\,\KK}
+\newcommand{\Bstomumuhh}{$\Bs \to \mumuhh$}
+\newcommand{\BstomumuKK}{$\Bs \to \mumuKK$}
 \newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
-\newcommand{\BstoJpsihh}{$\Bs \to \Jpsi\,\hh$}
-\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsi\,\phimes$}
-\newcommand{\BstoJpsiKK}{$\Bs \to \Jpsi\,\KK$}
+\newcommand{\BstoJpsihh}{$\Bs \to \Jpsihh$}
+\newcommand{\BstoJpsiphi}{$\Bs \to \Jpsiphi$}
+\newcommand{\BstoJpsiKK}{$\Bs \to \JpsiKK$}
 \newcommand{\BstoJpsimumuKK}{$\Bs \to \Jpsi(\to\mumu)\,\KK$}
-\newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\phimes(\to\KK)$}
+\newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\phimesalt(\to\KK)$}
 \newcommand{\BstoJpsipipi}{$\Bs \to \Jpsi\,\pipi$}
 \newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\pimes[+]$}
 \newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
+\newcommand{\BdtoJpsiKS}{$\Bd\to\Jpsi\,\text{K}_\text{S}^0$}
 \newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
 \newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\pimes[-]$}
 
