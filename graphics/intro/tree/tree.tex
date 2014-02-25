@@ -1,0 +1,27 @@
+%%BoundingBox: -5 0 121 170 
+%%HiResBoundingBox: -5 0 120.57008 169.36447 
+
+\begin{fmffile}{graphics/intro/tree/tree}
+  \fmfframe(17,-25)(31,-25){
+    \begin{fmfgraph*}(115,170)
+      \fmfstraight
+      \fmfleft{i0,i1,i2,i3,i4,i5}
+      \fmfright{o0,o1,o2,o3,o4,o5}
+      \fmf{fermion,tension=3.5,label.side=left,label=b}{v2,i3}
+      \fmf{fermion,label=c,label.side=left}{o4,v2}
+      \fmf{fermion,label=c,label.side=left}{v3,o3}
+      \fmf{fermion,label=s,label.side=left,tension=2}{o2,v3}
+      \fmf{boson,tension=2.4,label=W$^+$,label.side=right,right=0.3}{v2,v3}
+      \fmffreeze
+      \fmf{phantom,tension=0.3}{v2,v1,v3}
+      \fmf{fermion,tension=0.5,label=s,label.side=left}{v1,o1}
+      \fmf{fermion,tension=0.5,label.side=left,label=s}{i2,v1}
+      \fmf{plain,right=0.2}{i2,i3}
+      \fmf{plain,left=0.2,label=$\Bs$}{i2,i3}
+      \fmf{plain,right=0.2,label=$\phimesalt$}{o1,o2}
+      \fmf{plain,left=0.2}{o1,o2}
+      \fmf{plain,right=0.2,label=$\Jpsi$}{o3,o4}
+      \fmf{plain,left=0.2}{o3,o4}
+    \end{fmfgraph*}
+  }
+\end{fmffile}

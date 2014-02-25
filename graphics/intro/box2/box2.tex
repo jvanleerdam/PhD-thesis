@@ -1,0 +1,24 @@
+%%BoundingBox: -8 0 123 75 
+%%HiResBoundingBox: -8 0 122.57008 74.71962 
+
+\begin{fmffile}{graphics/intro/box2/box2} 
+  \fmfframe(19,3)(17,3){
+    \begin{fmfgraph*}(115,75)
+      \fmfbottom{i1,d1,o1}%dummy vertex
+      \fmftop{i2,d2,o2}
+      \fmf{fermion,label=s,l.side=left}{i1,v1}
+      \fmf{fermion,label=b,l.side=left}{v2,o1}
+      \fmf{fermion,label=b,l.side=left}{v3,i2}
+      \fmf{fermion,label=s,l.side=left}{o2,v4}
+      \fmf{boson,label=W$^-$,l.side=left}{v1,v2}
+      \fmf{boson,label=W$^+$,l.side=left}{v4,v3}
+      \fmffreeze
+      \fmf{fermion,label={t,,c,,u},l.side=left}{v4,v2}
+      \fmf{fermion,label={t,,c,,u},l.side=left}{v1,v3}
+      \fmf{plain,left=0.2}{o1,o2}
+      \fmf{plain,left=0.2,label=$\Bsbar$}{o2,o1}
+      \fmf{plain,left=0.2}{i2,i1}
+      \fmf{plain,left=0.2,label=$\Bs$}{i1,i2}
+    \end{fmfgraph*}
+  }
+\end{fmffile}
