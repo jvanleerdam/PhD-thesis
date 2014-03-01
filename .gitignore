@@ -3,8 +3,9 @@
 *.aux
 *.ps
 *.eps
-*.pdf
 *.toc
+thesis.pdf
+contents.pdf
 *.out
 *.bbl
 *.blg
