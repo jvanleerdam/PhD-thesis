@@ -1,5 +1,7 @@
 \documentclass[a4paper,11pt]{book}
 %\documentclass[a4paper,12pt]{book}
+%\usepackage{setspace}
+%\doublespacing
 
 \usepackage{feynmp}
 \usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false,unicode=false,pdfencoding=auto]{hyperref}
@@ -21,8 +23,12 @@
 \usepackage{mciteplus}
 \usepackage{tikz}
 \usetikzlibrary{arrows,shapes,backgrounds}
-%\usepackage{setspace}
-%\doublespacing
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{15.2pt}
+\rhead[\nouppercase\leftmark]{\thepage}
+\lhead[\thepage]{\nouppercase\rightmark}
+\cfoot{}
 
 \usepackage[ttscale=.875]{libertine}
 %\usepackage{unicode-math}
@@ -40,34 +46,44 @@
 \newcommand{\ud}{\mathrm{d}}
 \renewcommand{\vec}{\bm}
 
-\newcommand{\invfb}{fb$^{-1}$}
-\newcommand{\invps}{ps$^{-1}$}
-\newcommand{\MeV}{MeV/$c^2$}
-\newcommand{\GeV}{GeV/$c^2$}
+\newcommand{\tenpow}[1]{10\textsuperscript{#1}}
+\newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
+\newcommand{\invfb}{fb\textsuperscript{--1}}
+\newcommand{\invps}{ps\textsuperscript{--1}}
+\newcommand{\eV}{eV/$c$\textsuperscript{2}}
+\newcommand{\MeV}{MeV/$c$\textsuperscript{2}}
+\newcommand{\GeV}{GeV/$c$\textsuperscript{2}}
+\newcommand{\eVc}{eV/$c$}
+\newcommand{\MeVc}{MeV/$c$}
+\newcommand{\GeVc}{GeV/$c$}
 \newcommand{\pT}{p_\mathrm{T}}
 
-\newcommand{\lepe}[1][]{\text{e}^{#1}}
-\newcommand{\lmu}[1][]{\text{μ}^{#1}}
-\newcommand{\ltau}[1][]{\text{τ}^{#1}}
+\newcommand{\lepe}[1][]{\text{e}^\text{#1}}
+\newcommand{\lmu}[1][]{\text{μ}^\text{#1}}
+\newcommand{\ltau}[1][]{\text{τ}^\text{#1}}
 \newcommand{\nul}[1][]{\text{ν}_\text{#1}}
 \newcommand{\nue}{\nul[e]}
 \newcommand{\numu}{\nul[μ]}
 \newcommand{\nutau}{\nul[τ]}
 \newcommand{\qbar}[1][b]{\overline{\text{#1}}}
 \newcommand{\btoccs}{\text{b}\to\text{c}\qbar[c]\text{s}}
-\newcommand{\pimes}[1][]{\text{π}^{#1}}
+\newcommand{\bbbar}{\text{b}\qbar[b]}
+\newcommand{\pimes}[1][]{\text{π}^\text{#1}}
 \newcommand{\phimes}{\text{ϕ}\text{(1020)}}
 \newcommand{\phimesalt}{\text{ϕ}}
 \newcommand{\fzero}{\text{f}_\text{0}\text{(980)}}
 \newcommand{\ftwop}{\text{f}_\text{2}^{\,\prime}\text{(1525)}}
 \newcommand{\Jpsi}{\text{J}/\text{ψ}}
-\newcommand{\Kp}{\text{K}^+}
-\newcommand{\Km}{\text{K}^-}
-\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em 0}}
+\newcommand{\kaon}[1][0]{\text{K}^\text{#1}}
+\newcommand{\Kp}{\kaon[+]}
+\newcommand{\Km}{\kaon[--]}
+\newcommand{\KS}{\kaon_\text{S}}
+\newcommand{\Kst}{\text{K}^{\ast \kern 0.01em \text{0}}}
 \newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
-\newcommand{\Bd}{\text{B}^0}
+\newcommand{\Dmes}[1][0]{\text{D}^\text{#1}}
+\newcommand{\Bd}{\text{B}^\text{0}}
 \newcommand{\Bdbar}{\kern 0.06em \overline{\kern -0.06em \Bd \kern -0.32em} \kern 0.32em}
-\newcommand{\Bs}{\text{B}_\text{s}^0}
+\newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
 \newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
 \newcommand{\BH}{\text{B}_\text{H}}
 \newcommand{\BL}{\text{B}_\text{L}}
@@ -81,11 +97,11 @@
 \newcommand{\fst}{|\text{f}\rangle}
 \newcommand{\fbarst}{|\overline{\text{f}}\rangle}
 \newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
-\newcommand{\mumu}{\text{μ}^+\text{μ}^-}
-\newcommand{\hh}{\text{h}^+\text{h}^-}
-\newcommand{\KK}{\text{K}^+\text{K}^-}
+\newcommand{\mumu}{\lmu[+]\lmu[--]}
+\newcommand{\hh}{\text{h}^\text{+}\text{h}^\text{--}}
+\newcommand{\KK}{\Kp\Km}
 \newcommand{\pipi}{\pimes[+]\pimes[-]}
-\newcommand{\Kpi}{\text{K}^+\pimes[-]}
+\newcommand{\Kpi}{\Kp\pimes[-]}
 \newcommand{\mumuhh}{\mumu\,\hh}
 \newcommand{\mumuKK}{\mumu\,\KK}
 \newcommand{\Bstof}[1][\text{f}]{\Bs\!\to\!{#1}}
@@ -93,8 +109,10 @@
 \newcommand{\Bstofbar}[1][\text{f}]{\Bs\!\to\!\overline{#1}}
 \newcommand{\Bsbartofbar}[1][\text{f}]{\Bsbar\!\to\!\overline{#1}}
 \newcommand{\Jpsiphi}{\Jpsi\,\phimesalt}
+\newcommand{\JpsimumuphiKK}{\Jpsi(\to\mumu)\,\phimesalt(\to\KK)}
 \newcommand{\Jpsihh}{\Jpsi\,\hh}
 \newcommand{\JpsiKK}{\Jpsi\,\KK}
+\newcommand{\JpsimumuKK}{\Jpsi(\to\mumu)\,\KK}
 \newcommand{\Bstomumuhh}{$\Bs \to \mumuhh$}
 \newcommand{\BstomumuKK}{$\Bs \to \mumuKK$}
 \newcommand{\BstoJpsimumuhh}{$\Bs \to \Jpsi(\to\mumu)\,\hh$}
@@ -104,11 +122,11 @@
 \newcommand{\BstoJpsimumuKK}{$\Bs \to \Jpsi(\to\mumu)\,\KK$}
 \newcommand{\BstoJpsimumuphiKK}{$\Bs \to \Jpsi(\to\mumu)\,\phimesalt(\to\KK)$}
 \newcommand{\BstoJpsipipi}{$\Bs \to \Jpsi\,\pipi$}
-\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\text{K}^-\pimes[+]$}
+\newcommand{\BstoJpsiKpi}{$\Bs \to \Jpsi\,\Km\pimes[+]$}
 \newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
-\newcommand{\BdtoJpsiKS}{$\Bd\to\Jpsi\,\text{K}_\text{S}^0$}
+\newcommand{\BdtoJpsiKS}{$\Bd\to\Jpsi\,\KS$}
 \newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
-\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\text{K}^+\pimes[-]$}
+\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\Kp\pimes[-]$}
 
 \newcommand{\VCKM}[1][\phantom{\dagger}]{V^{#1}_\text{CKM}}
 \newcommand{\lam}{\lambda}
@@ -171,7 +189,7 @@
 \newcommand{\phitr}{\phi_{\text{tr}}}
 \newcommand{\mBs}{m_{\Bs}}
 \newcommand{\mKK}{m_{\text{KK}}}
-\newcommand{\mpsiK}{m_{\Jpsi\text{K}^+}}
+\newcommand{\mpsiK}{m_{\Jpsi\Kp}}
 
 \newcommand{\Azero}{A_0}
 \newcommand{\Apar}{A_\parallel}
