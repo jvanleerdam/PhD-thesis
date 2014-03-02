@@ -380,15 +380,20 @@ FUNCTION {format.eprint.paren}
   if$
 }
 
+FUNCTION {format.CDS}
+{ "\href{http://cdsweb.cern.ch/search?p=" number "{" "" find.replace "}" "" find.replace * 
+  "&f=reportnumber&action_search=Search} {\tt " * number * "}" * 
+}
+
 FUNCTION {format.lhcbid.internal}
 { "\href{http://cdsweb.cern.ch/search?p=" number * 
-  "&f=reportnumber&action_search=Search&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes} {" * 
+  "&f=reportnumber&action_search=Search&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes} {\tt " * 
   number * "}" * 
 }
 
 FUNCTION {format.lhcbid.public}
-{ "\href{http://cdsweb.cern.ch/search?p=" number * 
-  "&f=reportnumber&action_search=Search&c=LHCb+Reports&c=LHCb+Conference+Proceedings&c=LHCb+Conference+Contributions&c=LHCb+Notes&c=LHCb+Theses&c=LHCb+Papers} {" * 
+{ "\href{http://cdsweb.cern.ch/search?p=" number "{" "" find.replace "}" "" find.replace * 
+  "&f=reportnumber&action_search=Search&c=LHCb+Reports&c=LHCb+Conference+Proceedings&c=LHCb+Conference+Contributions&c=LHCb+Notes&c=LHCb+Theses&c=LHCb+Papers} {\tt " * 
   number * "}" * 
 }
 
@@ -1195,10 +1200,26 @@ FUNCTION {techreport}
 FUNCTION {lhcbreport}
 { output.bibitem
   format.collaboration output
-  format.authors "author" output.check
+  format.authors output
   format.title "title" output.check
   blank.sep
-  format.lhcbid output.nonnull
+  format.CDS output.nonnull
+  blank.sep
+  format.date.paren "year" output.check
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {cdsreport}
+{ output.bibitem
+  format.collaboration output
+  format.authors output
+  format.title "title" output.check
+  blank.sep
+  format.CDS output.nonnull
+  blank.sep
+  format.date.paren "year" output.check
   new.block
   note output
   fin.entry
