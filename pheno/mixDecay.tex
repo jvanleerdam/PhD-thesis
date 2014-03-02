@@ -38,10 +38,10 @@ corresponding anti-particle. This results in equal diagonal elements of both the
     \equiv \begin{pmatrix} H_0 & H_{12} \\ H_{21} & H_0 \end{pmatrix}
     = \vec{M} - \tfrac{i}{2}\,\vec{\Gamma}
     \equiv \begin{pmatrix} \ms & \mmix \\ \mmix^* & \ms \end{pmatrix}
-      - \tfrac{i}{2} \begin{pmatrix} \Gams & \gmix \\ \gmix^* & \Gams \end{pmatrix}
+      - \tfrac{i}{2} \begin{pmatrix} \Gs & \gmix \\ \gmix^* & \Gs \end{pmatrix}
     \ ,
 \end{equation}
-where $\ms$ is the $\Bs$ mass and $\Gams=\frac{1}{\taus}$ the $\Bs$ decay width, with $\taus$ the $\Bs$ mean lifetime.
+where $\ms$ is the $\Bs$ mass and $\Gs=\frac{1}{\taus}$ the $\Bs$ decay width, with $\taus$ the $\Bs$ mean lifetime.
 
 Mixing of the $\Bs$ and $\Bsbar$ states is governed by the off-diagonal elements of the Hamiltonian. The parameter $\mmix$ is the
 \emph{dispersive} part of $H_{12}$. This part originates from contributions of virtual intermediate states to the mixing process.
@@ -66,7 +66,7 @@ constructed from the corresponding eigenvectors:
   \label{eq:timeEvolMassStates}
   \begin{align}
     \vec{H'} &\equiv \begin{pmatrix} \mL & 0 \\ 0 & \mH \end{pmatrix}
-             - \tfrac{i}{2}\, \begin{pmatrix} \GamL & 0 \\ 0 & \GamH \end{pmatrix}
+             - \tfrac{i}{2}\, \begin{pmatrix} \GL & 0 \\ 0 & \GH \end{pmatrix}
     \label{eq:timeEvolMassStatesHamil1} \\
     &= \begin{pmatrix} H_0 - \sqrt{H_{12} H_{21}} & 0 \\ 0 & H_0 + \sqrt{H_{12} H_{21}} \end{pmatrix}
     \label{eq:timeEvolMassStatesHamil2} \\
@@ -83,17 +83,17 @@ The parameters $\alpha$ and $\beta$ are arbitrary constants as far as diagonaliz
 
 Mass and decay parameters of $\Bs$ and $\Bsbar$ are related to the masses and decay widths of $\BL$ and $\BH$ by
 Equations~\ref{eq:timeEvolMassStatesHamil1} and \ref{eq:timeEvolMassStatesHamil2}: $H_0 = \tfrac{1}{2}\,(\mH+\mL) -
-\tfrac{i}{4}\,(\GamL+\GamH)$ and $\sqrt{H_{12} H_{21}} = \tfrac{1}{2}\,(\mH-\mL) + \tfrac{i}{4}\,(\GamL-\GamH)$. Using also
+\tfrac{i}{4}\,(\GL+\GH)$ and $\sqrt{H_{12} H_{21}} = \tfrac{1}{2}\,(\mH-\mL) + \tfrac{i}{4}\,(\GL-\GH)$. Using also
 Equation~\ref{eq:timeEvolHamil}:
 \begin{subequations}
   \begin{alignat}{2}
     \ms   &\,=\,&     \Re(H_0) &\,=\, \tfrac{1}{2}\,(\mH+\mL)     \\
-    \Gams &\,=\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GamL+\GamH)
+    \Gs &\,=\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GL+\GH)
   \end{alignat}%
   \begin{align}
-    \Delms   &\equiv \mH-\mL = 2\,\Re\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
+    \Dms   &\equiv \mH-\mL = 2\,\Re\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
              &= 2\,\Re\!\left(\sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}\right) \\
-    \DelGams &\equiv \GamL-\GamH = 4\,\Im\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
+    \DGs &\equiv \GL-\GH = 4\,\Im\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
              &= 4\,\Im\!\left(\sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}\right)
   \end{align}
 \end{subequations}
@@ -149,7 +149,7 @@ basis then gives the coupled time evolution of $\Bs$ and $\Bsbar$:
   \begin{align}
     e^{-i\,\vec{H}\,t} &= \vec{P}\, e^{-i\,\vec{H'}\,t}\, \vec{P}^{-1} \nonumber\\
                        &= \begin{pmatrix*}[r] p & p \\ q & -q \end{pmatrix*}\!
-                          \begin{pmatrix} e^{-i\,(\mL-i\,\GamL/2)\,t} & 0 \\ 0 & e^{-i\,(\mH-i\,\GamH/2)\,t} \end{pmatrix}\!
+                          \begin{pmatrix} e^{-i\,(\mL-i\,\GL/2)\,t} & 0 \\ 0 & e^{-i\,(\mH-i\,\GH/2)\,t} \end{pmatrix}\!
                           \begin{pmatrix*}[r] q & p \\ q & -p \end{pmatrix*} \frac{1}{2\,p\,q} \nonumber\\
                        &= \begin{pmatrix*}[r] g_+(t) & \pq\,g_-(t) \\ \qp\,g_-(t) & g_+(t) \end{pmatrix*}
     \ ,
@@ -158,9 +158,9 @@ basis then gives the coupled time evolution of $\Bs$ and $\Bsbar$:
 where the functions $g_\pm$ are given by
 \begin{align}
   \label{eq:timeEvolQp}
-  g_\pm(t) &\equiv \tfrac{1}{2}\, \left( e^{-i\,(\mL-i\,\GamL/2)\,t} \pm e^{-i\,(\mH-i\,\GamH/2)\,t} \right) \\
-           &= \tfrac{1}{2}\, e^{-i\,\ms\,t}\, e^{-\Gams/2\,t}
-                \left( e^{+i\,\Delms/2\,t}\, e^{-\DelGams/4\,t} \pm e^{-i\,\Delms/2\,t}\, e^{+\DelGams/4\,t} \right) \nonumber
+  g_\pm(t) &\equiv \tfrac{1}{2}\, \left( e^{-i\,(\mL-i\,\GL/2)\,t} \pm e^{-i\,(\mH-i\,\GH/2)\,t} \right) \\
+           &= \tfrac{1}{2}\, e^{-i\,\ms\,t}\, e^{-\Gs/2\,t}
+                \left( e^{+i\,\Dms/2\,t}\, e^{-\DGs/4\,t} \pm e^{-i\,\Dms/2\,t}\, e^{+\DGs/4\,t} \right) \nonumber
            \ .
 \end{align}
 
@@ -222,8 +222,8 @@ Using the definition of $g_\pm$ from Equation~\ref{eq:timeEvolQp}, the required 
 \begin{subequations}
   \label{eq:mixDecayQpSq}
   \begin{alignat}{4}
-    |g_\pm|^2  &\,=\,& \tfrac{1}{2}\, e^{-\Gams\,t} \Big[ & & \cDGs\, & & \pm\,  & \cDms \Big] \\
-    g_+^*\,g_- &\,=\,& \tfrac{1}{2}\, e^{-\Gams\,t} \Big[ &-& \sDGs\, & & +\,i\, & \sDms \Big]
+    |g_\pm|^2  &\,=\,& \tfrac{1}{2}\, e^{-\Gs\,t} \Big[ & & \cDGs\, & & \pm\,  & \cDms \Big] \\
+    g_+^*\,g_- &\,=\,& \tfrac{1}{2}\, e^{-\Gs\,t} \Big[ &-& \sDGs\, & & +\,i\, & \sDms \Big]
     \ ,
   \end{alignat}
 \end{subequations}
@@ -231,7 +231,7 @@ which yields
 \begin{equation}
   \label{eq:mixDecayDiffRate}
   \begin{aligned}
-    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, e^{-\Gams\,t}
+    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, e^{-\Gs\,t}
       \bigg[ &   \left(|\Af|^2 + \Big|\qp\Big|^2\, |\Abarf|^2\right)\,\cDGs \\
              & + \left(|\Af|^2 - \Big|\qp\Big|^2\, |\Abarf|^2\right)\,\cDms \\
              & - 2\,\Re\!\left(\qp\,\Af^*\,\Abarf\right)\,\sDGs \\
@@ -258,7 +258,7 @@ the differential decay rate can be expressed as
 \begin{equation}
   \label{eq:mixDecayDiffRateLambda}
   \begin{aligned}
-    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, |\Af|^2\, &(1+\lamfSq)\, e^{-\Gams\,t} \\
+    \frac{\ud\Gamma(\Bstof)}{\ud t} \propto \tfrac{1}{2}\, |\Af|^2\, &(1+\lamfSq)\, e^{-\Gs\,t} \\
       \times \Big[ &\cDGs + \Cf\,\cDms \\
       &+ \Df\,\sDGs - \Sf\,\sDms \Big]
     \ ,
@@ -288,14 +288,14 @@ With Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayDiffRateLambda}, the di
   \begin{align}
     \label{eq:mixDecayDiffRateB}
     \frac{\ud\Gamma(\text{f})}{\ud t}
-      &\propto \tfrac{1}{2}\, |\Af|^2\, (1+\lamfSq)\, \frac{1+\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gams\,t} \nonumber\\
+      &\propto \tfrac{1}{2}\, |\Af|^2\, (1+\lamfSq)\, \frac{1+\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gs\,t} \nonumber\\
       &\qquad\quad\times \Big[ \cDGs + \qf\,\Cf\,\cDms \nonumber\\
       &\qquad\qquad\quad + \Df\,\sDGs - \qf\,\Sf\,\sDms \Big]
   \end{align}
   \begin{align}
     \label{eq:mixDecayDiffRateBbar}
     \frac{\ud\Gamma\!\left(\overline{\text{f}}\right)}{\ud t}
-      &\propto \tfrac{1}{2}\, |\Abarfbar|^2\, (1+\lamfbarSq)\, \frac{1-\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gams\,t} \nonumber\\
+      &\propto \tfrac{1}{2}\, |\Abarfbar|^2\, (1+\lamfbarSq)\, \frac{1-\Cm}{1-\Cm^2}\, (1-\qf\,\Cm)\, e^{-\Gs\,t} \nonumber\\
       &\qquad\quad\times \Big[ \cDGs - \qf\,\Cfbar\,\cDms \nonumber\\
       &\qquad\qquad\quad + \Dfbar\,\sDGs + \qf\,\Sfbar\,\sDms \Big]
     \ ,
