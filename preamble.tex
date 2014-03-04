@@ -43,10 +43,21 @@
 
 \renewcommand{\bibname}{References}
 
+\newcommand{\cern}{\textsc{Cern}}
+\newcommand{\atlas}{\textsc{Atlas}}
+\newcommand{\velo}{\textsc{Velo}}
+\newcommand{\ecal}{\textsc{ECal}}
+\newcommand{\hcal}{\textsc{HCal}}
+\newcommand{\rich}{\textsc{Rich}}
+
 \newcommand{\ud}{\mathrm{d}}
 \renewcommand{\vec}{\bm}
 
-\renewcommand{\textequiv}{≡}
+\newcommand{\unitsp}{$\,$}
+\newcommand{\texteq}{\unitsp=\unitsp}
+\renewcommand{\textequiv}{\unitsp≡\unitsp}
+\renewcommand{\textapprox}{\unitsp≈\unitsp}
+\renewcommand{\textpm}{\unitsp±\unitsp}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
 \newcommand{\invfb}{fb\textsuperscript{--1}}
@@ -86,6 +97,8 @@
 \newcommand{\Bdbar}{\kern 0.06em \overline{\kern -0.06em \Bd \kern -0.32em} \kern 0.32em}
 \newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
 \newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+\newcommand{\prot}{\text{p}}
+\newcommand{\Lb}{\text{Λ}_\text{b}^\text{0}}
 \newcommand{\BH}{\text{B}_\text{H}}
 \newcommand{\BL}{\text{B}_\text{L}}
 \newcommand{\BE}{\text{B}_\text{E}}
@@ -127,7 +140,9 @@
 \newcommand{\BstoJpsiKst}{$\Bs \to \Jpsi\,\Kstbar$}
 \newcommand{\BdtoJpsiKS}{$\Bd\to\Jpsi\,\KS$}
 \newcommand{\BdtoJpsiKst}{$\Bd \to \Jpsi\,\Kst$}
-\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\Kp\pimes[-]$}
+\newcommand{\BdtoJpsiKstKpi}{$\Bd \to \Jpsi\,\Kst(\to\Kpi)$}
+\newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\Kpi$}
+\newcommand{\LbtoJpsipK}{$\Lb \to \Jpsi\,\prot\,\Km$}
 
 \newcommand{\VCKM}[1][\phantom{\dagger}]{V^{#1}_\text{CKM}}
 \newcommand{\lam}{\lambda}
@@ -163,10 +178,12 @@
 \newcommand{\lamfbarAbs}[1][\text{f}]{|{\lamfbar[#1]}|}
 \newcommand{\lamfbarSq}[1][\text{f}]{{\lamfbarAbs[#1]}^2}
 \newcommand{\taus}{\tau_\text{s}}
+\newcommand{\taud}{\tau_\text{d}}
 \newcommand{\ms}{M_\text{s}}
 \newcommand{\mL}{M_\text{L}}
 \newcommand{\mH}{M_\text{H}}
 \newcommand{\Gs}{\Gamma_\text{s}}
+\newcommand{\Gd}{\Gamma_\text{d}}
 \newcommand{\GL}{\Gamma_\text{L}}
 \newcommand{\GH}{\Gamma_\text{H}}
 \newcommand{\DGs}{\Delta\Gamma_\text{s}}
