@@ -1,25 +1,328 @@
-\section{The LHCb Experiment}
+\section{The \texorpdfstring{\BstoJpsiKK}{Bs0->J/psi K+K-} Decay in the LHCb Experiment}
 \label{sec:intro_LHCb}
-\subsection{The Large Hadron Collider}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\texorpdfstring{$\Bs$}{Bs0}-Meson Production at the Large Hadron Collider}
+\label{subsec:intro_LHCb_LHC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The $\Bs$ mesons that are used for the \BstoJpsiKK{} measurement are produced in the proton collisions of the Large Hadron Collider (LHC)
+\cite{Evans:2008zzb}. The LHC accelerates protons to high energies and makes the particles collide head-on at designated points. For the
+measurement presented here, data from the ``LHC run years'' 2011 and 2012 were used. In 2011 colliding protons had an energy of
+3.5\unitsp{}TeV.  The energy was increased to 4\unitsp{}TeV for 2012. This gave a centre-of-mass energy in proton--proton collisions of 7
+and 8\unitsp{}TeV, respectively.
+
+The LHC is a circular collider of 27\unitsp{}km in circumference, which can store and accelerate two \emph{beams} of protons. The beams
+travel in opposite directions and are bent around the LHC ring with magnetic fields. Electric fields are used for acceleration.
+
+Protons are brought to an energy of 0.45\unitsp{}TeV by a series of pre-accelerators before they are injected into the LHC. There they are
+accelerated to their collision energy of 3.5 or 4\unitsp{}TeV. After the acceleration process the protons are grouped in \emph{bunches},
+which are located at discrete positions in the beams. Each beam contained 1380 bunches of \tenpow{11} protons in most of 2011 and in 2012.
+The minimum separation between two bunches was 50\unitsp{}ns.
+
+When the final energy is reached, the acceleration process is stopped and the beam trajectories are crossed at four distinct points.
+Bunches from the two beams reach these \emph{interaction points} simultaneously from opposite directions, which enables proton collisions.
+After on the order of ten hours the number of remaining protons in the bunches becomes too small to maintain a significant collision rate
+and the beams are removed from the LHC.
+
+The moment at which two bunches meet is called a \emph{bunch crossing}. If collisions in a bunch crossing produce particles of interest,
+this is called an \emph{event}.
+
+The mean number of collisions per bunch crossing that produce detectable particles at the LHCb interaction point varied between one and two
+in 2011 and 2012. This number is determined by the probability that two protons interact when they pass each other and by the probability
+that the protons get close enough to enable such an interaction. These probabilities are represented by two effective quantities: the
+proton--proton \emph{cross section} and the beam \emph{luminosity}.
+
+The luminosity is an effective density of protons that meet each other per unit of time across a surface perpendicular to the beams at the
+interaction point. This quantity is fully determined by the beam parameters, like the number of protons per bunch, the number of bunches in
+the beams, and the number of bunch crossings per unit time. To get a quantity that represents the total number of protons that passed each
+other per unit surface, the luminosity is integrated over time. The integrated luminosity was 1\unitsp\invfb{} in 2011 and
+2\unitsp\invfb{} in 2012.%
+\footnote{Surface areas in this context are measured in units of \emph{barn} (b):
+1\unitsp{}b\textequiv\tenpow{--28}\unitsp{}m\textsuperscript{2}.}
+
+For the number of interactions per unit time, the luminosity is multiplied by the surface area of the effective proton cross section. This
+surface area represents the strength of the interaction between the colliding particles, which typically depends on the centre-of-mass
+energy of the collision. The total proton--proton cross section is a sum of the cross sections for all possible interactions.
+
+The sum of the cross sections for $\Bs$ and $\Bsbar$ production in LHCb is measured to be approximately 1\tenpowmult{10}\unitsp{}fb at an
+energy of 7\unitsp{}TeV \cite{LHCB-PAPER-2013-004}. Assuming the cross section at 8\unitsp{}TeV is approximately the same, this gives
+3\tenpowmult{10} produced $\Bs$ and $\Bsbar$ mesons in 2011 and 2012. A fraction of 3\tenpowmult{--5} decays into $\JpsimumuphiKK$
+\cite{PDG2012}, which yields 9\tenpowmult{5} decays. Including particle-detection inefficiencies and selection of usable decays, about
+9\tenpowmult{4} decays are left for analysis (see Section\unitsp{}\ref{sec:exp_selBkg}).
+
+To produce $\Bs$ and $\Bsbar$ mesons, (anti)beauty and (anti)strange quarks must be created. Beauty quarks are predominantly produced as
+$\bbbar$ pairs. Beauty hadrons are formed by combining the b and $\qbar[b]$ quarks with lighter quarks that are produced at a later stage.
+If this lighter quark is an s ($\qbar[s]$) quark, the result is a $\Bs$ ($\Bsbar$) meson.
+
+In collisions that are relevant for $\bbbar$ production, the constituents of the colliding protons interact. These constituents can be
+(anti)quarks or gluons, which are collectively called \emph{partons}. A proton consists of three \emph{valence quarks}: two up quarks and
+one down quark. Low-energy, non-perturbative QCD interactions create also virtual partons. The centre-of-mass energy of the collision is
+large enough to make the lifetime of these virtual states larger than the time needed to also interact with partons from the other proton.
+
+The colliding protons break up in the parton interaction, leaving coloured remnants. Quarks and gluons created in the interaction and
+these proton remnants recombine into colourless hadrons. This process is called \emph{hadronization}. Tens of hadrons can be created in a
+LHC collision.
+
+The energy of a parton is a fraction of the proton energy. For $\bbbar$ production the energy fractions of the interacting partons must be
+minimally the ratio of the energy to produce beauty-hadron masses and the collision energy, which is of the order of \tenpow{--3}. However,
+in most collisions the fractions are different for the two interacting partons. This gives the produced particles additional energy and
+leads to large boosts along the beam direction.
+
+Conceptually the parton interaction can be separated into two parts. First there are high-energy interactions, which are described by
+perturbative QCD. The proton energy is converted into particle masses, which may be much larger than the proton mass. Beauty quarks are
+created at this stage.
+
+Interactions that follow are less energetic and create only lighter quarks in quark--antiquark pairs. This non-perturbative process is
+called \emph{fragmentation}. A $\Bs$ meson is formed with the strange quark from a created s$\qbar[s]$ pair. The remaining antistrange
+quark forms a hadron with other quarks in the fragmentation process.
+
+The $\Bs$ production mechanism can be exploited to determine whether the produced meson was a $\Bs$ or a $\Bsbar$. This procedure is called
+\emph{flavour tagging}. Information about the flavour cannot be inferred from the decay into $\mumuKK$, since both $\Bs$ and $\Bsbar$ decay
+into this charge-neutral final state. For the CP-violation measurement in \BstoJpsiKK{} it is crucial to disentangle the two contributions,
+because the important features in the decay-time distribution cancel in their sum (see Sections~\ref{sec:pheno_mix} and
+\ref{sec:pheno_decay}).
+
+Flavour tagging relies on the fact that both the beauty and strange quarks that form a $\Bs$ meson are predominantly produced in
+quark--antiquark pairs. The flavour of the $\Bs$ meson can be inferred from the identities of the two (anti)quarks that were not involved
+in its production. This is not possible in all cases and there is a probability that the determined flavour is wrong. Therefore, both the
+flavour and the corresponding \emph{wrong-tag probability} are estimated for each $\Bs$ meson in the \BstoJpsiKK{} measurement.
+
+The flavour of the beauty-quark partner in an event can be determined from the charges of electrons, muons, and kaons in the decay of the
+hadron it formed. This procedure is termed \emph{opposite-side tagging} and is described in reference~\cite{LHCb-PAPER-2011-027}.
+
+The required charged particles for opposite-side tagging are produced in many, but not all beauty decays. In addition, neutral beauty
+mesons may convert into their antiparticles before they decay. This gives a fundamental limitation for this procedure. There may also be
+additional beauty hadrons in an event or the decay products may not be detectable by the LHCb detector. The resulting effective fraction of
+$\Bs$ mesons with a correct tag in the \BstoJpsiKK{} measurement is 2.6\% (see Section~\ref{sec:exp_tagging}).
+
+The strange-quark partner will often be combined with an (anti)up quark to form a charged kaon. In \emph{same-side kaon tagging} the
+flavour of the $\Bs$ meson is estimated by determination of the charges of kaons that are close to it in momentum
+space~\cite{LHCb-CONF-2012-033}. This procedure is limited by other possibilities for fragmentation and hadronization of the strange quark
+and by detection of the correct kaon. The effective fraction of correctly tagged $\Bs$ mesons is 1.3\% in the \BstoJpsiKK{} measurement.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\texorpdfstring{\BstoJpsiKK}{Bs0->J/psi K+K-} Decays in LHCb}
+\label{subsec:intro_LHCb_Jpsiphi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+LHCb is one of the six experiments that analyse the particles produced by LHC collisions. The LHCb detector measures particle trajectories
+in the ``forward'' direction, that is, along the direction of one of the proton beams. Particles produced with momenta at angles between
+typically 1 and 15 degrees from the beam direction can be detected. Although this \emph{acceptance region} covers only a very small part of
+possible particle directions, it contains roughly a quarter of all produced beauty quarks. This makes the LHCb design very efficient for
+studies of hadrons containing beauty quarks.
+
+The particles that are produced in an LHC collision get a momentum from the boost introduced by asymmetric parton momenta, but also from
+the centre-of-mass energy that is available in the parton interaction. $\Bs$ mesons that are used in the analysis of \BstoJpsiKK{}
+decays have an average momentum of the order of a hundred \GeVc{} (see Figure~\ref{fig:introHists_BMomentum}). With the 5.4\unitsp\GeV{}
+$\Bs$-meson mass~\cite{PDG2012} this gives an average Lorentz factor of the order of 20.
+
+The \BsBsbar{} system has a relatively large mean lifetime of about 1.5\unitsp{}ps \cite{Amhis:2012bh}. Combination of the lifetime and the
+boost makes that a macroscopic distance is covered before the system decays. This \emph{flight distance} is used to infer the decay time.
+It is determined by measuring the positions of the points of production and decay. The measured distribution for $\Bs$ mesons that are used
+in the \BstoJpsiKK{} measurement is shown in Figure~\ref{fig:introHists_flightDist}.
+
+\begin{figure}[tb]
+  \centering
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/intro/BMomentum}
+    \caption{}
+    \label{fig:introHists_BMomentum}
+  \end{subfigure}%
+  \hfill%
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/intro/flightDist}
+    \caption{}
+    \label{fig:introHists_flightDist}
+  \end{subfigure}
+  \caption{Histograms of (a) the reconstructed momenta and (b) the flight distance of $\Bs$ mesons in the \BstoJpsiKK{} measurement.}
+  \label{fig:introHists}
+\end{figure}
+
+Since LHC bunches have a finite size and the positions of the colliding protons in their respective bunches are not known a priori, the
+point of particle production has to be measured for each collision. This is done by measuring the trajectories of produced particles and
+extrapolating them to the point of their common origin. This point is termed the \emph{primary vertex}. The \emph{secondary vertex} is the
+point where the $\Bs$ decayed, which is measured with only the trajectories four decay products. This is schematically shown in
+Figure~\ref{fig:vertices}.
+
+\begin{figure}[tb]
+  \centering
+  \begin{tikzpicture}
+    \node[anchor=south]{\includegraphics[width=0.98\textwidth]{graphics/intro/vertices}};
+    \node at (  0.65, 4.5 )  {$\Bs$};
+    \node at ( -0.14, 1.1 )  {$\Kp$};
+    \node at ( -0.77, 0.45 ) {$\Km$};
+    \node at ( -3.5,  1.54 ) {$\lmu[+]$};
+    \node at ( -1.86, 0.6 )  {$\lmu[--]$};
+  \end{tikzpicture}
+  \caption{Vertices in a \BstoJpsiKK{} decay \cite{vanEijk:2012}. The vertices are indicated by spheres, which represent the uncertainties
+           in the measurement of their position. The primary vertex is indicated by the cyan sphere, the $\mumu$ vertex with the small
+	   green sphere and the $\KK$ vertex with the large blue sphere. The secondary vertex is the combination of the  $\mumu$ and $\KK$
+           vertices.}
+  \label{fig:vertices}
+\end{figure}
+
+The decay time can be calculated from the flight distance if also the $\Bs$ momentum is known:
+\begin{equation}
+  \label{eq:decayTime}
+  t = \frac{1}{\gamma(v)}\,\frac{d}{v} = \frac{m d}{\gamma(v) m v} = \frac{m d}{|\vec{p}|} \ \ ,
+\end{equation}
+where $t$ is the decay time in the rest system of the $\Bs$, $d$ the flight distance, $v$ the $\Bs$ velocity, $\gamma$ the
+corresponding Lorentz factor, $\vec{p}$ the momentum, and $m$ the $\Bs$ mass. The momentum is reconstructed as a vector sum of the
+decay-product momenta, which are also required to calculate the decay angles. Momenta of charged particles are inferred from the curvature
+of their tracks in the magnetic field of the detector.
+
+The $\Bs$ momentum and flight distance are estimated by combining information from measured particle momenta and extrapolated
+positions~\cite{Hulsbergen:2005pu}. Uncertainties in the measurements are propagated and ultimately lead to an uncertainty in the estimated
+decay time. This \emph{decay-time resolution} is estimated for each $\Bs$ decay and taken into account in the analysis (see
+Sections~\ref{sec:exp_time} and \ref{subsec:ana_model_timeRes}). The effective resolution is about 0.05\unitsp{}ps. This is good enough to
+resolve the oscillations in the \BstoJpsiKK{} decay-time distribution, which have a period of 0.35\unitsp{}ps (see
+Sections~\ref{sec:pheno_mix} and \ref{sec:pheno_decay}).
+
+Before the vertex positions and momenta can be determined, the four particles from a \BstoJpsiKK{} decay have to be selected from all
+particles that are produced in an LHC event. This procedure is far from trivial and there is a significant probability to select four
+particles that do not originate from a $\Bs$ decay.
+
+Combinations of four particles that are considered for analysis are called \emph{decay candidates}. Candidates can either be real
+\BstoJpsiKK{} decays (\emph{signal}) or combinations that fake the decay signature (\emph{background}). Time and angular distributions for
+the background that remains after the selection procedure are subtracted from the measured distributions to obtain the signal contribution
+(see Section~\ref{sec:ana_bkg}).
+
+There are several categories of background decay candidates. Most background is \emph{combinatorial}, which means that candidates are
+formed from random combinations of four particles. Often all four particles come from a primary vertex. This combinatorial background is
+called \emph{prompt}. For non-prompt candidates some of the particles originate from a secondary vertex in the decay of a long-lived
+particle, like a beauty hadron. This often involves a $\Jpsi\to\mumu$ decay, where the muons are combined with kaons from the primary
+vertex.
+
+Another category is \emph{misidentified background}, which comprises decays where one or more particles have been incorrectly identified.
+The two misidentified backgrounds that are taken into account in the \BstoJpsiKK{} measurement are \BdtoJpsiKstKpi{} and \LbtoJpsipK. In
+the $\Bd$ decay the pion is misidentified as a kaon and in the $\Lb$ decay the proton as a kaon.
+
+There are different stages of event and decay-candidate selection. Each stage is optimized to find signal decays with high efficiency and
+at the same time keep the background at a manageable level. The first three selection stages are \emph{triggers} \cite{LHCb-DP-2012-004},
+which are designed to select events of interest \emph{online}, before detector data are stored for further analysis. Two \emph{offline}
+stages select decay candidates in the stored events.
+
+The first trigger is called \emph{Level 0} (L0). It is implemented in the detector hardware and designed to bring the rate of incoming
+events down to less than 1\unitsp{}MHz. In the type of proton collisions that create beauty hadrons, particles are created in all
+directions in the centre-of-mass frame of the parton interaction. As a result, particles in these collisions have significant momentum
+components in the direction transverse to the proton beams. This is used by the L0 trigger, which selects only events that contain
+particles with a minimum transverse momentum.
+
+Events that are selected by L0 are processed by the \emph{High Level Trigger} (HLT). This trigger is implemented in software and consists
+of two stages: HLT1 and HLT2. In the first stage a minimal reconstruction of particle trajectories and vertices is performed. For the
+\BstoJpsiKK{} measurement, events are selected if they contain the signatures of the muons in this decay.
+
+HLT1 selects roughly 40\unitsp{}kHz of events, which are subsequently processed by HLT2. At this stage a more complete particle
+reconstruction is performed. Events are selected for the \BstoJpsiKK{} measurement if they contain $\mumu$ pairs that are compatible with a
+$\Jpsi$ decay at a significant distance from a primary vertex. About 3\unitsp{}kHz of events is stored for all LHCb measurements.
+
+The first stage of the offline selection fully reconstructs the particle trajectories and vertices in the remaining events and selects
+combinations of muon and kaon pairs that form \BstoJpsiKK{} candidates. A set of loose selection criteria is applied to filter out
+part of the background, which reduces the number of remaining candidates to a manageable level. This procedure is termed \emph{stripping}.
+
+Stripping yields about one million \BstoJpsiKK{} decay candidates for 2011 and 2012. A second set of stricter offline selection criteria is
+optimized to find the best compromise between selecting as many signal and as few background candidates as possible. About 230 thousand
+candidates are used for analysis, of which roughly 40\% is signal (see Sections~\ref{sec:exp_selBkg} and \ref{sec:ana_bkg}).
+
+The total set of selection requirements for particles and decay candidates remove background, but also a significant part of the signal.
+This can be seen in the flight-distance distribution of Figure~\ref{fig:introHists_flightDist}. The original decay-time distribution has
+approximately an exponential shape. Since the decay time and $\Bs$ momentum are uncorrelated, also an exponential shape is expected for the
+flight-distance distribution. The lack of entries at small flight distance is a result of the selection inefficiency. This effect
+propagates to the decay-time distribution and has to be described in its analysis (see Sections~\ref{sec:exp_time} and
+\ref{subsec:ana_model_timeAcc}).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The LHCb Detector}
+\label{subsec:intro_LHCb_detector}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[p]
   \centering
-  \includegraphics[width=\textwidth]{graphics/intro/eventdisplay}
-  \caption{Event display \cite{vanEijk:2012}.}
+  \begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{graphics/intro/detector_3D}
+    \caption{}
+    \label{fig:LHCb_3D}
+  \end{subfigure}
+
+  \vspace*{0.05\textwidth}
+  \begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{graphics/intro/detector_cross}
+    \caption{}
+    \label{fig:LHCb_cross}
+  \end{subfigure}
+
+  \caption{Schematic views of the LHCb detector: (a) Three-dimensional view, (b) Cross section. The various subdetectors are discussed in
+           the text. (Courtesy of \cern)}
   \label{fig:LHCb}
 \end{figure}
 
-\begin{figure}[htbp]
+The LHCb detector was mainly built to measure beauty- and strange-hadron decays into particles with an electric charge. It is capable of
+measuring charged-particle trajectories and the locations of primary and secondary vertices with great precision. Another important feature
+of the detector is its ability to identify different particles in a decay.
+
+The detector is described in reference~\cite{Alves:2008zz}. A schematic view is shown in Figure~\ref{fig:LHCb}. The subdetectors were built
+around the LHC beams, which come in from the left and right. The interaction point is contained within the subdetector labelled ``Vertex
+Locator'' on the left of Figure~\ref{fig:LHCb_cross}. Particles that are produced within the LHCb acceptance region traverse the various
+subdetectors from the left to the right. This is indicated by the red lines in Figure~\ref{fig:LHCb_3D}.
+
+A magnetic field is produced by a dipole magnet between approximately 3 and 8\unitsp{}m from the interaction point. The saddle-shaped coils
+of the magnet are shown in Figure~\ref{fig:LHCb} surrounded by the magnet yoke, which is indicated by the blue block. The magnetic field is
+pointing either upwards or downwards, bending charged-particle trajectories in the horizontal plane. During the two years of LHC running,
+the direction of the magnetic field was reversed several times to get a handle on systematic uncertainties related to the measurement of
+particle trajectories.
+
+Trajectories of charged particles are reconstructed by measurement of the positions at which the particles traverse the various
+\emph{tracking detectors} of LHCb. These measurements are all based on the electromagnetic interaction of the particle with detector
+material. The signal from a particle interaction with a unit of sensitive detector material is called a \emph{hit}. The collection of hits
+that represent the trajectory of a particle is a \emph{track}.
+
+The LHCb tracking system consists of four components. The \emph{Vertex Locator} (\velo) and the \emph{Tracker Turicensis} (TT)
+before the magnet and the \emph{Inner Tracker} (IT) and \emph{Outer Tracker} (OT) behind the magnet. Together, the IT and OT form the
+three tracking stations labelled by ``T1'', ``T2'', and ``T3'' in Figure~\ref{fig:LHCb_cross}. The inner region of roughly
+0.5\unitsp{}m\textsuperscript{2} around the proton beams is covered by the IT and the region up to approximately 3\unitsp{}m from the beams
+by the OT.
+
+Hit information from all tracking detectors is combined to build tracks. The momentum of a particle can be inferred from the radius of
+curvature of the track in the magnetic field, given the charge of the particle. Since the only charged particles that live long enough to
+reach the detector are electrons, muons, pions, kaons, and protons, a unit charge can be assumed. The sign of the charge is determined from
+the direction of the track curvature.
+
+Vertices are reconstructed by extrapolating tracks to the point where they are closest together. The most precise information on vertex
+locations comes from the \velo, which detects particles very close to the interaction point down to a radius of 8\unitsp{}mm
+around the beams.
+
+Particles are identified with other subsystems. Electrons produce signals in the \emph{Scintillator Pad Detector} (SPD), \emph{Preshower
+detector} (PS) and the \emph{Electromagnetic Calorimeter} (\ecal). The electron energy is absorbed by these detectors and no signal is
+produced in the \emph{Hadronic Calorimeter} (\hcal). Pions, kaons, and protons produce a signal in the \hcal{} and not so much in the
+\ecal. Energy measurements from the calorimeters are also used in the L0 trigger to select events with high-energy particles in the
+transverse direction.
+
+Muons and part of the charged hadrons make it through the calorimeters and produce hits in the four \emph{muon stations} behind the \hcal{}
+(M2--M5 in Figure~\ref{fig:LHCb_cross}). Muons do not produce significant signals in the \hcal, which distinguishes them from hadrons. The
+\emph{Muon System} is completed by the station M1 before the calorimeters. It is also used in the L0 trigger to identify muon tracks.
+
+Two \emph{Ring Imaging Cherenkov} (\rich) detectors are used to distinguish the different charged hadrons. The first \rich{} detector
+(\rich1) is located between the \velo{} and the magnet and the other (\rich2) behind the IT/OT. These detectors determine the velocities of
+charged particles by measuring the angle at which Cherenkov light is emitted when the particle traverses the \rich{} material. Combined
+with the momentum measurement this gives an estimate of the particle mass, which is used to distinguish between pions, kaons, and protons.
+
+Figure~\ref{fig:event} shows the information from different subdetectors for an event that contains a \BstoJpsiKK{} decay candidate. The
+coloured lines show reconstructed tracks. Three tracks are combined with hits in the muons stations and represent particles that have been
+identified as muons.
+\begin{figure}[p]
   \centering
-  \begin{picture}(300,250)(0,0)
-    \put(-35,10){\includegraphics[width=0.99\textwidth]{graphics/intro/vertices}}
-    \put(132,40){$\Kp$}
-    \put(115,16){$\Km$}
-    \put(81,20){$\lmu[-]$}
-    \put(38,45){$\lmu[+]$}
-    \put(159,138){$\Bs$}
-  \end{picture}
-  \caption{Vertices \cite{vanEijk:2012}.}
-  \label{fig:vertices}
+  \begin{tikzpicture}
+    \node[anchor=south]{\includegraphics[width=0.98\textwidth]{graphics/intro/eventdisplay}};
+    \node at ( 0., 7.3 )  {(a)};
+    \node at ( 0., 0.8 )  {(b)};
+  \end{tikzpicture}
+  \caption{Reconstructed particle trajectories in the LHCb detector for an event with a \BstoJpsiKK{} decay candidate \cite{vanEijk:2012}:
+           (a) a view from the top and (b) a view from the side, equivalent to Figure~\ref{fig:LHCb}.
+           Particle tracks are shown by the coloured lines. The green crosses indicate hits in the tracking detectors and the red and blue
+           bars energy deposits in the calorimeters. Hits in the muon stations are represented by green dots. Cherenkov photons in the
+           \rich{} detectors are shown by the purple lines and orange hits.}
+  \label{fig:event}
 \end{figure}
