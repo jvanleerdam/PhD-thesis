@@ -178,6 +178,7 @@
 \newcommand{\lamfbar}[1][\text{f}]{{\kern 0.06em \overline{\kern -0.06em \lambda \kern -0.03em}\kern 0.03em}_{\overline{\text{#1}}}}
 \newcommand{\lamfbarAbs}[1][\text{f}]{|{\lamfbar[#1]}|}
 \newcommand{\lamfbarSq}[1][\text{f}]{{\lamfbarAbs[#1]}^2}
+\newcommand{\lamsAbs}{\lamfAbs[\text{s}]}
 \newcommand{\taus}{\tau_\text{s}}
 \newcommand{\taud}{\tau_\text{d}}
 \newcommand{\ms}{M_\text{s}}
@@ -213,16 +214,18 @@
 \newcommand{\Azero}{A_0}
 \newcommand{\Apar}{A_\parallel}
 \newcommand{\Aperp}{A_\perp}
-\newcommand{\AS}{A_\text{S}}
-\newcommand{\FS}[1][]{F_\text{S}#1}
-\newcommand{\magzero}[1][]{|A_0#1|}
-\newcommand{\magpar}[1][]{|A_\parallel#1|}
-\newcommand{\magperp}[1][]{|A_\perp#1|}
-\newcommand{\magS}[1][]{|A_\text{S}#1|}
-\newcommand{\delzero}[1][]{\delta_0#1}
-\newcommand{\delpar}[1][]{\delta_\parallel#1}
-\newcommand{\delperp}[1][]{\delta_\perp#1}
-\newcommand{\delS}[1][]{\delta_\text{S}#1}
+\newcommand{\magzero}{|\Azero|}
+\newcommand{\magzeroSq}{\magzero^2}
+\newcommand{\magpar}{|\Apar|}
+\newcommand{\magparSq}{\magpar^2}
+\newcommand{\magperp}{|\Aperp|}
+\newcommand{\magperpSq}{\magperp^2}
+\newcommand{\magS}[1][]{|A_\text{S#1}|}
+\newcommand{\FS}[1][]{F_\text{S#1}}
+\newcommand{\delzero}{\delta_0}
+\newcommand{\delpar}{\delta_\parallel}
+\newcommand{\delperp}{\delta_\perp}
+\newcommand{\delS}[1][]{\delta_\text{S#1}}
 
 \newcommand{\qf}{{q_\text{flav}}}
 \newcommand{\qt}{q_\text{tag}}

@@ -1,0 +1,90 @@
+\section{Mass model systematics}
+\label{sec:syst_mass}
+
+In the analysis of the decay-time and decay-angle distributions a set of fixed event weights is used to statistically separate signal and
+background contributions (see Section~\ref{sec:ana_bkg}). The weights are based on the estimates of the signal and background contributions
+to the $\JpsiKK$-mass distribution. Uncertainties in the mass model are propagated to the time and angular analysis by evaluating the
+effects of different sets of weights on the final parameter estimates.
+
+\subsection{Reflection backgrounds}
+\label{subsec:syst_mass_peaking}
+
+Reflection backgrounds from \BdtoJpsiKst{} and \LbtoJpsipK{} are subtracted by injecting simulated events with negative weights into the
+data sample that is used for analysis. Two types of uncertainties arise from this procedure: uncertainties in the estimates of the numbers
+of background events that affect the \BstoJpsiKK{} analysis and uncertainties in the relevant distributions of the reflection backgrounds.
+
+A systematic uncertainty for the numbers of background events is estimated by changing the subtracted background yields by one standard
+deviation. The (absolute) variations resulting from an upward and a downward fluctuation are averaged. The yields of all background
+components are varied simultaneously.
+
+The distributions of the decay angles and tagging variables of simulated background events are reweighted to make them match the
+distributions in \BdtoJpsiKst{} and \LbtoJpsipK{} data as closely as possible. Since the results of this procedure are not expected to be
+perfect, the difference in results with datasets containing reweighted and not reweighted distributions is taken as a systematic
+uncertainty.
+
+As a check, the analysis is also performed without subtracting the reflection backgrounds. The result is not used for evaluation of the
+systematic uncertainties.
+
+Results with the different datasets are shown in Tables~\ref{tab:syst_mass_peaking_phi} to \ref{tab:syst_mass_peaking_polarDep} for the
+three different time and angular models. Only the differences with the nominal results (see Section~\ref{sec:result_paramEst}) are shown.
+The resulting systematic uncertainties are shown in the last column.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with $\lamsAbs\equiv1$ for different schemes of
+           subtracting reflection backgrounds. The differences with the nominal result are given in fractions of the statistical errors.
+           The resulting systematic uncertainty in the last column is obtained by taking the average of the yield-variation uncertainties
+           and adding the reweighting uncertainty in quadrature.}
+  \label{tab:syst_mass_peaking_phi}
+  \begin{tabular}{lllllll}
+    \hline
+    parameter            &  no subtr.  &  yield--  &  yield+   &  no rew.  &  \multicolumn{2}{l}{systematic (abs.)}  \\
+    \hline
+    $\phis$              &  --0.041    &  --0.025  &   +0.025  &  --0.021  &  0.033  &  (0.0015)                     \\
+    \hline
+    $\Gs$                &   +0.000    &  --0.013  &   +0.016  &  --0.012  &  0.019  &  (0.000058~\invps)            \\
+    $\DGs$               &  --0.069    &  --0.007  &   +0.013  &  --0.046  &  0.047  &  (0.00043~\invps)             \\
+    $\Dms$               &   +0.086    &   +0.022  &  --0.020  &  --0.004  &  0.021  &  (0.0013~\invps)              \\
+    \hline
+    $\magzeroSq$         &  --0.251    &  --0.007  &   +0.008  &  --0.072  &  0.072  &  (0.00025)                    \\
+    $|A_\perp|^2$        &   +0.180    &   +0.008  &  --0.003  &   +0.080  &  0.080  &  (0.00039)                    \\
+    $\FS[1]$             &  --0.271    &  --0.043  &   +0.039  &   +0.070  &  0.081  &  (0.0044)                     \\
+    $\FS[2]$             &   +0.070    &   +0.019  &  --0.011  &   +0.023  &  0.027  &  (0.00049)                    \\
+    $\FS[3]$             &  --0.129    &  --0.019  &   +0.021  &  --0.010  &  0.022  &  (0.00015)                    \\
+    $\FS[4]$             &  --0.084    &  --0.002  &   +0.005  &   +0.024  &  0.024  &  (0.00014)                    \\
+    $\FS[5]$             &   +0.232    &   +0.025  &  --0.023  &   +0.023  &  0.033  &  (0.00054)                    \\
+    $\FS[6]$             &  --0.140    &  --0.036  &   +0.039  &   +0.185  &  0.19   &  (0.0048)                     \\
+    \hline
+    $\delpar-\delzero$   &   +0.016    &   +0.020  &  --0.014  &  --0.195  &  0.20   &  (0.024)                      \\
+    $\delperp-\delzero$  &   +0.065    &   +0.029  &  --0.034  &  --0.088  &  0.093  &  (0.015)                      \\
+    $\delS[1]-\delperp$  &  --0.055    &  --0.025  &   +0.023  &   +0.117  &  0.12   &  (0.024)                      \\
+    $\delS[2]-\delperp$  &   +0.302    &   +0.036  &  --0.044  &   +0.105  &  0.11   &  (0.032)                      \\
+    $\delS[3]-\delperp$  &   +0.083    &   +0.011  &  --0.008  &  --0.040  &  0.041  &  (0.0094)                     \\
+    $\delS[4]-\delperp$  &  --0.058    &  --0.002  &  --0.000  &   +0.019  &  0.019  &  (0.0041)                     \\
+    $\delS[5]-\delperp$  &   +0.106    &   +0.007  &  --0.008  &  --0.100  &  0.100  &  (0.018)                      \\
+    $\delS[6]-\delperp$  &  --0.051    &   +0.003  &  --0.002  &   +0.047  &  0.047  &  (0.0065)                     \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with a free $\lamsAbs$ for different schemes of
+           subtracting reflection backgrounds. The resulting systematic uncertainty in the last column is obtained by taking the average of
+           the yield-variation uncertainties and adding the reweighting uncertainty in quadrature.}
+  \label{tab:syst_mass_peaking_lamb_phi}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with polarization-dependent CP violation for
+           different schemes of subtracting reflection backgrounds. The resulting systematic uncertainty in the last column is obtained by
+           taking the average of the yield-variation uncertainties and adding the reweighting uncertainty in quadrature.}
+  \label{tab:syst_mass_peaking_polarDep}
+\end{table}
+
+\subsection{Signal and combinatorial background: statistical}
+\label{subsec:syst_mass_stat}
+
+\subsection{Signal and combinatorial background: factorization}
+\label{subsec:syst_mass_factor}
