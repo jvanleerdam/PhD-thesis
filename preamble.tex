@@ -32,10 +32,15 @@
 \cfoot{}
 
 \usepackage[ttscale=.875]{libertine}
+%\usepackage[]{fontspec}
 %\usepackage{unicode-math}
-%\setmathfont{texgyrepagella-math.otf}
-%\renewcommand*\ttdefault{lcmtt}
+%\setmainfont{Linux Libertine O}
 \setmonofont[Scale=MatchLowercase]{DejaVuSansMono.ttf}
+%\setmathfont{latinmodern-math.otf}
+%\setmathfont[range=\mathit/{latin,Latin,num,Greek,greek}]{LinLibertine_I.otf}
+%\setmathfont[range=\mathup/{latin,Latin,num,Greek,greek}]{LinLibertine_R.otf}
+%\setmathfont[range=\mathbfup/{latin,Latin,num,Greek,greek}]{LinLibertine_RB.otf}
+%\setmathfont[range={"221E}]{LinLibertine_R.otf}% "0221E = \infty
 
 \newboolean{articletitles}
 \setboolean{articletitles}{false}
@@ -51,6 +56,9 @@
 \newcommand{\hcal}{\textsc{HCal}}
 \newcommand{\rich}{\textsc{Rich}}
 
+\newcommand{\splot}[1][]{\textsubscript{\textit{s}}$\mathcal{P}$\textit{lot#1}}
+\newcommand{\sweight}[1][]{sWeight#1}
+
 \newcommand{\ud}{\mathrm{d}}
 \renewcommand{\vec}{\bm}
 
@@ -59,6 +67,7 @@
 \renewcommand{\textequiv}{\unitsp≡\unitsp}
 \renewcommand{\textapprox}{\unitsp≈\unitsp}
 \renewcommand{\textpm}{\unitsp±\unitsp}
+\renewcommand{\texttimes}{\unitsp×\unitsp}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
 \newcommand{\invfb}{fb\textsuperscript{--1}}
@@ -172,6 +181,11 @@
 \newcommand{\phimix}{\phi_{12}}
 \newcommand{\phis}{\phi_\text{s}}
 \newcommand{\phisccs}{\phi_\text{s}^{\text{c}\bar{\text{c}}\text{s}}}
+\newcommand{\phisav}{\phis^\text{av}}
+\newcommand{\Delphispara}{\Delta\phis^\parallel}
+\newcommand{\Delphisperp}{\Delta\phis^\perp}
+\newcommand{\Delphisperpp}{\Delta\phis^{\perp\prime}}
+\newcommand{\DelphisS}{\Delta\phis^\text{S}}
 \newcommand{\lamf}[1][\text{f}]{\lambda_\text{#1}}
 \newcommand{\lamfAbs}[1][\text{f}]{|{\lamf[#1]}|}
 \newcommand{\lamfSq}[1][\text{f}]{{\lamfAbs[#1]}^2}
@@ -179,6 +193,11 @@
 \newcommand{\lamfbarAbs}[1][\text{f}]{|{\lamfbar[#1]}|}
 \newcommand{\lamfbarSq}[1][\text{f}]{{\lamfbarAbs[#1]}^2}
 \newcommand{\lamsAbs}{\lamfAbs[\text{s}]}
+\newcommand{\Cs}{C_\text{s}}
+\newcommand{\Csav}{\Cs^\text{av}}
+\newcommand{\DelCspara}{\Cs^\parallel}
+\newcommand{\DelCsperp}{\Cs^\perp}
+\newcommand{\CsavS}{\Cs^\text{avS}}
 \newcommand{\taus}{\tau_\text{s}}
 \newcommand{\taud}{\tau_\text{d}}
 \newcommand{\ms}{M_\text{s}}
@@ -216,16 +235,25 @@
 \newcommand{\Aperp}{A_\perp}
 \newcommand{\magzero}{|\Azero|}
 \newcommand{\magzeroSq}{\magzero^2}
+\newcommand{\magzeroAvSq}{\Azero^{\text{av}2}}
 \newcommand{\magpar}{|\Apar|}
 \newcommand{\magparSq}{\magpar^2}
+\newcommand{\magparAvSq}{\Apar^{\text{av}2}}
 \newcommand{\magperp}{|\Aperp|}
 \newcommand{\magperpSq}{\magperp^2}
+\newcommand{\magperpAvSq}{\Aperp^{\text{av}2}}
 \newcommand{\magS}[1][]{|A_\text{S#1}|}
+\newcommand{\magSAvSq}[1][]{\AS[#1]^{\text{av}2}}
 \newcommand{\FS}[1][]{F_\text{S#1}}
+\newcommand{\FSAv}[1][]{\FS[#1]^\text{av}}
 \newcommand{\delzero}{\delta_0}
 \newcommand{\delpar}{\delta_\parallel}
 \newcommand{\delperp}{\delta_\perp}
 \newcommand{\delS}[1][]{\delta_\text{S#1}}
+\newcommand{\delparzero}{\delpar\,\text{--}\,\delzero}
+\newcommand{\delperpzero}{\delperp\,\text{--}\,\delzero}
+\newcommand{\delSperp}[1][]{\delS[#1]\,\text{--}\,\delperp}
+\newcommand{\CSP}{C_\text{SP}}
 
 \newcommand{\qf}{{q_\text{flav}}}
 \newcommand{\qt}{q_\text{tag}}
