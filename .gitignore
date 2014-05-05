@@ -9,9 +9,6 @@ contents.pdf
 *.out
 *.bbl
 *.blg
-*.1
-*.mp
-*.t1
 .*.swp
 *.bak
 #*
