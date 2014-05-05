@@ -1,13 +1,17 @@
-\section{Mass model systematics}
+%%%%%%%%%%%%%%%%%%%%%
+\section{Mass model}
 \label{sec:syst_mass}
+%%%%%%%%%%%%%%%%%%%%%
 
 In the analysis of the decay-time and decay-angle distributions a set of fixed event weights is used to statistically separate signal and
 background contributions (see Section~\ref{sec:ana_bkg}). The weights are based on the estimates of the signal and background contributions
 to the $\JpsiKK$-mass distribution. Uncertainties in the mass model are propagated to the time and angular analysis by evaluating the
 effects of different sets of weights on the final parameter estimates.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Reflection backgrounds}
 \label{subsec:syst_mass_peaking}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Reflection backgrounds from \BdtoJpsiKst{} and \LbtoJpsipK{} are subtracted by injecting simulated events with negative weights into the
 data sample that is used for analysis. Two types of uncertainties arise from this procedure: uncertainties in the estimates of the numbers
@@ -32,37 +36,38 @@ The resulting systematic uncertainties are shown in the last column.
 \begin{table}[htbp]
   \centering
   \caption{Deviations in parameter estimates from the nominal results with the model with $\lamsAbs\equiv1$ for different schemes of
-           subtracting reflection backgrounds. The differences with the nominal result are given in fractions of the statistical errors.
-           The resulting systematic uncertainty in the last column is obtained by taking the average of the yield-variation uncertainties
-           and adding the reweighting uncertainty in quadrature.}
+           subtracting reflection backgrounds.
+           Differences with the nominal result are given in fractions of the statistical uncertainties. The resulting systematic
+           uncertainty in the last column is obtained by taking the average of the yield-variation uncertainties and adding the reweighting
+           uncertainty in quadrature. The absolute systematic is given in brackets.}
   \label{tab:syst_mass_peaking_phi}
   \begin{tabular}{lllllll}
     \hline
-    parameter            &  no subtr.  &  yield--  &  yield+   &  no rew.  &  \multicolumn{2}{l}{systematic (abs.)}  \\
+    par.            &  no sub.    &  yield--  &  yield+   &  no rew.  &  \multicolumn{2}{l}{systematic (abs.)}  \\
     \hline
-    $\phis$              &  --0.041    &  --0.025  &   +0.025  &  --0.021  &  0.033  &  (0.0015)                     \\
+    $\phis$         &  --0.041    &  --0.025  &   +0.025  &  --0.021  &  0.033  &  (0.0015)                     \\
     \hline
-    $\Gs$                &   +0.000    &  --0.013  &   +0.016  &  --0.012  &  0.019  &  (0.000058~\invps)            \\
-    $\DGs$               &  --0.069    &  --0.007  &   +0.013  &  --0.046  &  0.047  &  (0.00043~\invps)             \\
-    $\Dms$               &   +0.086    &   +0.022  &  --0.020  &  --0.004  &  0.021  &  (0.0013~\invps)              \\
+    $\Gs$           &   +0.000    &  --0.013  &   +0.016  &  --0.012  &  0.019  &  (0.000058)                   \\
+    $\DGs$          &  --0.069    &  --0.007  &   +0.013  &  --0.046  &  0.047  &  (0.00043)                    \\
+    $\Dms$          &   +0.086    &   +0.022  &  --0.020  &  --0.004  &  0.021  &  (0.0013)                     \\
     \hline
-    $\magzeroSq$         &  --0.251    &  --0.007  &   +0.008  &  --0.072  &  0.072  &  (0.00025)                    \\
-    $|A_\perp|^2$        &   +0.180    &   +0.008  &  --0.003  &   +0.080  &  0.080  &  (0.00039)                    \\
-    $\FS[1]$             &  --0.271    &  --0.043  &   +0.039  &   +0.070  &  0.081  &  (0.0044)                     \\
-    $\FS[2]$             &   +0.070    &   +0.019  &  --0.011  &   +0.023  &  0.027  &  (0.00049)                    \\
-    $\FS[3]$             &  --0.129    &  --0.019  &   +0.021  &  --0.010  &  0.022  &  (0.00015)                    \\
-    $\FS[4]$             &  --0.084    &  --0.002  &   +0.005  &   +0.024  &  0.024  &  (0.00014)                    \\
-    $\FS[5]$             &   +0.232    &   +0.025  &  --0.023  &   +0.023  &  0.033  &  (0.00054)                    \\
-    $\FS[6]$             &  --0.140    &  --0.036  &   +0.039  &   +0.185  &  0.19   &  (0.0048)                     \\
+    $\magzeroSq$    &  --0.251    &  --0.007  &   +0.008  &  --0.072  &  0.072  &  (0.00025)                    \\
+    $\magperpSq$    &   +0.180    &   +0.008  &  --0.003  &   +0.080  &  0.080  &  (0.00039)                    \\
+    $\FS[1]$        &  --0.271    &  --0.043  &   +0.039  &   +0.070  &  0.081  &  (0.0044)                     \\
+    $\FS[2]$        &   +0.070    &   +0.019  &  --0.011  &   +0.023  &  0.027  &  (0.00049)                    \\
+    $\FS[3]$        &  --0.129    &  --0.019  &   +0.021  &  --0.010  &  0.022  &  (0.00015)                    \\
+    $\FS[4]$        &  --0.084    &  --0.002  &   +0.005  &   +0.024  &  0.024  &  (0.00014)                    \\
+    $\FS[5]$        &   +0.232    &   +0.025  &  --0.023  &   +0.023  &  0.033  &  (0.00054)                    \\
+    $\FS[6]$        &  --0.140    &  --0.036  &   +0.039  &   +0.185  &  0.19   &  (0.0048)                     \\
     \hline
-    $\delpar-\delzero$   &   +0.016    &   +0.020  &  --0.014  &  --0.195  &  0.20   &  (0.024)                      \\
-    $\delperp-\delzero$  &   +0.065    &   +0.029  &  --0.034  &  --0.088  &  0.093  &  (0.015)                      \\
-    $\delS[1]-\delperp$  &  --0.055    &  --0.025  &   +0.023  &   +0.117  &  0.12   &  (0.024)                      \\
-    $\delS[2]-\delperp$  &   +0.302    &   +0.036  &  --0.044  &   +0.105  &  0.11   &  (0.032)                      \\
-    $\delS[3]-\delperp$  &   +0.083    &   +0.011  &  --0.008  &  --0.040  &  0.041  &  (0.0094)                     \\
-    $\delS[4]-\delperp$  &  --0.058    &  --0.002  &  --0.000  &   +0.019  &  0.019  &  (0.0041)                     \\
-    $\delS[5]-\delperp$  &   +0.106    &   +0.007  &  --0.008  &  --0.100  &  0.100  &  (0.018)                      \\
-    $\delS[6]-\delperp$  &  --0.051    &   +0.003  &  --0.002  &   +0.047  &  0.047  &  (0.0065)                     \\
+    $\delparzero$   &   +0.016    &   +0.020  &  --0.014  &  --0.195  &  0.20   &  (0.024)                      \\
+    $\delperpzero$  &   +0.065    &   +0.029  &  --0.034  &  --0.088  &  0.093  &  (0.015)                      \\
+    $\delSperp[1]$  &  --0.055    &  --0.025  &   +0.023  &   +0.117  &  0.12   &  (0.024)                      \\
+    $\delSperp[2]$  &   +0.302    &   +0.036  &  --0.044  &   +0.105  &  0.11   &  (0.032)                      \\
+    $\delSperp[3]$  &   +0.083    &   +0.011  &  --0.008  &  --0.040  &  0.041  &  (0.0094)                     \\
+    $\delSperp[4]$  &  --0.058    &  --0.002  &  --0.000  &   +0.019  &  0.019  &  (0.0041)                     \\
+    $\delSperp[5]$  &   +0.106    &   +0.007  &  --0.008  &  --0.100  &  0.10   &  (0.018)                      \\
+    $\delSperp[6]$  &  --0.051    &   +0.003  &  --0.002  &   +0.047  &  0.047  &  (0.0065)                     \\
     \hline
   \end{tabular}
 \end{table}
@@ -70,21 +75,315 @@ The resulting systematic uncertainties are shown in the last column.
 \begin{table}[htbp]
   \centering
   \caption{Deviations in parameter estimates from the nominal results with the model with a free $\lamsAbs$ for different schemes of
-           subtracting reflection backgrounds. The resulting systematic uncertainty in the last column is obtained by taking the average of
-           the yield-variation uncertainties and adding the reweighting uncertainty in quadrature.}
+           subtracting reflection backgrounds.
+           Differences with the nominal result are given in fractions of the statistical uncertainties. The resulting systematic
+           uncertainty in the last column is obtained by taking the average of the yield-variation uncertainties and adding the reweighting
+           uncertainty in quadrature. The absolute systematic is given in brackets.}
   \label{tab:syst_mass_peaking_lamb_phi}
+  \begin{tabular}{lllllll}
+    \hline
+    par.            &  no sub.    &  yield--  &  yield+   &  no rew.  &  \multicolumn{2}{l}{systematic (abs.)}  \\
+    \hline
+    $\phis$         &  --0.026    &  --0.022  &   +0.020  &  --0.023  &  0.031  &  (0.0015)                     \\
+    $\lamsAbs$      &  --0.010    &   +0.010  &  --0.009  &   +0.147  &  0.15   &  (0.0028)                     \\
+    \hline
+    $\Gs$           &  --0.022    &  --0.012  &   +0.015  &  --0.047  &  0.049  &  (0.00015)                    \\
+    $\DGs$          &  --0.056    &  --0.005  &   +0.004  &  --0.028  &  0.028  &  (0.00026)                    \\
+    $\Dms$          &   +0.057    &   +0.007  &  --0.005  &  --0.027  &  0.028  &  (0.0016)                     \\
+    \hline
+    $\magzeroSq$    &  --0.238    &  --0.003  &   +0.004  &  --0.054  &  0.054  &  (0.00019)                    \\
+    $\magperpSq$    &   +0.165    &   +0.008  &  --0.007  &   +0.068  &  0.068  &  (0.00034)                    \\
+    $\FS[1]$        &  --0.277    &  --0.045  &   +0.039  &   +0.057  &  0.071  &  (0.0038)                     \\
+    $\FS[2]$        &   +0.095    &   +0.004  &  --0.002  &   +0.038  &  0.038  &  (0.00067)                    \\
+    $\FS[3]$        &  --0.111    &  --0.009  &   +0.009  &   +0.001  &  0.009  &  (0.00006)                    \\
+    $\FS[4]$        &  --0.100    &  --0.003  &   +0.003  &  --0.004  &  0.005  &  (0.00003)                    \\
+    $\FS[5]$        &   +0.216    &   +0.018  &  --0.018  &  --0.006  &  0.019  &  (0.00029)                    \\
+    $\FS[6]$        &  --0.154    &  --0.030  &   +0.031  &   +0.184  &  0.19   &  (0.0048)                     \\
+    \hline
+    $\delparzero$   &   +0.037    &   +0.017  &  --0.014  &  --0.188  &  0.19   &  (0.023)                      \\
+    $\delperpzero$  &   +0.015    &   +0.012  &  --0.010  &  --0.126  &  0.13   &  (0.018)                      \\
+    $\delSperp[1]$  &  --0.031    &  --0.020  &   +0.018  &   +0.121  &  0.12   &  (0.024)                      \\
+    $\delSperp[2]$  &   +0.335    &   +0.029  &  --0.030  &   +0.128  &  0.13   &  (0.037)                      \\
+    $\delSperp[3]$  &   +0.058    &   +0.001  &  --0.001  &  --0.055  &  0.055  &  (0.012)                      \\
+    $\delSperp[4]$  &  --0.056    &   +0.002  &  --0.002  &   +0.001  &  0.002  &  (0.0004)                     \\
+    $\delSperp[5]$  &   +0.077    &  --0.003  &   +0.004  &  --0.142  &  0.14   &  (0.022)                      \\
+    $\delSperp[6]$  &  --0.060    &   +0.011  &  --0.009  &   +0.041  &  0.042  &  (0.0059)                     \\
+    \hline
+  \end{tabular}
 \end{table}
 
 \begin{table}[htbp]
   \centering
   \caption{Deviations in parameter estimates from the nominal results with the model with polarization-dependent CP violation for
-           different schemes of subtracting reflection backgrounds. The resulting systematic uncertainty in the last column is obtained by
-           taking the average of the yield-variation uncertainties and adding the reweighting uncertainty in quadrature.}
+           different schemes of subtracting reflection backgrounds.
+           Differences with the nominal result are given in fractions of the statistical uncertainties. The resulting systematic
+           uncertainty in the last column is obtained by taking the average of the yield-variation uncertainties and adding the reweighting
+           uncertainty in quadrature. The absolute systematic is given in brackets.}
   \label{tab:syst_mass_peaking_polarDep}
+  \begin{tabular}{lllllll}
+    \hline
+    par.            &  no sub.    &  yield--  &  yield+   &  no rew.  &  \multicolumn{2}{l}{systematic (abs.)}  \\
+    \hline
+    $\phisav$       &  --0.077    &  --0.024  &   +0.022  &  --0.053  &  0.058  &  (0.0029)                     \\
+    $\Delphispara$  &   +0.030    &   +0.015  &  --0.014  &   +0.020  &  0.025  &  (0.0011)                     \\
+    $\Delphisperpp$ &  --0.033    &  --0.001  &   +0.002  &  --0.032  &  0.032  &  (0.00092)                    \\
+    $\DelphisS$     &   +0.009    &   +0.016  &  --0.013  &  --0.136  &  0.14   &  (0.0085)                     \\
+    \hline
+    $\Csav$         &   +0.094    &   +0.000  &  --0.001  &   +0.029  &  0.029  &  (0.0011)                     \\
+    $\DelCspara$    &   +0.120    &   +0.008  &  --0.006  &  --0.062  &  0.062  &  (0.0076)                     \\
+    $\DelCsperp$    &   +0.111    &   +0.015  &  --0.014  &  --0.021  &  0.026  &  (0.0041)                     \\
+    $\CsavS$        &  --0.134    &  --0.031  &   +0.030  &  --0.104  &  0.11   &  (0.0035)                     \\
+    \hline
+    $\Gs$           &  --0.008    &  --0.011  &   +0.017  &  --0.043  &  0.045  &  (0.00014)                    \\
+    $\DGs$          &  --0.066    &  --0.004  &   +0.004  &  --0.022  &  0.022  &  (0.00020)                    \\
+    $\Dms$          &   +0.121    &   +0.009  &  --0.007  &   +0.021  &  0.022  &  (0.0014)                     \\
+    \hline
+    $\magzeroAvSq$  &  --0.248    &  --0.003  &   +0.004  &  --0.048  &  0.048  &  (0.00017)                    \\
+    $\magperpAvSq$  &   +0.173    &   +0.008  &  --0.008  &   +0.059  &  0.060  &  (0.00029)                    \\
+    $\FSAv[1]$      &  --0.275    &  --0.044  &   +0.038  &   +0.062  &  0.074  &  (0.0040)                     \\
+    $\FSAv[2]$      &   +0.105    &   +0.001  &  --0.000  &   +0.054  &  0.054  &  (0.00095)                    \\
+    $\FSAv[3]$      &  --0.060    &  --0.006  &   +0.006  &   +0.008  &  0.010  &  (0.000066)                   \\
+    $\FSAv[4]$      &  --0.099    &  --0.003  &   +0.003  &   +0.014  &  0.014  &  (0.000081)                   \\
+    $\FSAv[5]$      &   +0.204    &   +0.016  &  --0.015  &   +0.002  &  0.016  &  (0.00024)                    \\
+    $\FSAv[6]$      &  --0.146    &  --0.032  &   +0.032  &   +0.182  &  0.19   &  (0.0047)                     \\
+    \hline
+    $\delparzero$   &   +0.048    &   +0.019  &  --0.016  &  --0.178  &  0.18   &  (0.024)                      \\
+    $\delperpzero$  &   +0.081    &   +0.012  &  --0.010  &  --0.064  &  0.065  &  (0.011)                      \\
+    $\delSperp[1]$  &  --0.021    &  --0.017  &   +0.016  &   +0.096  &  0.097  &  (0.020)                      \\
+    $\delSperp[2]$  &   +0.353    &   +0.033  &  --0.033  &   +0.133  &  0.14   &  (0.042)                      \\
+    $\delSperp[3]$  &   +0.013    &   +0.000  &  --0.000  &  --0.077  &  0.077  &  (0.019)                      \\
+    $\delSperp[4]$  &  --0.055    &   +0.002  &  --0.002  &   +0.001  &  0.002  &  (0.0004)                     \\
+    $\delSperp[5]$  &   +0.073    &  --0.005  &   +0.005  &  --0.146  &  0.15   &  (0.023)                      \\
+    $\delSperp[6]$  &  --0.050    &   +0.013  &  --0.010  &   +0.011  &  0.016  &  (0.0023)                     \\
+    \hline
+  \end{tabular}
 \end{table}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Signal and combinatorial background: statistical}
 \label{subsec:syst_mass_stat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Statistical uncertainties in the $\JpsiKK$-mass models of the signal and the combinatorial background are propagated by repeating the time
+and angular fit with different sets of signal weights. The sets of weights are obtained by calculating \sweight[s] with different sets of
+mass-model parameters, which are generated according to a multivariate-Gaussian distribution using the means and covariances from the mass
+fit.
+
+Tables~\ref{tab:syst_mass_stat_lamb_phi} and \ref{tab:syst_mass_stat_polarDep} show the results of fits to five thousand datasets with
+varying signal weights. The square root of the mean squared difference with the nominal result is taken as a systematic uncertainty for
+each parameter.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the $\lamsAbs\equiv1$ and free $\lamsAbs$ models for five
+           thousand datasets with varying signal weights.
+           The square root of the mean squared difference with the nominal result is shown for each parameter, both as a fraction of the
+           statistical uncertainty and as an absolute value (in brackets).}
+  \label{tab:syst_mass_stat_lamb_phi}
+  \begin{tabular}{lllll}
+    \hline
+    par.            &  \multicolumn{2}{l}{deviation $\lamsAbs\equiv1$}  &  \multicolumn{2}{l}{deviation free $\lamsAbs$}  \\
+    \hline
+    $\phis$         &  0.004  &  (0.00019)                              &  0.004  &  (0.00021)                            \\
+    $\lamsAbs$      &  --     &  --                                     &  0.005  &  (0.000088)                           \\
+    \hline
+    $\Gs$           &  0.044  &  (0.00014~\invps)                       &  0.041  &  (0.00013~\invps)                     \\
+    $\DGs$          &  0.012  &  (0.00011~\invps)                       &  0.009  &  (0.000080~\invps)                    \\
+    $\Dms$          &  0.009  &  (0.00051~\invps)                       &  0.005  &  (0.00031~\invps)                     \\
+    \hline
+    $\magzeroSq$    &  0.027  &  (0.000094)                             &  0.020  &  (0.000071)                           \\
+    $\magperpSq$    &  0.014  &  (0.000070)                             &  0.009  &  (0.000043)                           \\
+    $\FS[1]$        &  0.14   &  (0.0078)                               &  0.15   &  (0.0080)                             \\
+    $\FS[2]$        &  0.042  &  (0.00075)                              &  0.032  &  (0.00056)                            \\
+    $\FS[3]$        &  0.010  &  (0.000066)                             &  0.006  &  (0.000039)                           \\
+    $\FS[4]$        &  0.013  &  (0.000076)                             &  0.009  &  (0.000055)                           \\
+    $\FS[5]$        &  0.032  &  (0.00052)                              &  0.024  &  (0.00037)                            \\
+    $\FS[6]$        &  0.047  &  (0.0012)                               &  0.046  &  (0.0012)                             \\
+    \hline
+    $\delparzero$   &  0.018  &  (0.0023)                               &  0.014  &  (0.0018)                             \\
+    $\delperpzero$  &  0.012  &  (0.0019)                               &  0.008  &  (0.0011)                             \\
+    $\delSperp[1]$  &  0.028  &  (0.0055)                               &  0.023  &  (0.0045)                             \\
+    $\delSperp[2]$  &  0.022  &  (0.0064)                               &  0.012  &  (0.0035)                             \\
+    $\delSperp[3]$  &  0.007  &  (0.0016)                               &  0.002  &  (0.00050)                            \\
+    $\delSperp[4]$  &  0.009  &  (0.0020)                               &  0.005  &  (0.00085)                            \\
+    $\delSperp[5]$  &  0.016  &  (0.0028)                               &  0.007  &  (0.0011)                             \\
+    $\delSperp[6]$  &  0.009  &  (0.0013)                               &  0.010  &  (0.0014)                             \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with polarization-dependent CP violation for five
+           thousand datasets with varying signal weights.
+           The square root of the mean squared difference with the nominal result is shown for each parameter, both as a fraction of the
+           statistical uncertainty and as an absolute value (in brackets).}
+  \label{tab:syst_mass_stat_polarDep}
+  \begin{tabular}{lll}
+    \hline
+    par.            &  \multicolumn{2}{l}{deviation polar. dep.}  \\
+    \hline
+    $\phisav$       &  0.004  &  (0.00023)                        \\
+    $\Delphispara$  &  0.003  &  (0.00014)                        \\
+    $\Delphisperpp$ &  0.008  &  (0.00022)                        \\
+    $\DelphisS$     &  0.010  &  (0.00064)                        \\
+    \hline
+    $\Csav$         &  0.005  &  (0.00020)                        \\
+    $\DelCspara$    &  0.005  &  (0.00066)                        \\
+    $\DelCsperp$    &  0.005  &  (0.00075)                        \\
+    $\CsavS$        &  0.007  &  (0.00024)                        \\
+    \hline
+    $\Gs$           &  0.041  &  (0.00013~\invps)                 \\
+    $\DGs$          &  0.009  &  (0.000079~\invps)                \\
+    $\Dms$          &  0.005  &  (0.00031~\invps)                 \\
+    \hline
+    $\magzeroAvSq$  &  0.021  &  (0.000071)                       \\
+    $\magperpAvSq$  &  0.008  &  (0.000041)                       \\
+    $\FSAv[1]$      &  0.15   &  (0.0080)                         \\
+    $\FSAv[2]$      &  0.031  &  (0.00056)                        \\
+    $\FSAv[3]$      &  0.005  &  (0.000036)                       \\
+    $\FSAv[4]$      &  0.009  &  (0.000051)                       \\
+    $\FSAv[5]$      &  0.024  &  (0.00037)                        \\
+    $\FSAv[6]$      &  0.046  &  (0.0012)                         \\
+    \hline
+    $\delparzero$   &  0.014  &  (0.0019)                         \\
+    $\delperpzero$  &  0.006  &  (0.00098)                        \\
+    $\delSperp[1]$  &  0.020  &  (0.0041)                         \\
+    $\delSperp[2]$  &  0.013  &  (0.0039)                         \\
+    $\delSperp[3]$  &  0.002  &  (0.00057)                        \\
+    $\delSperp[4]$  &  0.004  &  (0.00076)                        \\
+    $\delSperp[5]$  &  0.007  &  (0.0011)                         \\
+    $\delSperp[6]$  &  0.010  &  (0.0015)                         \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Signal and combinatorial background: factorization}
 \label{subsec:syst_mass_factor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with $\lamsAbs\equiv1$ for $\JpsiKK$-mass models
+           determined in different bins of $\cthetal$. Differences with the nominal result are given in fractions of the statistical
+           uncertainties. The result from bin-by-bin subtraction in the last column is used as a systematic uncertainty.
+           The absolute uncertainty is given in brackets.}
+  \label{tab:syst_mass_factor_phi}
+  \begin{tabular}{llllll}
+    \hline
+    par.            &  0--0.25  &  0.25--0.7  &  0.7--1   &  \multicolumn{2}{l}{bin subtraction (abs.)} \\
+    \hline
+    $\phis$         &  --0.031  &  --0.005    &   +0.014  &   +0.057  &  ( +0.0028)                     \\
+    \hline
+    $\Gs$           &  --1.657  &  --0.193    &   +1.770  &  --0.005  &  (--0.00002~\invps)             \\
+    $\DGs$          &   +0.264  &  --0.008    &  --0.231  &  --0.090  &  (--0.00082~\invps)             \\
+    $\Dms$          &   +0.074  &   +0.008    &  --0.097  &   +0.088  &  ( +0.0053~\invps)              \\
+    \hline
+    $\magzeroSq$    &   +1.104  &   +0.105    &  --1.129  &  --1.887  &  (--0.00649)                    \\
+    $\magperpSq$    &  --0.607  &  --0.032    &   +0.446  &   +0.628  &  ( +0.00309)                    \\
+    $\FS[1]$        &   +0.511  &  --0.018    &  --0.988  &  --1.233  &  (--0.0666)                     \\
+    $\FS[2]$        &   +0.555  &   +0.089    &  --0.693  &  --1.215  &  (--0.0218)                     \\
+    $\FS[3]$        &   +0.364  &   +0.023    &  --0.290  &  --0.770  &  (--0.00526)                    \\
+    $\FS[4]$        &   +0.321  &   +0.059    &  --0.292  &  --0.580  &  (--0.00331)                    \\
+    $\FS[5]$        &   +0.397  &   +0.120    &  --0.528  &  --1.476  &  (--0.0237)                     \\
+    $\FS[6]$        &   +0.250  &  --0.047    &  --0.185  &  --0.849  &  (--0.0216)                     \\
+    \hline
+    $\delparzero$   &  --0.457  &  --0.082    &   +0.667  &   +0.420  &  ( +0.052)                      \\
+    $\delperpzero$  &  --0.100  &  --0.028    &   +0.196  &   +0.375  &  ( +0.060)                      \\
+    $\delSperp[1]$  &   +0.103  &   +0.002    &  --0.188  &   +0.026  &  ( +0.005)                      \\
+    $\delSperp[2]$  &   +0.252  &   +0.042    &  --0.456  &  --1.467  &  (--0.424)                      \\
+    $\delSperp[3]$  &  --0.191  &  --0.010    &   +0.199  &   +1.051  &  ( +0.243)                      \\
+    $\delSperp[4]$  &   +0.198  &   +0.039    &  --0.257  &  --0.568  &  (--0.122)                      \\
+    $\delSperp[5]$  &   +0.163  &   +0.064    &  --0.308  &  --1.871  &  (--0.330)                      \\
+    $\delSperp[6]$  &  --0.003  &   +0.006    &  --0.034  &  --0.434  &  (--0.061)                      \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with a free $\lamsAbs$ for $\JpsiKK$-mass models
+           determined in different bins of $\cthetal$. Differences with the nominal result are given in fractions of the statistical
+           uncertainties. The result from bin-by-bin subtraction in the last column is used as a systematic uncertainty.
+           The absolute uncertainty is given in brackets.}
+  \label{tab:syst_mass_factor_lamb_phi}
+  \begin{tabular}{llllll}
+    \hline
+    par.            &  0--0.25  &  0.25--0.7  &  0.7--1   &  \multicolumn{2}{l}{bin subtraction (abs.)} \\
+    \hline
+    $\phis$         &  --0.008  &   +0.003    &  --0.005  &   +0.035  &  ( +0.0018)                     \\
+    $\lamsAbs$      &   +0.068  &   +0.005    &   +0.001  &  --0.045  &  (--0.00080)                    \\
+    \hline
+    $\Gs$           &  --1.659  &  --0.196    &   +1.789  &  --0.001  &  (--0.000004~\invps)            \\
+    $\DGs$          &   +0.253  &   +0.008    &  --0.243  &  --0.075  &  (--0.00069~\invps)             \\
+    $\Dms$          &   +0.028  &  --0.001    &  --0.044  &   +0.074  &  ( +0.0042~\invps)              \\
+    \hline
+    $\magzeroSq$    &   +1.093  &   +0.126    &  --1.129  &  --1.868  &  (--0.00643)                    \\
+    $\magperpSq$    &  --0.609  &  --0.053    &   +0.463  &   +0.631  &  ( +0.00309)                    \\
+    $\FS[1]$        &   +0.506  &  --0.022    &  --0.994  &  --1.236  &  (--0.0668)                     \\
+    $\FS[2]$        &   +0.567  &   +0.090    &  --0.677  &  --1.197  &  (--0.0210)                     \\
+    $\FS[3]$        &   +0.344  &   +0.022    &  --0.260  &  --0.744  &  (--0.00489)                    \\
+    $\FS[4]$        &   +0.293  &   +0.051    &  --0.272  &  --0.622  &  (--0.00363)                    \\
+    $\FS[5]$        &   +0.371  &   +0.106    &  --0.479  &  --1.374  &  (--0.0213)                     \\
+    $\FS[6]$        &   +0.253  &  --0.051    &  --0.195  &  --0.844  &  (--0.0215)                     \\
+    \hline
+    $\delparzero$   &  --0.426  &  --0.075    &   +0.663  &   +0.401  &  ( +0.050)                      \\
+    $\delperpzero$  &  --0.159  &  --0.034    &   +0.279  &   +0.363  &  ( +0.052)                      \\
+    $\delSperp[1]$  &   +0.106  &   +0.003    &  --0.165  &   +0.026  &  ( +0.005)                      \\
+    $\delSperp[2]$  &   +0.256  &   +0.041    &  --0.411  &  --1.277  &  (--0.359)                      \\
+    $\delSperp[3]$  &  --0.161  &  --0.010    &   +0.152  &   +0.910  &  ( +0.203)                      \\
+    $\delSperp[4]$  &   +0.161  &   +0.032    &  --0.214  &  --0.527  &  (--0.096)                      \\
+    $\delSperp[5]$  &   +0.130  &   +0.045    &  --0.207  &  --1.301  &  (--0.203)                      \\
+    $\delSperp[6]$  &  --0.013  &   +0.010    &  --0.036  &  --0.420  &  (--0.059)                      \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Deviations in parameter estimates from the nominal results with the model with polarization-dependent CP violation for
+           $\JpsiKK$-mass models determined in different bins of $\cthetal$. Differences with the nominal result are given in fractions of
+           the statistical uncertainties. The result from bin-by-bin subtraction in the last column is used as a systematic uncertainty.
+           The absolute uncertainty is given in brackets.}
+  \label{tab:syst_mass_factor_polarDep}
+  \begin{tabular}{llllll}
+    \hline
+    par.             &  0--0.25  &  0.25--0.7  &  0.7--1   &  \multicolumn{2}{l}{bin subtraction (abs.)} \\
+    \hline
+    $\phisav$        &  --0.037  &  --0.000    &   +0.036  &   +0.061  &  ( +0.0031)                     \\
+    $\Delphispara$   &  --0.070  &  --0.010    &   +0.103  &   +0.123  &  ( +0.0052)                     \\
+    $\Delphisperpp$  &  --0.076  &  --0.002    &   +0.087  &  --0.049  &  (--0.0014)                     \\
+    $\DelphisS$      &  --0.077  &  --0.003    &   +0.176  &   +0.260  &  ( +0.0162)                     \\
+    \hline
+    $\Csav$          &   +0.018  &  --0.002    &   +0.015  &   +0.032  &  ( +0.0012)                     \\
+    $\DelCspara$     &   +0.092  &   +0.024    &  --0.174  &  --0.348  &  (--0.042)                      \\
+    $\DelCsperp$     &  --0.103  &  --0.013    &   +0.137  &   +0.067  &  ( +0.011)                      \\
+    $\CsavS$         &  --0.160  &  --0.016    &   +0.104  &   +0.425  &  ( +0.0136)                     \\
+    \hline
+    $\Gs$            &  --1.661  &  --0.197    &   +1.773  &   +0.004  &  ( +0.00001~\invps)             \\
+    $\DGs$           &   +0.268  &  --0.009    &  --0.239  &  --0.060  &  (--0.00055~\invps)             \\
+    $\Dms$           &   +0.103  &   +0.012    &  --0.117  &   +0.026  &  ( +0.0016~\invps)              \\
+    \hline
+    $\magzeroAvSq$   &   +1.101  &   +0.104    &  --1.128  &  --1.850  &  (--0.00637)                    \\
+    $\magperpAvSq$   &  --0.617  &  --0.031    &   +0.447  &   +0.608  &  ( +0.00300)                    \\
+    $\FSAv[1]$       &   +0.514  &  --0.019    &  --0.992  &  --1.247  &  (--0.0675)                     \\
+    $\FSAv[2]$       &   +0.589  &   +0.087    &  --0.733  &  --1.135  &  (--0.0201)                     \\
+    $\FSAv[3]$       &   +0.321  &   +0.019    &  --0.229  &  --0.640  &  (--0.00419)                    \\
+    $\FSAv[4]$       &   +0.285  &   +0.052    &  --0.271  &  --0.615  &  (--0.00346)                    \\
+    $\FSAv[5]$       &   +0.382  &   +0.110    &  --0.520  &  --1.373  &  (--0.0211)                     \\
+    $\FSAv[6]$       &   +0.263  &  --0.045    &  --0.217  &  --0.911  &  (--0.0233)                     \\
+    \hline
+    $\delparzero$    &  --0.421  &  --0.079    &   +0.659  &   +0.377  &  ( +0.050)                      \\
+    $\delperpzero$   &  --0.077  &  --0.025    &   +0.193  &   +0.292  &  ( +0.048)                      \\
+    $\delSperp[1]$   &   +0.081  &   +0.002    &  --0.136  &   +0.087  &  ( +0.018)                      \\
+    $\delSperp[2]$   &   +0.278  &   +0.043    &  --0.556  &  --1.271  &  (--0.393)                      \\
+    $\delSperp[3]$   &  --0.170  &  --0.007    &   +0.148  &   +0.807  &  ( +0.202)                      \\
+    $\delSperp[4]$   &   +0.161  &   +0.033    &  --0.202  &  --0.484  &  (--0.089)                      \\
+    $\delSperp[5]$   &   +0.137  &   +0.053    &  --0.249  &  --1.277  &  (--0.202)                      \\
+    $\delSperp[6]$   &   +0.012  &   +0.008    &  --0.045  &  --0.483  &  (--0.071)                      \\
+    \hline
+  \end{tabular}
+\end{table}
