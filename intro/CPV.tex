@@ -6,9 +6,8 @@
 \label{subsec:intro_mixCPV_mix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the Standard Model only the charged weak interaction changes the flavour of quarks and leptons. This is shown in
-Figure~\ref{fig:WCouplings} for quarks. Only quarks with a left-handed chirality participate in this interaction, which is why the quarks
-in Figure~\ref{fig:WCouplings} carry a subscript ``L''.
+The Feynman diagrams for the charged weak current that changes the flavour of a quark are shown in Figure~\ref{fig:WCouplings}. The
+subscript ``L'' on the quark indicates that only quark states with a left-handed chirality participate in this interaction.
 \begin{figure}[hbt]
   \input{graphics/intro/WCouplings/WCouplings}
   \caption{Charged-current weak interactions of quarks.}
@@ -31,8 +30,8 @@ $V_{ij}$. A similar mechanism applies for mixing of leptons \cite{Pontecorvo:195
 The CKM matrix is a unitary complex matrix. The number of independent parameters in the matrix is limited by the constraint of unitarity
 and by the fact that part of the complex phases of the matrix elements can be absorbed in the arbitrary phases of the quark fields.
 Representation of the CKM matrix in terms of the four remaining parameters is convention dependent. A commonly used choice is the
-\emph{Wolfenstein parameterization} with real-valued $\Vud$, $\Vus$, $\Vcb$, and $\Vtb$ and a complex phase entering in the other elements
-\cite{Wolfenstein:1983yz,*Chau:1984fp,*Buras:1994ec}. Four real parameters, $\lam$, $A$, $\rho$, and $\eta$, are then
+\emph{Wolfenstein parameterization} with real-valued $\Vud$, $\Vus$, $\Vcb$, and $\Vtb$ and a single complex phase entering in the other
+elements \cite{Wolfenstein:1983yz,*Chau:1984fp,*Buras:1994ec}. Four real parameters, $\lam$, $A$, $\rho$, and $\eta$, are then
 defined by
 \begin{equation}
   \begin{gathered}
@@ -51,7 +50,7 @@ approximately equal to one. Magnitudes of the couplings between the first and se
 $|\Vus|\approx|\Vcd|\approx\lam\approx0.23$ \cite{Charles:2004jd,Bona:2005vz}.
 
 Couplings between the second and third and between the first and third generation are suppressed by factors $\lam^2$ and $\lam^3$,
-respectively: $|\Vcb|\approx|\Vts|\approx A\lam^2\approx0.04$, $|\Vub|=A\lam^3|\rho+i\eta|\approx0.004$ and $|\Vtd|\approx
+respectively: $|\Vcb|\approx|\Vts|\approx A\lam^2\approx0.04$, $|\Vub|=A\lam^3|\rho+i\eta|\approx0.004$, and $|\Vtd|\approx
 A\lam^3|1-\rho-i\eta|\approx0.009$. In this form of the Wolfenstein parameterization the complex phase is introduced with the parameters
 $\rho\approx0.13$ and $\eta\approx0.36$, where $\arg(\Vub[*])=\arg(\rho+i\eta)\approx70^\circ$.
 
@@ -98,9 +97,11 @@ leading term for each element, it is approximated by \cite{Charles:2004jd}
     \end{pmatrix}
     \ ,
 \end{equation}
-where $c\equiv1 - \tfrac{1}{2}\lam^2$ and $r\equiv\rho+i\eta$. Note that only the elements $\Vub$, $\Vtd$ and $\Vts$ have non-vanishing
-imaginary parts in this approximation. In $\Vts$ the parameter $r$ is suppressed by a factor $\lam^2$, which makes the imaginary part of
-this element much smaller than the real part.
+where $c\equiv1 - \tfrac{1}{2}\lam^2$ and $r\equiv\rho+i\eta$.
+
+Notice that only the elements $\Vub$, $\Vtd$ and $\Vts$ have non-vanishing imaginary parts in this approximation. In $\Vts$ the parameter $r$ is suppressed by a
+factor $\lam^2$, which makes the imaginary part of this element much smaller than the real part. For $\Vcd$ and $\Vcs$ the suppression
+factors are $\lam^4$ and $\lam^6$, respectively, which results in vanishing imaginary parts.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,22 +114,19 @@ Figure~\ref{fig:WCouplings} results in the interactions of right-handed antiquar
 
 In the transformation from quarks to antiquarks the CKM-matrix elements in the weak interaction states are replaced with their complex
 conjugates. If there were no complex phase in the CKM matrix, its elements would be real and the weak interactions of quarks would be
-invariant under the CP transformation. Introducing a complex phase breaks this invariance and gives rise to \emph{CP violation}. With its
-counterpart for leptons, the CKM matrix is the only source of CP violation in the Standard Model.
+invariant under the CP transformation. Introducing a complex phase breaks this invariance and gives rise to CP violation.
 
 Although the complex phase in the CKM matrix formally breaks CP invariance, CP-violating phenomena cannot be observed directly in processes
-that are described by a single diagram with a W-boson interaction. These Feynman diagrams represent the amplitudes of processes, the
-magnitudes of which are squared to obtain the corresponding observable probability. The magnitude of a single CKM-matrix element is
-identical to the magnitude of its complex conjugate. Furthermore, the appearance of imaginary parts of CKM elements is convention
-dependent. A single element can be made real by rotating the phases of the quark fields.
+that are described by a single diagram with W-boson interactions. The magnitude of a diagram is squared to obtain the corresponding
+observable probability, which makes its phase unobservable.
 
-For these reasons CP violation can only be observed in processes where two or more amplitudes with different CKM elements interfere. The
-CKM elements then introduce a different \emph{weak phase} for each contribution, which changes sign between CP-conjugate processes.
-Differences between the weak phases affect the observable magnitude of the total amplitude if the contributing amplitudes also have
-different \emph{strong phases}, which do not change sign under a CP transformation.
+CP violation can only be observed in processes where two or more amplitudes with different CKM elements interfere. The CKM elements then
+introduce a different \emph{weak phase} for each contribution, which changes sign between CP-conjugate processes. Differences between the
+weak phases do affect the observable magnitude of the total amplitude if the contributing amplitudes also have different \emph{strong
+phases}, which do not change sign under a CP transformation.
 
-In the case of two contributing amplitudes $A_1$ and $A_2$ with CKM factors $F_1$ and $F_2$ the asymmetry between the squared magnitudes
-for CP-conjugate processes is given by
+This can be illustrated by considering two interfering amplitudes $A_1$ and $A_2$ with CKM factors $F_1$ and $F_2$. The asymmetry between
+the squared magnitudes for CP-conjugate processes is then given by
 \begin{equation}
   \label{eq:interference}
   \begin{split}
@@ -140,25 +138,36 @@ for CP-conjugate processes is given by
 \end{equation}
 where $R\equiv\frac{|F_2|\,|A_2|}{|F_1|\,|A_1|}$, $\Delta\delta\equiv\arg(A_2)-\arg(A_1)$ and $\Delta\phi\equiv\arg(F_2)-\arg(F_1)$. Notice
 that the CP asymmetry vanishes if there is no weak phase difference $\Delta\phi$, but also if there is no strong phase difference
-$\Delta\delta$.
+$\Delta\delta$. The size of the asymmetry also depends on the relative magnitudes of the amplitudes and CKM factors. The asymmetry vanishes
+in case the $|F_2|\,|A_2|$ is much smaller than $|F_1|\,|A_1|$.
 
 To construct convention-independent measures of CP violation in quark interactions, the CKM-matrix unitarity constraints are used. The
 unitarity relation $\VCKM[\dagger]\VCKM = \VCKM\VCKM[\dagger] = \mathbb{1}$ gives nine constraints. Six of these are orthogonality
-relations, which contain the off-diagonal elements. Two relations are given by
+relations, two of which are given by
 \begin{subequations}
   \label{eq:unitConstraints}
-  \begin{align}
+  \begin{alignat}{3}
     \label{eq:unitConstraints_d}
-    \Vud\Vub[*] + \Vcd\Vcb[*] + \Vtd\Vtb[*] = 0 &\implies 1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0 \\
+    \text{d--b:} & \quad
+      &\Vud\Vub[*] + \Vcd\Vcb[*] + \Vtd\Vtb[*] = 0
+      &\ \implies\
+      &1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0
+      & \\
     \label{eq:unitConstraints_s}
-    \Vus\Vub[*] + \Vcs\Vcb[*] + \Vts\Vtb[*] = 0 &\implies 1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0
-    \quad.
-  \end{align}
+    \text{s--b:} &
+      &\Vus\Vub[*] + \Vcs\Vcb[*] + \Vts\Vtb[*] = 0
+      &\ \implies\
+      &1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0
+      &\ .
+  \end{alignat}
 \end{subequations}
 
-The three terms in each of the orthogonality relations can be used to construct a triangle in the complex plane. The resulting
-\emph{unitarity triangles} are shown in Figure~\ref{fig:unitTriangles}. Each of the combinations of four CKM elements that appear in the
-unitarity equations and triangles is convention independent.
+Notice that the phases of the combinations of four CKM elements that appear in Equation~\ref{eq:unitConstraints} are of the form
+$\arg( V^{\phantom{*}}_{ij} V^{\phantom{*}}_{kl} V^{*}_{il} V^{*}_{kj} )$. Each of the quarks in this expression appears twice; once in the
+indices of a matrix element and once in the indices of the complex conjugate of a matrix element. Absorbing CKM phases in the quark fields
+gives opposite phase shifts for the two corresponding elements, which makes the phase of the four-element combination invariant and
+convention independent.
+
 \begin{figure}[tb]
   \centering
   \begin{subfigure}{0.475\textwidth}
@@ -178,8 +187,10 @@ unitarity equations and triangles is convention independent.
   \label{fig:unitTriangles}
 \end{figure}
 
-The triangle in Figure~\ref{fig:unitTriangles_bd} corresponds to Equation~\ref{eq:unitConstraints_d}. Its sides are defined by the CKM
-elements for the couplings of the up-type quarks and the down/beauty quarks. The angles $\alpha$, $\beta$ and $\gamma$ are defined by
+The three terms in each of the orthogonality relations can be used to construct a triangle in the complex plane. The resulting
+\emph{unitarity triangles} are schematically shown in Figure~\ref{fig:unitTriangles}. Figure~\ref{fig:unitTriangles_bd} shows the
+\emph{d--b triangle}, which corresponds to Equation~\ref{eq:unitConstraints_d}. Its sides are defined by the CKM elements for the couplings
+of the up-type quarks and the down/beauty quarks. The angles $\alpha$, $\beta$ and $\gamma$ are defined by
 \begin{equation}
   \label{eq:bdAnglesDef}
   \alpha \equiv \arg\left( -\frac{\Vtd\Vtb[*]}{\Vud\Vub[*]} \right)
@@ -189,10 +200,11 @@ elements for the couplings of the up-type quarks and the down/beauty quarks. The
   \gamma \equiv \arg\left( -\frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} \right)
   \ .
 \end{equation}
+The coordinates of the triangle apex are defined as $(\rhobar, \etabar)$.
 
-Equation~\ref{eq:unitConstraints_s} gives the triangle in Figure~\ref{fig:unitTriangles_bs}. This \emph{s--b triangle} is defined in a
-similar way as the \emph{d--b triangle}, but its apex has negative real and imaginary coordinates. The angles $\as$, $\bs$ and $\gs$ are
-given by
+Equation~\ref{eq:unitConstraints_s} gives the \emph{s--b triangle} in Figure~\ref{fig:unitTriangles_bs}. It is defined in a
+similar way as the d--b triangle, but its apex has negative real and imaginary coordinates $(\rhosbar, \etasbar)$. The angles $\as$, $\bs$
+and $\gs$ are given by
 \begin{equation}
   \label{eq:bsAnglesDef}
   \as \equiv \arg\left( -\frac{\Vus\Vub[*]}{\Vts\Vtb[*]} \right)
@@ -208,7 +220,7 @@ respectively, to make the first side lie between 0 and 1. Without this scaling, 
 are equal and provide a convention-independent measure of the CP violation that is introduced by the CKM matrix. The areas are given by
 half of the \emph{Jarlskog invariant} ($J$) \cite{Jarlskog:1985ht}, which is defined by
 \begin{equation}
-  \Im(V_{ij}V_{kl}V_{il}^*V_{kj}^*) \equiv J\; \sum_{m,n} \epsilon_{ikm}\,\epsilon_{jln}
+  \Im( V^{\phantom{*}}_{ij} V^{\phantom{*}}_{kl} V^{*}_{il} V^{*}_{kj} ) \equiv J\; \sum_{m,n} \epsilon_{ikm}\,\epsilon_{jln}
   \ ,
 \end{equation}
 where $\epsilon$ is the Levi-Civita symbol.
@@ -222,8 +234,9 @@ Jarlskog invariant can be expressed as
 Its experimental value is approximately 3\tenpowmult{--5}~\cite{Charles:2004jd,Bona:2005vz}. This value is four orders of magnitude smaller
 than the theoretical maximum of $\frac{\text{1}}{\text{6}\sqrt{\text{3}}}$\textapprox0.1 given by unitarity.
 
-In this approximation, the only CKM-matrix elements with imaginary parts are $\Vub$, $\Vtd$ and $\Vts$. The arguments of these elements are
-approximated by the angles $\gamma$, $\beta$ and $\bs$, respectively:
+In the same relative $\lam^3$ approximation, the only CKM-matrix elements with imaginary parts are $\Vub$, $\Vtd$ and $\Vts$. Using the
+approximations of the matrix elements from Equation~\ref{eq:CKMApprox} and the angle definitions from Equations~\ref{eq:bdAnglesDef} and
+\ref{eq:bsAnglesDef}, the angles $\gamma$, $\beta$, and $\bs$ are approximated by
 \begin{subequations}
   \label{eq:CKMAnglesApprox}
   \begin{alignat}{2}
@@ -239,7 +252,8 @@ approximated by the angles $\gamma$, $\beta$ and $\bs$, respectively:
     \ .
   \end{alignat}
 \end{subequations}
-By construction, the relations between $\alpha_{(\text{s})}$, $\beta_{(\text{s})}$ and $\gamma_{(\text{s})}$ are given by
+Expanding the expressions for the angles $\alpha$ and $\alpha_{\text{s}}$ in the same way gives the expected relations between the three
+angles in a triangle:
 \begin{subequations}
   \begin{alignat}{2}
     \alpha &\approx\, \pi + \arg(\Vtd)  - \arg(\Vub[*]) \,&&\approx\, \pi - \beta - \gamma \\
@@ -249,38 +263,47 @@ By construction, the relations between $\alpha_{(\text{s})}$, $\beta_{(\text{s})
 \end{subequations}
 
 The experimental values of the CKM angles can be determined by a global fit of the Standard Model to all relevant experimental data. There
-are two groups doing such a fit, using different statistical methods and slightly different sets of input data.  With the experimental data
-that were available in the spring of 2013, the CKMfitter Group finds \cite{Charles:2004jd}
+are two groups doing such a fit, using different statistical methods and slightly different sets of input data. With the experimental data
+that were available in the spring of 2013, the CKMfitter Group finds~\cite{Charles:2004jd}
 \begin{equation}
   \label{eq:CKMAnglesCKMf}
   \gamma = (69.7^{+1.3}_{-2.8})^\circ \qquad \beta = (21.8^{+0.8}_{-0.7})^\circ \qquad \bs = (1.05\pm0.04)^\circ
   \ .
 \end{equation}
-The resulting unitarity triangles are shown in Figure~\ref{fig:unitTriangleMeas}, together with the constraints on their apices from the
-measurements that are input to the fit.
 
-The UTfit Collaboration finds slightly different values with the data available by summer 2013 \cite{Bona:2005vz}:
+Figure~\ref{fig:unitTriangleMeas} shows the resulting CKMfitter unitarity triangles, together with the constrains on the coordinates
+of the triangle apices. In the lowest order approximation in $\lam$ the apices are given by $(\rho, \eta)$ and $(-\lam^2\,\rho,\
+-\lam^2\,\eta)$ for the d--b and s--b triangles, respectively. Constraints from the fit are given by
+\begin{equation}
+  \label{eq:CKMApicesCKMf}
+  \begin{aligned}
+    (\rhobar, \etabar)   &= (+0.129^{+0.018}_{-0.009},\ +0.348^{+0.012}_{-0.012}) \\[0.3em]
+    (\rhosbar, \etasbar) &= (-0.0068^{+0.0005}_{-0.0010},\ -0.0185^{+0.0006}_{-0.0007})
+  \end{aligned}
+\end{equation}
+
+The UTfit Collaboration finds slightly different values for the angles with the data available by summer 2013~\cite{Bona:2005vz}:
 \begin{equation}
   \label{eq:CKMAnglesUTf}
   \gamma = (70.3\pm3.5)^\circ \qquad \beta = (22.0\pm0.9)^\circ \qquad \bs = (1.07\pm0.04)^\circ
   \ .
 \end{equation}
 
-\begin{figure}[tb]
+\begin{figure}[p]
   \centering
-  \begin{subfigure}{0.495\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[trim=5mm 2mm 3mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoeta_large}
     \caption{}
-  \end{subfigure}%
-  \hspace*{\stretch{1}}%
-  \begin{subfigure}{0.495\textwidth}
+  \end{subfigure}\\
+  \vspace*{0.03\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[trim=6mm 2mm 2mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoBsetaBs_large_global}
     \caption{}
   \end{subfigure}
   \caption{Constraints on the (a) d--b and (b) s--b unitarity triangles resulting from the global Standard-Model fit by the CKMfitter Group
            \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apices in the complex plane, which are given by the
-	   parameters (a) $\rhobar\approx\rho$ and $\etabar\approx\eta$ and (b) $\rhosbar\approx\lam^2\,\rho$ and
-           $\etasbar\approx\lam^2\,\eta$.
+	   parameters (a) $\rhobar\approx\rho$ and $\etabar\approx\eta$ and (b) $\rhosbar\approx-\lam^2\,\rho$ and
+           $\etasbar\approx-\lam^2\,\eta$.
            Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
   \label{fig:unitTriangleMeas}
 \end{figure}
