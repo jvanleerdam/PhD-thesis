@@ -7,9 +7,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The $\Bs$ meson is a QCD bound state of an anti-b quark and an s quark. Its antiparticle is the $\Bsbar$ meson (b and anti-s). The $\Bs$
-and the $\Bsbar$ are charge-neutral particles with an identical mass, which makes it possible to convert one into the other.
-Figure~\ref{fig:mixing} shows the box diagrams that dominate the transition from $\Bs$ to $\Bsbar$. There are equivalent diagrams for the
-opposite transition.
+and $\Bsbar$ are charge-neutral particles, which makes it possible to convert one into the other.  Figure~\ref{fig:mixing} shows the box
+diagrams that dominate this transition.
 \begin{figure}[hbt]
   \centering
   \begin{subfigure}{0.5\textwidth}
@@ -22,19 +21,24 @@ opposite transition.
     \input{graphics/intro/box2/box2}
     \label{fig:mixing_2}
   \end{subfigure}
-  \caption{Dominant \BsBsbar{} mixing diagrams \cite{LHCb-PAPER-2013-002}.}
+  \caption{Dominant \BsBsbar{} mixing diagrams~\cite{LHCb-PAPER-2013-002}.}
   \label{fig:mixing}
 \end{figure}
 
 Their mixing makes the $\Bs$ and $\Bsbar$ a coupled system of particles. The system comprises two eigenstates with different masses and
-mean lifetimes (see Section~\ref{sec:pheno_mix}). A particle that is created as $\Bs$ can be observed as either a $\Bs$ or a $\Bsbar$ some
-time later. As a result, the distribution of the time at which the \BsBsbar{} system decays is not a simple exponential, like it is for a
-single particle.
+mean lifetimes (see Section~\ref{sec:pheno_mix}). A particle that is created as $\Bs$ can be observed as either a $\Bs$ or a $\Bsbar$ at a
+later point in time. As a result, the distribution of the time at which the \BsBsbar{} system decays is not a simple exponential, as it is
+for a single particle. Because the expression for the probability to observe the system as a $\Bs$ or a $\Bsbar$ contains sinusoidal
+terms in time, mixing is often referred to as ``\BsBsbar{} oscillations''.
 
-The \emph{decay time} is defined as the time difference between the production and the decay of a particle in its rest frame. In
-Section~\ref{sec:pheno_mix} the exact shape of the decay-time dependence of the \BsBsbar{} system will be discussed. The applied formalism
-is common to the $\Dmes$, $\Bd$ and $\Bs$ mesons and, to some extend, also the $\kaon$ meson, which all mix with their antiparticles.
-Because the differential decay rate as a function of time contains sinusoidal terms, mixing is often referred to as ``meson oscillations''.
+The \emph{decay time} is defined as the time difference between the production and the decay of the \BsBsbar{} system in its rest frame. In
+Section~\ref{sec:pheno_mix} the exact shape of the decay-time dependence will be discussed. The applied formalism is common to the $\Dmes$,
+$\Bd$ and $\Bs$ mesons and, to some extend, also the $\kaon$ meson, which all mix with their respective antiparticles.
+
+The parameters that are used to describe the \BsBsbar{} system are the mean decay width $\Gs$, the difference between the decay widths of
+the eigenstates $\DGs$, and the difference between the masses of the eigenstates $\Dms$. By definition, the mean lifetime of the system is
+given by $\taus$\textequiv$\frac{\text{1}}{\Gs}$. The mass difference will turn out to be the frequency of the oscillations of the
+\BsBsbar{} probability in time.
 
 In the Standard Model, CP violation enters the mixing process through the CKM-matrix elements at W-boson vertices. Since for CP violation
 interfering amplitudes with different weak and strong phases are required (Equation~\ref{eq:interference}), the box diagrams from
@@ -44,19 +48,20 @@ contributions dominating and to good approximation only one weak phase from $(\V
 Whereas the diagrams in Figure~\ref{fig:mixing} contain loops with virtual particles, there are also \BsBsbar{} transitions with real
 intermediate states into which both $\Bs$ and $\Bsbar$ can decay. These amplitudes with real states interfere with the virtual amplitudes
 with different weak phases and cause \emph{CP violation in mixing}. This leads to different rates for the CP-conjugate processes
-$\Bs\to\Bsbartofbar$ and $\Bsbar\to\Bstof$, where f is a state into which only $\Bs$ can decay and $\overline{\text{f}}$ the CP-conjugate
-state into which only $\Bsbar$ can decay.
+$\Bs\to\Bsbar$ and $\Bsbar\to\Bs$.
 
-Because the virtual amplitudes dominate the mixing process, CP violation in mixing is very small for the \BsBsbar{} system. The asymmetry
+Because the virtual amplitudes dominate the mixing process, CP violation in mixing is very small for the \BsBsbar{} system.  In terms of
+Equation~\ref{eq:interference}, the dominance of virtual processes correspond to a small value of $R$, which suppresses the CP asymmetry.
+The asymmetry
 %\footnote{The asymmetry between two quantities $A$ and $B$ is defined as the ratio of their difference and their sum: $\frac{A-B}{A+B}$.}
-between the $\Bs\to\Bsbartofbar$ and $\Bsbar\to\Bstof$ processes due to CP violation in mixing is measured to be approximately one per cent
-\cite{Amhis:2012bh}. This is compatible with no CP violation given the current experimental uncertainties.
+between the $\Bs\to\Bsbar$ and $\Bsbar\to\Bs$ rates is measured to be approximately one per cent~\cite{Amhis:2012bh}. This is compatible
+with no CP violation given the current experimental uncertainties.
 
 Depending on the final state, there may also be different amplitudes contributing to the decay of the $\Bs$ meson. Also then
 interference can lead to different decay rates, in this case for the $\Bstof$ and $\Bsbartofbar$ processes. This form is termed \emph{CP
 violation in decay}.
 
-The first significant observation of CP violation in the $\Bs$ system was recently by LHCb \cite{LHCb-PAPER-2013-018}. This was a
+The first significant observation of CP violation in the $\Bs$ system was recently obtained by LHCb~\cite{LHCb-PAPER-2013-018}. This was a
 measurement of CP violation in decay for $\Bsbar\to\Kp\pimes[-]$ and $\Bs\to\Km\pimes[+]$, where an asymmetry in the decay rates of about
 30\% was found.
 
@@ -69,23 +74,24 @@ measurement of CP violation in decay for $\Bsbar\to\Kp\pimes[-]$ and $\Bs\to\Km\
   \resizebox{0.32\textwidth}{!}{\input{graphics/intro/decay.pdftex_t}}
   \caption{Interference between the $\Bstof[\fp]$ and $\Bs\to\Bsbartof[\fp]$ processes. The phases $\phimixfig$, $\phifig$, and
            $\phibarfig$ are the relevant weak phases contributing to the two decay paths from the mixing, $\Bs$ decay and $\Bsbar$ decay,
-           respectively. This is assuming no CP violation in mixing or decay.}
+           respectively. This is assuming no CP violation in mixing or CP violation in decay.}
   \label{fig:interference}
 \end{figure}
 
 An interesting situation occurs if both $\Bs$ and $\Bsbar$ can decay into the same final state $\fp$. In that case the processes
-$\Bstof[\fp]$ and $\Bs\to\Bsbartof[\fp]$ interfere, which is depicted in Figure~\ref{fig:interference}. Even without CP
-violation in mixing or decay, this interference may cause a difference between the rates of $\Bs(\to\Bsbar)\to\fp$ and
-$\Bsbar(\to\Bs)\to\overline{\fp}$. This difference is called \emph{CP violation in the interference of decays with and decays without
-mixing}.
+$\Bstof[\fp]$ and $\Bs\to\Bsbartof[\fp]$ interfere, which is depicted schematically in Figure~\ref{fig:interference}. Even without CP
+violation in mixing or CP violation in decay, the interference of these two decay paths may cause a difference between the rates of
+$\Bs(\to\Bsbar)\to\fp$ and $\Bsbar(\to\Bs)\to\overline{\fp}$. This difference is called \emph{CP violation in the interference of decays
+with and decays without mixing}.
 
 A special case of this form of CP violation is the one where $\fp$ is a CP eigenstate. In this case $\fp$ and $\overline{\fp}$ are
-identical and CP violation results in a difference between $\Bs(\to\Bsbar)\to\fp$ and $\Bsbar(\to\Bs)\to\fp$.
+identical and CP violation results in a difference between the decay rates of $\Bs(\to\Bsbar)\to\fp$ and $\Bsbar(\to\Bs)\to\fp$.
 
-An example is the decay \BdtoJpsiKS, where $\Bd$--$\Bdbar$ mixing is implied. Assuming the Standard Model, a measurement of the
-oscillations in its decay-time distribution yields the CKM angle $\beta$. This measurement was first performed by both the BaBar and Belle
-experiments \cite{Aubert:2001nu,*Abe:2001xe}. The result of combining all currently available measurements of CP violation in this decay
-\cite{Amhis:2012bh} is consistent with other measurements in the Standard Model framework \cite{Charles:2004jd,Bona:2005vz}.
+An example of such a decay is the so-called ``golden mode'' \BdtoJpsiKS. Considering only the Standard Model, the combination of CKM-matrix
+elements in $\Bd$--$\Bdbar$ mixing and the \BdtoJpsiKS{} decay makes the decay-time distribution depend on the CKM angle $\beta$. The
+measurement of $\beta$ with this decay mode by the BaBar and Belle experiments~\cite{Aubert:2001nu,*Abe:2001xe} was the first observation
+of CP violation in $\Bd$ decays. The result of combining all currently available measurements of the angle $\beta$~\cite{Amhis:2012bh} is
+consistent with the value obtained from the global Standard Model fits~\cite{Charles:2004jd,Bona:2005vz}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,14 +100,15 @@ experiments \cite{Aubert:2001nu,*Abe:2001xe}. The result of combining all curren
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The \BstoJpsiphi{} decay%
-\footnote{Charge-conjugate particles, CP-conjugate decays and neutral-meson mixing will implied, unless stated otherwise.}
-is one of the processes in the $\Bs$ system that is equivalent to the decay \BdtoJpsiKS{} in the $\Bd$ system. Its decay-time distribution
-depends on the angle $\bs$ instead of $\beta$.
+\footnote{Charge-conjugate particles, CP-conjugate decays and neutral-meson mixing are implied, unless stated otherwise.}
+of the $\Bs$ system is equivalent to the \BdtoJpsiKS{} decay of the $\Bd$ system. Its decay-time distribution depends on the angle $\bs$
+instead of $\beta$, as will be shown below.
 
-A complication arises from the fact that both the $\Jpsi$ and the $\phimesalt$ have a spin of one, which leads to three possible orbital
-angular momentum configurations of the $\Jpsiphi$ system. This results in a superposition of three CP eigenstates, whereas there is only
-one in \BdtoJpsiKS. Contributions of these states may be separated by an analysis of the $\Jpsi$ and $\phimesalt$ spin polarizations
-\cite{Dighe:1995pd,*Dighe:1998vk}, which improves the sensitivity of the CP-violation measurement.
+However, a complication arises in comparison to \BdtoJpsiKS{} from the fact that both the $\Jpsi$ and the $\phimesalt$ are spin-one mesons,
+whereas the $\KS$ is a spin-zero meson. This leads to three possible orbital angular momentum configurations of the $\Jpsiphi$ system,
+compared to one configuration for the $\Jpsi\,\KS$ system. As a result, the \BstoJpsiphi{} decay comprises three different CP eigenstates
+instead of one. The contributions of these states must be statistically separated by an analysis of the $\Jpsi$ and $\phimesalt$ spin
+polarizations for an optimal measurement~\cite{Dighe:1995pd,*Dighe:1998vk}, as will be explained in Section~\ref{sec:pheno_decay}.
 
 \begin{figure}[hbt]
   \centering
@@ -117,47 +124,58 @@ one in \BdtoJpsiKS. Contributions of these states may be separated by an analysi
     \caption{}
     \label{fig:decay_penguin}
   \end{subfigure}
-  \caption{\BstoJpsiphi{} decay: (a) tree-level diagram; (b) penguin diagram \cite{LHCb-PAPER-2013-002}. The curled/dashed line in (b)
-           represents a colour-neutral state, which can be a Z$^0$, a photon, or a colour-singlet gluon.}
+  \caption{\BstoJpsiphi{} decay: (a) tree-level diagram; (b) penguin diagram~\cite{LHCb-PAPER-2013-002}. The curled/dashed line in (b)
+           represents a colour-neutral state, which can be a Z$^0$, a photon, or colour-singlet gluons.}
   \label{fig:decay}
 \end{figure}
-Figure~\ref{fig:decay_tree} shows the dominant Standard Model contribution to the \BstoJpsiphi{} decay. This is a tree-level diagram,
-where the $\qbar[b]$ quark decays into an $\qbar[s]$ quark and a c$\qbar[c]$ pair. The amplitude for this lowest order \emph{$\btoccs$
-transition} is proportional to the CKM-matrix elements $\Vcs$ and $\Vcb[*]$.
+At quark level, the \BstoJpsiphi{} decay is a \emph{$\btoccs$ transition}. The b quark decays into an s quark and a c$\qbar[c]$ pair, where
+the s quark forms a $\phimesalt$ meson with the spectator $\qbar[s]$ quark and the c$\qbar[c]$ pair forms a $\Jpsi$ meson.
+Figure~\ref{fig:decay_tree} shows the dominant Standard Model contribution. This is a tree-level diagram, which is proportional to the
+CKM-matrix elements $\Vcs$ and $\Vcb[*]$.
+
+Since the CP-violation phenomenology is governed by \BsBsbar{} mixing and the $\btoccs$ transition, decays where the c$\qbar[c]$ and
+s$\qbar[s]$ pairs form different mesons may be used in addition to \BstoJpsiphi. An important example is the \BstoJpsipipi{}
+decay~\cite{Stone:2008ak}, from which he value of $\phis$ can be obtained with a precision that is comparable to the precision in the
+\BstoJpsiphi{} channel.
 
 The dominant contributions to the \BsBsbar{} mixing with internal top quarks (Figure~\ref{fig:mixing}) are proportional to
-$(\Vts\Vtb[*])^2$. With the diagram from Figure~\ref{fig:decay_tree} this gives a weak phase difference between decays with and decays
-without mixing of
+$(\Vts\Vtb[*])^2$. In combination with the tree-level decay, it gives a weak phase difference between decays with and decays without mixing
+of
 \begin{equation}
   \label{eq:betasCKM}
   \begin{split}
     &\arg\left[(\Vts\Vtb[*])^2\right] + \arg\left(\Vcs[*]\Vcb\right) - \arg\left(\Vcs\Vcb[*]\right) \\
     &\qquad\qquad= 2\,\arg\left(-\frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]}\right) = 2\bs
+    \ ,
   \end{split}
 \end{equation}
+where the first contribution comes from the $\Bs\to\Bsbar$ transition, the second contribution from the subsequent $\Bsbar$ decay, and the
+third contribution from the $\Bs$ decay path without mixing.
 
-Additional contributions to the mixing and decay processes can affect the estimate of the weak phase. The quantity that is observed in a
-measurement is $\phis$, which is equal to --2$\bs$ with the above assumptions.%
+Additional contributions to the mixing and decay processes can affect this estimate of the weak phase. The quantity that is observed in
+this measurement is the phase $\phis$, which is equal to --2$\bs$ with the above assumptions.%
 \footnote{There are various, often contradicting, notations of the phase difference in use. In this work $\bs$ is the CKM-triangle angle
-(Equation~\ref{eq:bsAnglesDef}) and $\phis$ the observable in the decay-time distribution (see Section~\ref{sec:pheno_obs}). If only
-dominant Standard Model contributions to both mixing and decay are considered, $\phis$ is equal to --2$\bs$.}
+(Equation~\ref{eq:bsAnglesDef}) and $\phis$ the model-independent observable (see Section~\ref{sec:pheno_obs}). If only dominant Standard
+Model contributions to both mixing and decay are considered, $\phis$ is equal to --2$\bs$.}
 
-In the Standard Model, there are the mixing diagrams with real states and also higher order contributions to the decay, like the
-\emph{penguin diagram} in Figure~\ref{fig:decay_penguin}. While the former are responsible for small Standard Model CP violation in mixing,
-these amplitudes are not expected to contribute significantly to $\phis$ (see Section~\ref{sec:pheno_obs}). Although hard to estimate,
-small contributions from penguin diagrams to the decay are expected \cite{Faller:2008gt,*Bhattacharya:2012ph}.
+In the Standard Model, corrections come from the mixing diagrams with real states and from higher order contributions to the decay.  While
+the former lead to small Standard Model CP violation in mixing, these amplitudes are not expected to contribute significantly to the value
+of $\phis$ (see Section~\ref{sec:pheno_obs}). An example of an additional contribution to the decay is the \emph{penguin diagram} in
+Figure~\ref{fig:decay_penguin}. Although hard to estimate, small contributions from penguin diagrams to the decay are
+expected~\cite{Faller:2008gt,*Bhattacharya:2012ph}.
 
-Beyond the Standard Model, modification of CP violation can come from new contributions to both the (virtual) \BsBsbar{} mixing process
-\cite{Nir:1990hj,*Silverman:1998uj,*Ball:1999yi,*Dunietz:2000cr,Buras:2009if} and the $\Bs$ decay \cite{Chiang:2009ev,*Datta:2009fk}. In
-previous measurements it was assumed that these contributions would be large, but only affecting $\phis$. This enables the use of a
-simplified model for the decay-time distribution. It is now known that effects from non-Standard Model physics are small, which creates a
-need for a more precise measurement that makes less assumptions. The model to be used in such a measurement is discussed in
-Chapter~\ref{chap:pheno}.
+Beyond the Standard Model, CP violation can arise from new contributions to the \BsBsbar{} mixing
+process~\cite{Nir:1990hj,*Silverman:1998uj,*Ball:1999yi,*Dunietz:2000cr,Buras:2009if} as well as the $\Bs$
+decay~\cite{Chiang:2009ev,*Datta:2009fk}. If the effect of such contributions on the value of $\phis$ is large compared to the Standard
+Model value, the corresponding deviation from the Standard Model can be revealed by the measurement of a large non-zero value of $\phis$.
+In this case an exact estimate of the Standard Model value is not required and subleading penguin contributions can be neglected. In
+addition, a large deviation could be detected by a low-statistics measurement, which would not have the precision to distinguish between
+the cases of no CP violation, the Standard Model, and a small deviation from the Standard Model.
 
-Measurements of $\phis$ with the \BstoJpsiphi{} decay have been performed previously by the D0 \cite{Abazov:2011ry}, CDF
-\cite{Aaltonen:2012ie}, \atlas{} \cite{Aad:2012kba,*ATLAS:2013nla}, and LHCb \cite{LHCb-PAPER-2013-002} experiments. The measurements and
-their combination \cite{Amhis:2012bh} are compatible with no CP violation and also with the value of $\bs$ from the Standard Model fit
-(Equations~\ref{eq:CKMAnglesCKMf} and \ref{eq:CKMAnglesUTf}). The LHCb measurement yielded
+Measurements of $\phis$ with the \BstoJpsiphi{} decay have been performed by the D0~\cite{Abazov:2011ry}, CDF~\cite{Aaltonen:2012ie},
+\atlas~\cite{Aad:2012kba,*ATLAS:2013nla}, and LHCb~\cite{LHCb-PAPER-2013-002} experiments. LHCb also measured $\phis$ in the
+\BstoJpsipipi{} decay channel~\cite{LHCb-PAPER-2014-019}. All measurements and their combination~\cite{Amhis:2012bh} are compatible with no
+CP violation and also with the value of $\bs$ from the Standard Model fit. The LHCb measurement in the \BstoJpsiphi{} channel yielded
 \begin{equation}
   \label{eq:phis1fb}
   \phis\text{\texteq+0.07\textpm0.09$\,$(stat.)\textpm0.01$\,$(syst.)~~rad\ ,}
@@ -166,14 +184,14 @@ where the first uncertainty is statistical and the second systematic. This value
 --2$\bs$\texteq--0.0368$^\text{+0.0013}_\text{--0.0014}$\unitsp{}rad (see Equation~\ref{eq:CKMAnglesCKMf} and
 reference~\cite{Charles:2004jd}).
 
-A measurement of the decay-time distribution is not only sensitive to the phase $\phis$, but also to the lifetime parameters of the
-\BsBsbar{} system. The decay-width average ($\Gs$\textequiv$\frac{\text{1}}{\taus}$, where $\taus$ is the mean lifetime) and difference
-($\DGs$) of the two eigenstates were measured by D0, CDF, \atlas, and LHCb and also by CMS \cite{CMS:2012pca}.
+A measurement of the decay-time distribution in \BstoJpsiphi{} is not only sensitive to the phase $\phis$, but also to the lifetime
+parameters of the \BsBsbar{} system. The previously mentioned CP violation measurements yielded estimates of $\Gs$ and $\DGs$ as well.
+These parameters were also estimated by CMS in a measurement that assumed no CP violation~\cite{CMS:2012pca}.
 
-In the Standard Model the parameter $\Gs$ is expected to be equal to the $\Bd$ decay width up to relative corrections of the order of
-\tenpow{--3} \cite{Lenz:2006hd,*Lenz:2011ti}. $\Gd$ is measured to be 0.6583\textpm0.0030\unitsp\invps{} \cite{Amhis:2012bh}. A prediction
-of the decay-width difference $\DGs$ yields 0.087\textpm0.021\unitsp\invps{} \cite{Lenz:2006hd,*Lenz:2011ti}. The measurements of $\Gs$ and
-$\DGs$ and their combination \cite{Amhis:2012bh} are compatible with these predictions. The estimates from the LHCb measurement are given
+In the Standard Model the parameter $\Gs$ is expected to be equal to the $\Bd$ decay width, $\Gd$, up to relative corrections of the order
+of \tenpow{--3}~\cite{Lenz:2006hd,*Lenz:2011ti}. $\Gd$ is measured to be 0.6583\textpm0.0030\unitsp\invps~\cite{Amhis:2012bh}. A prediction
+of the decay-width difference $\DGs$ yields 0.087\textpm0.021\unitsp\invps~\cite{Lenz:2006hd,*Lenz:2011ti}. The measurements of $\Gs$ and
+$\DGs$ and their combination~\cite{Amhis:2012bh} are compatible with these predictions. The estimates from the LHCb measurement are given
 by
 \begin{subequations}
   \label{eq:width1fb}
@@ -187,18 +205,35 @@ by
 
 \begin{figure}[tb]
   \centering
-  \includegraphics[width=0.7\textwidth]{graphics/intro/hfag_spr2014_DGsphis_comb-crop}
-  \caption{Combination of $\phis$ (here represented as $\phisccs$) and $\DGs$ measurements by HFAG \cite{Amhis:2012bh}.
-           The estimates at 68\% confidence level by the different experiments are shown by the dashed contours.
+  \includegraphics[width=0.8\textwidth]{graphics/intro/hfag_spr2014_DGsphis_comb-crop}
+  \caption{Combination of $\phis$ (here represented as $\phisccs$) and $\DGs$ measurements by HFAG~\cite{Amhis:2012bh}.
+           The estimates at 68\% confidence level (CL) by the different experiments are shown by the dashed contours.
            Note that the LHCb contour is a combination of measurements in the \BstoJpsiphi{} and \BstoJpsipipi{} decays.
            The combined 68\% confidence region is shown by the shaded area and the Standard Model prediction by the vertical bar.}
   \label{fig:phisDGs}
 \end{figure}
+A graphical representation of the status of $\phis$ and $\DGs$ measurements in the spring of 2014 by the Heavy Flavour Averaging Group
+(HFAG) is shown in Figure~\ref{fig:phisDGs}. The LHCb contribution is a combination of the \BstoJpsiphi{} and \BstoJpsipipi{} results with
+data from 2011, which form roughly one third of the currently available dataset. The 68\% confidence-level (CL) contour of the combined
+result is consistent with the region that represents the Standard Model prediction.
 
-A graphical representation of the current status of $\phis$ and $\DGs$ measurements Heavy Flavour Averaging Group (HFAG) is shown in
-Figure~\ref{fig:phisDGs}. Apart from the four \BstoJpsiphi{} measurements, also a $\phis$ measurement with the \BstoJpsipipi{} decay by
-LHCb was included in the combination that is shown in this figure. The 68\% confidence-level (CL) contour of the combined result is
-consistent with the region that represents the Standard Model prediction.
+As it is clear from Figure~\ref{fig:phisDGs} that possible effects from non-Standard Model physics on $\phis$ and $\DGs$ cannot be large,
+more precise measurements are needed to probe them. With the currently available LHCb data, combination of the $\phis$ estimates from the
+two decay channels is expected to reach a precision of approximately 0.04~rad, which is roughly equal to the value of the Standard Model
+prediction. An improvement of this precision by an order of magnitude is expected with future LHCb data.
+
+For a measurement with this precision, effects have to be taken into account that have not been considered for previous measurements. A
+precise estimate of Standard Model CP violation is required, which also includes higher order penguin contributions to the $\btoccs$
+transition. A problem arises from the fact that these additional contributions affect the value of $\phis$ differently for the
+\BstoJpsiphi{} and \BstoJpsipipi{} decays and for the different intermediate states that contribute to the
+decays~\cite{Faller:2008gt,*Bhattacharya:2012ph}. Moreover, physics beyond the Standard Model may also affect all intermediate states
+differently~\cite{Chiang:2009ev,*Datta:2009fk}. These effects need to be considered not only in theoretical predictions, but also in
+measurements.
+
+In the \BstoJpsiphi{} measurement that is presented in this thesis the dependence of CP violation on the intermediate state is taken into
+account for the first time. The value of $\phis$ is estimated separately for each of the CP eigenstates in the decay, which is possible
+if the contributions of the states are statistically separated. The decay model for this measurement is presented in
+Chapter~\ref{chap:pheno}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,23 +242,23 @@ consistent with the region that represents the Standard Model prediction.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The $\Jpsiphi$ system is unstable and only its decay products can be detected. There are many possibilities for both the $\Jpsi$ and
-$\phimesalt$ mesons to decay \cite{PDG2012}. The only final state that will be considered here is $\mumu\,\KK$, where the muon pair
-originates from the $\Jpsi$ decay and the kaon pair from the $\phimesalt$ decay. All four particles can be detected efficiently by the LHCb
-detector (see Section~\ref{sec:intro_LHCb}). Processes equivalent to \BstoJpsimumuphiKK{} often have larger decay rates, but lead to more
-complicated final states that cannot be detected as efficiently.
+$\phimesalt$ mesons to decay~\cite{PDG2012}. The only final state that will be considered here is $\mumu\,\KK$, where the muon pair
+originates from the $\Jpsi$ decay and the kaon pair from the $\phimesalt$ decay. All four particles can be detected efficiently and with
+low background by the LHCb detector, as will be described in Section~\ref{sec:intro_LHCb}. This makes \BstoJpsimumuphiKK{} the optimal
+channel to measure CP violation in $\Bs$ decays with a $\btoccs$ transition.
 
 Since the $\mumuKK$ final state can also be reached through resonances other than the $\Jpsi$ and the $\phimesalt$, interference with other
-processes needs to be considered. To optimize for $\Jpsiphi$, a region in kinematic phase space is selected where this intermediate state
-dominates.
+processes needs to be considered. To optimize for the detection of the $\Jpsi$ and $\phimesalt$ resonances, a region in kinematic phase
+space is selected where this intermediate state dominates.
 
-The measured invariant mass of the muon pair is required to be between 3.03 and 3.15~\GeV{} (see also Section~\ref{sec:exp_selBkg}).%
-\footnote{The unit of energy used in particle physics is the \emph{electronvolt} (eV), which is approximately equal to
-1.6\tenpowmult{--19}~J. Derived units for momentum and mass are \eVc{} and \eV, respectively, where $c$ is the speed of light.}
+The measured invariant mass of the muon pair is required to be between 3.03 and 3.15~\GeV{} (see also Section~\ref{sec:exp_selBkg}).
+%\footnote{The unit of energy used in particle physics is the \emph{electronvolt} (eV), which is approximately equal to
+%1.6\tenpowmult{--19}~J. Derived units for momentum and mass are \eVc{} and \eV, respectively, where $c$ is the speed of light.}
 This restriction is assumed to select only those \BstomumuKK{} decays with muons coming from a $\Jpsi$, which has a mass of approximately
 3.10~\GeV{}~\cite{PDG2012}.
 
 Also the invariant-mass range of the $\KK$ pair is restricted, but there the situation is more complicated. An analysis of the resonant
-components in the $\KK$ system \cite{LHCb-PAPER-2012-040} has shown that there is a mass region where the $\phimes$ dominates, but other
+components in the $\KK$ system~\cite{LHCb-PAPER-2012-040} has shown that there is a mass region where the $\phimes$ dominates, but other
 contributions cannot be neglected.
 
 \begin{figure}[tb]
@@ -233,38 +268,44 @@ contributions cannot be neglected.
   %  \draw[red] (-0.2047\textwidth,0.04\textwidth) -- (-0.2047\textwidth,0.52\textwidth);
   %\end{tikzpicture}
 
-  \includegraphics[width=0.7\textwidth]{graphics/intro/KKComponents}
-  \caption{$\KK$-mass spectrum in \BstoJpsiKK{} decays \cite{LHCb-PAPER-2012-040}. The black points represent a histogram of decay
+  \includegraphics[width=0.85\textwidth]{graphics/intro/KKComponents}
+  \caption{$\KK$-mass spectrum in \BstoJpsiKK{} decays~\cite{LHCb-PAPER-2012-040}. The black points represent a histogram of decay
            candidates.
            %, where the size of the error bar shows the fluctuation expected from a Poisson distribution of the number of entries
            %in each mass bin.
            A model of the mass distribution is shown as the blue curve. The largest contributions to the distribution
            come from the $\phimes$, $\ftwop$, and $\fzero$ resonances, which are shown as the magenta,
-           brown, and green long-dashed lines, respectively. Other resonances are shown as the thin, black curves and a non-resonant
-           contribution as the dashed, cyan curve. Contributions from interference are represented by the dotted-dashed, black line. The
-           small dotted, black and dashed, red contributions are backgrounds of four particles that do not originate from a \BstoJpsiKK{}
-           decay.}
+           brown, and green long-dashed lines, respectively. Notice that a large part of the $\phimes$ peak is not visible,
+           because of the truncated vertical scale.
+           Other resonances are shown as the thin, black curves and a non-resonant
+           contribution as the dashed, cyan curve. Contributions from interferences between the resonances are represented
+           by the dotted-dashed, black line. The small dotted, black and dashed, red contributions are backgrounds of four
+           particles that do not originate from a \BstoJpsiKK{} decay.}
            %The region to the left of the vertical, red line is dominated by the $\phimes$.}
   \label{fig:KKComponents}
 \end{figure}
 
 The $\KK$-mass spectrum in \BstoJpsiKK{} decays is shown in Figure~\ref{fig:KKComponents}. The contribution of the $\phimes$ is represented
-by the dashed, magenta curve. Note that part of the $\phimesalt$ peak is not visible because of the truncated vertical scale.
+by the dashed, magenta curve. Notice that part this peak is not visible, because of the truncated vertical scale.
 
 For the \BstoJpsiphi{} CP-violation measurement, only $\KK$ pairs with a mass between 0.99 and 1.05~\GeV{} are selected. In this region the
 $\phimes$ clearly dominates, but there are also contributions from the $\fzero$ and from $\KK$ pairs that do not originate from the decay
 of a resonance.
 
-The $\KK$ system is in a state of zero orbital angular momentum for both of the additional contributions and hence they are referred to as
-the \emph{$\KK$ S-wave}. Because the $\Jpsiphi$ and $\KK$ S-wave processes are observed simultaneously in a measurement, the analysed decay
-is \BstoJpsiKK.
+The $\KK$ system is in a state of zero orbital angular momentum for both of the additional non-$\phimesalt$ contributions and hence they
+are referred to as the \emph{$\KK$ S-wave}. Because the $\Jpsiphi$ and $\KK$ S-wave processes are observed simultaneously in a measurement,
+the analysed decay is referred to as \BstoJpsiKK.
+
+In addition to separating the three components of the \BstoJpsiphi{} process, these components are also separated from the two S-wave
+contributions. The latter could be accomplished on a statistical basis with an analysis of the $\KK$-mass distribution. However, this
+distribution does not discriminate between the CP eigenstates of the \BstoJpsiphi{} decay, so a different approach is chosen.
 
 Because the $\phimes$ is a spin-one particle, the orbital angular momentum of the $\KK$ system has a P-wave configuration for the
 $\Jpsiphi$ intermediate state. This makes the spatial distributions of the final-state particles different from the S-wave distributions,
-which enables a statistical separation of these two components based on variables other than the $\KK$ mass. An analysis of the spatial
-distributions also separates the three CP eigenstates of the $\Jpsiphi$ system, which is not possible with the $\KK$ mass.
+which enables a statistical separation of the two components. An analysis of the spatial distributions also separates P-wave
+spin-polarization states and hence the three CP eigenstates of the $\Jpsiphi$ system.
 
-The directions of the final-state particles are specified with respect to the directions of the $\mumu$ and $\KK$ momenta in the
-centre-of-mass system of the $\Bs$ meson (see Section~\ref{sec:pheno_angles}). This is done with three \emph{decay angles}, which can be
-computed given the four-momenta of the final-state particles. These angles are included in the model of the decay, in addition to the decay
-time.
+The directions of the final-state particles are specified with respect to the momentum directions of the $\mumu$ and $\KK$ systems in the
+centre-of-mass system of the $\Bs$ meson. This is done with three \emph{decay angles}, which can be computed given the four-momenta of the
+final-state particles. These angles are included in the model of the decay, in addition to the decay time. The formalism for the angular
+dependence of the decay is described in detail in Section~\ref{sec:pheno_angles} and Appendix~\ref{chap:angularDecay}.
