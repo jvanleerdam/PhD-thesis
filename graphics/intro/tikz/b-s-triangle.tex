@@ -1,4 +1,6 @@
 \documentclass[11pt]{standalone}
+\usepackage{color}
+\usepackage[cmyk]{xcolor}
 \usepackage{amsmath}
 \usepackage{xltxtra}
 \usepackage{libertine}
@@ -21,6 +23,7 @@
 \def\etasbar{\ensuremath{{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}_\text{s}}}
 
 \begin{document}
+\sffamily
 \begin{tikzpicture}[scale=4]
   \begin{scope}[>=latex]
     \draw [name path=real,black,->] (-180:0.15) -- ( 0:1.15) node[below] {\(\Re\)}; % Real axis
@@ -40,9 +43,9 @@
     \draw [black,thick] (origin) -- (unity) -- (apex) -- cycle; % triangle
 
     % vertex labels
-    \path (origin) +(0.09,0) node [above] {\footnotesize{(\(0\),\(0\))}};
-    \path (unity)            node [above] {\footnotesize{(\(1\),\(0\))}};
-    \path (apex)             node [below] {\footnotesize{(\(\rhosbar\),\(\etasbar\))}};
+    \path (origin) +(0.09,0) node [above] {\footnotesize{(0,0)}};
+    \path (unity)            node [above] {\footnotesize{(1,0)}};
+    \path (apex)             node [below] {\footnotesize{(\rhosbar,\etasbar)}};
 
     % side labels
     \path (unity)  -- node[below,sloped,midway]   {\(\frac{\Vts\Vtbst}{\Vcs\Vcbst}\)} (apex);

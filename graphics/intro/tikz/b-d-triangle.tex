@@ -1,4 +1,6 @@
 \documentclass[11pt]{standalone}
+\usepackage{color}
+\usepackage[cmyk]{xcolor}
 \usepackage{amsmath}
 \usepackage{xltxtra}
 \usepackage{libertine}
@@ -21,6 +23,7 @@
 \def\etabar{\ensuremath{\kern 0.07em \overline{\kern -0.07em \eta \kern 0.05em}\kern -0.05em}}
 
 \begin{document}
+\sffamily
 \begin{tikzpicture}[scale=4]
   \begin{scope}[>=latex]
     \draw [name path=real,black,->] (-180:0.15) -- ( 0:1.15) node[below] {\(\Re\)}; % Real axis
@@ -43,9 +46,9 @@
     %\draw [black,thick,->] (apex)   -- (origin);
 
     % vertex labels
-    \path (origin) +(-0.1,0) node [below] {\footnotesize{(\(0\),\(0\))}};
-    \path (unity)            node [below] {\footnotesize{(\(1\),\(0\))}};
-    \path (apex)             node [above] {\footnotesize{(\(\rhobar\),\(\etabar\))}};
+    \path (origin) +(-0.1,0) node [below] {\footnotesize{(0,0)}};
+    \path (unity)            node [below] {\footnotesize{(1,0)}};
+    \path (apex)             node [above] {\footnotesize{(\rhobar,\etabar)}};
 
     % side labels
     \path (unity)  -- node[above,sloped,midway]   {\(\frac{\Vtd\Vtbst}{\Vcd\Vcbst}\)} (apex);
