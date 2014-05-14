@@ -1,5 +1,5 @@
 \begin{picture}(0,0)%
-\includegraphics{graphics/intro/decay.pdf}%
+\includegraphics{graphics/intro/decay_CMYK.pdf}%
 \end{picture}%
 \setlength{\unitlength}{4144sp}%
 %
@@ -14,12 +14,12 @@
 }}}}
 \put(5761,-736){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\ffig$}%
 }}}}
-\put(4501,-2041){\makebox(0,0)[b]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Bsbar$}%
+\put(4501,-421){\makebox(0,0)[b]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$-\phifig$}%
 }}}}
-\put(4501,-421){\makebox(0,0)[b]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,.82}$-\phifig$}%
+\put(5581,-1771){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$-\phibarfig$}%
 }}}}
 \put(3331,-1771){\makebox(0,0)[rb]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$-\phimixfig$}%
 }}}}
-\put(5581,-1771){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,.82}$-\phibarfig$}%
+\put(4501,-2041){\makebox(0,0)[b]{\smash{{\SetFigFont{25}{30.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Bsbar$}%
 }}}}
 \end{picture}%
