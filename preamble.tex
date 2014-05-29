@@ -71,6 +71,7 @@
 \renewcommand{\texttimes}{\unitsp×\unitsp}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
+\newcommand{\micron}{μm}
 \newcommand{\invfb}{fb\textsuperscript{--1}}
 \newcommand{\invps}{ps\textsuperscript{--1}}
 \newcommand{\eV}{eV/$c$\textsuperscript{2}}
@@ -89,9 +90,13 @@
 \newcommand{\lmu}[1][]{\text{μ}^\text{#1}}
 \newcommand{\ltau}[1][]{\text{τ}^\text{#1}}
 \newcommand{\nul}[1][]{\text{ν}_\text{#1}}
+\newcommand{\nulbar}[1][]{\kern 0.04em \overline{\kern -0.04em \nul[#1] \kern -0.25em} \kern 0.25em}
 \newcommand{\nue}{\nul[e]}
 \newcommand{\numu}{\nul[μ]}
 \newcommand{\nutau}{\nul[τ]}
+\newcommand{\nuebar}{\nulbar[e]}
+\newcommand{\numubar}{\nulbar[μ]}
+\newcommand{\nutaubar}{\nulbar[τ]}
 \newcommand{\qbar}[1][b]{\kern 0.06em \overline{\kern -0.06em \text{#1} \kern -0.04em} \kern 0.04em}
 \newcommand{\ccs}{\text{c}\qbar[c]\text{s}}
 \newcommand{\btoccs}{\text{b}\to\ccs}
@@ -102,6 +107,8 @@
 \newcommand{\fzero}{\text{f}_\text{0}\text{(980)}}
 \newcommand{\ftwop}{\text{f}_\text{2}^{\,\prime}\text{(1525)}}
 \newcommand{\Jpsi}{\text{J}/\text{ψ}}
+\newcommand{\psitwoS}{\text{ψ(2S)}}
+\newcommand{\upsS}[1][1]{\text{Y(#1S)}}
 \newcommand{\kaon}[1][0]{\text{K}^\text{#1}}
 \newcommand{\Kp}{\kaon[+]}
 \newcommand{\Km}{\kaon[--]}
