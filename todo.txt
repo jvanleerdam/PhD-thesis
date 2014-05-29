@@ -1,5 +1,10 @@
 defense:
 * BSM models that affect phi_s
+* why is CPV time dependent? weak phase -2beta_s always seems to be there... (this is only weak phase)
+* understand resolution plots in intro
 
 thesis:
 * interference terms in KK-mass plot?!
+* b production mechanism
+  - how much bb and single b
+  - contributions from which bb diagrams?
