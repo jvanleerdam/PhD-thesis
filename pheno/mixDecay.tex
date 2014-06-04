@@ -41,12 +41,16 @@ corresponding anti-particle. This results in equal diagonal elements of both the
       - \tfrac{i}{2} \begin{pmatrix} \Gs & \gmix \\ \gmix^* & \Gs \end{pmatrix}
     \ ,
 \end{equation}
-where $\ms$ is the $\Bs$ mass and $\Gs=\frac{1}{\taus}$ the $\Bs$ decay width, with $\taus$ the $\Bs$ mean lifetime.
+where $\ms$ is the $\Bs$ mass and $\Gs$ the $\Bs$ decay width.
 
 Mixing of the $\Bs$ and $\Bsbar$ states is governed by the off-diagonal elements of the Hamiltonian. The parameter $\mmix$ is the
-\emph{dispersive} part of $H_{12}$. This part originates from contributions of virtual intermediate states to the mixing process.
-$\gmix$ is the \emph{absorptive} part, which originates from contributions of real states into which both $\Bs$ and $\Bsbar$ can decay.
-% say something about the relative magnitudes M12, Gamma12 (and also relative to Ms and Gammas?)
+\emph{dispersive} part of $H_{12}$. This part originates from contributions of virtual intermediate states to the mixing process and is
+dominated by the diagrams with virtual top quarks (Figure~\ref{fig:mixing} on page~\pageref{fig:mixing}). $\gmix$ is the \emph{absorptive}
+part, which originates from contributions of real states into which both $\Bs$ and $\Bsbar$ can decay.
+
+The absorptive part of the mixing process is dominated by tree-level $\btoccs$ transitions~\cite{Lenz:2006hd,*Lenz:2011ti} and, therefore,
+effects of physics beyond the Standard Model in $\gmix$ are expected to be small. The virtual process that dominates $\mmix$, on the other
+hand, can be affected significantly and may lead to a deviation in the phase $\phis$.
 
 To solve Equation~\ref{eq:timeEvolSchr} and obtain expressions for the time evolution of the $\Bs$ and $\Bsbar$ states, the system is
 decoupled with a transformation of the flavour eigenstates that diagonalizes the Hamiltonian matrix. The decoupled states are \emph{mass
@@ -86,6 +90,7 @@ Equations~\ref{eq:timeEvolMassStatesHamil1} and \ref{eq:timeEvolMassStatesHamil2
 \tfrac{i}{4}\,(\GL+\GH)$ and $\sqrt{H_{12} H_{21}} = \tfrac{1}{2}\,(\mH-\mL) + \tfrac{i}{4}\,(\GL-\GH)$. Using also
 Equation~\ref{eq:timeEvolHamil}:
 \begin{subequations}
+  \label{eq:DmsDGsDef}
   \begin{alignat}{2}
     \ms   &\,=\,&     \Re(H_0) &\,=\, \tfrac{1}{2}\,(\mH+\mL)     \\
     \Gs &\,=\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GL+\GH)
@@ -97,6 +102,26 @@ Equation~\ref{eq:timeEvolHamil}:
              &= 4\,\Im\!\left(\sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}\right)
   \end{align}
 \end{subequations}
+With these definitions of $\Dms$ and $\DGs$, the expression for $\sqrt{H_{12} H_{21}}$ reads
+\begin{equation}
+  \label{eq:HHmixSq}
+  \begin{gathered}
+    \sqrt{H_{12} H_{21}} = \sqrt{(\mmix-\tfrac{i}{2}\,\gmix)\,(\mmix^*-\tfrac{i}{2}\,\gmix^*)}
+                          = \tfrac{1}{2}\,\Dms + \tfrac{i}{4}\,\DGs \\
+    4\,|\mmix|^2 - |\gmix|^2 - 4i\,\Re(\mmix\,\gmix^*) = \Dms^2 - \tfrac{1}{4}\,\DGs^2 + i\,\Dms\,\DGs \ ,
+  \end{gathered}
+\end{equation}
+which yields the relations
+\begin{subequations}
+  \label{eq:DmsDGsMmixGmix}
+  \begin{align}
+    \label{eq:DmsDGsMmixGmix_1}
+    \Dms^2 - \tfrac{1}{4}\,\DGs^2 &= 4\,|\mmix|^2 - |\gmix|^2 \\[0.5em]
+    \label{eq:DmsDGsMmixGmix_2}
+    \Dms\,\DGs &= -4\,\Re(\mmix\,\gmix^*) = 4\,|\mmix|\,|\gmix|\,\cos\phimix \ ,
+  \end{align}
+\end{subequations}
+where the phase difference between $\mmix$ and $\gmix$ is defined as $\phimix\text{\textequiv}\arg\big(\text{--}\frac{\mmix}{\gmix}\big)$.
 
 To find the transformation between flavour eigenstates and mass eigenstates, the state of Equation~\ref{eq:timeEvolBBbarState} is expressed
 in matrix form and the transformation of Equation~\ref{eq:timeEvolTrans} is applied:
@@ -128,6 +153,7 @@ expressed as
 From Equations~\ref{eq:timeEvolMassTrans} and \ref{eq:timeEvolTransInv} it now follows that $\alpha=\beta$ and, also with
 Equation~\ref{eq:timeEvolHamil},
 \begin{equation}
+  \label{eq:qpDef}
   \qp = -\sqrt{\frac{H_{21}}{H_{12}}} = -\sqrt{\frac{\mmix^*-\tfrac{i}{2}\,\gmix^*}{\mmix-\tfrac{i}{2}\,\gmix}}
   \quad .
 \end{equation}
@@ -201,7 +227,7 @@ four possible combinations of initial and final states are given by
   \end{alignedat}
 \end{equation}
 
-Note that the amplitudes for the processes with final state $\fbarst$ have the same structure as the amplitudes for the processes with
+Notice that the amplitudes for the processes with final state $\fbarst$ have the same structure as the amplitudes for the processes with
 final state $\fst$. $\mathcal{A}(\Bsbartofbar)$ and $\mathcal{A}(\Bstofbar)$ can be obtained from $\mathcal{A}(\Bstof)$ and
 $\mathcal{A}(\Bsbartof)$, respectively, by interchanging $p$ and $q$, replacing $\Af$ by $\Abarfbar$ and replacing $\Abarf$ by $\Afbar$.
 The amplitude for $\Bsbartof$\ \ ($\Bstofbar$) is obtained from the amplitude for $\Bstof$\ \ ($\Bsbartofbar$) by interchanging $g_+$ and $g_-$
@@ -302,8 +328,9 @@ With Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayDiffRateLambda}, the di
   \end{align}
 \end{subequations}
 where the variable $\qf$ takes the value $+1$ for a $\Bs$ initial state and $-1$ for a $\Bsbar$ initial state and the parameter for CP
-violation in mixing $\Cm$ is given by
+violation in mixing, $\Cm$, is given by
 \begin{equation}
+  \label{eq:CmDef}
   \Cm \equiv \frac{1-\qpAbsAlt^2}{1+\qpAbsAlt^2}
   \ .
 \end{equation}
@@ -311,16 +338,115 @@ violation in mixing $\Cm$ is given by
 For flavour-specific final states, where $\Bsst$ can only decay into $\fst$ and $\Bsbarst$ only into $\fbarst$, the parameters $\lamf$ and
 $\lamfbar$ vanish. In that case $\Df$, $\Sf$, $\Dfbar$ and $\Sfbar$ are equal to zero and $\Cf$ and $\Cfbar$ are equal to one. Only the
 $\cDGs$ and $\cDms$ terms then remain in the expressions for the differential decay rates. An example of this case are the CP-conjugate
-processes $\Bs \to \text{D}_\text{s}^-\, \text{π}^+$ and $\Bsbar \to \text{D}_\text{s}^+\, \text{π}^-$.
+processes \BstoDsmpip{} and \BsbartoDsppim.
 
-Another special case is a CP self-conjugate final state, for which $\fst$ and $\fbarst$ are the same. Equations~\ref{eq:mixDecayDiffRateB}
-and \ref{eq:mixDecayDiffRateBbar} then contain the same information and either one of them can be used to describe the decay. The final
-state $\Jpsi\,\KK$ is an example of this case. The structure of the amplitude and the differential decay rate for the \BstoJpsiKK{} decay
-is discussed in Section~\ref{sec:pheno_decay}.
+Another special case is a CP self-conjugate final state, for which $\fst$ and $\fbarst$ are the same. As a result,
+$\Afbar\text{\texteq}\Af$, $\Abarfbar\text{\texteq}\Abarf$, $\lamfbar\text{\texteq}\frac{\text{1}}{\lamf}$,
+$\Cfbar\text{\texteq}\text{--}\Cf$, $\Dfbar\text{\texteq}\text{+}\Df$, and $\Sfbar\text{\texteq}\text{--}\Sf$, which makes
+Equations~\ref{eq:mixDecayDiffRateB} and \ref{eq:mixDecayDiffRateBbar} identical. The final state $\Jpsi\,\KK$ is an example of this case.
+The structure of the amplitude and the differential decay rate for the \BstoJpsiKK{} decay is discussed in Section~\ref{sec:pheno_decay}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CP-Violation Observables}
-\label{sec:pheno_obs}
+\label{sec:pheno_mix_obs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% lambda, expression for phi_s, q/p --> arg(M_12), arg(-M_12/G_12), Deltam, DeltaGamma, a_fs, magnitude of G_12 / M_12 (< 0.01), ...
+All three types of CP violation discussed in Section~\ref{subsec:intro_Jpsiphi_Bs} affect the differential decay rates in
+Equation~\ref{eq:mixDecayDiffRateAll}. Notice that the expressions are CP symmetric if $\Cm\text{\texteq0}$,
+$|\Abarfbar|\text{\texteq}|\Af|$, and $\lamfbar\text{\texteq}\lamf$. In that case the decay rates of $\Bstof$ and $\Bsbartofbar$ are equal
+and the decay rates of $\Bsbartof$ and $\Bstofbar$ are equal.
+
+CP violation in mixing would give rise to a $\qpAbsAlt$ that is not equal to one. As a result, $\Cm$ would have a nonzero value and the
+magnitudes of $\lamf$ and $\lamfbar$ would be different. CP violation in decay leads to $|\Af|\text{\textneq}|\Abarfbar|$ and/or
+$|\Abarf|\text{\textneq}|\Afbar|$, which also gives a difference in $\lamfAbs$ and $\lamfbarAbs$.
+
+Although the phases of the ratio $\qp$ and the amplitudes are not directly observable, the phases of $\lamf$ and $\lamfbar$ are. CP
+violation in the interference of decays with and without mixing gives $\lamf$ and $\lamfbar$ different phases, resulting in
+$\Df\text{\textneq}\Dfbar$ and $\Sf\text{\textneq}\Sfbar$.
+
+For a CP self-conjugate final state, $\lamf$ and $\lamfbar$ can only be equal if they are real and equal to one, as a consequence of the
+relation $\lamfbar\text{\texteq}\frac{\text{1}}{\lamf}$. In other words, CP symmetry is violated if $|\lamf|\text{\textneq1}$ or
+$\arg(\lamf)\text{\textneq0}$ in this case. For \BstoJpsiKK, the phase of $\lamf$ is given by $\phis$, which is defined as
+$\phis\text{\textequiv--}\arg(\lamf)$.
+
+The CP-violation observables $\phis$ and $\Cm$ are related to the parameters $\Dms$ and $\DGs$ through the \BsBsbar{} mixing process. The
+parameters $\qp$, $\Dms$, and $\DGs$ are all defined by the off-diagonal elements of the mixing Hamiltonian matrix, as shown in
+Equations~\ref{eq:DmsDGsDef}--\ref{eq:DmsDGsMmixGmix} and \ref{eq:qpDef}. The parameter values enable an approximation of these
+expressions, which simplifies the relations between the parameters.
+
+The parameters $\Dms$ and $\DGs$ are measured to be 17.768\textpm0.024\unitsp\invps~\cite{LHCb-PAPER-2013-006} and
+0.091\textpm0.011\unitsp\invps~\cite{Amhis:2012bh}, respectively, and hence $|\DGs|\textll\Dms$. In the Standard Model, the magnitude of
+$\gmix$ is predicted to be roughly half the value of $\DGs$. This corresponds to approximately 0.04\unitsp\invps, using the predicted value
+of $\DGs$~\cite{Lenz:2006hd,*Lenz:2011ti}. Since effects from potential contributions beyond the Standard Model on $\gmix$ are expected to
+be relatively small, also the relation $|\gmix|\textll\Dms$ holds.
+
+Using Equation~\ref{eq:DmsDGsMmixGmix_1} with the above parameter values, the magnitude of $\mmix$ is approximated by
+$|\mmix|$\textapprox$\tfrac{\text{1}}{\text{2}}\Dms$ and consequently $|\gmix|\textll|\mmix|$. This last inequality enables an expansion in
+the ratio $\gmmixAlt$\textapprox5\tenpowmult{--3}:
+\begin{subequations}
+  \label{eq:qpDmsDGsApprox}
+  \begin{align}
+    \label{eq:qpDmsDGsApprox_qp}
+    \qp  &= -e^{i\phim}\, \bigg[ 1 - \tfrac{1}{2}\gmmix\sin\phimix + \tfrac{1}{8}\gmmix^2\sin^2\phimix \nonumber\\
+         &\qquad\qquad\qquad\qquad\qquad+ \tfrac{i}{4}\gmmix^2\sin2\phimix + \mathcal{O}\bigg(\gmmix^3\bigg) \bigg] \\[0.5em]
+    \label{eq:qpDmsDGsApprox_Dms}
+    \Dms &= 2\,|\mmix|\,            \bigg[ 1 - \tfrac{1}{8}\gmmix^2\sin^2\phimix + \mathcal{O}\bigg(\gmmix^4\bigg) \bigg] \\[0.5em]
+    \label{eq:qpDmsDGsApprox_DGs}
+    \DGs &= 2\,|\gmix|\cos\phimix\, \bigg[ 1 + \tfrac{1}{8}\gmmix^2\sin^2\phimix  + \mathcal{O}\bigg(\gmmix^4\bigg)\bigg] \ ,
+  \end{align}
+\end{subequations}
+where $\phim\text{\textequiv}\arg(\mmix)$ and $\phimix\text{\textequiv}\arg\big(\text{--}\frac{\mmix}{\gmix}\big)$. Notice that the product
+of the third order $\Dms$ and $\DGs$ approximations is equal to $\text{4}\,|\mmix||\gmix|\cos\phimix$ at that order, as required by the
+relation in Equation~\ref{eq:DmsDGsMmixGmix_2}.
+
+The phase $\phim$ is convention dependent and cannot be observed directly, but contributes to the phases of $\lamf$ and $\lamfbar$ (see
+Equations~\ref{eq:mixDecayLamfDef}, \ref{eq:mixDecayLamfbarDef}, and \ref{eq:qpDmsDGsApprox_qp}). In a first order approximation in
+$\gmmixAlt$, this is the only mixing-induced contribution to these phases, since other complex phases only enter at
+$\mathcal{O}\big(\gmmixAlt^\text{2}\big)$. Consequently, only (the phase of) $\mmix$ is expected to contribute significantly to CP
+violation in the interference of decays with and without mixing and not $\gmix$.
+
+In the Standard Model, $\phim$ arises from the phases of the $\Vts$ and $\Vtb$ CKM-matrix elements in the dominant contribution to the
+mixing process. In combination with the phases in the \BstoJpsiKK{} decay process, this leads to $\phis$\textapprox$\text{--2}\bs$, as
+shown in Equation~\ref{eq:betasCKM} on page~\pageref{eq:betasCKM}.
+
+The phase difference $\phimix$ is directly observable and governs CP violation in mixing. The predicted value in the Standard Model is
+$\phimix$\texteq0.0038\textpm0.0010\unitsp\invps~\cite{Lenz:2006hd,*Lenz:2011ti}. With Equations~\ref{eq:CmDef} and
+\ref{eq:qpDmsDGsApprox_qp}, the CP asymmetry $\Cm$ is approximated at first order by
+\begin{equation}
+  \label{eq:CmApprox}
+  \Cm \equiv \frac{1-\qpAbsAlt^2}{1+\qpAbsAlt^2} \approx \tfrac{1}{2}\gmmix\sin\phimix \ .
+\end{equation}
+This relates to the asymmetry between the $\Bsbartof$ and $\Bstofbar$ rates in flavour-specific decays, $\afs$, as
+\begin{equation}
+  \label{eq:afsDef}
+  \afs \equiv \frac{\pqAbsAlt^2-\qpAbsAlt^2}{\pqAbsAlt^2+\qpAbsAlt^2} = \frac{(1+\Cm)^2 - (1-\Cm)^2}{(1+\Cm)^2 + (1-\Cm)^2} \approx 2\,\Cm
+  \ ,
+\end{equation}
+which is predicted to be (1.9\textpm0.3)\tenpowmult{--5} in the Standard Model. With Equations~\ref{eq:qpDmsDGsApprox}, \ref{eq:CmApprox},
+and \ref{eq:afsDef}, an approximate relation between $\afs$, $\Dms$, and $\DGs$ can be derived:
+\begin{equation}
+  \label{eq:afsDmsDGs}
+  \afs \approx \gmmix\sin\phimix \approx \frac{\DGs}{\Dms}\,\tan\phimix \ .
+\end{equation}
+
+Under the assumption that physics beyond the Standard Model only affects $\mmix$ and not $\gmix$, deviations in $\phim$ and $\phimix$ are
+equal. Also assuming that CP violation in \BstoJpsiKK{} is fully induced by mixing ($\mmix$), the same deviation can also be found in
+$\phis$.
+
+With these assumptions, Equation~\ref{eq:afsDmsDGs} can be used as a constraint in the $\phis$--$\DGs$ plane, given the measured
+values of $\afs$ and $\Dms$ and with the difference $\phis$--$\phimix$ fixed to the Standard Model prediction. The resulting 68\% and 95\%
+confidence-level contours are shown in Figure~\ref{fig:phisDGs_asls}, together with the 68\% confidence-level contour from the combination
+of direct measurements (Figure~\ref{fig:phisDGs} on page~\pageref{fig:phisDGs}). With the current precision, the measurements are
+compatible at 95\% confidence level.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{graphics/pheno/hfag_PDG2014_DGsphis_asls-crop-cmyk}
+  \caption{Constraints in the $\phis$--$\DGs$ plane from measurements of CP violation in mixing ($\afs$, here represented as
+	   $\mathcal{A}_\text{SL}^\text{s}$) by HFAG~\cite{Amhis:2012bh}, under the assumptions mentioned in the text.
+           Both the 68\% (green) and 95\% (orange) confidence-level contours are shown.
+           The confidence-level (CL) contour from the combination of direct $\phis$ (here represented as $\phisccs$) and $\DGs$
+           measurements is shown as the grey area (see also Figure~\ref{fig:phisDGs} on page~\pageref{fig:phisDGs}).
+           The Standard Model prediction is represented by the black bar.}
+  \label{fig:phisDGs_asls}
+\end{figure}

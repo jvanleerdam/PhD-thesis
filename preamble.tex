@@ -65,6 +65,8 @@
 
 \newcommand{\unitsp}{$\,$}
 \newcommand{\texteq}{\unitsp=\unitsp}
+\renewcommand{\textneq}{\unitsp≠\unitsp}
+\renewcommand{\textll}{\unitsp≪\unitsp}
 \renewcommand{\textequiv}{\unitsp≡\unitsp}
 \renewcommand{\textapprox}{\unitsp≈\unitsp}
 \renewcommand{\textpm}{\unitsp±\unitsp}
@@ -116,6 +118,7 @@
 \newcommand{\Kst}{\text{K}^{\ast \kern 0.01em \text{0}}}
 \newcommand{\Kstbar}{\kern 0.06em \overline{\kern -0.06em \Kst \kern -0.44em} \kern 0.44em}
 \newcommand{\Dmes}[1][0]{\text{D}^\text{#1}}
+\newcommand{\Dsmes}[1][0]{\text{D}_\text{s}^\text{#1}}
 \newcommand{\Bd}{\text{B}^\text{0}}
 \newcommand{\Bdbar}{\kern 0.06em \overline{\kern -0.06em \Bd \kern -0.32em} \kern 0.32em}
 \newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
@@ -166,6 +169,8 @@
 \newcommand{\BdtoJpsiKstKpi}{$\Bd \to \Jpsi\,\Kst(\to\Kpi)$}
 \newcommand{\BdtoJpsiKpi}{$\Bd \to \Jpsi\,\Kpi$}
 \newcommand{\LbtoJpsipK}{$\Lb \to \Jpsi\,\prot\,\Km$}
+\newcommand{\BstoDsmpip}{$\Bs \to \Dsmes[--]\,\pimes[+]$}
+\newcommand{\BsbartoDsppim}{$\Bsbar \to \Dsmes[+]\,\pimes[--]$}
 
 \newcommand{\VCKM}[1][\phantom{\dagger}]{V^{#1}_\text{CKM}}
 \newcommand{\lam}{\lambda}
@@ -188,10 +193,12 @@
 \newcommand{\bs}{\beta_\text{s}}
 \newcommand{\gs}{\gamma_\text{s}}
 
-\newcommand{\mmix}{M_{12}}
-\newcommand{\gmix}{\Gamma_{12}}
-\newcommand{\phim}{\phi_\text{M}}
-\newcommand{\phimix}{\phi_{12}}
+\newcommand{\mmix}{M_\text{12}}
+\newcommand{\gmix}{\Gamma_\text{12}}
+\newcommand{\gmmix}{\left|\frac{\gmix}{\mmix}\right|}
+\newcommand{\gmmixAlt}{\big|\tfrac{\gmix}{\mmix}\big|}
+\newcommand{\phim}{\phi_M}
+\newcommand{\phimix}{\phi_\text{12}}
 \newcommand{\phis}{\phi_\text{s}}
 \newcommand{\phisccs}{\phi_\text{s}^{\ccs}}
 \newcommand{\phisav}{\phis^\text{av}}
@@ -274,9 +281,12 @@
 \newcommand{\qtSS}{{\qt^\text{SS}}}
 \newcommand{\qp}{\frac{q}{p}}
 \newcommand{\pq}{\frac{p}{q}}
+\newcommand{\qpAlt}{\tfrac{q}{p}}
+\newcommand{\pqAlt}{\tfrac{p}{q}}
 \newcommand{\qpAbs}{\left|\qp\right|}
-\newcommand{\qpAbsAlt}{\big|\qp\big|}
+\newcommand{\qpAbsAlt}{\big|\qpAlt\big|}
 \newcommand{\pqAbs}{\left|\pq\right|}
+\newcommand{\pqAbsAlt}{\big|\pqAlt\big|}
 \newcommand{\Af}[1][\text{f}]{\mathcal{A}_{#1}}
 \newcommand{\Abarf}[1][\text{f}]{\kern 0.23em \overline{\kern -0.23em \mathcal{A}}_{#1}}
 \newcommand{\Afbar}[1][\text{f}]{\Af[\overline{#1}]}
@@ -287,6 +297,7 @@
 \newcommand{\AstAt}{A_i(t)^*A_j(t)}
 \newcommand{\AstAArg}[2]{A_{#1}^*A_{#2}}
 \newcommand{\AstAtArg}[2]{A_{#1}(t)^*A_{#2}(t)}
+\newcommand{\afs}{a_\text{fs}}
 \newcommand{\Cm}{C_\text{m}}
 \newcommand{\Dm}{D_\text{m}}
 \newcommand{\Sm}{S_\text{m}}
