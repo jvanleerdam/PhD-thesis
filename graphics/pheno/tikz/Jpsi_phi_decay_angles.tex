@@ -1,0 +1,95 @@
+\documentclass{article}
+% \usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows,intersections}
+\usepackage{tikz-3dplot}
+% \usepackage{tikz3d}
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+
+\begin{document}
+\tikzstyle{every picture}=[scale=3,>=latex',thick]
+
+%% choose perspective: 70 degree
+\tdplotsetmaincoords{70}{120}
+
+\begin{tikzpicture}[tdplot_main_coords]
+  \begin{scope}[shift={(0,-1,0)}]
+    %% xy plane (skewed to emulate parallax)
+    \draw [dashed] (-1.25,-1,0) -- (-1.3,1,0) -- (1.3,1,0) -- (1.25,-1,0) -- cycle;
+    %% Kpi
+    \draw [<->] (1,-0.6,0) node [left] {\(K^+\)} -- (-1,0,0) node [right] {\(\pi^-\)};
+    \fill (0,-0.3,0) circle (0.7pt) node [anchor=north] {\(K\pi\)};
+    \tdplotdrawarc{(0,-0.3,0)}{0.3}{-90}{atan(-0.3/1)}{anchor=east}{\(\theta_K\)}
+  \end{scope}
+
+  \tdplotsetrotatedcoords{0}{40}{0}
+  \begin{scope}[shift={(0,1,0)},tdplot_rotated_coords]
+    %% rotated plane (skewed to emulate parallax)
+    \filldraw [dashed,fill=white,fill opacity=0.7] (-1.1,-1,0) -- (-1.13,1,0) -- (1.13,1,0) -- (1.1,-1,0) -- cycle;
+    %% J/psi
+    \draw [<->] (1,-0.3,0) node [right] {\(\mu^-\)} -- (-1,0.7,0) node [left] {\(\mu^+\)};
+    \fill (0,0.2,0) circle (0.7pt) node [anchor=north west] {\(J/\psi\)};
+    \tdplotdrawarc[tdplot_rotated_coords]{(0,0.2,0)}{0.3}{90}{90+atan(1/0.5)}{anchor=west}{\(\theta_l\)}
+  \end{scope}
+
+  %% Bd
+  \draw [dotted] (0,-2,0) -- (0,2,0);
+  \draw [<->] (0,-0.7,0) -- (0,0.7,0);
+  \fill (0,0,0) circle (1pt) node [anchor=south east] {\(B_d^0\)};
+
+  %% angle
+  \tdplotsetthetaplanecoords{0}
+  \tdplotdrawarc[tdplot_rotated_coords,->]{(0,0,0)}{0.7}{90}{130}{anchor=north east}{\(\phi_{hel}\)}
+  % \tdplotgetpolarcoords{ang2 |- 0,0}{ang2 -| 0,0}{} ;
+  % \tdplotgetpolarcoords{1}{0}{{cos(20)}}
+\end{tikzpicture}
+
+\begin{tikzpicture}[tdplot_main_coords]
+  %% J/psi (below)
+  \tdplotsetrotatedcoords{0}{40}{0} % rotated decay planes
+  \tdplottransformrotmain{1}{-0.5}{0} % transform main to rotated coordinates (mu-)
+  \begin{scope}[shift={(0,1.2,0)}]
+    \coordinate (mu1) at (\tdplotresx, \tdplotresy, \tdplotresz);
+    \coordinate (mu1xy) at (\tdplotresx, \tdplotresy, 0);
+    \draw [<-] (mu1) node [below] {\(\mu^-\)} -- (0,0);
+    \draw [dashed] (mu1) -- (mu1xy) -- (0,0);
+  \end{scope}
+
+  % FIXME: parallax
+  \begin{scope}[shift={(0,-1,0)}]
+    %% xy plane (skewed to emulate parallax)
+    \filldraw [dashed,fill=white,fill opacity=0.7] (-1.25,-1,0) -- (-1.35,3,0) -- (1.35,3,0) -- (1.25,-1,0) -- cycle;
+    %% Kpi
+    \draw [<->] (1,-0.6,0) node [left] {\(K^+\)} -- (-1,0,0) node [right] {\(\pi^-\)};
+    \fill (0,-0.3,0) circle (0.7pt) node [anchor=north] {\(K\pi\)};
+    \tdplotdrawarc{(0,-0.3,0)}{0.3}{-90}{atan(-0.3/1)}{anchor=east}{\(\psi_{tr}\)}
+  \end{scope}
+
+  %% J/psi (above)
+  \tdplottransformrotmain{-1}{0.5}{0} % transform main to rotated coordinates (mu+)
+  \begin{scope}[shift={(0,1.2,0)}]
+    \coordinate (mu2) at (\tdplotresx, \tdplotresy, \tdplotresz);
+    \coordinate (mu2xy) at (\tdplotresx, \tdplotresy, 0);
+    \draw [->] (0,0) -- (mu2) node [above] {\(\mu^+\)};
+    \fill (0,0,0) circle (0.7pt) node [anchor=south east] {\(J/\psi\)};
+    \draw [dashed] (mu2) -- (mu2xy) -- (0,0);
+    \draw [dotted,->] (0,0) -- (0,0,0.8) node [above] {z};
+    % \draw [dotted,->] (0,0) -- (0,0.8,0) node [above] {y};
+    % \draw [dotted,->] (0,0) -- (0.8,0,0) node [above] {x};
+
+    \tdplotsetthetaplanecoords{atan(\tdplotresy/\tdplotresx)}
+    \tdplotdrawarc[tdplot_rotated_coords]{(0,0,0)}{0.3}{0}{atan(-sqrt((\tdplotresx)^2 + (\tdplotresy)^2)/\tdplotresz)}{above}{\(\theta_{tr}\)}
+    \tdplotdrawarc{(0,0,0)}{0.3}{-90}{180+atan(\tdplotresy/\tdplotresx)}{right}{\(\phi_{tr}\)}
+  \end{scope}
+
+  %% Bd
+  \draw [dotted] (0,-2,0) -- (0,2,0);
+  \draw [<->] (0,-0.7,0) -- (0,0.7,0);
+  \fill (0,0,0) circle (1pt) node [anchor=south east] {\(B_d^0\)};
+\end{tikzpicture}
+
+\end{document}

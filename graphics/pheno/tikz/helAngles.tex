@@ -1,0 +1,74 @@
+\documentclass[11pt]{standalone}
+\usepackage{color}
+\usepackage[cmyk]{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{libertine}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows,intersections}
+\usepackage{tikz-3dplot}
+% \usepackage{tikz3d}
+
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5pt}%
+
+\newcommand{\lmu}[1][]{\text{μ}^\text{#1}}
+\newcommand{\kaon}[1][0]{\text{K}^\text{#1}}
+\newcommand{\Kp}{\kaon[+]}
+\newcommand{\Km}{\kaon[--]}
+\newcommand{\KK}{\Kp\Km}
+\newcommand{\Jpsi}{\text{J}/\text{ψ}}
+\newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
+\newcommand{\thetaK}{\theta_{\text{K}}}
+\newcommand{\thetal}{\theta_{\text{μ}}}
+\newcommand{\cthetaK}{\cos\thetaK}
+\newcommand{\cthetal}{\cos\thetal}
+\newcommand{\phihel}{\phi_{\text{h}}}
+\newcommand{\psitr}{\psi_{\text{tr}}}
+\newcommand{\thetatr}{\theta_{\text{tr}}}
+\newcommand{\cpsitr}{\cos\psitr}
+\newcommand{\cthetatr}{\cos\thetatr}
+\newcommand{\phitr}{\phi_{\text{tr}}}
+
+\begin{document}
+\sffamily
+\tikzstyle{every picture}=[scale=3,>=latex',thick]
+
+%% choose perspective: 70 degree
+\tdplotsetmaincoords{70}{120}
+
+\begin{tikzpicture}[tdplot_main_coords]
+  \begin{scope}[shift={(0,-1,0)}]
+    %% xy plane (skewed to emulate parallax)
+    \draw [dashed] (-1.25,-1,0) -- (-1.3,1,0) -- (1.3,1,0) -- (1.25,-1,0) -- cycle;
+    %% Kpi
+    \draw [<->] (1,-0.6,0) node [left] {$\Kp$} -- (-1,0,0) node [right] {$\Km$};
+    \fill (0,-0.3,0) circle (0.7pt) node [anchor=north] {};
+    \tdplotdrawarc{(0,-0.3,0)}{0.3}{-90}{atan(-0.3/1)}{anchor=east}{$\thetaK$}
+  \end{scope}
+
+  \tdplotsetrotatedcoords{0}{40}{0}
+  \begin{scope}[shift={(0,1,0)},tdplot_rotated_coords]
+    %% rotated plane (skewed to emulate parallax)
+    \filldraw [dashed,fill=white,fill opacity=0.7] (-1.1,-1,0) -- (-1.13,1,0) -- (1.13,1,0) -- (1.1,-1,0) -- cycle;
+    %% J/psi
+    \draw [<->] (1,-0.3,0) node [left] {$\lmu[--]$} -- (-1,0.7,0) node [right] {$\lmu[+]$};
+    \fill (0,0.2,0) circle (0.7pt) node [anchor=north west] {$\Jpsi$};
+    \tdplotdrawarc[tdplot_rotated_coords]{(0,0.2,0)}{0.3}{90}{90+atan(1/0.5)}{anchor=west}{$\thetal$}
+  \end{scope}
+
+  %% Bd
+  \draw [dotted] (0,-2,0) -- (0,2,0);
+  \draw [<->] (0,-0.7,0) -- (0,0.7,0);
+  \fill (0,0,0) circle (1pt) node [anchor=south east] {$\Bs$};
+
+  %% angle
+  \tdplotsetthetaplanecoords{0}
+  \tdplotdrawarc[tdplot_rotated_coords,->]{(0,0,0)}{0.7}{90}{130}{anchor=north east}{$\phihel$}
+  % \tdplotgetpolarcoords{ang2 |- 0,0}{ang2 -| 0,0}{} ;
+  % \tdplotgetpolarcoords{1}{0}{{cos(20)}}
+\end{tikzpicture}
+
+\end{document}
