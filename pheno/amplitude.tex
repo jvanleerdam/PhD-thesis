@@ -55,15 +55,27 @@ expressed as
   \label{eq:diffRateAngles}
   \ud\Gamma \propto |\pJpsi|\,|\pK|\, |\mathcal{A}(\Bstof)|^2\, \ud\mKK\, \ud\cthetaK\, \ud\cthetal\, \ud\phihel \ .
 \end{equation}
+The factors $|\pJpsi|$ and $|\pK|$ depend on the $\KK$ invariant mass, but not on the decay angles and can be absorbed in the
+$\mKK$-dependent part of $|\mathcal{A}(\Bstof)|^2$ (see Section~\ref{sec:pheno_KKMass}).
 
 The squared amplitude for the \BstoJpsiKK{} process can be obtained by working out expressions for $|\Af|^2$, $|\Abarf|^2$ and
 $\Af^*\,\Abarf$ and combining these with the decay time dependence of Equation~\ref{eq:mixDecayDiffRate}. See Reference~\cite{Zhang:2012zk}
 for an example of this approach for $\text{B}_q^\text{0}\to\Jpsihh$ processes in general.
 
 However, it is often more convenient to order terms in the expression for the differential decay rate by intermediate resonant or
-angular-momentum state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For this
-approach it is necessary to go back to the expression for the $\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay
-amplitudes:
+angular-momentum state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For the
+CP-violation analysis, a set of intermediate CP eigenstates is used to describe the decay.
+
+The \BstoJpsiphi{} process is the decay of a spin-zero particle into two spin-one particles, which gives three intermediate
+angular-momentum states. Describing the decay in terms of CP eigenstates, there is a state where the polarization vectors of the $\Jpsi$
+and the $\phimesalt$ point along the helicity axis and two states where the vectors are transverse with respect to the helicity axis. The
+former polarization is called \emph{longitudinal} and is indicated with ``0''. The two transverse polarizations are \emph{parallel}
+($\parallel$) and \emph{perpendicular} ($\perp$), indicating the relative orientations of the two vectors in the transverse plane. The
+\BstoJpsiKK{} S-wave gives a fourth intermediate state, indicated with ``S''. The longitudinal and parallel states are even under a CP
+transformation, while the perpendicular and S-wave states are odd.
+
+To derive an expression for the squared amplitude in terms of intermediate states it is necessary to go back to the expression for the
+$\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay amplitudes:
 \begin{equation}
   \mathcal{A}(\Bstof) \propto g_+\, \Af + \qp\, g_-\, \Abarf = g_+\, \sum_i\Af[i] + \qp\, g_-\, \sum_j\Abarf[j]
   \ ,
@@ -89,9 +101,26 @@ accordance with $\lamf$ (Equation~\ref{eq:mixDecayLamfDef}):
 \begin{equation}
   \label{eq:amplitudeLamiDef}
   \lamf[i]\equiv\qp\frac{\Abari}{\Ai}
-  \ .
 \end{equation}
+The amplitude for the $\Bsbartof$ decay is obtained by interchanging $g_+$ and $g_-$ and multiplying by a factor $\pq$ (see
+Equation~\ref{eq:mixDecayAmps}). Notice that this only affects the decay-time part of Equation~\ref{eq:amplitudeAmpLami}, i.e. the factor
+$\timeAmp$.
+
+For intermediate CP eigenstates, the parameter $\lamf[i]$ can be expressed as
+\begin{equation}
+  \lamf[i] = \eta_i\,\lamfAbs[i]\,e^{-i\,\phisi} \ ,
+\end{equation}
+where $\eta_i$\texteq\textpm1 is the CP eigenvalue of the state, $\lamfAbs[i]$\texteq$\qpAbsAlt\big|\frac{\Abari}{\Ai}\big|$, and
+$\phisi$\textequiv--$\arg\big(\frac{1}{\eta_i}\lamf[i]\big)$. If CP symmetry is violated by the same amount for all intermediate states,
+the combination $\frac{1}{\eta_i}\lamf[i]$ does not depend on the state and $\phisi\to\phis$.
 
 Squaring the magnitude of $\mathcal{A}(\Bstof)$ gives an expression that contains the products of the terms in
-Equation~\ref{eq:amplitudeAmpLami} of the form $\Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]\, \angAmp^*\angAmp[j]\, \mKKAmp^*\mKKAmp[j]$. The
-dependence on decay time, decay angles, and invariant $\KK$ mass of the resulting expression are discussed in the following sections.
+Equation~\ref{eq:amplitudeAmpLami} of the form $\Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]\, \angAmp^*\angAmp[j]\, \mKKAmp^*\mKKAmp[j]$.
+Combining the interference terms with indices $ij$ and $ji$ gives
+\begin{equation}
+  \label{eq:sqAmp}
+  |\mathcal{A}(\Bstof)|^2
+    \propto \sum_i |\Ai\,\timeAmp\,\angAmp\,\mKKAmp|^2
+      + \sum_{i\neq j} \Re( \Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]\, \angAmp^*\angAmp[j]\, \mKKAmp^*\mKKAmp[j] )
+\end{equation}
+The dependence on decay time, decay angles, and invariant $\KK$ mass of this expression are discussed in the following sections.
