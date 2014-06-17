@@ -69,7 +69,8 @@
 \renewcommand{\textll}{\unitsp≪\unitsp}
 \renewcommand{\textequiv}{\unitsp≡\unitsp}
 \renewcommand{\textapprox}{\unitsp≈\unitsp}
-\renewcommand{\textpm}{\unitsp±\unitsp}
+\newcommand{\textplus}{\unitsp+\unitsp}
+\renewcommand{\textminus}{\unitsp--\unitsp}
 \renewcommand{\texttimes}{\unitsp×\unitsp}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
@@ -200,13 +201,14 @@
 \newcommand{\phim}{\phi_M}
 \newcommand{\phimix}{\phi_\text{12}}
 \newcommand{\phis}{\phi_\text{s}}
-\newcommand{\phisccs}{\phi_\text{s}^{\ccs}}
-\newcommand{\phisav}{\phis^\text{av}}
+\newcommand{\phisi}[1][i]{\phi_\text{s}^{#1}}
+\newcommand{\phisccs}{\phisi[\ccs]}
+\newcommand{\phisav}{\phisi[\text{av}]}
 \newcommand{\Delphispara}{\Delta\phis^\parallel}
 \newcommand{\Delphisperp}{\Delta\phis^\perp}
 \newcommand{\Delphisperpp}{\Delta\phis^{\perp\prime}}
 \newcommand{\DelphisS}{\Delta\phis^\text{S}}
-\newcommand{\lamf}[1][\text{f}]{\lambda_\text{#1}}
+\newcommand{\lamf}[1][\text{f}]{\lambda_{#1}}
 \newcommand{\lamfAbs}[1][\text{f}]{|{\lamf[#1]}|}
 \newcommand{\lamfSq}[1][\text{f}]{{\lamfAbs[#1]}^2}
 \newcommand{\lamfbar}[1][\text{f}]{{\kern 0.06em \overline{\kern -0.06em \lambda \kern -0.03em}\kern 0.03em}_{\overline{\text{#1}}}}
@@ -259,19 +261,21 @@
 \newcommand{\Azero}{A_0}
 \newcommand{\Apar}{A_\parallel}
 \newcommand{\Aperp}{A_\perp}
+\newcommand{\magAv}[1][\Ai]{#1^{\text{CP}}}
+\newcommand{\magAvConj}[1][\Ai]{{\magAv[#1]}^\ast}
 \newcommand{\magzero}{|\Azero|}
 \newcommand{\magzeroSq}{\magzero^2}
-\newcommand{\magzeroAvSq}{\Azero^{\text{av}2}}
+\newcommand{\magzeroAvSq}{|\magAv[\Azero]|^2}
 \newcommand{\magpar}{|\Apar|}
 \newcommand{\magparSq}{\magpar^2}
-\newcommand{\magparAvSq}{\Apar^{\text{av}2}}
+\newcommand{\magparAvSq}{|\magAv[\Apar]|^2}
 \newcommand{\magperp}{|\Aperp|}
 \newcommand{\magperpSq}{\magperp^2}
-\newcommand{\magperpAvSq}{\Aperp^{\text{av}2}}
+\newcommand{\magperpAvSq}{|\magAv[\Aperp]|^2}
 \newcommand{\magS}[1][]{|A_\text{S#1}|}
-\newcommand{\magSAvSq}[1][]{\AS[#1]^{\text{av}2}}
+\newcommand{\magSAvSq}[1][]{|\magAv[\AS[#1]]|^2}
 \newcommand{\FS}[1][]{F_\text{S#1}}
-\newcommand{\FSAv}[1][]{\FS[#1]^\text{av}}
+\newcommand{\FSAv}[1][]{\FS[#1]^\text{CP}}
 \newcommand{\delzero}{\delta_0}
 \newcommand{\delpar}{\delta_\parallel}
 \newcommand{\delperp}{\delta_\perp}
@@ -281,8 +285,8 @@
 \newcommand{\delSperp}[1][]{\delS[#1]\,\text{--}\,\delperp}
 \newcommand{\CSP}{C_\text{SP}}
 
-\newcommand{\qf}{{q_\text{flav}}}
-\newcommand{\qt}{q_\text{tag}}
+\newcommand{\qf}{{q_\text{f}}}
+\newcommand{\qt}{q_\text{t}}
 \newcommand{\qtOS}{{\qt^\text{OS}}}
 \newcommand{\qtSS}{{\qt^\text{SS}}}
 \newcommand{\qp}{\frac{q}{p}}
@@ -315,6 +319,7 @@
 \newcommand{\Sfbar}[1][\text{f}]{S_{\overline{#1}}}
 \newcommand{\Ppl}{P^+_{ij}}
 \newcommand{\Pmn}{P^-_{ij}}
+\newcommand{\Ppm}{P^\pm_{ij}}
 \newcommand{\Pre}{P^\Re_{ij}}
 \newcommand{\Pim}{P^\Im_{ij}}
 \newcommand{\Hpl}{H^+_{ij}}

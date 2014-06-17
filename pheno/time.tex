@@ -1,0 +1,106 @@
+\section{Decay-Time Distribution}
+\label{sec:pheno_time}
+
+The distribution in decay time follows from the products $\timeAmp^*\timeAmp[j]$ (Equation~\ref{eq:amplitudeAmpLami}). With $|g_\pm|^2$ and
+$g_+^*\,g_-$ from Equation~\ref{eq:mixDecayQpSq}, these products are given by
+\begin{align}
+  \timeAmp^*\timeAmp[j]
+  &=\left[ |g_+|^2 + \lamf[i]^*\,\lamf[j]\, |g_-|^2 + \lamf[i]^*\, (g_+^*\,g_-)^* + \lamf[j]\, g_+^*\,g_- \right]
+      \nonumber \\
+  &=\tfrac{1}{2}\, \eGst\, \Big[    (1+\lamf[i]^*\lamf[j]) \, \cDGs
+                                +   (1-\lamf[i]^*\lamf[j]) \, \cDms \\
+  &\qquad\qquad\quad            -   (\lamf[i]^* + \lamf[j])\,   \sDGs
+                                - i (\lamf[i]^* - \lamf[j])\,   \sDms \Big] \ . \nonumber
+\end{align}
+Defining
+\begin{equation}
+  \label{eq:CDSPolarDep}
+  \begin{aligned}
+    \Cf[ij]^\pm    &\equiv \frac{1\pm\lamf[i]^*\lamf[j]}{\sqrt{(1+\lamfSq[i])(1+\lamfSq[j])}} \\
+    \qquad \Df[ij] &\equiv \frac{-    (\lamf[i]^* + \lamf[j])}{\sqrt{(1+\lamfSq[i])(1+\lamfSq[j])}} \\
+    \qquad \Sf[ij] &\equiv \frac{+i\, (\lamf[i]^* - \lamf[j])}{\sqrt{(1+\lamfSq[i])(1+\lamfSq[j])}}
+  \end{aligned}
+\end{equation}
+in accordance with Equation~\ref{eq:mixDecayCDS} and a ``CP-average'' decay amplitude
+\begin{equation}
+  \label{eq:CPAvAmp}
+  \begin{gathered}
+    \magAv \equiv \tfrac{1}{\sqrt{2}}\, \Ai\, \sqrt{1+\lamfSq[i]} \\
+    \left|\magAv\right|^2
+      = \tfrac{1}{2}\, |\Ai|^2\, \left(1 + \lamfSq\right)
+      = \tfrac{1}{2} \left(|\Ai|^2 + \qpAbsAlt^2\,|\Abari|^2\right) \ ,
+  \end{gathered}
+\end{equation}
+the combination $\Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]$ can be expressed as
+\begin{equation}
+  \label{eq:timeDep}
+  \begin{aligned}
+    \Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]
+      = \magAvConj&\magAv[{\Ai[j]}]\, \eGst \\
+        \times\Big[ &\Cf[ij]^+\,\cDGs + \Cf[ij]^-\,\cDms \\
+                    &+ \Df[ij]\,\sDGs - \Sf[ij]\,\sDms \Big] \ .
+  \end{aligned}
+\end{equation}
+
+In general, the coefficients $\Cf[ij]^\pm$, $\Df[ij]$, and $\Sf[ij]$ are complex numbers and hence the terms
+$\Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]$ have both real and imaginary parts. Notice that if $i=j$, the coefficients are real:
+\begin{equation}
+  \begin{alignedat}{2}
+    \Cf[ii]^+ &= 1                                                    &  \Cf[ii]^- &= \frac{1-\lamfSq[i]}{1+\lamfSq[i]} \\
+    \Df[ii]   &= -\frac{2\,\Re(\lamf[i])}{1+\lamfSq[i]} \qquad\qquad  &  \Sf[ii]   &= \frac{2\,\Im(\lamf[i])}{1+\lamfSq[i]} \ ,
+  \end{alignedat}
+\end{equation}
+as required by the relation $\Ai^*\Ai^{\phantom{*}}\,\timeAmp^*\timeAmp^{\phantom{*}} = |\Ai\,\timeAmp|^2$.
+
+The equivalent expression for the $\Bsbartof$ decay is obtained by changing the signs of the $\cDms$ and $\sDms$ terms and multiplying
+by a factor $\pqAbsAlt^\text{2}$ (see Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayQpSq}). Using the definitions of $\qf$ and
+$\Cm$ from Equations~\ref{eq:mixDecayDiffRateAll} and \ref{eq:CmDef}, the time dependence of the $\Bstof$ and $\Bsbartof$ decays is
+given by
+\begin{equation}
+  \label{eq:timeqfDep}
+  \begin{aligned}
+    \Ai^*\Ai[j]\,\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}} =
+      \magAvConj&\magAv[{\Ai[j]}]\, \frac{1-\qf\,\Cm}{1+\Cm}\, \eGst \\
+          \times\Big[ &\Cf[ij]^+\,\cDGs + \qf\,\Cf[ij]^-\,\cDms \\
+                      &+ \Df[ij]\,\sDGs - \qf\,\Sf[ij]\,\sDms \Big] \ .
+  \end{aligned}
+\end{equation}
+
+The coefficients of the time-dependent functions in Equation~\ref{eq:timeqfDep} are functions of $\lamf[i]$ and hence contain both the
+effects of CP violation in mixing and CP violation in decay. These two effects can be separated with an alternative parameterization.
+Defining
+\begin{equation}
+  \label{eq:decayRho}
+  \begin{gathered}
+    \Ppm \equiv \frac{1}{2} \left[ 1 \pm \left(\frac{\Abari}{\Ai}\right)^{\!*}\, \frac{\Abari[j]}{\Ai[j]} \right] \\[0.6em]
+    \Pre \equiv \frac{1}{2} \left[ \left(\frac{\Abari}{\Ai}\right)^{\!*} + \frac{\Abari[j]}{\Ai[j]} \right] \quad\quad
+    \Pim \equiv \frac{i}{2} \left[ \left(\frac{\Abari}{\Ai}\right)^{\!*} - \frac{\Abari[j]}{\Ai[j]} \right]
+  \end{gathered}
+\end{equation}
+and
+\begin{equation}
+  \label{eq:mixCDS}
+  \Cm \equiv \frac{1-\qpAbsAlt^2}{1+\qpAbsAlt^2}
+  \qquad \Dm \equiv -\frac{2\,\Re\big(\qpAlt\big)}{1+\qpAbsAlt^2}
+  \qquad \Sm \equiv  \frac{2\,\Im\big(\qpAlt\big)}{1+\qpAbsAlt^2}
+  \ ,
+\end{equation}
+the product $\Ai^*\Ai[j]\,\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}}$ can be expressed as
+\begin{equation}
+  \label{eq:timeqfDepSep}
+  \begin{aligned}
+    \Ai^*\Ai[j]\,\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}} =
+      \Ai^*\Ai[j]\, &\frac{1-\qf\,\Cm}{1-\Cm^2}\, \eGst \\
+        \times\Big[ &(\Ppl+\Pmn\,\Cm)\,\cDGs \\
+                    &\quad + \qf\,(\Pmn+\Ppl\,\Cm)\,\cDms \\
+                    &\quad\quad + (\Pre\,\Dm+\Pim\,\Sm)\,\sDGs \\
+                    &\quad\quad\quad + \qf\,(\Pim\,\Dm-\Pre\,\Sm)\,\sDms \Big] \ .
+  \end{aligned}
+\end{equation}
+
+Since the phases of $\qp$ and $\frac{\Abari}{\Ai}$ cannot be observed independently, only the combinations $\Pre\,\Dm$\textplus$\Pim\,\Sm$
+and $\Pim\,\Dm$\textminus$\Pre\,\Sm$ are observable and not the $\Pre$, $\Pmn$, $\Dm$, and $\Sm$ parameters individually. A phase
+convention can be chosen by, for example, setting $\arg(\qpAbsAlt)$\textequiv0, which makes the phase of $\frac{\Abari}{\Ai}$ equal
+to the phase of $\lamf[i]$. Another choice is $\arg(\frac{\Abari[\text{0}]}{\Ai[\text{0}]})$\textequiv0,
+which results in $\arg(\qpAbsAlt)$\texteq$\arg(\lamf[\text{0}])$ and
+$\arg(\frac{\Abari}{\Ai})$\texteq$\arg(\lamf[i])$\textminus$\arg(\lamf[\text{0}])$ and enables a measurement of phase differences.
