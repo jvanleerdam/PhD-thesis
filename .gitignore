@@ -1,8 +1,6 @@
 *~
 *.log
 *.aux
-*.ps
-*.eps
 *.toc
 thesis.pdf
 contents.pdf
