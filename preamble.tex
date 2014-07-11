@@ -1,10 +1,14 @@
-\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,11pt]{book}
+\documentclass[b5paper,11pt]{book}
 %\documentclass[a4paper,12pt]{book}
 %\usepackage{setspace}
 %\doublespacing
-
+\usepackage[paperwidth=17cm, paperheight=24cm, top=30mm, bottom=30mm, outer=30mm, inner=20mm]{geometry}
 \usepackage{color}
 \usepackage[cmyk]{xcolor}
+%\usepackage{showframe}
+%\usepackage{layout}
+
 \usepackage{feynmp}
 \usepackage[colorlinks,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black,plainpages=false,unicode=false,pdfencoding=auto]{hyperref}
 \usepackage{ifthen}
@@ -71,6 +75,9 @@
 \renewcommand{\textapprox}{\unitsp≈\unitsp}
 \newcommand{\textplus}{\unitsp+\unitsp}
 \renewcommand{\textminus}{\unitsp--\unitsp}
+\renewcommand{\textpm}{\unitsp±\unitsp}
+\newcommand{\tm}{--}
+\newcommand{\tpm}{±}
 \renewcommand{\texttimes}{\unitsp×\unitsp}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
@@ -276,7 +283,7 @@
 \newcommand{\magSAvSq}[1][]{|\magAv[\AS[#1]]|^2}
 \newcommand{\FS}[1][]{F_\text{S#1}}
 \newcommand{\FSAv}[1][]{\FS[#1]^\text{CP}}
-\newcommand{\delzero}{\delta_0}
+\newcommand{\delzero}{\delta_\text{0}}
 \newcommand{\delpar}{\delta_\parallel}
 \newcommand{\delperp}{\delta_\perp}
 \newcommand{\delS}[1][]{\delta_\text{S#1}}

@@ -146,20 +146,14 @@ unitarity relation $\VCKM[\dagger]\VCKM = \VCKM\VCKM[\dagger] = \mathbb{1}$ give
 relations, two of which are given by
 \begin{subequations}
   \label{eq:unitConstraints}
-  \begin{alignat}{3}
+  \begin{align}
+    \text{d--b:} & \quad \Vud\Vub[*] + \Vcd\Vcb[*] + \Vtd\Vtb[*] = 0 \nonumber \\
     \label{eq:unitConstraints_d}
-    \text{d--b:} & \quad
-      &\Vud\Vub[*] + \Vcd\Vcb[*] + \Vtd\Vtb[*] = 0
-      &\ \implies\
-      &1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0
-      & \\
+    &\qquad\qquad\qquad \implies\ 1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0 \\
+    \text{s--b:} & \quad \Vus\Vub[*] + \Vcs\Vcb[*] + \Vts\Vtb[*] = 0 \nonumber \\
     \label{eq:unitConstraints_s}
-    \text{s--b:} &
-      &\Vus\Vub[*] + \Vcs\Vcb[*] + \Vts\Vtb[*] = 0
-      &\ \implies\
-      &1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0
-      &\ .
-  \end{alignat}
+    &\qquad\qquad\qquad \implies\ 1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0 \ .
+  \end{align}
 \end{subequations}
 
 Notice that the phases of the combinations of four CKM elements that appear in Equation~\ref{eq:unitConstraints} are of the form
@@ -271,9 +265,9 @@ that were available in the spring of 2013, the CKMfitter Group finds~\cite{Charl
   \ .
 \end{equation}
 
-Figure~\ref{fig:unitTriangleMeas} shows the resulting CKMfitter unitarity triangles, together with the constrains on the coordinates
-of the triangle apices. In the lowest order approximation in $\lam$ the apices are given by $(\rho, \eta)$ and $(-\lam^2\,\rho,\
--\lam^2\,\eta)$ for the d--b and s--b triangles, respectively. Constraints from the fit are given by
+Figures~\ref{fig:unitTriangleMeas_db} and \ref{fig:unitTriangleMeas_sb} show the resulting CKMfitter unitarity triangles, together with the
+constrains on the coordinates of the triangle apices. At lowest order in $\lambda$ the apices of the d--b and s--b triangles are given by
+$(\rho, \eta)$ and $(-\lam^2\,\rho,\ -\lam^2\,\eta)$, respectively. Constraints from the fit are given by
 \begin{equation}
   \label{eq:CKMApicesCKMf}
   \begin{aligned}
@@ -282,31 +276,32 @@ of the triangle apices. In the lowest order approximation in $\lam$ the apices a
   \end{aligned}
 \end{equation}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[trim=5mm 2mm 3mm 15mm, clip=true, width=0.8\textwidth]{graphics/intro/rhoeta_large_CMYK}
+  \caption{Constraints on the d--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter Group
+           \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apex in the complex plane, which is given by the
+	   parameters $\rhobar\approx\rho$ and $\etabar\approx\eta$.
+           Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
+  \label{fig:unitTriangleMeas_db}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[trim=6mm 2mm 2mm 15mm, clip=true, width=0.8\textwidth]{graphics/intro/rhoBsetaBs_large_global_CMYK}
+  \caption{Constraints on the s--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter Group
+           \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apex in the complex plane, which is given by the
+	   parameters $\rhosbar\approx-\lam^2\,\rho$ and $\etasbar\approx-\lam^2\,\eta$.
+           Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
+  \label{fig:unitTriangleMeas_sb}
+\end{figure}
+
 The UTfit Collaboration finds slightly different values for the angles with the data available by summer 2013~\cite{Bona:2005vz}:
 \begin{equation}
   \label{eq:CKMAnglesUTf}
   \gamma = (70.3\pm3.5)^\circ \qquad \beta = (22.0\pm0.9)^\circ \qquad \bs = (1.07\pm0.04)^\circ
   \ .
 \end{equation}
-
-\begin{figure}[p]
-  \centering
-  \begin{subfigure}{0.65\textwidth}
-    \includegraphics[trim=5mm 2mm 3mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoeta_large_CMYK}
-    \caption{}
-  \end{subfigure}\\
-  \vspace*{0.03\textwidth}
-  \begin{subfigure}{0.65\textwidth}
-    \includegraphics[trim=6mm 2mm 2mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoBsetaBs_large_global_CMYK}
-    \caption{}
-  \end{subfigure}
-  \caption{Constraints on the (a) d--b and (b) s--b unitarity triangles resulting from the global Standard-Model fit by the CKMfitter Group
-           \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apices in the complex plane, which are given by the
-	   parameters (a) $\rhobar\approx\rho$ and $\etabar\approx\eta$ and (b) $\rhosbar\approx-\lam^2\,\rho$ and
-           $\etasbar\approx-\lam^2\,\eta$.
-           Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
-  \label{fig:unitTriangleMeas}
-\end{figure}
 
 Quark-flavour changing interactions and the CKM picture of CP violation provide excellent probes for testing the Standard Model. There are,
 for example, measurements that yield one of the CKM angles if only Standard Model processes are considered. If such a measurement gives a

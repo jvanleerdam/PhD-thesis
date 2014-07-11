@@ -1,4 +1,4 @@
-\section{The \texorpdfstring{\BstoJpsiKK}{Bs0->J/psi K+K-} Decay in the LHCb Experiment}
+\section{The \texorpdfstring{\BstoJpsiKK}{Bs0->J/psi K+K-} Decay in LHCb}
 \label{sec:intro_LHCb}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,7 +85,7 @@ Flavour tagging relies on the fact that both the beauty and strange quarks that 
 in quark--antiquark pairs. Even if the flavour of the produced meson cannot be determined from its decay products, it can still be inferred
 from the charges of the remaining (anti)b and (anti)s quarks of the two pairs. This is schematically shown in Figure~\ref{fig:tagging}.
 
-\begin{figure}[tbp]
+\begin{figure}[tbhp]
   \centering
   \includegraphics{graphics/intro/tikz/tagging}
   \caption{Production and decay mechanisms exploited by flavour-tagging algorithms.
@@ -135,15 +135,15 @@ and boost, $\Bs$ mesons cover a typical distance of several millimetres before t
 is used to infer the decay time. It is determined by reconstructing the positions of the points of production and decay. The measured
 distribution for $\Bs$ mesons that are used in the \BstoJpsiKK{} measurement is shown in Figure~\ref{fig:introHists_flightDist}.
 
-\begin{figure}[tb]
+\begin{figure}[tbhp]
   \centering
-  \begin{subfigure}{0.49\textwidth}
+  \begin{subfigure}{0.497\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/BMomentum}
     \caption{}
     \label{fig:introHists_BMomentum}
   \end{subfigure}%
   \hfill%
-  \begin{subfigure}{0.49\textwidth}
+  \begin{subfigure}{0.497\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/flightDist}
     \caption{}
     \label{fig:introHists_flightDist}
@@ -166,7 +166,7 @@ resolution. This difference is caused by the fact that only $\KK$ invariant mass
 just above the threshold of twice the kaon mass. As a result, the opening angle between the $\Kp$ and $\Km$ trajectories is small, which
 gives the measurement of the point of common origin a large uncertainty.
 
-\begin{figure}[tb]
+\begin{figure}[ptb]
   \centering
   \includegraphics{graphics/intro/tikz/vertices}
   \caption{Vertices in a \BstoJpsiKK{} decay \cite{vanEijk:2012}.
@@ -253,15 +253,15 @@ Sections~\ref{sec:exp_time}, \ref{sec:exp_angles} and \ref{sec:ana_model}).
 \label{subsec:intro_LHCb_detector}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}[p]
+\begin{figure}[ptb]
   \centering
-  \begin{subfigure}{\textwidth}
+  \begin{subfigure}{0.78\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/detector_3D.jpg}
     \caption{}
     \label{fig:LHCb_3D}
   \end{subfigure}
 
-  \vspace*{0.05\textwidth}
+  \vspace*{0.03\textwidth}
   \begin{subfigure}{\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/detector_cross}
     \caption{}
@@ -310,7 +310,7 @@ The performance of the tracking system is shown in Figures~\ref{fig:detPerf_momR
 the relative resolution of the momentum measurement for muon tracks in $\Jpsi\to\mumu$ decays, which varies from roughly 0.5\% to 1.1\% as
 a function of momentum. The resulting resolution of the dimuon invariant-mass measurement is shown in the latter figure. The relative mass
 resolution is about 0.5\% up to 10\unitsp\GeV, but increases to 1.9\% at the $\Zz$ mass.
-\begin{figure}[tbp]
+\begin{figure}[ptb]
   \begin{subfigure}{0.49\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/dppVsp-crop-cmyk}
     \caption{}
@@ -379,12 +379,12 @@ Combined with the momentum measurement this gives an estimate of the particle ma
 Figure~\ref{fig:event} shows the information from different subdetectors for an event that contains a \BstoJpsiKK{} decay candidate. The
 coloured lines show reconstructed tracks. Three tracks are combined with hits in the muons stations and represent particles that have been
 identified as muons.
-\begin{figure}[p]
+\begin{figure}[ptb]
   \centering
   \begin{tikzpicture}
-    \node[anchor=south]{\includegraphics[width=0.98\textwidth]{graphics/intro/eventdisplay_CMYK}};
-    \node at ( 0., 7.3 )  {(a)};
-    \node at ( 0., 0.8 )  {(b)};
+    \node[anchor=south]{\includegraphics[width=0.95\textwidth]{graphics/intro/eventdisplay_CMYK}};
+    \node at ( 0., 6.7 )  {(a)};
+    \node at ( 0., 0.7 )  {(b)};
   \end{tikzpicture}
   \caption{Reconstructed particle trajectories in the LHCb detector for an event with a \BstoJpsiKK{} decay candidate \cite{vanEijk:2012}:
            (a) a view from the top and (b) a view from the side, equivalent to Figure~\ref{fig:LHCb}.
