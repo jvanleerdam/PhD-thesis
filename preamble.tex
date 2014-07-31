@@ -82,6 +82,8 @@
 \newcommand{\tm}{--}
 \newcommand{\tpm}{±}
 \renewcommand{\texttimes}{\unitsp×\unitsp}
+\newcommand{\ttime}{×}
+\newcommand{\tpi}{π}
 \newcommand{\ctm}{\multicolumn{1}{c}{--}}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
 \newcommand{\tenpowmult}[1]{$\,\cdot\,$10\textsuperscript{#1}}
@@ -226,10 +228,14 @@
 \newcommand{\lamfbarAbs}[1][\text{f}]{|{\lamfbar[#1]}|}
 \newcommand{\lamfbarSq}[1][\text{f}]{{\lamfbarAbs[#1]}^2}
 \newcommand{\lamsAbs}{\lamfAbs[\text{s}]}
+\newcommand{\lamsi}[1][i]{{\lamf[\text{s}]^{#1}}}
+\newcommand{\lamsiAbs}[1][i]{|{\lamsi[#1]}|}
+\newcommand{\lamsiSq}[1][i]{{\lamsiAbs[#1]}^2}
 \newcommand{\Cs}{C_\text{s}}
+\newcommand{\Csi}[1][i]{C_\text{s}^{#1}}
 \newcommand{\Csav}{\Cs^\text{av}}
-\newcommand{\DelCspara}{\Cs^\parallel}
-\newcommand{\DelCsperp}{\Cs^\perp}
+\newcommand{\DelCspara}{\Delta\Cs^\parallel}
+\newcommand{\DelCsperp}{\Delta\Cs^\perp}
 \newcommand{\CsavS}{\Cs^\text{avS}}
 \newcommand{\taus}{\tau_\text{s}}
 \newcommand{\taud}{\tau_\text{d}}
