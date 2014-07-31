@@ -46,7 +46,7 @@ The sum of the cross sections for $\Bs$ and $\Bsbar$ production in LHCb is measu
 energy of 7\unitsp{}TeV \cite{LHCB-PAPER-2013-004}. Assuming the cross section at 8\unitsp{}TeV is approximately the same, this gives a
 total of 3\tenpowmult{10} produced $\Bs$ and $\Bsbar$ mesons in 2011 and 2012. A fraction of 3\tenpowmult{--5} decays into $\JpsimumuphiKK$
 \cite{PDG}, which yields an expected number of 9\tenpowmult{5} decays. Including particle-detection inefficiencies and selection of
-usable decays, about 9\tenpowmult{4} decays are left for analysis (see Section\unitsp{}\ref{sec:exp_selBkg}).
+usable decays, about 9\tenpowmult{4} decays are left for analysis (see Section\unitsp{}\ref{sec:ana_bkgSub}).
 
 To produce $\Bs$ and $\Bsbar$ mesons, (anti)beauty and (anti)strange quarks must be created. Beauty quarks are predominantly produced as
 $\bbbar$ pairs. Beauty hadrons are formed by combining the b and $\qbar[b]$ quarks with lighter quarks that are produced at a later stage.
@@ -105,7 +105,7 @@ The efficiency of opposite-side tagging is limited. The required charged particl
 addition, the decay products may not be detectable by the LHCb detector. There is also a probability that the determined flavour is wrong.
 A neutral beauty meson may convert into its antiparticle before it decays, which gives the opposite tag. A background of charged particles
 from elsewhere in the event gives additional wrong tags. The resulting effective fraction of $\Bs$ mesons with a correct opposite-side tag
-in the \BstoJpsiKK{} measurement is 2.6\% (see Section~\ref{sec:exp_tagging}).
+in the \BstoJpsiKK{} measurement is 2.6\% (see Section~\ref{sec:ana_tagging}).
 
 When combined with an (anti)up quark, the remaining quark from the s$\qbar[s]$ pair forms a charged kaon. In \emph{same-side kaon tagging}
 the flavour of the $\Bs$ meson is estimated by determination of the charges of kaons that are close to it in momentum
@@ -190,8 +190,8 @@ of their tracks in the magnetic field of the detector.
 The $\Bs$ momentum and flight distance are estimated by combining information from measured particle momenta and extrapolated
 positions~\cite{Hulsbergen:2005pu}. Uncertainties in the measurements are propagated and ultimately lead to an uncertainty in the estimated
 decay time. This decay-time resolution is estimated for each $\Bs$ decay and taken into account in the analysis (see
-Sections~\ref{sec:exp_time} and \ref{subsec:ana_model_timeRes}). The effective resolution is about 0.05\unitsp{}ps. This suffices to
-resolve the oscillations in the \BstoJpsiKK{} decay-time distribution, which have a period of 2π/$\Dms$\textapprox0.35\unitsp{}ps.
+Section~\ref{subsec:ana_time_res}). The effective resolution is about 0.05\unitsp{}ps. This suffices to resolve the oscillations in the
+\BstoJpsiKK{} decay-time distribution, which have a period of 2π/$\Dms$\textapprox0.35\unitsp{}ps.
 
 Before the vertex positions and momenta can be determined, the four particles from a \BstoJpsiKK{} decay have to be selected from all
 particles that are produced in an LHC event. Since the particle multiplicity is high, there is a significant probability to select four
@@ -200,7 +200,7 @@ particles that do not originate from a $\Bs$ decay.
 Combinations of four particles that are considered for analysis are called \emph{decay candidates}. Candidates can either be real
 \BstoJpsiKK{} decays (\emph{signal}) or combinations that fake the decay signature (\emph{background}). Distributions of decay time and
 decay angles for background events are subtracted from the measured distributions to obtain the net signal contribution (see
-Section~\ref{sec:ana_bkg}).
+Section~\ref{sec:ana_bkgSub}).
 
 There are several categories of background decay candidates. Most background is \emph{combinatorial}, which means that candidates are
 formed from random combinations of four particles. Often all four particles originate directly from a primary vertex. This combinatorial
@@ -237,7 +237,7 @@ part of the background, which reduces the number of remaining candidates to a ma
 
 Stripping yields about one million \BstoJpsiKK{} decay candidates for 2011 and 2012. A second set of stricter offline selection criteria is
 optimized to find the best compromise between selecting as many signal and as few background candidates as possible. About 230 thousand
-candidates are used for further analysis, of which roughly 40\% is signal (see Sections~\ref{sec:exp_selBkg} and \ref{sec:ana_bkg}).
+candidates are used for further analysis, of which roughly 40\% is signal (see Section~\ref{sec:ana_bkgSub}).
 
 The total set of selection requirements for particles and decay candidates removes background, but also a significant part of the signal.
 %This can be seen in the flight-distance distribution of Figure~\ref{fig:introHists_flightDist}. The original decay-time distribution has
@@ -245,7 +245,7 @@ The total set of selection requirements for particles and decay candidates remov
 %flight-distance distribution. The lack of entries at small flight distance is a result of the selection inefficiency.
 Since the efficiency of the selection depends on the decay time and the decay angles, the observed distributions of these variables do not
 directly reflect the underlying true distributions. This effect has to be taken into account in the model of the decay (see
-Sections~\ref{sec:exp_time}, \ref{sec:exp_angles} and \ref{sec:ana_model}).
+Sections~\ref{subsec:ana_time_acc} and \ref{sec:ana_angles}).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,8 +358,8 @@ of tracks to less than 10\unitsp\micron{} for more than 40 tracks.
 
 Since only four tracks originate from the secondary vertex, its resolution dominates the uncertainty of the decay-time measurement. For
 \BstomumuKK{} events the decay-time resolution is measured with prompt background, for which the true decay time is equal to zero (see
-Section~\ref{sec:exp_time}). The resulting resolution as a function of $\mumu\,\KK$ momentum is shown in Figure~\ref{fig:detPerf_timeRes}.
-Its value varies between roughly 0.04\unitsp{}ps and 0.05\unitsp{}ps.
+Section~\ref{subsec:ana_time_res}). The resulting resolution as a function of $\mumu\,\KK$ momentum is shown in
+Figure~\ref{fig:detPerf_timeRes}. Its value varies between roughly 0.04\unitsp{}ps and 0.05\unitsp{}ps.
 
 Particles are identified with other subsystems. Electrons produce signals in the \emph{Scintillator Pad Detector} (SPD), \emph{Preshower
 detector} (PS) and the \emph{Electromagnetic Calorimeter} (\ecal). The electron energy is absorbed by these detectors and no signal is
