@@ -1,16 +1,19 @@
 \chapter{Data Analysis}
 \label{chap:ana}
 
-% general overview: maximum-likelihood fit, simultaneous in KK-mass bins and tagging categories
+General overview: maximum-likelihood fit (introduce NLL), error correction for background,
+simultaneous in KK-mass bins and tagging categories
 
 \section{Decay-Candidate Selection and Background}
 \label{sec:ana_bkgSub}
+show mass-fit results in $\cthetal$ bins
 
 \section{Decay Time}
 \label{sec:ana_time}
 
 \subsection{Resolution}
 \label{subsec:ana_time_res}
+mention how to handle conditional observables for plots and toys
 
 \subsection{Acceptance}
 \label{subsec:ana_time_acc}
@@ -18,8 +21,31 @@
 \section{Decay Angles}
 \label{sec:ana_angles}
 
+\section{\texorpdfstring{$\KK$}{KK}-Mass Integrals}
+\label{sec:ana_KKIntegrals}
+
+Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero$ with a Flatt\'e shape, resolution from MC.
+\begin{table}[h]
+  \centering
+  \caption{S-wave--$\Jpsiphi$ coupling factors in the six $\KK$-mass bins ($\CSP^i$).}
+  \label{tab:CSPFactors}
+  \begin{tabular}{cccc}
+    bin     & nominal  &  +20\% resolution  &  uniform S-wave  \\
+    \hline
+    1       & 0.9178   &  0.9152            &  0.9586          \\
+    2       & 0.9022   &  0.8797            &  0.9110          \\
+    3       & 0.8619   &  0.8357            &  0.8618          \\
+    4       & 0.8875   &  0.8599            &  0.8828          \\
+    5       & 0.9360   &  0.9207            &  0.9227          \\
+    6       & 0.9641   &  0.9624            &  0.9110          \\
+  \end{tabular}
+\end{table}
+
 \section{Flavour Tagging}
 \label{sec:ana_tagging}
+mention how to handle conditional observables for plots and toys,
+explain why nuisance asymmetries can be ignored
 
 \section{Simulation}
 \label{sec:ana_sim}
+discuss both detector simulation (with correction for kinematic distributions) and toys
