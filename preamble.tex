@@ -70,9 +70,13 @@
 \newcommand{\ud}{\mathrm{d}}
 \renewcommand{\vec}{\bm}
 
-\newcommand{\unitsp}{$\,$}
+\newcommand{\unitsp}{\,}
 \newcommand{\texteq}{\unitsp=\unitsp}
 \renewcommand{\textneq}{\unitsp≠\unitsp}
+\newcommand{\textlt}{\unitsp<\unitsp}
+\newcommand{\textgt}{\unitsp>\unitsp}
+\renewcommand{\textle}{\unitsp≤\unitsp}
+\renewcommand{\textge}{\unitsp≥\unitsp}
 \renewcommand{\textll}{\unitsp≪\unitsp}
 \renewcommand{\textequiv}{\unitsp≡\unitsp}
 \renewcommand{\textapprox}{\unitsp≈\unitsp}
@@ -217,10 +221,11 @@
 \newcommand{\phisi}[1][i]{\phi_\text{s}^{#1}}
 \newcommand{\phisccs}{\phisi[\ccs]}
 \newcommand{\phisav}{\phisi[\text{av}]}
-\newcommand{\Delphispara}{\Delta\phis^\parallel}
-\newcommand{\Delphisperp}{\Delta\phis^\perp}
-\newcommand{\Delphisperpp}{\Delta\phis^{\perp\prime}}
-\newcommand{\DelphisS}{\Delta\phis^\text{S}}
+\newcommand{\Delphisi}[1][i]{\Delta\phis^{#1}}
+\newcommand{\Delphispara}{\Delphisi[\parallel]}
+\newcommand{\Delphisperp}{\Delphisi[\perp]}
+\newcommand{\Delphisperpp}{\Delphisi[\perp\prime]}
+\newcommand{\DelphisS}{\Delphisi[\text{S}]}
 \newcommand{\lamf}[1][\text{f}]{\lambda_{#1}}
 \newcommand{\lamfAbs}[1][\text{f}]{|{\lamf[#1]}|}
 \newcommand{\lamfSq}[1][\text{f}]{{\lamfAbs[#1]}^2}
@@ -294,13 +299,13 @@
 \newcommand{\magSAvSq}[1][]{|\magAv[\AS[#1]]|^2}
 \newcommand{\FS}[1][]{F_\text{S#1}}
 \newcommand{\FSAv}[1][]{\FS[#1]^\text{CP}}
-\newcommand{\delzero}{\delta_\text{0}}
-\newcommand{\delpar}{\delta_\parallel}
-\newcommand{\delperp}{\delta_\perp}
+\newcommand{\delzero}[1][]{\delta_\text{0#1}}
+\newcommand{\delpar}[1][]{\delta_{\parallel\text{#1}}}
+\newcommand{\delperp}[1][]{\delta_{\perp\text{#1}}}
 \newcommand{\delS}[1][]{\delta_\text{S#1}}
 \newcommand{\delparzero}{\delpar\,\text{--}\,\delzero}
 \newcommand{\delperpzero}{\delperp\,\text{--}\,\delzero}
-\newcommand{\delSperp}[1][]{\delS[#1]\,\text{--}\,\delperp}
+\newcommand{\delSperp}[1][]{\delS[#1]\,\text{--}\,\delperp[#1]}
 \newcommand{\CSP}{C_\text{SP}}
 
 \newcommand{\qf}{{q_\text{f}}}
