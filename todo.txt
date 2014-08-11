@@ -2,6 +2,8 @@ defense:
 * BSM models that affect phi_s
 * why is CPV time dependent? weak phase -2beta_s always seems to be there... (this is only weak phase)
 * understand resolution plots in intro
+* Why is the error on phi_s slightly smaller in |lambda|=1 model? Only a 2% correlation between phi_s and |lambda|.
+  Shift in parameter values (Deltam->resolution?, delta_perp?), makes error on Deltam larger instead of smaller.
 
 thesis:
 * interference terms in KK-mass plot?!
