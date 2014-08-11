@@ -388,7 +388,7 @@ FUNCTION {format.CDS}
 FUNCTION {format.lhcbid.internal}
 { "\href{http://cdsweb.cern.ch/search?p=" number * 
   "&f=reportnumber&action_search=Search&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes} {\tt " * 
-  number * "} (internal note)" * 
+  number * "} (internal LHCb note)" * 
 }
 
 FUNCTION {format.lhcbid.public}
