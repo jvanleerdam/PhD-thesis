@@ -10,6 +10,101 @@
 % correlation between delta_para and delta_perp
 % ambiguities in phases
 
+\begin{table}[htbp]
+  \centering
+  \caption{Functions of decay time without CP violation. An approximation for small decay-width difference is made ($\DGs$\textapprox0).}
+  \label{tab:timeFunctionsNoCPV}
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{cl}
+    \hline
+    state  &  function\texttimes$e^{+\Gs\,t}$  \\
+    \hline
+    $ii$
+      &  $|\AAv|^2 \left( 1 - \tfrac{1}{2}\,\eta_i\,\DGs\,t \right)$  \\
+    0$\parallel$
+      &  $\magzeroAv\magparAv\cos(\delparzero) \left( 1 - \tfrac{1}{2}\,\DGs\,t \right)$  \\
+    0$\perp$
+      &  $\magzeroAv\magperpAv \left[ \sin(\delperpzero)\,\cDms - \cos(\delperpzero)\,\sDms \right]$  \\
+    $\parallel\perp$
+      &  $\magparAv\magperpAv \left[ \sin(\delperppar)\,\cDms - \cos(\delperppar)\,\sDms \right]$  \\
+    0S
+      &  $\magzeroAv\magSAv[i] \left[ \cos(\delSzero)\,\cDms + \sin(\delSzero)\,\sDms \right]$  \\
+    $\parallel$S
+      &  $\magparAv\magSAv \left[ \cos(\delSpar)\,\cDms + \sin(\delSpar)\,\sDms \right]$  \\
+    $\perp$S
+      &  $\magperpAv\magSAv\sin(\delSperp) \left( 1 + \tfrac{1}{2}\,\DGs\,t \right)$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
+$\delparzero$\textapprox$\pi$ and $\delperpzero$\textapprox$\pi$:
+\begin{equation}
+  \begin{alignedat}{2}
+    \sin(\delparzero)  &\approx \pi - \delpar  + \delzero &\qquad\quad \cos(\delparzero)  &\approx -1  \\
+    \sin(\delperpzero) &\approx \pi - \delperp + \delzero &            \cos(\delperpzero) &\approx -1  \\
+    \sin(\delperppar)  &\approx \delperppar               &            \cos(\delperppar)  &\approx +1
+  \end{alignedat}
+\end{equation}
+\begin{equation}
+  \sij{i}{j} \equiv \sin(\delta_j - \delta_i) \qquad\quad
+  \cij{i}{j} \equiv \cos(\delta_j - \delta_i)
+\end{equation}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Functions of decay time with approximations for small CP violation, small $\DGs$, and phase differences close to 0 or $\pi$.}
+  \label{tab:timeFunctionsApprox}
+  \renewcommand{\arraystretch}{1.7}
+  \begin{tabular}{cl}
+    \hline
+    state  &  function\texttimes$e^{+\Gs\,t}$  \\
+    \hline
+    $ii$
+      &  $|\AAv|^2 \Big[
+                     1 - \tfrac{1}{2}\,\eta_i\,\DGs\,t
+                     + \Csi\,\cDms + \eta_i\,\phisi\,\sDms
+                   \Big]$  \\
+    0$\parallel$
+      &  $-\magzeroAv\magparAv \Big[
+                             1 - \tfrac{1}{2}\,\DGs\,t$  \\
+      &  $\qquad\qquad\quad  + \tfrac{1}{2}(\Cszero + \Cspar) \cDms + \tfrac{1}{2}(\phiszero + \phispar) \sDms
+                           \Big]$  \\
+    0$\perp$
+      &  $-\magzeroAv\magperpAv \Big[
+                              \tfrac{1}{2}(\phisperp-\phiszero) - \tfrac{1}{4}(\phiszero+\phisperp)\,\DGs\,t$  \\
+      &  $\qquad\qquad\quad   - (\szeroperp + \tfrac{1}{2}\phisperp - \tfrac{1}{2}\phiszero) \cDms - \sDms
+                            \Big]$  \\
+    $\parallel\perp$
+      &  $+\magparAv\magperpAv \Big[
+                             \tfrac{1}{2}(\phisperp-\phispar) - \tfrac{1}{4}(\phispar+\phisperp)\,\DGs\,t$  \\
+      &  $\qquad\qquad\quad  + (\sparperp - \tfrac{1}{2}\phisperp + \tfrac{1}{2}\phispar) \cDms - \sDms
+                           \Big]$  \\
+    0S
+      &  $-\magzeroAv\magSAv \Big[
+                           \tfrac{1}{2}(\Cszero+\CsS)\cperpS - \tfrac{1}{2}(\phisS-\phiszero)\sperpS$  \\
+      &  $\qquad\qquad\quad    - \big[ \tfrac{1}{2}(\CsS-\Cszero)\cperpS - \tfrac{1}{2}(\phiszero+\phisS)\sperpS \big]
+                                 \cdot\tfrac{1}{2}\DGs\,t$ \\
+      &  $\qquad\qquad\quad\   + \big[ \cperpS + (\szeroperp + \tfrac{1}{2}\phisS - \tfrac{1}{2}\phiszero)\sperpS \big]\cDms$  \\
+      &  $\qquad\qquad\quad\ \ - \big[ (\szeroperp + \tfrac{1}{2}\phisS - \tfrac{1}{2}\phiszero)\cperpS - \sperpS \big]\sDms
+                         \Big]$  \\
+    $\parallel$S
+      &  $+\magparAv\magSAv \Big[
+                           \tfrac{1}{2}(\Cspar+\CsS)\cperpS - \tfrac{1}{2}(\phisS-\phispar)\sperpS$  \\
+      &  $\qquad\qquad\quad    - \big[ \tfrac{1}{2}(\CsS-\Cspar)\cperpS - \tfrac{1}{2}(\phispar+\phisS)\sperpS \big]
+                                 \cdot\tfrac{1}{2}\DGs\,t$ \\
+      &  $\qquad\qquad\quad\   + \big[ \cperpS - (\sparperp - \tfrac{1}{2}\phisS + \tfrac{1}{2}\phispar)\sperpS \big]\cDms$  \\
+      &  $\qquad\qquad\quad\ \ + \big[ (\sparperp - \tfrac{1}{2}\phisS + \tfrac{1}{2}\phispar)\cperpS + \sperpS \big]\sDms
+                         \Big]$  \\
+    $\perp$S
+      &  $-\magperpAv\magSAv \Big[
+                           \big[ \tfrac{1}{2}(\phisS-\phisperp)\cperpS - \sperpS \big] (1 + \tfrac{1}{2}\DGs\,t)$ \\
+      &  $\qquad\qquad\quad\   - \big[ \tfrac{1}{2}(\phisS-\phisperp)\cperpS + \tfrac{1}{2}(\Csperp + \CsS)\sperpS \big]\cDms$  \\
+      &  $\qquad\qquad\quad\ \ - \big[ \tfrac{1}{2}(\CsS-\Csperp)\cperpS - \tfrac{1}{2}(\phisperp + \phisS)\sperpS \big]\sDms
+                         \Big]$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
 \begin{equation}
   \begin{aligned}
     \label{eq:timeCPEvenOdd}
