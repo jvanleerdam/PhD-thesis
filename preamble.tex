@@ -219,6 +219,10 @@
 \newcommand{\phimix}{\phi_\text{12}}
 \newcommand{\phis}{\phi_\text{s}}
 \newcommand{\phisi}[1][i]{\phi_\text{s}^{#1}}
+\newcommand{\phiszero}{\phisi[\text{0}]}
+\newcommand{\phispar}{\phisi[\parallel]}
+\newcommand{\phisperp}{\phisi[\perp]}
+\newcommand{\phisS}{\phisi[\text{S}]}
 \newcommand{\phisccs}{\phisi[\ccs]}
 \newcommand{\phisav}{\phisi[\text{av}]}
 \newcommand{\Delphisi}[1][i]{\Delta\phis^{#1}}
@@ -238,6 +242,10 @@
 \newcommand{\lamsiSq}[1][i]{{\lamsiAbs[#1]}^2}
 \newcommand{\Cs}{C_\text{s}}
 \newcommand{\Csi}[1][i]{C_\text{s}^{#1}}
+\newcommand{\Cszero}{\Csi[\text{0}]}
+\newcommand{\Cspar}{\Csi[\parallel]}
+\newcommand{\Csperp}{\Csi[\perp]}
+\newcommand{\CsS}{\Csi[\text{S}]}
 \newcommand{\Csav}{\Cs^\text{av}}
 \newcommand{\DelCspara}{\Delta\Cs^\parallel}
 \newcommand{\DelCsperp}{\Delta\Cs^\perp}
@@ -259,6 +267,8 @@
 \newcommand{\sDGs}{\sinh\!\left(\tfrac{1}{2}\DGs\, t\right)}
 \newcommand{\cDms}{\cos\!\left(\Dms\, t\right)}
 \newcommand{\sDms}{\sin\!\left(\Dms\, t\right)}
+\newcommand{\scDms}{\cos}
+\newcommand{\ssDms}{\sin}
 
 \newcommand{\thetaK}{\theta_{\text{K}}}
 \newcommand{\thetal}{\theta_{\text{μ}}}
@@ -280,32 +290,54 @@
 \newcommand{\LB}[1][i]{L_{\Jpsi\KK}^{#1}}
 \newcommand{\LKK}[1][i]{L_{\KK}^{#1}}
 
-\newcommand{\Azero}{A_0}
-\newcommand{\Apar}{A_\parallel}
-\newcommand{\Aperp}{A_\perp}
-\newcommand{\magAv}[1][\Ai]{#1^{\text{CP}}}
-\newcommand{\magAvConj}[1][\Ai]{{\magAv[#1]}^\ast}
+\newcommand{\Azero}[1][]{A_{\text{0}#1}}
+\newcommand{\Apar}[1][]{A_{\parallel#1}}
+\newcommand{\Aperp}[1][]{A_{\perp#1}}
+\newcommand{\AS}[1][]{A_\text{S}#1}
+\newcommand{\AAv}[1][\Ai]{#1^{\text{CP}}}
+\newcommand{\AAvConj}[1][\Ai]{{\AAv[#1]}^\ast}
 \newcommand{\magzero}{|\Azero|}
 \newcommand{\magzeroSq}{\magzero^2}
-\newcommand{\magzeroAvSq}{|\magAv[\Azero]|^2}
+\newcommand{\magzeroAv}{|\AAv[\Azero]|}
+\newcommand{\magzeroAvSq}{\magzeroAv^2}
 \newcommand{\magpar}{|\Apar|}
 \newcommand{\magparSq}{\magpar^2}
-\newcommand{\magparAvSq}{|\magAv[\Apar]|^2}
+\newcommand{\magparAv}{|\AAv[\Apar]|}
+\newcommand{\magparAvSq}{\magparAv^2}
 \newcommand{\magperp}{|\Aperp|}
 \newcommand{\magperpSq}{\magperp^2}
-\newcommand{\magperpAvSq}{|\magAv[\Aperp]|^2}
-\newcommand{\magS}[1][]{|A_\text{S#1}|}
+\newcommand{\magperpAv}{|\AAv[\Aperp]|}
+\newcommand{\magperpAvSq}{\magperpAv^2}
+\newcommand{\magS}[1][]{|A_{\text{S}#1}|}
 \newcommand{\magSSq}[1][]{\magS[#1]^2}
-\newcommand{\magSAvSq}[1][]{|\magAv[\AS[#1]]|^2}
-\newcommand{\FS}[1][]{F_\text{S#1}}
+\newcommand{\magSAv}[1][]{|\AAv[\AS]|}
+\newcommand{\magSAvSq}[1][]{\magSAv^2}
+\newcommand{\FS}[1][]{F_{\text{S}#1}}
 \newcommand{\FSAv}[1][]{\FS[#1]^\text{CP}}
-\newcommand{\delzero}[1][]{\delta_\text{0#1}}
-\newcommand{\delpar}[1][]{\delta_{\parallel\text{#1}}}
-\newcommand{\delperp}[1][]{\delta_{\perp\text{#1}}}
-\newcommand{\delS}[1][]{\delta_\text{S#1}}
+\newcommand{\delzero}[1][]{\delta_{0#1}}
+\newcommand{\delpar}[1][]{\delta_{\parallel#1}}
+\newcommand{\delperp}[1][]{\delta_{\perp#1}}
+\newcommand{\delS}[1][]{\delta_{\text{S}#1}}
 \newcommand{\delparzero}{\delpar\,\text{--}\,\delzero}
 \newcommand{\delperpzero}{\delperp\,\text{--}\,\delzero}
+\newcommand{\delperppar}{\delperp\,\text{--}\,\delpar}
+\newcommand{\delSzero}[1][]{\delS[#1]\,\text{--}\,\delzero[#1]}
 \newcommand{\delSperp}[1][]{\delS[#1]\,\text{--}\,\delperp[#1]}
+\newcommand{\delSpar}[1][]{\delS[#1]\,\text{--}\,\delpar[#1]}
+\newcommand{\sij}[2]{s_{#1#2}}
+\newcommand{\szeropar}{\sij{\text{0}}{\parallel}}
+\newcommand{\szeroperp}{\sij{\text{0}}{\perp}}
+\newcommand{\sparperp}{\sij{\parallel}{\perp}}
+\newcommand{\sperpS}{\sij{\perp}{\text{S}}}
+\newcommand{\cij}[2]{c_{#1#2}}
+\newcommand{\czeropar}{\cij{\text{0}}{\parallel}}
+\newcommand{\czeroperp}{\cij{\text{0}}{\perp}}
+\newcommand{\cparperp}{\cij{\parallel}{\perp}}
+\newcommand{\cperpS}{\cij{\perp}{\text{S}}}
+\newcommand{\Delij}[2]{\Delta_{#1#2}}
+\newcommand{\Delzeropar}{\Delij{\text{0}}{\parallel}}
+\newcommand{\Delzeroperp}{\Delij{\text{0}}{\perp}}
+\newcommand{\Delparperp}{\Delij{\parallel}{\perp}}
 \newcommand{\CSP}{C_\text{SP}}
 
 \newcommand{\qf}{{q_\text{f}}}
