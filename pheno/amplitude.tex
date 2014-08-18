@@ -5,7 +5,7 @@ With four particles in the final state, the kinematics of the \BstoJpsimumuKK{} 
 particles are assumed to be on their mass shell, which gives four relations between the particle energies and three-momenta and only twelve
 degrees of freedom remain. The final-state momenta can be expressed in terms of the four-momentum of the $\Bs$, three Euler angles that
 describe the orientation of the $\Jpsi$ and $\KK$ momenta in the rest frame of the $\Bs$, the invariant masses of the $\Jpsi$ and the $\KK$
-system, and three decay angles that describe the relative orientations of the final state momenta.
+system, and three decay angles that describe the orientations of the final state momenta relative to the $\Jpsi$ and $\KK$ momenta.
 
 As a result of the fact that the $\Bs$ is a spinless particle, the \BstoJpsiKK{} decay amplitude does not depend on the $\Bs$ momentum and
 the orientation of the $\Jpsi$ and $\KK$ momenta (see also Appendix~\ref{chap:angularDecay}). The corresponding variables can be integrated
@@ -33,8 +33,8 @@ and $\Jpsi$ rest frames, respectively, boosting along this axis. $\thetaK$ is th
 axis and $\thetal$ the angle between the direction of the $\lmu[+]$ and the helicity axis. The azimuthal angle $\phihel$ specifies the
 relative orientation of the $\KK$ and $\mumu$ decay planes. It is defined as the angle between the ``$\Kp$ side'' of the $\KK$ plane and
 the ``$\lmu[--]$ side'' of the $\mumu$ plane, using a right-handed rotation around the helicity axis that is positive in the direction of
-the $\Jpsi$ momentum. Notice that $\thetal$ and $\phihel$ form a right-handed spherical coordinate system in the $\Jpsi$ rest frame, as was
-required for Equation~\ref{eq:diffRateMsq}.
+the $\Jpsi$ momentum. Notice that $\thetal$ and $\phihel$ form a spherical coordinate system in the $\Jpsi$ rest frame, as was required for
+Equation~\ref{eq:diffRateMsq}.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=\textwidth]{graphics/pheno/tikz/helAngles-crop}
@@ -43,14 +43,16 @@ required for Equation~\ref{eq:diffRateMsq}.
 \end{figure}
 
 The change of variables from $\mpsiK^\text{2}$ and $\mKK^\text{2}$ to $\mKK$ and $\cthetaK$ introduces a Jacobian determinant in
-Equation~\ref{eq:diffRateMsq}. Given that $\mKK^\text{2}$ does not depend on $\cthetaK$, when expressed in terms of the new variables, this
-determinant reads $\frac{\partial\mKK^2}{\partial\mKK}\,\frac{\partial\mpsiK^2}{\partial\cthetaK}$. With the expression for $\mpsiK$,
+Equation~\ref{eq:diffRateMsq}. Given that $\mKK^\text{2}$ does not depend on $\cthetaK$ when expressed in terms of the new variables, this
+determinant reads $\frac{\partial\mKK^2}{\partial\mKK}\,\frac{\partial\mpsiK^2}{\partial\cthetaK}$. Exploiting kinematic relations between
+the final-state momenta an expression for $\mpsiK^2$ can be derived:
 \begin{equation}
-  \mpsiK = \tfrac{1}{2}\,(\mBs^2 + \mJpsi^2 + 2\,\mK^2 - \mKK^2) + 2\,\frac{\mBs}{\mKK}\,|\pJpsi|\,|\pK|\,\cthetaK \ ,
+  \mpsiK^2 = \tfrac{1}{2}\,(\mBs^2 + \mJpsi^2 + 2\,\mK^2 - \mKK^2) + 2\,\frac{\mBs}{\mKK}\,|\pJpsi|\,|\pK|\,\cthetaK \ ,
 \end{equation}
-this is equal to $\text{4}\,\mBs\,|\pJpsi|\,|\pK|$, where $\mBs$ is the $\Bs$ mass, $\pJpsi$ the $\Jpsi$ three-momentum in the rest frame
-of the $\Bs$, and $\pK$ the kaon three-momentum in the $\KK$ rest frame. Ignoring constant factors, the differential decay rate can now be
-expressed as
+where $\mBs$ is the $\Bs$ mass, $\pJpsi$ the $\Jpsi$ three-momentum in the rest frame of the $\Bs$, and $\pK$ the kaon three-momentum in
+the $\KK$ rest frame.  With the derivative of this expression with respect to $\cthetaK$ the determinant is given by
+$\text{4}\,\mBs\,|\pJpsi|\,|\pK|$. Including the determinant, ignoring constant factors, the differential decay rate can now be expressed
+as
 \begin{equation}
   \label{eq:diffRateAngles}
   \ud\Gamma \propto |\pJpsi|\,|\pK|\, |\mathcal{A}(\Bstof)|^2\, \ud\mKK\, \ud\cthetaK\, \ud\cthetal\, \ud\phihel \ .
@@ -59,20 +61,31 @@ The factors $|\pJpsi|$ and $|\pK|$ depend on the $\KK$ invariant mass, but not o
 $\mKK$-dependent part of $|\mathcal{A}(\Bstof)|^2$ (see Section~\ref{sec:pheno_KKMass}).
 
 The squared amplitude for the \BstoJpsiKK{} process can be obtained by working out expressions for $|\Af|^2$, $|\Abarf|^2$ and
-$\Af^*\,\Abarf$ and combining these with the decay time dependence of Equation~\ref{eq:mixDecayDiffRate}. See Reference~\cite{Zhang:2012zk}
-for an example of this approach for $\text{B}_q^\text{0}\to\Jpsihh$ processes in general.
+$\Af^*\,\Abarf$ and combining these with the decay time dependence of Equation~\ref{eq:mixDecayDiffRate}. The resulting expression is
+ordered by the four time-dependent functions, $\cDGs$, $\sDGs$, $\cDms$, and $\sDms$. Each of the four function coefficients depends on the
+kinematic variables. See Reference~\cite{Zhang:2012zk} for an example of this approach for $\text{B}_q^\text{0}\to\Jpsihh$ processes in
+general.
 
 However, it is often more convenient to order terms in the expression for the differential decay rate by intermediate resonant or
 angular-momentum state rather than by decay-time dependence. Each term then has a distinct dependence on kinematic variables. For the
 CP-violation analysis, a set of intermediate CP eigenstates is used to describe the decay.
 
 The \BstoJpsiphi{} process is the decay of a spin-zero particle into two spin-one particles, which gives three intermediate
-angular-momentum states. Describing the decay in terms of CP eigenstates, there is a state where the polarization vectors of the $\Jpsi$
-and the $\phimesalt$ point along the helicity axis and two states where the vectors are transverse with respect to the helicity axis. The
-former polarization is called \emph{longitudinal} and is indicated with ``0''. The two transverse polarizations are \emph{parallel}
-($\parallel$) and \emph{perpendicular} ($\perp$), indicating the relative orientations of the two vectors in the transverse plane. The
-\BstoJpsiKK{} S-wave gives a fourth intermediate state, indicated with ``S''. The longitudinal and parallel states are even under a CP
-transformation, while the perpendicular and S-wave states are odd.
+angular-momentum states. Describing the decay in terms of linear spin-polarization states, there is one state where the polarization
+vectors of the $\Jpsi$ and the $\phimesalt$ point along the helicity axis and two states where the vectors are transverse with respect to
+the helicity axis. The former polarization is called \emph{longitudinal} and is indicated with ``0''. The two transverse polarizations are
+\emph{parallel} (``$\parallel$'') and \emph{perpendicular} (``$\perp$''), indicating the relative orientations of the two vectors in the
+transverse plane.
+
+The behaviour of the $\Jpsiphi$ system under a CP transformation depends on its orbital angular-momentum configuration. Since both the
+$\Jpsi$ and the $\phimes$ particles are odd under a CP transformation, the CP of the system is equal to the parity of the orbital
+angular-momentum state. For the longitudinal and parallel polarizations the state of the $\JpsiKK$ orbital angular momentum is either an
+S-wave ($L$\texteq0) or a D-wave ($L$\texteq2), which are even under a parity transformation. The perpendicular polarization state
+corresponds to a P-wave ($L$\texteq1), which is odd under parity.
+
+A fourth intermediate state is formed by the $\KK$ S-wave, indicated with ``S''. For this state the $\KK$ system has no angular momentum.
+Because the decaying $\Bs$ meson is spinless, the orbital angular momentum of the $\JpsiKK$ system needs to be in a P-wave configuration,
+which compensates for the spin of the $\Jpsi$. As a result, the $\KK$ S-wave state is odd under CP.
 
 To derive an expression for the squared amplitude in terms of intermediate states it is necessary to go back to the expression for the
 $\Bstof$ amplitude in Equation~\ref{eq:mixDecayAmps} and expand the decay amplitudes:
@@ -122,6 +135,7 @@ Combining the interference terms with indices $ij$ and $ji$ gives
   \label{eq:sqAmp}
   |\mathcal{A}(\Bstof)|^2
     \propto \sum_i |\Ai\,\timeAmp\,\angAmp\,\mKKAmp|^2
-      + \sum_{i\neq j} \Re( \Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]\, \angAmp^*\angAmp[j]\, \mKKAmp^*\mKKAmp[j] )
+      + \sum_{i\neq j} \Re( \Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]\, \angAmp^*\angAmp[j]\, \mKKAmp^*\mKKAmp[j] ) \ ,
 \end{equation}
+where the indices $i$ and $j$ run over the intermediate states $0$, $\parallel$, $\perp$, and S.
 The dependence on decay time, decay angles, and invariant $\KK$ mass of this expression are discussed in the following sections.

@@ -4,6 +4,7 @@
 The distribution in decay time follows from the products $\timeAmp^*\timeAmp[j]$ (Equation~\ref{eq:amplitudeAmpLami}). With $|g_\pm|^2$ and
 $g_+^*\,g_-$ from Equation~\ref{eq:mixDecayQpSq}, these products are given by
 \begin{align}
+  \label{eq:timeDepProd}
   \timeAmp^*\timeAmp[j]
   &=\left[ |g_+|^2 + \lamsi^*\,\lamsi[j]\, |g_-|^2 + \lamsi^*\, (g_+^*\,g_-)^* + \lamsi[j]\, g_+^*\,g_- \right] \nonumber \\
   &=\tfrac{1}{2}\, \eGst\, \Big[    (1+\lamsi^*\lamsi[j]) \, \cDGs
@@ -72,7 +73,11 @@ given by
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The coefficients of the time-dependent functions in Equation~\ref{eq:timeqfDep} are functions of $\lamsi$ and hence contain both the
 effects of CP violation in mixing and CP violation in decay. These two effects can be separated with an alternative parameterization, which
-has been implemented in the software that was used for data analysis in this measurement. Defining
+has been implemented in the software that was used for data analysis in this measurement.
+
+Starting again from Equation~\ref{eq:timeDepProd}, an alternative expression for the product
+$\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}}$ is derived by splitting the $\lamsi$ parameter into a $\qpAlt$ factor and an amplitude
+factor. Defining
 \begin{equation}
   \label{eq:decayRho}
   \begin{gathered}
@@ -101,6 +106,7 @@ the product $\Ai^*\Ai[j]\,\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}}$ can be
                     &\quad\quad\quad + \qf\,(\Pim\,\Dm-\Pre\,\Sm)\,\sDms \Big] \ .
   \end{aligned}
 \end{equation}
+Notice that the amplitudes $\Ai$ and $\Ai[j]$ occur in this expression and not the CP-average amplitudes $\AAv$ and $\AAv[{\Ai[j]}]$.
 
 Since the phases of $\qp$ and $\frac{\Abari}{\Ai}$ cannot be observed independently, only the combinations $\Pre\,\Dm$\textplus$\Pim\,\Sm$
 and $\Pim\,\Dm$\textminus$\Pre\,\Sm$ are observable and not the $\Pre$, $\Pmn$, $\Dm$, and $\Sm$ parameters individually. A phase
