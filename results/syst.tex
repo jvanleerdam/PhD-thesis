@@ -9,26 +9,25 @@ The value of some of the nuisance parameters can be determined with the \BstoJps
 these cases the value of the parameter is varied in the fit, often constrained by external information. Uncertainties originating from
 these parameters are therefore absorbed in the statistical uncertainties quoted in Section~\ref{sec:result_paramEst}.
 
-As described in Section~\ref{subsec:ana_time_acc}, the parameters of the lower decay-time acceptance function are fully determined from the
-\BstoJpsiKK{} data and constrained in the fit by counting decay candidates in the different trigger categories. The externally determined
-exponential factors for the upper decay-time acceptance in 2011 and 2012 are combined with the information on their difference from the
-decay-time fit by varying these nuisance parameters within Gaussian constraints.
+As described in Section~\ref{subsec:ana_time_acc}, the parameters of the trigger decay-time acceptance function are fully determined from
+the \BstoJpsiKK{} data and constrained in the fit by counting decay candidates in the different trigger categories. The externally
+determined exponential factors for the reconstruction decay-time acceptance in 2011 and 2012 are combined with the information on their
+difference from the decay-time fit by varying these nuisance parameters within Gaussian constraints.
 
 Resulting contributions of decay-time acceptance uncertainties are estimated by repeating the fit with fixed acceptance parameters and
 subtracting the statistical uncertainties with varying and with fixed parameters in quadrature. Only the uncertainty of $\Gs$ is
-significantly affected. The contribution from the lower acceptance is 0.0011~\invps{} and the contribution from the upper acceptance
-0.0015~\invps. It turns out that only uncertainties in the decay-time acceptance parameters significantly affect $\Gs$, so no further
-systematics are quoted for this parameter.
+significantly affected. The contribution from the trigger acceptance is 0.0011~\invps{} and the contribution from the reconstruction
+acceptance 0.0015~\invps.
 
 Other nuisance parameters that are varied within Gaussian constraints are the parameters that describe the flavour-tagging calibration, as
 discussed in Section~\ref{sec:ana_tagging}. Fixing the tagging parameters does not significantly affect any of the uncertainty estimates
 for other parameters.
 
 Systematic effects that are not propagated to the statistical uncertainties are listed in Tables~\ref{tab:systErrsPhases},
-\ref{tab:systErrsMixDecay}, and \ref{tab:systErrsLifetime} for the principal parameters. Also a total uncertainty is shown for each
-parameter, determined by adding the statistical and systematic uncertainties in quadrature. The effects for the three CP-violation
-parameterizations are found to be similar and for most parameters only results with the $\phisi$/$\Csi$ model are shown. Systematic
-uncertainties for $\phis$ are assumed to be the same as those for $\phisav$ and uncertainties for $\lamsAbs$ are shown in
+\ref{tab:systErrsMixDecay}, \ref{tab:systErrsLifetime}, and \ref{tab:systErrsAmps} for the principal parameters. Also a total uncertainty
+is shown for each parameter, determined by adding the statistical and systematic uncertainties in quadrature. The effects for the three
+CP-violation parameterizations are found to be similar and for most parameters only results with the $\phisi$/$\Csi$ model are shown.
+Systematic uncertainties for $\phis$ are assumed to be the same as those for $\phisav$ and uncertainties for $\lamsAbs$ are shown in
 Table~\ref{tab:systErrsMixDecay}.
 
 \begin{table}[htbp]
@@ -87,29 +86,57 @@ Table~\ref{tab:systErrsMixDecay}.
 
 \begin{table}[htbp]
   \centering
-  \caption{Systematic uncertainties for the lifetime parameters and transversity amplitudes.}
+  \caption{Systematic uncertainties for the lifetime parameters.}
   \label{tab:systErrsLifetime}
-  \begin{tabular}{lllllll}
+  \begin{tabular}{llll}
     \hline
-                             &  $\DGs$    &  $\Dms$    &  $\magzeroAvSq$  &  $\magperpAvSq$  &  $\delparzero$  &  $\delperpzero$  \\
-                             &  [\invps]  &  [\invps]  &                  &                  &  [rad]          &  [rad]           \\
+                             &  $\Gs$     &  $\DGs$    &  $\Dms$    \\
+                             &  [\invps]  &  [\invps]  &  [\invps]  \\
     \hline
-    \textit{$\JpsiKK$ mass}  &  &  &  &  &  &  \\
-    resonant                 &  0.0002    &  0.001     &  0.0002          &  0.0003          &  0.024          &  0.011           \\
-    factorization            &  0.0006    &  0.002     &  0.0064          &  0.0030          &  0.050          &  0.048           \\[3pt]
-    \textit{$\KK$ mass}      &  &  &  &  &  &  \\                                
-    integrals                &  \ctm      &  \ctm      &  \ctm            &  \ctm            &  0.003          &  0.007           \\[3pt]
-    \textit{decay time}      &  &  &  &  &  &  \\
-    resolution               &  \ctm      &  0.006     &  \ctm            &  \ctm            &  0.004          &  0.008           \\[3pt]
-    \textit{decay angles}    &  &  &  &  &  &  \\                                
-    resolution               &  0.0008    &  0.006     &  0.0002          &  0.0009          &  0.036          &  0.022           \\
-    acc. statistical         &  0.0001    &  0.001     &  0.0005          &  0.0007          &  0.019          &  0.009           \\
-    acc. simulation          &  0.0001    &  0.001     &  0.0020          &  0.0011          &  0.006          &  0.002           \\
-    \hline                                                                      
-    total systematic         &  0.0010    &  0.009     &  0.0067          &  0.0034          &  0.069          &  0.056           \\
+    \textit{$\JpsiKK$ mass}  &  &  &  \\
+    resonant                 &  \ctm      &  0.0002    &  0.001     \\
+    factorization            &  \ctm      &  0.0006    &  0.002     \\[3pt]
+    \textit{decay time}      &  &  &  \\
+    resolution               &  \ctm      &  \ctm      &  0.006     \\
+    reco. acc. model         &  0.0013    &  0.0023    &  0.012     \\[3pt]
+    \textit{decay angles}    &  &  &  \\
+    resolution               &  \ctm      &  0.0008    &  0.006     \\
+    acc. statistical         &  \ctm      &  0.0001    &  0.001     \\
+    acc. simulation          &  \ctm      &  0.0001    &  0.001     \\
     \hline
-    statistical              &  0.0092    &  0.060     &  0.0034          &  0.0049          &  0.132          &  0.165           \\
-    total                    &  0.009     &  0.06      &  0.008           &  0.006           &  0.15           &  0.17            \\
+    total systematic         &  0.0013    &  0.0025    &  0.015     \\
+    \hline
+    statistical              &  0.0033    &  0.0092    &  0.060     \\
+    total                    &  0.004     &  0.010     &  0.06      \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Systematic uncertainties for the transversity amplitudes.}
+  \label{tab:systErrsAmps}
+  \begin{tabular}{lllll}
+    \hline
+                             &  $\magzeroAvSq$  &  $\magperpAvSq$  &  $\delparzero$  &  $\delperpzero$  \\
+                             &                  &                  &  [rad]          &  [rad]           \\
+    \hline
+    \textit{$\JpsiKK$ mass}  &  &  &  &  \\
+    resonant                 &  0.0002          &  0.0003          &  0.024          &  0.011           \\
+    factorization            &  0.0064          &  0.0030          &  0.050          &  0.048           \\[3pt]
+    \textit{$\KK$ mass}      &  &  &  &  \\
+    integrals                &  \ctm            &  \ctm            &  0.003          &  0.007           \\[3pt]
+    \textit{decay time}      &  &  &  &  \\
+    resolution               &  \ctm            &  \ctm            &  0.004          &  0.008           \\[3pt]
+    \textit{decay angles}    &  &  &  &  \\
+    resolution               &  0.0002          &  0.0009          &  0.036          &  0.022           \\
+    acc. statistical         &  0.0005          &  0.0007          &  0.019          &  0.009           \\
+    acc. simulation          &  0.0020          &  0.0011          &  0.006          &  0.002           \\
+    \hline
+    total systematic         &  0.0067          &  0.0034          &  0.069          &  0.056           \\
+    \hline
+    statistical              &  0.0034          &  0.0049          &  0.132          &  0.165           \\
+    total                    &  0.008           &  0.006           &  0.15           &  0.17            \\
     \hline
   \end{tabular}
 \end{table}
@@ -177,6 +204,21 @@ In simulation the differences between the resolution-model parameters for signal
 these differences a transformation between the two models is constructed, which is applied to the measured real-data parameters to obtain
 estimates of the signal-model parameters for real data. The difference in results between fits with the signal and background
 resolution models for real data is taken as a systematic uncertainty.
+
+\paragraph{Decay-time model: reconstruction acceptance}
+The acceptance arising from reconstruction is modelled as a function with an exponential shape in decay time, as described in
+Section~\ref{subsec:ana_time_acc}. This model only describes the acceptance function approximately, which gives systematic uncertainties in
+the estimates of the lifetime parameters.
+
+The uncertainties are evaluated with the differences between fit results on a data sample that is corrected for the reconstruction
+acceptance and the nominal data sample. Data are corrected for acceptance by assigning weights that inversely proportional to the
+acceptance to decay candidates. The weights are calculated with the shape of the acceptance in the reconstruction variables of a
+candidate. Although this acceptance shape is still an approximation, it describes the exact function significantly better than an
+exponential shape~\cite{LHCb-ANA-2014-039}.
+
+The resulting uncertainties dominate the systematics for the parameters $\Gs$, $\DGs$, and $\Dms$. For this reason a different approach may
+be required for future measurements with a larger dataset. Further study is required to evaluate the exact shape of the acceptance function
+and either implement it in the PDF or use it to correct the data.
 
 \paragraph{Decay-time model: nuisance \BsBsbar{} asymmetries}
 In the nominal analysis the absence of all time-independent \BsBsbar{} asymmetries is assumed. That is, the assumption is made that there
