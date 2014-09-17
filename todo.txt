@@ -4,6 +4,10 @@ defense:
 * understand resolution plots in intro
 * Why is the error on phi_s slightly smaller in |lambda|=1 model? Only a 2% correlation between phi_s and |lambda|.
   Shift in parameter values (Deltam->resolution?, delta_perp?), makes error on Deltam larger instead of smaller.
+* Differences of parameter values in Deltam-constraint fit with respect to nominal values corresponds with correlations.
+  What about uncertainties?
+* Hard to say what to expect from fits in narrow KK-mass window. Errors go up with respect to wide window,
+  but what about the differences between one bin and four bins?
 
 thesis:
 * interference terms in KK-mass plot?!
