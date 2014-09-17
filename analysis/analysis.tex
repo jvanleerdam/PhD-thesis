@@ -7,9 +7,22 @@ simultaneous in KK-mass bins and tagging categories
 \section{Decay-Candidate Selection and Background}
 \label{sec:ana_bkgSub}
 show mass-fit results in $\cthetal$ bins
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{graphics/analysis/mumuMass}
+  \caption{Background-subtracted distribution of \BstoJpsiKK{} decays in $\mumu$ mass.}
+  \label{fig:mumuMass}
+\end{figure}
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{graphics/analysis/KKMass}
+  \caption{Background-subtracted distribution of \BstoJpsiKK{} decays in $\KK$ mass.}
+  \label{fig:KKMass}
+\end{figure}
 
 \section{Decay Time}
 \label{sec:ana_time}
+mention reconstruction-acceptance model (linear/exponential/quadratic in time)
 
 \subsection{Resolution}
 \label{subsec:ana_time_res}
@@ -46,6 +59,18 @@ Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero
 \label{sec:ana_tagging}
 mention how to handle conditional observables for plots and toys,
 explain why nuisance asymmetries can be ignored
+
+\begin{equation}
+  \begin{aligned}
+    \label{eq:diffRateObs}
+    \left(\frac{\ud^{4} \Gamma}{\ud t \;\ud\Omega}\right)_{\qf,\,i}^{\text{obs}}\
+      &\propto\ (1-\wTag[\qf,\,i]) \left(\avgCEven[i] + \qf\,\avgCOdd\right)\left(\even + \qf\,\odd\right) \\
+      &\qquad\quad+ \wTag[-\qf,\,i] \left(\avgCEven[i] - \qf\,\avgCOdd\right)\left(\even - \qf\,\odd\right) \\
+    &\propto\ \left[\avgCEven[i] + \qf\,\dil[i]\left(\avgCOdd[i] - \ADilWTag[i]\,\avgCEven[i]\right)\right]\even \\
+      &\qquad\quad+ \left[\avgCOdd[i] + \qf\,\dil[i]\left(\avgCEven[i] - \ADilWTag[i]\,\avgCOdd[i]\right)\right]\odd
+  \end{aligned}
+\end{equation}
+
 
 \section{Simulation}
 \label{sec:ana_sim}
