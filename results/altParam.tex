@@ -1,17 +1,38 @@
 \section{Alternative Parameterizations}
 \label{sec:result_altParam}
 
-$\Gs$\texteq0.6591\textpm0.0031\unitsp\invps.
+To justify some of the modelling choices made in Chapter~\ref{chap:ana}, the time and angular fit is repeated with alternative
+parameterizations. The effects of an external constraint on the estimate of $\Dms$, a narrower $\KK$-mass window, and flavour-tagging
+categories are studied. It is expected that the fits with alternative models yield results that are comparable to or less precise than the
+results from the nominal fit.
+
+The parameters of the lower decay-time acceptance function are fixed to their nominal vales in all alternative fits, since this
+considerably reduces the time that the fits take. As a result, the estimated statistical uncertainty on $\Gs$ decreases. The fit with the
+nominal model yields $\Gs$\texteq0.6591\textpm0.0031\unitsp\invps.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Constrained Mass-Difference Parameter}
 \label{subsec:result_altParam_Delm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Uncertainties depend on point in parameter space. What happens if we constrain $\Dms$ (apart from error on $\delperpzero$)? Not much\ldots
+Currently the most precise estimate of $\Dms$ is given by 17.768\textpm0.024\unitsp\invps{} and comes from an LHCb analysis of
+\BstoDsmpip{} decays~\cite{LHCb-PAPER-2013-006}. This estimate can be used to constrain the value of $\Dms$ in the \BstoJpsiKK{} fit, as
+was done for previous measurements~\cite{LHCb-PAPER-2011-021,*LHCb-ANA-2011-036,LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}. The constraint is
+implemented by adding a parabolic term to the NLL.
+
+The value of the $\Dms$ constraint is about one standard deviation larger than the nominal-fit estimate
+($\Dms$\texteq17.697\textpm0.062\unitsp\invps) and its uncertainty is a factor 2.6 smaller. As a result, the estimates of the parameters
+that are correlated to $\Dms$ are expected to deviate from the nominal result. Especially the estimate of $\delperpzero$, for which the
+correlation with $\Dms$ is 70\%, will be significantly affected.
+
+Table~\ref{tab:result_DelM_polarDep} lists the results of the fit with $\Dms$ constrained. Estimates of the parameter values are given in
+the second column from the left. The third column contains the differences of these estimates with respect to the values from the nominal
+fit. The uncertainty estimates are given in the fourth column and the relative change in the uncertainties in the fifth column.
 \begin{table}[htbp]
   \centering
-  \caption{}
+  \caption{Results of a fit with the estimate of $\Dms$ constrained to an external measurement
+           ($\Dms$\texteq17.768\textpm0.024\unitsp\invps~\cite{LHCb-PAPER-2013-006}).}
   \label{tab:result_DelM_polarDep}
   \begin{tabular}{lllll}
     \hline
@@ -39,45 +60,63 @@ Uncertainties depend on point in parameter space. What happens if we constrain $
   \end{tabular}
 \end{table}
 
+The estimates of the value and uncertainty of $\Dms$ agree with what is expected from a combination of the internal and external estimates.
+Also value and uncertainty of $\delperpzero$ change as expected. The decrease of the uncertainty of the $\Delphisperpp$ estimate might be
+somewhat surprising, since there is no correlation between $\Delphisperpp$ and $\Dms$ given in
+Table~\ref{tab:result_paramEst_correlations}. However, the likelihood shape in $\Delphisperpp$
+(Figure~\ref{fig:NLL_CPV_phases_phiCPRel_AperpApar}) is not Gaussian, so the linear covariance matrix is not sufficient to predict the
+changes for this parameter. The similarity of these results to the nominal results justifies omission of the $\Dms$ constraint in the fit,
+although this choice may have to be re-evaluated for future analyses, depending on the $\Dms$ correlations with a larger dataset.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Narrow \texorpdfstring{$\KK$}{KK}-Mass Window}
 \label{subsec:result_altParam_KKMass}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}[htbp]
-  \centering
-  \caption{One $\KK$-mass bin.}
-  \label{tab:result_KKMass1_polarDep}
-  \begin{tabular}{lllll}
-    \hline
-    parameter        &  \multicolumn{2}{l}{estimate (difference)}              &  \multicolumn{2}{l}{uncertainty (rel. difference)} \\
-    \hline
-    $\phisav$       &  \tm0.046           &    (+0.001)   &  +0.072 \tm0.058  &  (+0.41 +0.14)                                      \\
-    $\Delphispara$  &  \tm0.004           &    (+0.015)   &  +0.059 \tm0.055  &  (+0.38 +0.28)                                      \\
-    $\Delphisperpp$ &  \tm0.011           &  (\tm0.008)   &  +0.034 \tm0.054  &  (+0.20 +0.87)                                      \\
-    $\DelphisS$     &  \tm0.054           &  (\tm0.069)   &  +1.66  \tm1.57   &  (+1.3  +24)                                        \\
-    \hline
-    $\Csav$         &  \tm0.008           &  (\tm0.001)   &  +0.040 \tm0.048  &  (+0.04 +0.23)                                      \\
-    $\DelCspara$    &  \tm0.013           &    (+0.012)   &  +0.175 \tm0.161  &  (+0.44 +0.32)                                      \\
-    $\DelCsperp$    &   +0.036            &  (\tm0.007)   &  0.169            &  (+0.04)                                            \\
-    $\CsavS$        &   +0.071            &    (+0.012)   &  +0.073 \tm0.174  &  (+1.3  +4.4)                                       \\
-    \hline
-    $\Gs$           &  \phantom{+}0.6577  &  (\tm0.001)   &  0.0032           &  (+0.04)                                            \\
-    $\DGs$          &   +0.0815           &   (+0.0030)   &  0.0095           &  (+0.04)                                            \\
-    $\Dms$          &  \phantom{+}17.682  &  (\tm0.015)   &  +0.071 \tm0.093  &  (+0.15 +0.51)                                      \\
-    \hline
-    $\magzeroAvSq$  &  \phantom{+}0.5247  &    (+0.0011)  &  0.0036           &  (+0.04)                                            \\
-    $\magperpAvSq$  &  \phantom{+}0.2512  &    (\tm)      &  0.0053           &  (+0.08)                                            \\
-    $\delparzero$   &   +3.248            &    (+0.002)   &  +0.126 \tm0.373  &  (+0.22 +0.85)                                      \\
-    $\delperpzero$  &   +2.997            &  (\tm0.039)   &  +0.200 \tm0.372  &  (+0.25 +1.1)                                       \\
-    \hline
-  \end{tabular}
-\end{table}
+Since the main interest of this measurement is CP violation in the \BstoJpsiphi{} decay, one could argue to limit the range of $\KK$ masses
+to the region where the $\phimes$ significantly contributes. This is a region of approximately 24~\MeV{} around the centre of the
+$\phimesalt$ peak at 1020~\MeV{} (see also Figure~\ref{fig:KKMass}).
 
+Results of a fit in a $\KK$-mass window of [1008, 1032]~\MeV{} are shown in Table~\ref{tab:result_KKMass4_polarDep}. The window was split
+up into the four bins of the nominal analysis. The structure of the table is the same as for Table~\ref{tab:result_DelM_polarDep}.
+
+Uncertainties of the parameter estimates increase with respect to the nominal fit, because the information on the $\KK$ S-wave in the [990,
+1008]~\MeV{} and [1032, 1050]~\MeV{} bins is lost. Parameters which are (partially) determined with the S-wave (interference) terms are
+affected. From these results it can be seen that the two outer $\KK$-mass bins add valuable information for the CP-violation measurement.
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption{Results of a fit in a $\KK$-mass window of [1008, 1032]~\MeV{} with one bin.}
+%  \label{tab:result_KKMass1_polarDep}
+%  \begin{tabular}{lllll}
+%    \hline
+%    parameter        &  \multicolumn{2}{l}{estimate (difference)}              &  \multicolumn{2}{l}{uncertainty (rel. difference)} \\
+%    \hline
+%    $\phisav$       &  \tm0.046           &    (+0.001)   &  +0.072 \tm0.058  &  (+0.41 +0.14)                                      \\
+%    $\Delphispara$  &  \tm0.004           &    (+0.015)   &  +0.059 \tm0.055  &  (+0.38 +0.28)                                      \\
+%    $\Delphisperpp$ &  \tm0.011           &  (\tm0.008)   &  +0.034 \tm0.054  &  (+0.20 +0.87)                                      \\
+%    $\DelphisS$     &  \tm0.054           &  (\tm0.069)   &  +1.66  \tm1.57   &  (+1.3  +24)                                        \\
+%    \hline
+%    $\Csav$         &  \tm0.008           &  (\tm0.001)   &  +0.040 \tm0.048  &  (+0.04 +0.23)                                      \\
+%    $\DelCspara$    &  \tm0.013           &    (+0.012)   &  +0.175 \tm0.161  &  (+0.44 +0.32)                                      \\
+%    $\DelCsperp$    &   +0.036            &  (\tm0.007)   &  0.169            &  (+0.04)                                            \\
+%    $\CsavS$        &   +0.071            &    (+0.012)   &  +0.073 \tm0.174  &  (+1.3  +4.4)                                       \\
+%    \hline
+%    $\Gs$           &  \phantom{+}0.6577  &  (\tm0.0014)  &  0.0032           &  (+0.04)                                            \\
+%    $\DGs$          &   +0.0815           &   (+0.0030)   &  0.0095           &  (+0.04)                                            \\
+%    $\Dms$          &  \phantom{+}17.682  &  (\tm0.015)   &  +0.071 \tm0.093  &  (+0.15 +0.51)                                      \\
+%    \hline
+%    $\magzeroAvSq$  &  \phantom{+}0.5247  &    (+0.0011)  &  0.0036           &  (+0.04)                                            \\
+%    $\magperpAvSq$  &  \phantom{+}0.2512  &    (\tm)      &  0.0053           &  (+0.08)                                            \\
+%    $\delparzero$   &   +3.248            &    (+0.002)   &  +0.126 \tm0.373  &  (+0.22 +0.85)                                      \\
+%    $\delperpzero$  &   +2.997            &  (\tm0.039)   &  +0.200 \tm0.372  &  (+0.25 +1.1)                                       \\
+%    \hline
+%  \end{tabular}
+%\end{table}
 \begin{table}[htbp]
   \centering
-  \caption{Four $\KK$-mass bins.}
+  \caption{Results of a fit in the $\KK$-mass window of [1008, 1032]~\MeV{} with four bins.}
   \label{tab:result_KKMass4_polarDep}
   \begin{tabular}{lllll}
     \hline
@@ -111,10 +150,24 @@ Uncertainties depend on point in parameter space. What happens if we constrain $
 \label{subsec:result_altParam_tagCats}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-No $\Dms$, $\delparzero$\texteq$\pi$, $\DelCsperp$\texteq0:
+The flavour-tagging scheme with an estimated wrong-tag probability for each decay candidate is expected to give more precise
+results than a scheme with an average wrong-tag probability. To test this assumption the data are fitted using three alternative
+flavour-tagging parameterizations.
+
+Table~\ref{tab:result_untagged_polarDep} shows the results of a fit in which no flavour-tagging information is used. Neglecting \BsBsbar{}
+nuisance asymmetries, the $\cDms$ and $\sDms$ terms vanish from the PDF used in this untagged fit and only the $\cDGs$ and $\sDGs$ terms
+remain (see Section~\ref{sec:ana_tagging}). As a result, there is no sensitivity for the parameter $\Dms$ in this fit, but also the
+uncertainties in the estimates of other parameters increase significantly.
+
+Table~\ref{tab:timeFunctionsNoCPV} shows that with small CP violation $\delparzero$ appears in the coefficients of the $\cDGs$ and $\sDGs$
+terms, but $\delperpzero$ does not. The latter is fixed to $\pi$ in the untagged fit, because its uncertainty becomes too large. In the
+nominal fit the main sensitivity for $\phisav$ and $\Csav$ comes from the $|\Ai|^2$ oscillation terms. In the untagged fit the information
+has to come from interference terms and, at second order, from the $|\Ai|^2$ $\cDGs$ and $\sDGs$ terms. As a result, $\DelCsperp$ also
+becomes too uncertain and is fixed to zero.
+
 \begin{table}[htbp]
   \centering
-  \caption{Untagged}
+  \caption{Results of a fit in which no flavour-tagging information is used.}
   \label{tab:result_untagged_polarDep}
   \begin{tabular}{lllll}
     \hline
@@ -144,7 +197,37 @@ No $\Dms$, $\delparzero$\texteq$\pi$, $\DelCsperp$\texteq0:
 
 \begin{table}[htbp]
   \centering
-  \caption{4\texttimes{}4 tagging categories.}
+  \caption{Tagging categories and estimates of the corresponding dilution factors from the fit without tagging-calibration constraints
+           (Table~\ref{tab:result_4TagCats_polarDep}).}
+  \label{tab:result_4TagCats_polarDep_dilution}
+  \begin{tabular}{llll}
+    \hline
+    OS index      &  $\etaOS$ range                  &  mean $\etaOS$  &  dilution estimate  \\
+    \hline
+    0 (untagged)  &  $\etaOS$\texteq0.5              &  0.5            &  0                  \\
+    1             &  0.34\textle$\etaOS$\textlt0.50  &  0.43           &  0.06\textpm0.04    \\
+    2             &  0.22\textle$\etaOS$\textlt0.34  &  0.29           &  0.41\textpm0.08    \\
+    3             &  $\etaOS$\textlt0.22             &  0.18           &  0.74\textpm0.14    \\
+    \hline
+  \end{tabular}
+
+  \vspace*{5pt}
+  \begin{tabular}{llll}
+    \hline
+    SS index      &  $\etaSS$ range                  &  mean $\etaSS$  &  dilution estimate  \\
+    \hline
+    0 (untagged)  &  $\etaSS$\texteq0.5              &  0.5            &  0                  \\
+    1             &  0.40\textle$\etaSS$\textlt0.50  &  0.47           &  0.07\textpm0.03    \\
+    2             &  0.30\textle$\etaSS$\textlt0.40  &  0.36           &  0.17\textpm0.07    \\
+    3             &  $\etaSS$\textlt0.30             &  0.26           &  0.43\textpm0.12    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Results of a fit with four tagging categories for OS tags and four tagging categories for SS tags.
+           Tagging-dilution factors are varied independently for the categories, without constraints.}
   \label{tab:result_4TagCats_polarDep}
   \begin{tabular}{lllll}
     \hline
@@ -153,7 +236,7 @@ No $\Dms$, $\delparzero$\texteq$\pi$, $\DelCsperp$\texteq0:
     $\phisav$        &  \tm0.061           &  (\tm0.014)           &  0.059            &  (+0.16)                       \\
     $\Delphispara$   &  \tm0.025           &  (\tm0.007)           &  0.043            &  (+0.01)                       \\
     $\Delphisperpp$  &    +0.003           &    (+0.005)           &  +0.036 \tm0.031  &  (+0.27 +0.08)                 \\
-    $\DelphisS$      &  \tm0.013           &  (\tm0.001)           &  +0.060 \tm0.067  &  (\tm0.04 +0.07)               \\
+    $\DelphisS$      &    +0.013           &  (\tm0.001)           &  +0.060 \tm0.067  &  (\tm0.04 +0.07)               \\
     \hline
     $\Csav$          &    +0.004           &    (+0.011)           &  0.049            &  (+0.26)                       \\
     $\DelCspara$     &  \tm0.011           &    (+0.013)           &  0.131            &  (+0.08)                       \\
@@ -174,14 +257,15 @@ No $\Dms$, $\delparzero$\texteq$\pi$, $\DelCsperp$\texteq0:
 
 \begin{table}[htbp]
   \centering
-  \caption{4\texttimes{}4 tagging categories with linear wrong-tag parameterization.}
+  \caption{Results of a fit with four tagging categories for OS tags and four tagging categories for SS tags.
+           Tagging-dilution factors follow from the linear model that is also applied in the nominal fit.}
   \label{tab:result_4TagCatsLinear_polarDep}
   \begin{tabular}{lllll}
     \hline
     parameter        &  \multicolumn{2}{l}{estimate (difference)}  &  \multicolumn{2}{l}{uncertainty (rel. difference)} \\
     \hline
     $\phisav$        &  \tm0.040           &    (+0.007)           &  0.054            &  (+0.06)                       \\
-    $\Delphispara$   &  \tm0.019           &  (\tm)                &  0.045            &  (+0.05)                       \\
+    $\Delphispara$   &  \tm0.019           &  (\tm0.001)                &  0.045            &  (+0.05)                       \\
     $\Delphisperpp$  &    +0.003           &    (+0.005)           &  0.032            &  (+0.12)                       \\
     $\DelphisS$      &    +0.017           &    (+0.003)           &  +0.060 \tm0.067  &  (\tm0.03 +0.08)               \\
     \hline
@@ -202,3 +286,17 @@ No $\Dms$, $\delparzero$\texteq$\pi$, $\DelCsperp$\texteq0:
   \end{tabular}
 \end{table}
 
+Tables~\ref{tab:result_4TagCats_polarDep} and \ref{tab:result_4TagCatsLinear_polarDep} list the results of fits in which the data sample is
+split into tagging categories and separate tagging-calibration parameters are used for each category. The split is based on the estimated
+wrong-tag probabilities for OS and SS tags. The categories are given in Table~\ref{tab:result_4TagCats_polarDep_dilution}.
+
+For the results in Table~\ref{tab:result_4TagCats_polarDep} the tagging-dilution factors for the categories are varied independently.
+Asymmetries in the tagging calibration are neglected, because the information in the data is insufficient to determine the corresponding
+parameters. The resulting dilution factors are also shown in Table~\ref{tab:result_4TagCats_polarDep_dilution}.
+
+The third column in Table~\ref{tab:result_4TagCats_polarDep_dilution} shows the mean of the estimated wrong-tag probability in each
+category. These numbers can be used to calculate the tagging-calibration parameters with the linear model that is used in the nominal fit
+for each event. The parameter estimates in Table~\ref{tab:result_4TagCatsLinear_polarDep} are the result of a fit with this model.
+
+Uncertainties in the parameter estimates with tagging categories are comparable to the uncertainties in the nominal fit, although they are
+still larger. The parameter estimates are more precise with the linear calibration model and also with event-by-event tagging, as expected.
