@@ -96,15 +96,18 @@ the diagonal of $\vec{H'}$ yields
     \sqrt{H_{12} H_{21}} &= \tfrac{1}{2}\,(\mH-\mL) + \tfrac{i}{4}\,(\GL-\GH)\ .
   \end{align}
 \end{subequations}
-Using also Equation~\ref{eq:timeEvolHamil}:
+Using also Equation~\ref{eq:timeEvolHamil}, it is found that
 \begin{subequations}
   \label{eq:DmsDGsDef}
   \begin{alignat}{2}
     \label{eq:DmsDGsDef_ms}
-    \ms   &\,=\,&     \Re(H_0) &\,=\, \tfrac{1}{2}\,(\mH+\mL)     \\
+    \ms   &\,\equiv\,&     \Re(H_0) &\,=\, \tfrac{1}{2}\,(\mH+\mL)     \\
     \label{eq:DmsDGsDef_Gs}
-    \Gs &\,=\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GL+\GH)
-  \end{alignat}%
+    \Gs &\,\equiv\,& -2\,\Im(H_0) &\,=\, \tfrac{1}{2}\,(\GL+\GH)
+  \end{alignat}
+\end{subequations}
+and the following quantities can be defined:
+\begin{subequations}
   \begin{align}
     \label{eq:DmsDGsDef_Dms}
     \Dms   &\equiv \mH-\mL = 2\,\Re\!\left(\!\sqrt{H_{12} H_{21}}\right) \nonumber\\
@@ -166,7 +169,7 @@ expressed as
   \text{with } |p|^2+|q|^2\equiv1
   \ .
 \end{equation}
-Combining Equations~\ref{eq:timeEvolHamil}, \ref{eq:timeEvolMassTrans}, and \ref{eq:timeEvolTransInv}:
+Combining Equations~\ref{eq:timeEvolHamil}, \ref{eq:timeEvolMassTrans}, and \ref{eq:timeEvolTransInv} results in
 \begin{equation}
   \label{eq:qpDef}
   \qp = -\sqrt{\frac{H_{21}}{H_{12}}} = -\sqrt{\frac{\mmix^*-\tfrac{i}{2}\,\gmix^*}{\mmix-\tfrac{i}{2}\,\gmix}}
@@ -231,12 +234,12 @@ decay amplitude labelled by $\Abarf$. Also considering decays into the CP conjug
 four possible combinations of initial and final states are given by
 \begin{equation}
   \label{eq:mixDecayAmps}
-  \begin{alignedat}{4}
-    \mathcal{A}(\Bstof) &\propto& & g_+\, \Af + \qp\, g_-\, \Abarf &
+  \begin{alignedat}{5}
+    \mathcal{A}(\Bstof) &\propto& & g_+\, \Af + \qp\, g_-\, \Abarf &&\ ; &
     \qquad
     \mathcal{A}(\Bstofbar) &\propto& \;\qp \Big( & g_-\, \Abarfbar + \pq\, g_+\, \Afbar \Big)
     \\
-    \mathcal{A}(\Bsbartof) &\propto& \;\pq \Big( & g_-\, \Af + \qp\, g_+\, \Abarf \Big) &
+    \mathcal{A}(\Bsbartof) &\propto& \;\pq \Big( & g_-\, \Af + \qp\, g_+\, \Abarf \Big) &&\ ; &
     \mathcal{A}(\Bsbartofbar) &\propto& & g_+\, \Abarfbar + \pq\, g_-\, \Afbar
     \ .
   \end{alignedat}
@@ -390,9 +393,9 @@ CP violation in mixing would give rise to a $\qpAbsAlt$ that is not equal to one
 magnitudes of $\lamf$ and $\lamfbar$ would be different. CP violation in decay leads to $|\Af|\text{\textneq}|\Abarfbar|$ and/or
 $|\Abarf|\text{\textneq}|\Afbar|$, which also gives a difference in $\lamfAbs$ and $\lamfbarAbs$.
 
-Although the phases of the ratio $\qp$ and the amplitudes are not directly observable, the phases of $\lamf$ and $\lamfbar$ are. CP
-violation in the interference of decays with and without mixing gives $\lamf$ and $\lamfbar$ different phases, resulting in
-$\Df\text{\textneq}\Dfbar$ and $\Sf\text{\textneq}\Sfbar$.
+Although neither the phase of the ratio $\qp$ nor the phases of the amplitudes are directly observable, the phases of both $\lamf$ and
+$\lamfbar$ are. CP violation in the interference of decays with and without mixing gives $\lamf$ and $\lamfbar$ different phases, resulting
+in $\Df\text{\textneq}\Dfbar$ and $\Sf\text{\textneq}\Sfbar$.
 
 If the final state is a CP eigenstate, $\lamf$ and $\lamfbar$ can only be equal if they are real and equal to (minus) one, as a consequence
 of the relation $\lamfbar\text{\texteq}\frac{\text{1}}{\lamf}$. In other words, CP symmetry is violated if $|\lamf|\text{\textneq1}$ or
