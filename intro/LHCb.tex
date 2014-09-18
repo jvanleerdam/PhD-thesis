@@ -53,7 +53,7 @@ $\bbbar$ pairs. Beauty hadrons are formed by combining the b and $\qbar[b]$ quar
 If this lighter quark is an s ($\qbar[s]$) quark, the result is a $\Bs$ ($\Bsbar$) meson.
 
 In the inelastic collisions that are relevant for $\bbbar$ production, the constituents of the colliding protons interact. These
-constituents can be (anti)quarks or gluons, which are collectively called \emph{partons}. A proton consists of three valence quarks: two up
+constituents can be gluons or (anti)quarks, which are collectively called \emph{partons}. A proton consists of three valence quarks: two up
 quarks and one down quark. In addition it contains virtual partons, created by low-energy, non-perturbative QCD interactions. The
 centre-of-mass energy of the collision is large enough to make the lifetime of these virtual states larger than the time needed to also
 interact with partons from the other proton.
@@ -208,9 +208,14 @@ background is called \emph{prompt}. For non-prompt candidates some of the partic
 long-lived particle, for example a beauty hadron. Since the $\mumu$ vertex has a relatively small uncertainty in comparison with the $\KK$
 vertex, this often involves a $\Jpsi\to\mumu$ decay combined with kaons from the primary vertex.
 
-Another category is \emph{misidentified background}, which comprises decays where one or more particles have been incorrectly identified.
-The two misidentified backgrounds that are taken into account in the \BstoJpsiKK{} measurement are \BdtoJpsiKstKpi{} and \LbtoJpsipK. In
-the $\Bd$ decay the pion is misidentified as a kaon and in the $\Lb$ decay the proton as a kaon.
+To reduce the amount of prompt background that is considered for further analysis, candidates for which the secondary vertex is too close
+to the primary vertex are rejected. This leads to a detection inefficiency for candidates with a small flight distance and, consequently,
+small decay time. This effect is visible in Figure~\ref{fig:introHists_flightDist}, where the number of decays goes to zero at small decay
+time.
+
+Another background category is \emph{misidentified background}, which comprises decays where one or more particles have been incorrectly
+identified.  The two misidentified backgrounds that are taken into account in the \BstoJpsiKK{} measurement are \BdtoJpsiKstKpi{} and
+\LbtoJpsipK. In the $\Bd$ decay the pion is misidentified as a kaon and in the $\Lb$ decay the proton as a kaon.
 
 There are different stages of event and decay-candidate selection. Each stage is optimized to find signal decays with high efficiency and
 at the same time keep the background at a manageable level. The first three selection stages are \emph{triggers} \cite{LHCb-DP-2012-004},
@@ -308,8 +313,8 @@ direction of the track curvature.
 
 The performance of the tracking system is shown in Figures~\ref{fig:detPerf_momRes} and \ref{fig:detPerf_massRes}. The former figure shows
 the relative resolution of the momentum measurement for muon tracks in $\Jpsi\to\mumu$ decays, which varies from roughly 0.5\% to 1.1\% as
-a function of momentum. The resulting resolution of the dimuon invariant-mass measurement is shown in the latter figure. The relative mass
-resolution is about 0.5\% up to 10\unitsp\GeV, but increases to 1.9\% at the $\Zz$ mass.
+a function of momentum over a range of 2 to 300~\GeVc. The resulting resolution of the dimuon invariant-mass measurement is shown in the
+latter figure. The relative mass resolution is about 0.5\% up to 10\unitsp\GeV, but increases to 1.9\% at the $\Zz$ mass.
 \begin{figure}[ptb]
   \begin{subfigure}{0.49\textwidth}
     \includegraphics[width=\textwidth]{graphics/intro/dppVsp-crop-cmyk}
