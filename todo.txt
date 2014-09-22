@@ -11,6 +11,8 @@ defense:
   but what about the differences between one bin and four bins?
 
 thesis:
+* reference for Yukawa interaction (Section 1.1.1)
+* reference for Lorentz invariance -> CPT invariance in QFT (Section 1.1.1)
 * update resolution plots in intro: LHCB-CERN-LHCB-DP-2014-002-001
 * interference terms in KK-mass plot?!
 * b production mechanism

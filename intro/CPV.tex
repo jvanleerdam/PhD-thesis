@@ -16,7 +16,7 @@ subscript ``L'' on the quark indicates that only quark states with a left-handed
 
 The primes on the d$_\text{L}^\prime$, s$_\text{L}^\prime$ and b$_\text{L}^\prime$ quarks in the figure indicate that the states that
 couple to the W boson are not the quark mass eigenstates. The down-type states in the interaction are given by a rotation of the mass
-eigenstates, which is parameterized by the Cabibbo-Kobayashi-Maskawa (CKM) quark-mixing matrix \cite{Kobayashi:1973fv}:
+eigenstates, which is described by the Cabibbo-Kobayashi-Maskawa (CKM) quark-mixing matrix \cite{Kobayashi:1973fv}:
 \begin{equation}
   \begin{pmatrix} \text{d}_\text{L}^\prime \\ \text{s}_\text{L}^\prime \\ \text{b}_\text{L}^\prime \end{pmatrix}
     \equiv \VCKM\, \begin{pmatrix} \text{d}_\text{L} \\ \text{s}_\text{L} \\ \text{b}_\text{L} \end{pmatrix}
@@ -118,13 +118,13 @@ invariant under the CP transformation. Introducing a complex phase breaks this i
 the only source of CP violation in the Standard Model with massless leptons.
 
 Although the complex phase in the CKM matrix formally breaks CP invariance, CP-violating phenomena cannot be observed directly in processes
-that are described by a single diagram with W-boson interactions. The magnitude of a diagram is squared to obtain the corresponding
+that are described by a single amplitude with W-boson interactions. The magnitude of an amplitude is squared to obtain the corresponding
 observable probability, which makes its phase unobservable.
 
 CP violation can only be observed in processes where two or more amplitudes with different CKM elements interfere. The CKM elements then
 introduce a different \emph{weak phase} for each contribution, which changes sign between CP-conjugate processes. Differences between the
-weak phases do affect the observable magnitude of the total amplitude if the contributing amplitudes also have different \emph{strong
-phases}, which do not change sign under a CP transformation.
+weak phases do affect the observable magnitude of the total amplitude, provided that the contributing amplitudes also have different
+\emph{strong phases}, which do not change sign under a CP transformation.
 
 This can be illustrated by considering two interfering amplitudes $A_1$ and $A_2$ with CKM factors $F_1$ and $F_2$. The asymmetry between
 the squared magnitudes for CP-conjugate processes is then given by
@@ -150,10 +150,10 @@ relations, two of which are given by
   \begin{align}
     \text{``d--b'':} & \quad \Vud\Vub[*] + \Vcd\Vcb[*] + \Vtd\Vtb[*] = 0 \nonumber \\
     \label{eq:unitConstraints_d}
-    &\qquad\qquad\qquad \implies\ 1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0 \\
+    &\qquad\qquad\qquad \Rightarrow\ 1 + \frac{\Vud\Vub[*]}{\Vcd\Vcb[*]} + \frac{\Vtd\Vtb[*]}{\Vcd\Vcb[*]} = 0 \\
     \text{``s--b'':} & \quad \Vus\Vub[*] + \Vcs\Vcb[*] + \Vts\Vtb[*] = 0 \nonumber \\
     \label{eq:unitConstraints_s}
-    &\qquad\qquad\qquad \implies\ 1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0 \ .
+    &\qquad\qquad\qquad \Rightarrow\ 1 + \frac{\Vus\Vub[*]}{\Vcs\Vcb[*]} + \frac{\Vts\Vtb[*]}{\Vcs\Vcb[*]} = 0 \ .
   \end{align}
 \end{subequations}
 
@@ -198,7 +198,7 @@ The coordinates of the triangle apex are defined as $(\rhobar, \etabar)$.
 
 Equation~\ref{eq:unitConstraints_s} gives the \emph{s--b triangle} in Figure~\ref{fig:unitTriangles_bs}. It is defined in a
 similar way as the d--b triangle, but its apex has negative real and imaginary coordinates $(\rhosbar, \etasbar)$. The angles $\as$, $\bs$
-and $\gs$ are given by
+and $\gs$ are defined by
 \begin{equation}
   \label{eq:bsAnglesDef}
   \as \equiv \arg\left( -\frac{\Vus\Vub[*]}{\Vts\Vtb[*]} \right)
@@ -210,7 +210,7 @@ and $\gs$ are given by
 \end{equation}
 
 In Figure~\ref{fig:unitTriangles} the sides of the s--b and d--b triangles were scaled with factors $\Vcd\Vcb[*]$ and $\Vcs\Vcb[*]$,
-respectively, to make the first side lie between 0 and 1. Without this scaling, the surface areas of the six possible unitarity triangles
+respectively, to make the first side lie between 0 and 1. Without this scaling, the surface areas of all six possible unitarity triangles
 are equal and provide a convention-independent measure of the CP violation that is introduced by the CKM matrix. The areas are given by
 half of the \emph{Jarlskog invariant} ($J$) \cite{Jarlskog:1985ht}, which is defined by
 \begin{equation}
@@ -256,9 +256,9 @@ angles in a triangle:
   \end{alignat}
 \end{subequations}
 
-The experimental values of the CKM angles can be determined by a global fit of the Standard Model to all relevant experimental data. There
-are two groups doing such a fit, using different statistical methods and slightly different sets of input data. With the experimental data
-that were available in the spring of 2013, the CKMfitter Group finds~\cite{Charles:2004jd}
+The experimental values of the CKM angles can be determined by a global fit of the Standard Model to all relevant experimental data. Two of
+the groups that are doing such a fit are CKMfitter and UTfit, which are using different statistical methods and slightly different sets of
+input data. With the experimental data that were available in the spring of 2013, the CKMfitter group finds~\cite{Charles:2004jd}
 \begin{equation}
   \label{eq:CKMAnglesCKMf}
   \gamma = (69.7^{+1.3}_{-2.8})^\circ \qquad \beta = (21.8^{+0.8}_{-0.7})^\circ \qquad \bs = (1.05\pm0.04)^\circ
@@ -279,8 +279,8 @@ Constraints from the fit are given by
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=5mm 2mm 3mm 15mm, clip=true, width=0.8\textwidth]{graphics/intro/rhoeta_large_CMYK}
-  \caption{Constraints on the d--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter Group
+  \includegraphics[trim=5mm 2mm 3mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoeta_large_CMYK}
+  \caption{Constraints on the d--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter group
            \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apex in the complex plane, which is given by the
 	   parameters $\rhobar\approx\rho$ and $\etabar\approx\eta$.
            Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
@@ -289,24 +289,24 @@ Constraints from the fit are given by
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=6mm 2mm 2mm 15mm, clip=true, width=0.8\textwidth]{graphics/intro/rhoBsetaBs_large_global_CMYK}
-  \caption{Constraints on the s--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter Group
+  \includegraphics[trim=6mm 2mm 2mm 15mm, clip=true, width=\textwidth]{graphics/intro/rhoBsetaBs_large_global_CMYK}
+  \caption{Constraints on the s--b unitarity triangle resulting from the global Standard-Model fit by the CKMfitter group
            \cite{Charles:2004jd}. The fit estimates the coordinates of the triangle apex in the complex plane, which is given by the
 	   parameters $\rhosbar\approx-\lam^2\,\rho$ and $\etasbar\approx-\lam^2\,\eta$.
            Constraints on these parameters from the measurements that are input to the fit are shown as the coloured bands.}
   \label{fig:unitTriangleMeas_sb}
 \end{figure}
 
-The UTfit Collaboration finds slightly different values for the angles with the data available by summer 2013~\cite{Bona:2005vz}:
+The UTfit collaboration finds slightly different values for the angles with the data available by summer 2013~\cite{Bona:2005vz}:
 \begin{equation}
   \label{eq:CKMAnglesUTf}
   \gamma = (70.3\pm3.5)^\circ \qquad \beta = (22.0\pm0.9)^\circ \qquad \bs = (1.07\pm0.04)^\circ
   \ .
 \end{equation}
 
-Quark-flavour changing interactions and the CKM picture of CP violation provide excellent probes for testing the Standard Model. There are,
-for example, measurements that yield one of the CKM angles if only Standard Model processes are considered. If such a measurement gives a
-deviation from the value predicted by a global fit or from the value from another measurement, this would be clear evidence for physics
+Quark-flavour changing interactions and the CKM picture of CP violation provide excellent probes for testing the Standard Model. They yield
+many experimental observables, which all depend on only four independent CKM parameters. If the measurement of one of these observables
+deviates from the value predicted by a global fit or from the value from another measurement, this would be clear evidence for physics
 beyond the Standard Model.
 
 As will be discussed in the next section, the CP-violation measurement in the \BstoJpsiphi{} decay yields the phase $\phis$. This phase is

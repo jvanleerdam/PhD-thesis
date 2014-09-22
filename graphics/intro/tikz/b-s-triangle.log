@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.7.15)  14 MAY 2014 14:20
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.7.15)  22 SEP 2014 07:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,7 +1805,7 @@ Requested font "cmr6" at 6.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
 /cmr6.tfm
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 49.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 9.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
@@ -1834,19 +1834,19 @@ Requested font "cmr9" at 9.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
 /cmr9.tfm
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 48.
+(Font)              scaled to size 6.0pt on input line 51.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 6.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
 ic/libertine/LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 48.
+(Font)              scaled to size 5.0pt on input line 51.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 5.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
 ic/libertine/LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 54.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 8.0pt
  -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
@@ -1854,10 +1854,10 @@ ic/libertine/LinBiolinum_R.otf
 Preview: Tightpage -65536 -65536 65536 65536
 [1] (./b-s-triangle.aux) ) 
 Here is how much of TeX's memory you used:
- 33835 strings out of 494460
- 736179 string characters out of 6155615
- 595044 words of memory out of 5000000
- 36666 multiletter control sequences out of 15000+600000
+ 33836 strings out of 494460
+ 736219 string characters out of 6155615
+ 595043 words of memory out of 5000000
+ 36667 multiletter control sequences out of 15000+600000
  9080 words of font info for 64 fonts, out of 8000000 for 9000
  808 hyphenation exceptions out of 8191
  56i,11n,56p,629b,723s stack positions out of 5000i,500n,10000p,200000b,80000s

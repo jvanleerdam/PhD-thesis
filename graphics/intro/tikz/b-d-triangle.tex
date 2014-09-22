@@ -40,10 +40,10 @@
 
     \fill [black] (origin) circle (0.01); % origin
 
-    \draw [black,thick] (origin) -- (unity) -- (apex) -- cycle; % triangle
-    %\draw [black,thick,->] (origin) -- (unity);
-    %\draw [black,thick,->] (unity)  -- (apex);
-    %\draw [black,thick,->] (apex)   -- (origin);
+    %\draw [black,thick,->] (origin) -- (unity) -- (apex) -- cycle; % triangle
+    \draw [black, thick,->] (origin) -- (unity);
+    \draw [black,thick,->] (unity)  -- (apex);
+    \draw [black,thick,->] (apex)   -- (origin);
 
     % vertex labels
     \path (origin) +(-0.1,0) node [below] {\footnotesize{(0,0)}};
