@@ -9,6 +9,7 @@ defense:
   What about uncertainties?
 * Hard to say what to expect from fits in narrow KK-mass window. Errors go up with respect to wide window,
   but what about the differences between one bin and four bins?
+* Jarlskog maximum 1/6/sqrt(3): why?
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)
