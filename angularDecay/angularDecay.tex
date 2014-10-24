@@ -1,2 +1,766 @@
 \chapter{Angular Differential Decay Rate}
 \label{chap:angularDecay}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Angular Amplitude}
+\label{sec:angularDecay_amp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The dependence of the \BstoJpsiKK{} decay on the three decay angles, as described in Section~\ref{sec:pheno_angles}, can be derived within
+the helicity formalism~\cite{Jacob:1959at,Chung:1971ri,*Richman:1984gh,*Kutschke:1996}. In this formalism the decay is described in terms
+of three two-body decays; first the decay of the $\Bs$ into a $\Jpsi$ and a second intermediate particle, followed by the decay of the
+$\Jpsi$ into a $\mumu$ pair and the decay of the second particle into a $\KK$ pair. The angular dependence arises from the rotations of the
+spin vectors of the decaying particles into the momentum directions of the decaying particles.
+
+\begin{figure}[p]
+  \centering
+  \resizebox{\textwidth}{!}{\input{graphics/angularDecay/helFormFrames.pdftex_t}}
+  \caption{Helicity frames for the decay \BtoaPPbPP{} in (a) a general
+    configuration where the coordinate systems in the $a$ and $b$ rest frames are aligned and (b)
+    with the Jacob--Wick convention, in which the coordinate system in the $b$
+    rest frame is rotated. A definition of the helicity angle $\phihel$ in the Jacob--Wick
+    convention is shown in (c).}
+  \label{fig:helFormFrames}
+\end{figure}
+
+A generalized form of the decay is shown in Figure~\ref{fig:helFormFrames}. The three coordinate systems in part (a) of the figure are
+defined in the centre-of-mass frames of particles $B$, $a$, and $b$ in the decay \BtoaPPbPP. The spherical coordinates $\theta$ and
+$\varphi$ specify the momentum direction of one of the particles in each two-body decay. The other particle, which is not shown in the
+figure, has an opposite momentum.
+
+The directions of the decay-product momenta define a \emph{helicity axis} for each of the three decays. The z axis of a particle coordinate
+system lies along the helicity axis that is associated to the production of the particle. The momentum direction of one of the two
+particles in a decay is chosen as the positive z direction, as depicted in Figure~\ref{fig:helFormFrames}a for particles $a$ and $b$.
+
+The sum of the spin projections of the two particles in each decay along the helicity axis is given by the difference of the particle
+helicities. Assuming the spin projection of the decaying particle in the z direction is known, the amplitude for the measuring the required
+spin projection along the helicity axis is given by the complex conjugate of a \emph{Wigner D-matrix}, which is a function of three Euler
+angles that specify the rotation of the spin projection from the z axis to the helicity axis.
+
+The D-matrix for each of the two-body decays is expressed in terms of a real-valued d-matrix and two exponential functions as
+\begin{equation}
+  \label{eq:Ddef}
+  \WD{j}{m}{n}{}(\varphi,\theta,\varphi') = e^{-im\varphi}\, \Wd{j}{m}{n}(\theta)\, e^{-in\varphi'}\ ,
+\end{equation}
+where $j$ is the spin of the decaying particle, $m$ the projection of the spin in the direction of the z axis, $n$ the projection of the
+spin in the positive direction of the helicity axis. The Euler angles that specify the rotation of the spin projection are $\varphi$,
+$\theta$, and $\varphi'$. The angles $\theta$ and $\varphi$ are equal to the spherical coordinates in the mother-particle rest frame, while
+the angle $\varphi'$ rotates the coordinate system of a decay product around the helicity axis. In the \emph{Jacob-Wick} convention
+$\varphi'$ is chosen to be equal to \tm$\varphi$, resulting in
+\begin{equation}
+  \label{eq:DdefJW}
+  \WD{j}{m}{n}{}(\varphi,\theta,-\varphi) = \Wd{j}{m}{n}(\theta)\, e^{-i(m-n)\varphi}\ .
+\end{equation}
+
+A boost along the helicity axis does not affect the spin projections along this axis. Therefore, the projection of the spin of a decay
+product along the helicity axis in the centre-of-mass frame of its production is equal to the spin projection in the z direction of the
+coordinate system in its rest frame. As a result, this projection relates the spins the decays that are described in the two frames.
+
+To define angles that are consistent with the helicity angles in Figure~\ref{fig:helAngles}, the coordinate system of particle $b$ is
+rotated by 180\textdegree{} around the $\mathrm{y}_b$ axis, as shown in Figure~\ref{fig:helFormFrames}b. This operation introduces an
+additional D-matrix, which represents the amplitude for a rotation with $\theta$\texteq$\pi$ and the other two Euler angles arbitrary, but
+equal. The spin projection in the $\mathrm{z}_b$ direction goes from \tm$\lambda_b$ to \tp$\lambda_b$, where $\lambda_b$ is the helicity of
+particle $b$ in the $B$ rest frame. Using the d-matrix property
+$\Wd{j}{m}{n}(\pi)$\texteq$(\text{\tm1})^{j\text{\tm}n}\,\delta_{m,\text{\tm}n}$, this D-matrix can be written as
+\begin{equation}
+  \WD{j_b}{-\lambda_b}{\lambda_b}{*}(\gamma,\pi,\gamma)
+      = e^{-i\lambda_b\gamma}\, \Wd{j_b}{-\lambda_b}{\lambda_b}(\theta)\, e^{+i\lambda_b\gamma}
+      = (-1)^{j_b-\lambda_b}\ .
+\end{equation}
+
+Identifying the particles $P_1$ and $P_3$ with the particles $\Kp$ and $\lmu[+]$, respectively, the angle
+$\theta_a$ corresponds to $\thetaK$ and the angle $\theta_b$ to $\thetal$. The angle $\phihel$ is given by the sum of $\varphi_a$ and
+$\varphi_b$, as shown in Figure~\ref{fig:helFormFrames}c.
+
+Combining the D-matrices for the three decays, the factor $\angAmp[]$ in Equation~\ref{eq:decayAmp} is given by
+\begin{equation}
+  \label{eq:angAmp}
+  \begin{aligned}
+    \angAmp[h] &=
+         \sqrt{\tfrac{2j_B+1}{4\pi}\; \tfrac{2j_a^h+1}{4\pi}\; \tfrac{2j_b^h+1}{4\pi}}\\
+         &\quad\times
+         (-1)^{j_b^h-\lambda_b^h}\
+         \WD{j_B}{\lambda_B}{\lambda_a^h-\lambda_b^h}{*}(\Omega_B)\
+         \WD{j_a^h}{\lambda_a^h}{\lambda_1-\lambda_2}{*}(\Omega_a)\
+         \WD{j_b^h}{\lambda_b^h}{\lambda_3-\lambda_4}{*}(\Omega_b)\ ,
+  \end{aligned}
+\end{equation}
+where $\Omega_p$ is a shorthand notation for the set of Euler angles in the decay of particle $p$ and the factors
+$\sqrt{\frac{2j+1}{4\pi}}$ are normalization factors for the two-particle states in the $B$, $a$, and $b$ decays. The index $h$ runs over
+intermediate helicity states, for which the particles have definite helicities. The final expressions for helicity states will be combined
+into expressions for the transversity states of Equation~\ref{eq:decayAmp}. Notice that the spins and helicities of particles $B$ and 1--4
+do not depend on the intermediate state, since these particles are external and their spin state is, in principle, observable.
+
+Concentrating only on the case where particle $B$ is a spinless particle, $j_B$, $\lambda_B$, and $\lambda_a$\textminus$\lambda_b$ are
+equal to zero. As a result, the D-matrix corresponding to the $B$ decay reduces to $\WD{0}{0}{0}{*}$\texteq1, which makes the decay
+independent of the orientation of the helicity axis with respect to the direction of the $B$ momentum. Introducing the notation
+$\lambda_a$\texteq$\lambda_b$\textequiv$\lambda$, $\lambda_1$\textminus$\lambda_2$\textequiv$\alpha$, and
+$\lambda_3$\textminus$\lambda_4$\textequiv$\beta$, Equation~\ref{eq:angAmp} reduces to
+\begin{equation}
+  \label{eq:angAmpRed}
+  \begin{aligned}
+    \angAmp[h] &=
+         \frac{(-1)^{j_b^h-\lambda^h}}{(4\pi)^{3/2}} \sqrt{(2j_a^h+1)\, (2j_b^h+1)}\
+         \WD{j_a^h}{\lambda^h}{\alpha}{*}(\Omega_a)\
+         \WD{j_b^h}{\lambda^h}{\beta}{*}(\Omega_b)\ .
+  \end{aligned}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Squared Angular Amplitude}
+\label{sec:angularDecay_squareAmp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+With Equation~\ref{eq:angAmpRed} the products $\angAmp[h]^*\,\angAmp[h']^{\phantom{*}}$ that appear in Equation~\ref{eq:sqAmp} can be
+expressed as
+\begin{equation}
+  \label{eq:angAmpSq}
+  \begin{aligned}
+    &\angAmp[h]^*\,\angAmp[h']^{\phantom{*}} \\
+    &\qquad=\frac{(-1)^{j_b^h+j_b^{h'}+M^{hh'}-2\lambda^h}}{(4\pi)^{3}}
+      \sqrt{(2j_a^h+1)\, (2j_a^{h'}+1)\, (2j_b^h+1)\, (2j_b^{h'}+1)}\\
+      &\qquad\qquad\times
+        \WD{j_a^h}{\lambda^h}{\alpha}{}(\Omega_a)\ \WD{j_a^{h'}}{\lambda^{h'}}{\alpha}{*}(\Omega_a)\
+        \WD{j_b^h}{\lambda^h}{\beta}{}(\Omega_b)\ \WD{j_b^{h'}}{\lambda^{h'}}{\beta}{*}(\Omega_b)\ .
+  \end{aligned}
+\end{equation}
+To evaluate the dependence between the D-matrices in this expression the following relations are applied:
+\begin{subequations}
+  \label{eq:Dprops}
+  \begin{align}
+    \WD{j}{m}{n}{*} &= (-1)^{m-n}\ \WD{j}{-m}{-n}{} \\
+    \WD{j}{m}{n}\,\WD{j'}{m'}{n'}{}
+      &= \sum_{J=|j-j'|}^{j+j'}
+      \langle j\,m,\,j'\,m'|J\ m+m' \rangle \nonumber\\
+      &\qquad\qquad\times
+      \langle j\,n,\,j'\,n'|J\ n+n' \rangle\,
+      \WD{J}{m+m'}{n+n'}{} \\
+    \langle j\,m,\,j'\,m'|J\ M \rangle
+      &= (-1)^{j-j'+M}\,\sqrt{2\,J+1}\
+      \begin{pmatrix}
+        \mss{j} & \mss{j'} & \mss{J} \\
+        \mss{m} & \mss{m'} & \mss{-M}
+      \end{pmatrix}
+  \end{align}
+\end{subequations}
+where $\langle j\,m,\,j'\,m'|J\ M \rangle$ is a Clebsch-Gordan coefficient, which is related to the Wigner 3j symbol
+$\begin{pmatrix} \mss{j} & \mss{j'} & \mss{J} \\ \mss{m} & \mss{m'} & \mss{-M} \end{pmatrix}$. The product of a D-matrix and a complex
+conjugate D-matrix with equal indices $n$ can now be written as
+\begin{equation}
+  \label{eq:DDstar}
+  \begin{aligned}
+    \WD{j}{m}{n}{}\,\WD{j'}{m'}{n}{*}
+    &= (-1)^{m'-n}\ \WD{j}{m}{n}{}\,\WD{j'}{-m'}{-n}{} \\
+    &= (-1)^{m'-n} \sum_{J=|j-j'|}^{j+j'}
+      \langle j\, m,\, j'\, -m' | J\ m-m' \rangle\\
+      &\qquad\qquad\qquad\qquad\quad\times\langle j\,n,\,j'\,-n|J\,0 \rangle\
+      \WD{J}{m-m'}{0}{} \\
+    &= (-1)^{m-n} \sum_{J=|j-j'|}^{j+j'} \left(2J+1\right)\
+      \begin{pmatrix}
+        \mss{j} & \mss{j'} & \mss{J} \\
+        \mss{m} & \mss{-m'} & \mss{-m+m'}
+      \end{pmatrix}\\
+      &\qquad\qquad\qquad\qquad\qquad\ \ \times
+      \begin{pmatrix}
+        \mss{j} & \mss{j'} & \mss{J} \\
+        \mss{n} & \mss{-n} & \mss{0}
+      \end{pmatrix}
+      \WD{J}{m-m'}{0}{}\ .
+  \end{aligned}
+\end{equation}
+With this expression the products of two D-matrices in Equation~\ref{eq:angAmpSq} that are functions of the same set of angles can be
+substituted by a sum of single D-matrices. After this substitution and with the definition
+$M^{hh'}$\textequiv$\lambda^h$\textminus$\lambda^{h'}$, the product $\angAmp[h]^*\,\angAmp[h']^{\phantom{*}}$ is given by
+\begin{align}
+  \label{eq:angAmpSqEval}
+  &\angAmp[h]^*\,\angAmp[h']^{\phantom{*}} \nonumber\\*
+  &\qquad=\frac{(-1)^{j_b^h+j_b^{h'}+M^{hh'}-\alpha-\beta}}{(4\pi)^{3}}
+    \sqrt{(2j_a^h+1)\, (2j_a^{h'}+1)\, (2j_b^h+1)\, (2j_b^{h'}+1)} \nonumber\\
+    &\qquad\quad \times
+    \sum_{J_a^{hh'}=|j_a^h-j_a^{h'}|}^{j_a^h+j_a^{h'}} \left(2J_a^{hh'}+1\right)\
+    \begin{pmatrix}
+      \mss{j_a^h} & \mss{j_a^{h'}} & \mss{J_a^{hh'}} \\
+      \mss{\lambda^h} & \mss{-\lambda^{h'}} & \mss{-M^{hh'}}
+    \end{pmatrix}\
+    \begin{pmatrix}
+      \mss{j_a^h} & \mss{j_a^{h'}} & \mss{J_a^{hh'}} \\
+      \mss{\alpha} & \mss{-\alpha} & \mss{0}
+    \end{pmatrix} \nonumber\\
+    &\qquad\quad \times
+    \sum_{J_b^{hh'}=|j_b^h-j_b^{h'}|}^{j_b^h+j_b^{h'}} \left(2J_b^{hh'}+1\right)\
+    \begin{pmatrix}
+      \mss{j_b^h} & \mss{j_b^{h'}} & \mss{J_b^{hh'}} \\
+      \mss{\lambda^h} & \mss{-\lambda^{h'}} & \mss{-M^{hh'}}
+    \end{pmatrix}\
+    \begin{pmatrix}
+      \mss{j_b^h} & \mss{j_b^{h'}} & \mss{J_b^{hh'}} \\
+      \mss{\beta} & \mss{-\beta} & \mss{0}
+    \end{pmatrix} \nonumber\\*
+    &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\times
+      \WD{J_a^{hh'}}{M^{hh'}}{0}{}(\Omega_a)\ \WD{J_b^{hh'}}{M^{hh'}}{0}{}(\Omega_b)\ .
+\end{align}
+
+Notice that the angular dependence is still written in terms of the sets of Euler angles corresponding to the decays of particles $a$ and
+$b$, $\Omega_a$ and $\Omega_b$, respectively. The dependence on the helicity angles, $\thetaK$\textequiv$\theta_a$,
+$\thetal$\textequiv$\theta_b$, and $\phihel$\textequiv$\varphi_a$\textplus$\varphi_b$, becomes apparent by expressing the product of
+D-matrices in Equation~\ref{eq:angAmpSqEval} in terms of d-matrices and exponential functions (see Equation~\ref{eq:DdefJW}):
+\begin{equation}
+  \begin{aligned}
+    \label{eq:Eultohel}
+    &\WD{J_a^{hh'}}{M^{hh'}}{0}{}(\Omega_a)\ \WD{J_b^{hh'}}{M^{hh'}}{0}{}(\Omega_b) \\
+    &\qquad= \Wd{J_a^{hh'}}{M^{hh'}}{0}(\theta_a)\ e^{-iM^{hh'}\varphi_a}\
+             \Wd{J_b^{hh'}}{M^{hh'}}{0}(\theta_b)\ e^{-iM^{hh'}\varphi_b} \\
+    &\qquad= \Wd{J_a^{hh'}}{M^{hh'}}{0}(\thetaK)\
+             \Wd{J_b^{hh'}}{M^{hh'}}{0}(\thetal)\ e^{-iM^{hh'}\phihel}\\
+    &\qquad= \sqrt{\frac{\left(J_a^{hh'}-M^{hh'}\right)!}{\left(J_a^{hh'}+M^{hh'}\right)!}\, \frac{4\pi}{2J_b^{hh'}+1}}\
+             \aLp{J_a^{hh'}}{M^{hh'}}(\cthetaK)\,\sph{J_b^{hh'}}{M^{hh'}}{*}(\thetal,\phihel)\ .
+  \end{aligned}
+\end{equation}
+The functions $\aLp{j}{m}(\cos\theta)$ and $\sph{j}{m}{}(\theta,\varphi)$ are associated Legendre polynomials and spherical harmonics,
+respectively, which are defined by
+\begin{subequations}
+  \label{eq:PYdef}
+  \begin{align}
+    \Lp{j}(x) &\equiv \frac{1}{2^j j!} \frac{\ud^j}{\ud x^j} \left(x^2-1\right)^j \qquad \text{with } j\ge0 \\
+    \aLp{j}{m}(x) &\equiv
+      \left\{\begin{array}{cl}
+        (-1)^m\,\left(1-x^2\right)^{\tfrac{1}{2}m}\,\frac{\ud^m}{\ud x^m}\Lp{j}(x) &\quad(m\ge0) \\
+        \tfrac{(j-|m|)!}{(j+|m|)!}\,\left(1-x^2\right)^{\tfrac{1}{2}|m|}\,\frac{\ud^{|m|}}{\ud x^{|m|}}\Lp{j}(x) &\quad(m<0)
+      \end{array}\right.\\
+    \sph{j}{m}{}(\theta,\phi) &\equiv \sqrt{\tfrac{2j+1}{4\pi}\tfrac{(j-m)!}{(j+m)!}}\ \aLp{j}{m}(\cos\theta)\, e^{im\phi} \\
+    \Wd{j}{m}{0}(\theta) &= \sqrt{\tfrac{(j-m)!}{(j+m)!}}\ \aLp{j}{m}(\cos\theta)\ .
+  \end{align}
+\end{subequations}
+
+The angular functions that eventually appear in the expression of the differential decay rate are given by the real and imaginary parts of
+the products $\angAmp[h]^*\,\angAmp[h']^{\phantom{*}}$. The only complex-valued factor on the right-hand side of
+Equation~\ref{eq:angAmpSqEval} after substituting the expression for $\WD{J_a}{M}{0}{}(\Omega_a)\ \WD{J_b}{M}{0}{}(\Omega_b)$ from
+Equation~\ref{eq:Eultohel} is the spherical harmonic $\sph{J_b}{M}{*}(\thetal,\phihel)$. Notice that this function is real valued if its
+upper index is equal to zero:
+\begin{equation}
+    \sph{j}{0}{}(\theta,\phi) = \sqrt{\tfrac{2j+1}{4\pi}}\ \Lp{j}(\cos\theta)\ .
+\end{equation}
+Real-valued spherical harmonics are used in the angular functions, which are defined by
+\begin{equation}
+  \label{eq:realYdef}
+  \rsph{j}{m}(\theta,\phi) = \left\{\begin{array}{cl}
+                               Y_j^0(\theta,\phi) &\quad(m=0) \\[0.2em]
+                               \sqrt{2}\ \Re[Y_j^m(\theta,\phi)] &\quad(m>0) \\[0.2em]
+                               \sqrt{2}\ \Im[Y_j^{|m|}(\theta,\phi)] &\quad(m<0)
+                             \end{array}\right.
+\end{equation}
+
+The squared amplitude in the helicity basis can be expressed in a form that is similar to Equation~\ref{eq:sqAmp}:
+\begin{equation}
+  \label{eq:sqAmpHel}
+  \begin{aligned}
+    |\mathcal{A}|^2
+      &\propto \sum_h |H_h\,\angAmp[h]|^2 + \sum_{h\neq h'} \Re( H_h^*\,H_{h'}\, \angAmp[h]^*\,\angAmp[h'] ) \\
+      &\propto \sum_h |H_h|^2\, |\angAmp[h]|^2 \\
+        &\qquad + \sum_{h\neq h'} \Re(H_h^*\,H_{h'})\, \Re(\angAmp[h]^*\,\angAmp[h'])
+                               - \Im(H_h^*\,H_{h'})\, \Im(\angAmp[h]^*\,\angAmp[h']) \ .
+  \end{aligned}
+\end{equation}
+Terms in the second sum of Equation~\ref{eq:sqAmpHel} with $h$ and $h'$ swapped are identical, since $H_h^*\,H_{h'}\,
+\angAmp[h]^*\,\angAmp[h']$ and $H_{h'}^*\,H_h\, \angAmp[h']^*\,\angAmp[h]$ are complex conjugates, which have identical real parts. The
+sign of $M^{hh'}$\textequiv$\lambda^h$\textminus$\lambda^{h'}$ is opposite for these terms. Adding the two contributions for each of the
+$h\leftrightarrow h'$ pairs, the angular functions in the helicity basis are given by
+\begin{subequations}
+  \label{eq:angFuncs}
+  \begin{align}
+    |\angAmp[h]|^2
+      &\propto \aLp{J_a^{hh'}}{0}(\cthetaK)\,\sph{J_b^{hh'}}{0}{*}(\thetal,\phihel) \nonumber\\
+      &\qquad= \aLp{J_a^{hh'}}{0}(\cthetaK)\, \rsph{J_b^{hh'}}{0}(\thetal,\phihel) \\
+    2\,\Re(\angAmp[h]^*\,\angAmp[h'])
+      &\propto 2\,\Re\!\left[ \aLp{J_a^{hh'}}{|M^{hh'}|}(\cthetaK)\,\sph{J_b^{hh'}}{|M^{hh'}|}{*}(\thetal,\phihel) \right] \nonumber\\
+      &\qquad= \sqrt{2}\, \aLp{J_a^{hh'}}{|M^{hh'}|}(\cthetaK)\, \rsph{J_b^{hh'}}{|M^{hh'}|}(\thetal,\phihel) \\
+    -2\,\Im(\angAmp[h]^*\,\angAmp[h'])
+      &\propto -2\,\Im\!\left[ \aLp{J_a^{hh'}}{|M^{hh'}|}(\cthetaK)\,\sph{J_b^{hh'}}{|M^{hh'}|}{*}(\thetal,\phihel) \right] \nonumber\\
+      &\qquad= \sqrt{2}\, \aLp{J_a^{hh'}}{|M^{hh'}|}(\cthetaK)\, \rsph{J_b^{hh'}}{-|M^{hh'}|}(\thetal,\phihel)
+  \end{align}
+\end{subequations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Angular Functions for \BstoJpsiKK}
+\label{sec:angularDecay_functions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Identifying particles $B$, $a$, and $b$ with the $\Bs$, the $\KK$ pair, and the $\Jpsi$, respectively, the angular dependence of the
+\BstoJpsiKK{} decay can be derived from Equations~\ref{eq:angAmpSqEval}, \ref{eq:Eultohel}, \ref{eq:sqAmpHel}, and \ref{eq:angFuncs}.  As
+discussed in Section~\ref{sec:pheno_decay}, the indices $h$ and $h'$ in Equation~\ref{eq:sqAmpHel} run over three \BstoJpsiphi{}
+polarization states and one \BstoJpsiKK{} state where the $\KK$ pair is in an S-wave configuration.
+
+Both the spins of the $\phimesalt$ and the $\Jpsi$ are equal to one ($j_a$\texteq$j_b$\texteq1), which results in sums over
+$J_a$,\,$J_b$\texteq0,\,1,\,2 for each combination of the \BstoJpsiphi{} helicity states. The three states are given by the possible
+$\phimesalt$ and $\Jpsi$ helicities: $\lambda$\texteq0 (``0''), $\lambda$\texteq\tp1 (``\tp''), and $\lambda$\texteq\tm1 (``\tm'').
+Since the $\KK$ system has no orbital angular momentum for the $\KK$ S-wave (``S'') and the kaons are spinless, both $j_a$ and $\lambda$
+are equal to zero for this state. The value of $J_a$ can only be zero for $h$\texteq$h'$\texteq{}S and one for $h$\textneq{}S and
+$h'$\texteq{}S. Only one value for $|M^{hh'}|$\textequiv$|\lambda^h$\textminus$\lambda^{h'}|$ is possible for each combination of states,
+varying from zero ($\lambda^h$\texteq$\lambda^{h'}$\texteq0) to two ($\lambda^h$\texteq\tm$\lambda^{h'}$\texteq1).
+
+Kaons are spinless, which results in $\alpha$\texteq0 for the \BstoJpsiKK{} decay. The helicities of the muons from the $\Jpsi$ decay can
+both be either \tp$\frac{\text{1}}{\text{2}}$ or \tm$\frac{\text{1}}{\text{2}}$, which gives the combinations $\beta$\textin\{0, \tpm1\}.
+Since the $\mup$ and the $\mum$ are produced with opposite chirality, the case $\beta$\texteq0 requires the helicity of one of the muons to
+be opposite to its chirality. These contributions are suppressed by a factor
+$m_{\lmu[]}^2$/$m_{\mumu}^2$\textapprox\tenpow{-3}~\cite{Altmannshofer:2008dz}, where $m_{\lmu[]}$ is the muon mass and $m_{\mumu}$
+the dimuon invariant mass, the latter of which is equal to the mass of the $\Jpsi$. For this reason only contributions with opposite
+helicities are considered, for which $\beta$\texteq\tpm1.
+
+\begin{table}[p]
+  \centering
+  \caption{Angular functions for the \BstoJpsiphi{} decay expressed in terms of associated Legendre polynomials and spherical harmonics
+           in helicity angles. Functions are shown for $\beta$\texteq\tpm1.
+           Top: functions in the helicity basis. Bottom: functions in the transversity basis.}
+  \label{tab:angDistJpsiphiPY}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{cc}
+    \hline
+    amplitudes                             &
+    %$hh'$                                  &
+      $f(\Omega) \times 16\sqrt{\pi}$      \\
+      %$f(\Omega) \times \tfrac{32\pi}{9}$  \\
+
+    \hline\hline
+
+    $\AmpSq[H]{0}$  &
+    %00  &
+      $4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$2\, \cos^2\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\AmpSq[H]{+}$  &
+    %\tp\tp  &
+      $2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \pm \sqrt{3}\, Y_{1,\,0})$  \\
+      %$\tfrac{1}{2}\, \sin^2\thetaK\, (1 \pm \cos\thetal)^2$  \\
+      &
+      $\qquad\quad = P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \pm \sqrt{3}\, Y_{1,\,0})$  \\
+    \hline
+
+    $\AmpSq[H]{-}$  &
+    %\tm{}\tm  &
+      $2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \mp \sqrt{3}\, Y_{1,\,0})$  \\
+      %$\tfrac{1}{2}\, \sin^2\thetaK\, (1 \mp \cos\thetal)^2$  \\
+      &
+      $\qquad\quad = P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \mp \sqrt{3}\, Y_{1,\,0})$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{+}$  &
+    %0\tp{} ($\Re$)  &
+      $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \pm \sqrt{5}\, Y_{1,\,+1})$  \\
+      %$\pm \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \cos\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{+}$  &
+    %0\tp{} ($\Im$)  &
+      $-2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \pm \sqrt{5}\, Y_{1,\,-1})$  \\
+      %$\mp \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \sin\phihel$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{-}$  &
+    %0\tm{} ($\Re$)  &
+      $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \mp \sqrt{5}\, Y_{1,\,+1})$  \\
+      %$\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \cos\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{-}$  &
+    %0\tm{} ($\Im$)  &
+      $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \mp \sqrt{5}\, Y_{1,\,-1})$  \\
+      %$\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \sin\phihel$  \\
+    \hline
+
+    $\ReAmp[H][H]{+}{-}$  &
+    %\tp\tm{} ($\Re$)  &
+      $-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,+2}$  \\
+      %$-\sin^2\thetaK\, \sin^2\thetal\, \cos2\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{+}{-}$  &
+    %\tp\tm{} ($\Im$)  &
+      $-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  \\
+      %$-\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
+    \hline\hline
+
+    $\AmpSq{0}$  &
+    %00  &
+      $4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$2\, \cos^2\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\AmpSq{\parallel}$  &
+    %$\parallel\parallel$  &
+      $P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} - \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  \\
+      %$\sin^2\thetaK\, (1 - \sin^2\thetal\, \cos^2\phihel)$  \\
+    \hline
+
+    $\AmpSq{\perp}$  &
+    %$\perp\perp$  &
+      $P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} + \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  \\
+      %$\sin^2\thetaK\, (1 - \sin^2\thetal\, \sin^2\phihel)$  \\
+    \hline
+
+    $\ReAmp{0}{\parallel}$  &
+    %0$\parallel$ ($\Re$)  &
+      $+2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,+1}$  \\
+      %$+\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{0}{\parallel}$  &
+    %0$\parallel$ ($\Im$)  &
+      $\mp 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,-1}$  \\
+      %$\mp \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{0}{\perp}$  &
+    %0$\perp$ ($\Re$)  &
+      $\pm 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,+1}$  \\
+      %$\pm \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{0}{\perp}$  &
+    %0$\perp$ ($\Im$)  &
+      $-2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,-1}$  \\
+      %$-\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{\parallel}{\perp}$  &
+    %$\parallel\perp$ ($\Re$)  &
+      $\pm 2\sqrt{3}\, P_2^2\, Y_{1,\,0}$  \\
+      %$\pm 2\, \sin^2\thetaK\, \cos\thetal$  \\
+    \hline
+
+    $\ImAmp{\parallel}{\perp}$  &
+    %$\parallel\perp$ ($\Im$)  &
+      $+2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  \\
+      %$+\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[p]
+  \centering
+  \caption{Angular functions for the \BstoJpsiKK{} decay with a $\KK$ S-wave and the \BstoJpsiphi{} and $\KK$ S-wave interference
+           expressed in terms of associated Legendre polynomials and spherical harmonics in helicity angles.
+           Functions are shown for $\beta$\texteq\tpm1.
+           Top: functions in the helicity basis. Bottom: functions in the transversity basis.}
+  \renewcommand{\arraystretch}{1.2}
+  \label{tab:angDistSWavePY}
+  \begin{tabular}{cc}
+    \hline
+    amplitudes                             &
+      $f(\Omega) \times 16\sqrt{\pi}$      \\
+      %$f(\Omega) \times \tfrac{32\pi}{9}$  \\
+
+    \hline\hline
+
+    $\AmpSq[H]{{\text{S}}}$  &
+      $4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$\tfrac{2}{3}\, \sin^2\thetal$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{{\text{S}}}$  &
+      $8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{{\text{S}}}$  &
+      0  \\
+      %0  \\
+    \hline
+
+    $\ReAmp[H][H]{+}{{\text{S}}}$  &
+      $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \pm Y_{1,\,+1})$  \\
+      %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \cos\phihel$ \\
+    \hline
+
+    $\ImAmp[H][H]{+}{{\text{S}}}$  &
+      $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \pm Y_{1,\,-1})$  \\
+      %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \sin\phihel$ \\
+    \hline
+
+    $\ReAmp[H][H]{-}{{\text{S}}}$  &
+      $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \mp Y_{1,\,+1})$  \\
+      %$\mp \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \cos\phihel$ \\
+    \hline
+
+    $\ImAmp[H][H]{-}{{\text{S}}}$  &
+      $-6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \mp Y_{1,\,-1})$  \\
+      %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \sin\phihel$ \\
+    \hline\hline
+
+    $\AmpSq{{\text{S}}}$  &
+      $4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$\tfrac{2}{3}\, \sin^2\thetal$  \\
+    \hline
+
+    $\ReAmp{0}{{\text{S}}}$  &
+      $8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
+      %$\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\ImAmp{0}{{\text{S}}}$  &
+      0  \\
+      %0  \\
+    \hline
+
+    $\ReAmp{\parallel}{{\text{S}}}$  &
+      $+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,+1}$  \\
+      %$+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{\parallel}{{\text{S}}}$  &
+      $\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,-1}$  \\
+      %$\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{\perp}{{\text{S}}}$  &
+      $\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,+1}$  \\
+      %$\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{\perp}{{\text{S}}}$  &
+      $+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,-1}$  \\
+      %$+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \sin\phihel$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Evaluation of the angular functions for the combinations of the \BstoJpsiphi{} states leads to Table~\ref{tab:angDistJpsiphiPY}. The first
+column of the table shows a combination of decay amplitudes and the second column the corresponding angular functions. The angular
+functions for the $\KK$ S-wave and the interference between \BstoJpsiphi{} and the $\KK$ S-wave are listed in
+Table~\ref{tab:angDistSWavePY}. All functions are multiplied by a factor 8$\pi^\text{2}$, which makes their integrals over all three angles
+equal to either one or zero.
+
+The differences between contributions from $\beta$\texteq\tpm1 are distinguished with \tpm{} and \tmp{} signs in the tables. Because the
+decay of the $\Jpsi$ is not a weak process it conserves parity, which results in equal decay amplitudes for $\beta$\texteq\tp1 and
+$\beta$\texteq\tm1. Since the muon helicities are not measured in the experiment, the two contributions are added, resulting in
+cancellation of the terms with opposite sign.
+
+The top halves of the tables show the angular amplitudes and functions in the helicity basis, while the bottom halves show the amplitudes
+and functions in the transversity basis. For both bases helicity angles are used. The transversity functions are obtained by substituting
+the helicity amplitudes ($H_0$, $H_+$, and $H_-$) by combinations of transversity amplitudes ($\Azero$, $\Apar$, and $\Aperp$), after which
+the helicity functions can be combined into functions corresponding to the transversity amplitudes. The amplitude for the $\KK$ S-wave is
+the same in both bases ($H_\text{S}$\texteq$\AS$). The substitution is given by~\cite{Dighe:1995pd}
+\begin{equation}
+  \label{eq:helToTransAmps}
+  \begin{aligned}
+    H_0   &= \Azero \\
+    H_\pm &= \tfrac{1}{\sqrt{2}}(\Apar \pm \Aperp) \ .
+  \end{aligned}
+\end{equation}
+
+Both Legendre polynomials and real-valued spherical harmonics can be expressed in terms of sines and cosines of the angles.
+Tables~\ref{tab:angDistJpsiphiSinCos} and \ref{tab:angDistSWaveSinCos} show the angular functions in terms of sines and cosines that
+correspond to the functions in Tables~\ref{tab:angDistJpsiphiPY} and \ref{tab:angDistSWavePY}, respectively.
+
+\begin{table}[p]
+  \centering
+  \caption{Angular functions for the \BstoJpsiphi{} decay expressed in terms of sines and cosines in helicity angles.
+           Functions are shown for $\beta$\texteq\tpm1.
+           Top: functions in the helicity basis. Bottom: functions in the transversity basis.}
+  \label{tab:angDistJpsiphiSinCos}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{cc}
+    \hline
+    amplitudes                             &
+    %$hh'$                                  &
+      %$f(\Omega) \times 16\sqrt{\pi}$      &
+      $f(\Omega) \times \tfrac{32\pi}{9}$  \\
+
+    \hline\hline
+
+    $\AmpSq[H]{0}$  &
+    %00  &
+      %$4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $2\, \cos^2\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\AmpSq[H]{+}$  &
+    %\tp\tp  &
+      %$2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \pm \sqrt{3}\, Y_{1,\,0})$  &
+      $\tfrac{1}{2}\, \sin^2\thetaK\, (1 \pm \cos\thetal)^2$  \\
+    \hline
+
+    $\AmpSq[H]{-}$  &
+    %\tm{}\tm  &
+      %$2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \mp \sqrt{3}\, Y_{1,\,0})$  &
+      $\tfrac{1}{2}\, \sin^2\thetaK\, (1 \mp \cos\thetal)^2$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{+}$  &
+    %0\tp{} ($\Re$)  &
+      %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \pm \sqrt{5}\, Y_{1,\,+1})$  &
+      $\pm \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \cos\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{+}$  &
+    %0\tp{} ($\Im$)  &
+      %$-2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \pm \sqrt{5}\, Y_{1,\,-1})$  &
+      $\mp \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \sin\phihel$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{-}$  &
+    %0\tm{} ($\Re$)  &
+      %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \mp \sqrt{5}\, Y_{1,\,+1})$  &
+      $\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \cos\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{-}$  &
+    %0\tm{} ($\Im$)  &
+      %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \mp \sqrt{5}\, Y_{1,\,-1})$  &
+      $\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \sin\phihel$  \\
+    \hline
+
+    $\ReAmp[H][H]{+}{-}$  &
+    %\tp\tm{} ($\Re$)  &
+      %$-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,+2}$  &
+      $-\sin^2\thetaK\, \sin^2\thetal\, \cos2\phihel$  \\
+    \hline
+
+    $\ImAmp[H][H]{+}{-}$  &
+    %\tp\tm{} ($\Im$)  &
+      %$-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  &
+      $-\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
+    \hline\hline
+
+    $\AmpSq{0}$  &
+    %00  &
+      %$4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $2\, \cos^2\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\AmpSq{\parallel}$  &
+    %$\parallel\parallel$  &
+      %$P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} - \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  &
+      $\sin^2\thetaK\, (1 - \sin^2\thetal\, \cos^2\phihel)$  \\
+    \hline
+
+    $\AmpSq{\perp}$  &
+    %$\perp\perp$  &
+      %$P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} + \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  &
+      $\sin^2\thetaK\, (1 - \sin^2\thetal\, \sin^2\phihel)$  \\
+    \hline
+
+    $\ReAmp{0}{\parallel}$  &
+    %0$\parallel$ ($\Re$)  &
+      %$+2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,+1}$  &
+      $+\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{0}{\parallel}$  &
+    %0$\parallel$ ($\Im$)  &
+      %$\mp 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,-1}$  &
+      $\mp \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{0}{\perp}$  &
+    %0$\perp$ ($\Re$)  &
+      %$\pm 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,+1}$  &
+      $\pm \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{0}{\perp}$  &
+    %0$\perp$ ($\Im$)  &
+      %$-2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,-1}$  &
+      $-\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{\parallel}{\perp}$  &
+    %$\parallel\perp$ ($\Re$)  &
+      %$\pm 2\sqrt{3}\, P_2^2\, Y_{1,\,0}$  &
+      $\pm 2\, \sin^2\thetaK\, \cos\thetal$  \\
+    \hline
+
+    $\ImAmp{\parallel}{\perp}$  &
+    %$\parallel\perp$ ($\Im$)  &
+      %$+2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  &
+      $+\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[p]
+  \centering
+  \caption{Angular functions for the \BstoJpsiKK{} decay with a $\KK$ S-wave and the \BstoJpsiphi{} and $\KK$ S-wave interference
+           expressed in terms of sines and cosines in helicity angles. Functions are shown for $\beta$\texteq\tpm1.
+           Top: functions in the helicity basis. Bottom: functions in the transversity basis.}
+  \renewcommand{\arraystretch}{1.2}
+  \label{tab:angDistSWaveSinCos}
+  \begin{tabular}{cc}
+    \hline
+    amplitudes                              &
+      %$f(\Omega) \times 16\sqrt{\pi}$      &
+      $f(\Omega) \times \tfrac{32\pi}{9}$  \\
+
+    \hline\hline
+
+    $\AmpSq[H]{{\text{S}}}$  &
+      %$4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $\tfrac{2}{3}\, \sin^2\thetal$  \\
+    \hline
+
+    $\ReAmp[H][H]{0}{{\text{S}}}$  &
+      %$8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\ImAmp[H][H]{0}{{\text{S}}}$  &
+      %0  &
+      0  \\
+    \hline
+
+    $\ReAmp[H][H]{+}{{\text{S}}}$  &
+      %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \pm Y_{1,\,+1})$  &
+      $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \cos\phihel$ \\
+    \hline
+
+    $\ImAmp[H][H]{+}{{\text{S}}}$  &
+      %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \pm Y_{1,\,-1})$  &
+      $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \sin\phihel$ \\
+    \hline
+
+    $\ReAmp[H][H]{-}{{\text{S}}}$  &
+      %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \mp Y_{1,\,+1})$  &
+      $\mp \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \cos\phihel$ \\
+    \hline
+
+    $\ImAmp[H][H]{-}{{\text{S}}}$  &
+      %$-6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \mp Y_{1,\,-1})$  &
+      $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \sin\phihel$ \\
+    \hline\hline
+
+    $\AmpSq{{\text{S}}}$  &
+      %$4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $\tfrac{2}{3}\, \sin^2\thetal$  \\
+    \hline
+
+    $\ReAmp{0}{{\text{S}}}$  &
+      %$8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
+      $\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
+    \hline
+
+    $\ImAmp{0}{{\text{S}}}$  &
+      %0  &
+      0  \\
+    \hline
+
+    $\ReAmp{\parallel}{{\text{S}}}$  &
+      %$+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,+1}$  &
+      $+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{\parallel}{{\text{S}}}$  &
+      %$\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,-1}$  &
+      $\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \sin\phihel$  \\
+    \hline
+
+    $\ReAmp{\perp}{{\text{S}}}$  &
+      %$\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,+1}$  &
+      $\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \cos\phihel$  \\
+    \hline
+
+    $\ImAmp{\perp}{{\text{S}}}$  &
+      %$+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,-1}$  &
+      $+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \sin\phihel$  \\
+    \hline
+  \end{tabular}
+\end{table}
