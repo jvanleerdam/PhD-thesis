@@ -14,8 +14,8 @@ the \BstoJpsiKK{} data and constrained in the fit by counting decay candidates i
 determined exponential factors for the reconstruction decay-time acceptance in 2011 and 2012 are combined with the information on their
 difference from the decay-time fit by varying these nuisance parameters within Gaussian constraints.
 
-Resulting contributions of decay-time acceptance uncertainties are estimated by repeating the fit with fixed acceptance parameters and
-subtracting the statistical uncertainties with varying and with fixed parameters in quadrature. Only the uncertainty of $\Gs$ is
+The resulting contributions of the decay-time acceptance uncertainties are estimated by repeating the fit with fixed acceptance parameters
+and subtracting the statistical uncertainties with varying and with fixed parameters in quadrature. Only the uncertainty of $\Gs$ is
 significantly affected. The contribution from the trigger acceptance is 0.0011~\invps{} and the contribution from the reconstruction
 acceptance 0.0015~\invps.
 
@@ -26,11 +26,11 @@ for other parameters.
 Systematic effects that are not propagated to the statistical uncertainties are listed in Tables~\ref{tab:systErrsPhases},
 \ref{tab:systErrsMixDecay}, \ref{tab:systErrsLifetime}, and \ref{tab:systErrsAmps} for the principal parameters. Also a total uncertainty
 is shown for each parameter, determined by adding the statistical and systematic uncertainties in quadrature. The effects for the three
-CP-violation parameterizations are found to be similar and for most parameters only results with the $\phisi$/$\Csi$ model are shown.
+CP-violation parameterizations are found to be similar and for most parameters only the results with the $\phisi$/$\Csi$ model are shown.
 Systematic uncertainties for $\phis$ are assumed to be the same as those for $\phisav$ and uncertainties for $\lamsAbs$ are shown in
 Table~\ref{tab:systErrsMixDecay}.
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \caption{Systematic uncertainties for the CP-violating phases.}
   \label{tab:systErrsPhases}
@@ -47,19 +47,19 @@ Table~\ref{tab:systErrsMixDecay}.
     \textit{decay time}      &  &  &  &  \\
     resolution               &  0.003      &  0.002           &  0.001            &  0.001        \\[3pt]
     \textit{decay angles}    &  &  &  &  \\
-    resolution               &  0.004      &  0.007           &  0.004            &  0.004        \\
+    resolution               &  0.004      &  0.014           &  0.009            &  0.007        \\
     acc. statistical         &  0.002      &  0.007           &  0.004            &  0.004        \\
     acc. simulation          &  \ctm       &  0.002           &  0.001            &  0.007        \\
     \hline
-    total systematic         &  0.007      &  0.012           &  0.006            &  0.021        \\
+    total systematic         &  0.007      &  0.017           &  0.010            &  0.022        \\
     \hline
     statistical              &  0.051      &  0.043           &  0.029            &  0.062        \\
-    total                    &  0.05       &  0.04            &  0.03             &  0.07         \\
+    total                    &  0.05       &  0.05            &  0.03             &  0.07         \\
     \hline
   \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \caption{Systematic uncertainties for the asymmetries from CP-violation in mixing and in decay.
            Uncertainties arising from $\KK$-mass integrals and decay-time resolution are negligible for these parameters.}
@@ -72,11 +72,11 @@ Table~\ref{tab:systErrsMixDecay}.
     resonant                 &  0.0028      &  0.001    &  0.008         &  0.004         &  0.004     \\
     factorization            &  0.0008      &  0.001    &  0.042         &  0.011         &  0.014     \\[3pt]
     \textit{decay angles}    &  &  &  &  \\
-    resolution               &  0.0014      &  0.001    &  0.015         &  0.006         &  0.005     \\
+    resolution               &  0.0014      &  0.004    &  0.030         &  0.011         &  0.010     \\
     acc. statistical         &  0.0024      &  0.001    &  0.015         &  0.006         &  0.005     \\
     acc. simulation          &  0.0048      &  0.001    &  0.003         &  0.001         &  0.011     \\
     \hline                                  
-    total systematic         &  0.0063      &  0.003    &  0.048         &  0.015         &  0.019     \\
+    total systematic         &  0.0063      &  0.005    &  0.055         &  0.018         &  0.021     \\
     \hline
     statistical              &  0.0188      &  0.039    &  0.122         &  0.162         &  0.032     \\
     total                    &  0.020       &  0.04     &  0.13          &  0.16          &  0.04      \\
@@ -84,7 +84,7 @@ Table~\ref{tab:systErrsMixDecay}.
   \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \caption{Systematic uncertainties for the lifetime parameters.}
   \label{tab:systErrsLifetime}
@@ -98,13 +98,14 @@ Table~\ref{tab:systErrsMixDecay}.
     factorization            &  \ctm      &  0.0006    &  0.002     \\[3pt]
     \textit{decay time}      &  &  &  \\
     resolution               &  \ctm      &  \ctm      &  0.006     \\
+    \BctoBsX                 &  0.0005    &  \ctm      &  \ctm      \\
     reco. acc. model         &  0.0013    &  0.0023    &  0.012     \\[3pt]
     \textit{decay angles}    &  &  &  \\
     resolution               &  \ctm      &  0.0008    &  0.006     \\
     acc. statistical         &  \ctm      &  0.0001    &  0.001     \\
     acc. simulation          &  \ctm      &  0.0001    &  0.001     \\
     \hline
-    total systematic         &  0.0013    &  0.0025    &  0.015     \\
+    total systematic         &  0.0014    &  0.0025    &  0.015     \\
     \hline
     statistical              &  0.0033    &  0.0092    &  0.060     \\
     total                    &  0.004     &  0.010     &  0.06      \\
@@ -112,7 +113,7 @@ Table~\ref{tab:systErrsMixDecay}.
   \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \caption{Systematic uncertainties for the transversity amplitudes.}
   \label{tab:systErrsAmps}
@@ -144,8 +145,8 @@ Table~\ref{tab:systErrsMixDecay}.
 \paragraph{$\JpsiKK$-mass model: resonant backgrounds}
 Resonant backgrounds from $\Bd$ and $\Lb$ decays are subtracted by injecting simulated events with negative weights into the \BstoJpsiKK{}
 data sample, as described in Section~\ref{sec:ana_bkgSub}. Two types of uncertainties arise from this procedure: uncertainties in the
-estimates of the numbers of background events that affect the \BstoJpsiKK{} measurement and uncertainties in the distributions of relevant
-variables for the reflection backgrounds.
+estimates of the numbers of background events that affect the \BstoJpsiKK{} measurement and uncertainties in the distributions of the
+relevant variables for the reflection backgrounds.
 
 A systematic uncertainty for the numbers of background events is estimated by changing the subtracted background yields by one standard
 deviation. The (absolute) variations resulting from an upward and a downward fluctuation are averaged. The yields of all background
@@ -172,10 +173,10 @@ possible way of removing this systematic would be a background subtraction in bi
 for future measurements. In this measurement the subtraction in bins is only used to evaluate a systematic uncertainty.
 
 The $\JpsiKK$-mass model is found to be symmetric with respect to the point $\cthetal$\texteq0. Signal weights are calculated separately
-for three $\cthetal$ bins defined as $|\cthetal|$\textlt0.25, 0.25\textle$|\cthetal|$\textlt0.7, and 0.7\textle$|\cthetal|$\textle1. The
-differences between the parameter estimates from fits with these signal weights and the nominal weights are taken as a systematic
-uncertainty. This uncertainty is the dominating systematic for the $\Csi$ and transversity-amplitude parameters, which emphasizes the need
-to reconsider the current strategy for future measurements.
+for three $\cthetal$ bins defined as $|\cthetal|$\textlt0.25, 0.25\textle$|\cthetal|$\textlt0.7, and 0.7\textle$|\cthetal|$, where the
+binning is motivated by the differences in the mass distribution. The differences between the parameter estimates from fits with these
+signal weights and the nominal weights are taken as a systematic uncertainty. This uncertainty is the dominating systematic for the $\Csi$
+and transversity-amplitude parameters, which emphasizes the need to reconsider the current strategy for future measurements.
 
 \paragraph{$\KK$-mass model: bin integrals}
 The expression for the differential decay rate is integrated over the $\KK$ mass in six bins. As discussed in
@@ -205,14 +206,27 @@ these differences a transformation between the two models is constructed, which 
 estimates of the signal-model parameters for real data. The difference in results between fits with the signal and background
 resolution models for real data is taken as a systematic uncertainty.
 
+\paragraph{Decay-time model: \BctoBsX{} decays}
+A fraction of $\Bs$ mesons in the \BstoJpsiKK{} sample originates from \BctoBsX{} decays, where \textit{X} is a charged particle or
+combination of particles, for instance a pion. The $\Bc$ meson has a mean lifetime of approximately 0.5\unitsp{}ps~\cite{PDG}, resulting in
+a decay at a significant distance from the primary vertex where the $\Bc$ is produced. Because it is assumed that the $\Bs$ is produced in
+the primary vertex in the reconstruction of its decay time, the measured decay time for the \BctoBsX{} contribution is wrong and leads to a
+systematic uncertainty. In future measurements this systematic uncertainty could be reduced by including a \BctoBsX{} component in the
+resolution model for the decay time.
+
+The contribution of \BctoBsX{} decays was estimated to be 0.8\% of the \BstoJpsiKK{} signal sample~\cite{LHCb-ANA-2014-039}. The
+corresponding systematic uncertainty was estimated by generating pseudo experiments, injecting simulated \BctoBsJpsiKKX{} into each
+generated data sample. The mean deviations in the resulting parameter estimates are taken as systematic uncertainties. Only the estimate of
+$\Gs$ is significantly affected.
+
 \paragraph{Decay-time model: reconstruction acceptance}
 The acceptance arising from reconstruction is modelled as a function with an exponential shape in decay time, as described in
 Section~\ref{subsec:ana_time_acc}. This model only describes the acceptance function approximately, which gives systematic uncertainties in
 the estimates of the lifetime parameters.
 
 The uncertainties are evaluated with the differences between fit results on a data sample that is corrected for the reconstruction
-acceptance and the nominal data sample. Data are corrected for acceptance by assigning weights that inversely proportional to the
-acceptance to decay candidates. The weights are calculated with the shape of the acceptance in the reconstruction variables of a
+acceptance and the nominal data sample. Data are corrected for acceptance by assigning decay-candidate weights that are inversely
+proportional to the estimated acceptance. The weights are calculated with the shape of the acceptance in the reconstruction variables of a
 candidate. Although this acceptance shape is still an approximation, it describes the exact function significantly better than an
 exponential shape~\cite{LHCb-ANA-2014-039}.
 
@@ -232,12 +246,12 @@ Since no precise values of the nuisance asymmetries are available, values for ea
 that represent the current estimates of the asymmetries. The uncertainties in the asymmetry-parameter estimates propagate to the widths of
 the parameter and pull distributions in the pseudo experiments.
 
-The asymmetry $\Cm$\textapprox0.5\,$\afs$ is estimated with the current average of CP-violation in mixing measurements,
-$\afs$\texteq\tm0.0109\textpm0.0040~\cite{Amhis:2012bh}. The uncertainty in the production asymmetry is estimated with a measurement of
-the $\Bd$ production asymmetry in LHCb, 0.006\textpm0.009~\cite{LHCb-PAPER-2013-040}, where the $\Bs$ asymmetry is expected to be smaller
-than the $\Bd$ asymmetry. As an estimate of the uncertainty for the $\Bs$ asymmetry the sum of the value and uncertainty is taken and the
-production asymmetry is generated as $\AProd$\texteq0\textpm0.15. Uncertainties in the tagging-efficiency differences for $\Bs$ and
-$\Bsbar$ are estimated in tagging calibration~\cite{LHCb-ANA-2014-039} and lead to generated values of
+The asymmetry $\Cm$\textapprox$\tfrac{\text{1}}{\text{2}}\,\afs$ is estimated with the current average of CP-violation in mixing
+measurements, $\afs$\texteq\tm0.0109\textpm0.0040~\cite{Amhis:2012bh}. The uncertainty in the production asymmetry is estimated with a
+measurement of the $\Bd$ production asymmetry in LHCb, 0.006\textpm0.009~\cite{LHCb-PAPER-2013-040}, where the $\Bs$ asymmetry is expected
+to be smaller than the $\Bd$ asymmetry. As an estimate of the uncertainty for the $\Bs$ asymmetry the sum of the value and uncertainty is
+taken and the production asymmetry is generated as $\AProd$\texteq0\textpm0.15. Uncertainties in the tagging-efficiency differences for
+$\Bs$ and $\Bsbar$ are estimated in tagging calibration~\cite{LHCb-ANA-2014-039} and lead to generated values of
 $\ATagEff[\text{OS}]$\texteq0\textpm0.0015 and $\ATagEff[\text{SS}]$\texteq0\textpm0.0046.
 
 Tagging-efficiency asymmetries for OS-untagged and SS-untagged candidates are equal but opposite to the asymmetry in the corresponding
@@ -258,13 +272,21 @@ The finite experimental resolution of the decay angles is not accounted for in t
 resolution is described in reference~\cite{LHCb-ANA-2014-039}. The resolution was estimated with simulated events and found to be of the
 order 0.01\unitsp{}rad. Its effect on the parameter estimates was studied by generating pseudo experiments and smearing the values of the
 decay angles according to the resolution distributions found in the simulation. Effects were quantified by the distribution of the
-difference in pull values for the fit results with and without angle smearing for each pseudo experiment.
+difference in pull values for the fit results with and without angle smearing for each pseudo experiment. The mean and the width of the
+pull-difference distribution are multiplied by the statistical uncertainty from the real-data fit for each parameter and added in
+quadrature to obtain the systematic uncertainty associated to decay-angle resolution.
 
-The mean and width of the pull-difference distribution are multiplied by the statistical uncertainty from the real-data fit for each
-parameter and added in quadrature to obtain the systematic uncertainty associated to decay-angle resolution. Unfortunately the study of
-angular resolution was only performed for the $\phis$/$\lamsAbs$ parameterization. Therefore, the systematic uncertainty for $\phisav$ is
-taken to be equal to the estimate for $\phis$. As estimates for the systematic uncertainties of $\Delphisi$ and $\Csi$ the values of the
-propagated statistical uncertainties in the decay-angle acceptance are taken.
+Unfortunately the study of angular resolution was only performed for the $\phis$/$\lamsAbs$ parameterization. Therefore, the systematic
+uncertainties for the CP-violation parameters in the remaining two models have to be estimated in a different way. The systematic
+for $\phisav$ is taken to be equal to the estimate for $\phis$. The parameter $\Csav$ appears in similar terms of the PDF as $\phisav$ and,
+therefore, the systematic for $\Csav$ is also estimated to be equal to the systematic of $\phis$.
+
+The parameters that describe the differences between the $\phisi$ and $\Csi$ parameters are measured from the interference terms in the
+PDF, as are the phase differences $\delparzero$ and $\delperpzero$. To estimate the effect of decay-angle resolution on the CP-violation
+parameters, the effects of decay-angle resolution and decay-angle acceptance are compared for $\delparzero$ and $\delperpzero$. The impact
+of the propagation of statistical uncertainties in the acceptance, which will be described next, is roughly half of the impact of
+resolution for these parameters. To get an estimate for the resolution uncertainty in the CP-violation parameters it is assumed that this
+factor of two also applies here.
 
 \paragraph{Decay-angles model: acceptance statistical}
 A non-trivial acceptance shape in the decay angles is included in the decay model with the normalization weights that were introduced in
