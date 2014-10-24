@@ -49,11 +49,14 @@
 %\setmathfont[range={"221E}]{LinLibertine_R.otf}% "0221E = \infty
 
 \usepackage{rotating}
+\usepackage{xargs}
 
 \newboolean{articletitles}
 \setboolean{articletitles}{false}
 
 \DeclareGraphicsRule{*}{eps}{*}{}
+
+\allowdisplaybreaks
 
 \renewcommand{\bibname}{References}
 
@@ -67,6 +70,7 @@
 \newcommand{\splot}[1][]{\textsubscript{\textit{s}}$\mathcal{P}$\textit{lot#1}}
 \newcommand{\sweight}[1][]{sWeight#1}
 
+\newcommand{\mss}[1]{{\scriptstyle #1}}
 \newcommand{\ud}{\mathrm{d}}
 \renewcommand{\vec}{\bm}
 
@@ -84,11 +88,14 @@
 \renewcommand{\textminus}{\unitsp--\unitsp}
 \renewcommand{\textpm}{\unitsp±\unitsp}
 \renewcommand{\textmp}{\unitsp∓\unitsp}
+\newcommand{\tp}{+}
 \newcommand{\tm}{--}
 \newcommand{\tpm}{±}
 \newcommand{\tmp}{∓}
 \renewcommand{\texttimes}{\unitsp×\unitsp}
-\newcommand{\ttime}{×}
+\renewcommand{\textcdot}{\unitsp·\unitsp}
+\newcommand{\ttimes}{×}
+\renewcommand{\textin}{\unitsp∈\unitsp}
 \newcommand{\tpi}{π}
 \newcommand{\ctm}{\multicolumn{1}{c}{--}}
 \newcommand{\tenpow}[1]{10\textsuperscript{#1}}
@@ -119,6 +126,8 @@
 \newcommand{\nuebar}{\nulbar[e]}
 \newcommand{\numubar}{\nulbar[μ]}
 \newcommand{\nutaubar}{\nulbar[τ]}
+\newcommand{\mup}{\lmu[+]}
+\newcommand{\mum}{\lmu[--]}
 \newcommand{\qbar}[1][b]{\kern 0.06em \overline{\kern -0.06em \text{#1} \kern -0.04em} \kern 0.04em}
 \newcommand{\ccs}{\text{c}\qbar[c]\text{s}}
 \newcommand{\btoccs}{\text{b}\to\ccs}
@@ -143,6 +152,7 @@
 \newcommand{\Bdbar}{\kern 0.06em \overline{\kern -0.06em \Bd \kern -0.32em} \kern 0.32em}
 \newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
 \newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+\newcommand{\Bc}{\text{B}_\text{c}^\text{+}}
 \newcommand{\prot}{\text{p}}
 \newcommand{\Lb}{\text{Λ}_\text{b}^\text{0}}
 \newcommand{\BH}{\text{B}_\text{H}}
@@ -157,11 +167,11 @@
 \newcommand{\fst}{|\text{f}\rangle}
 \newcommand{\fbarst}{|\overline{\text{f}}\rangle}
 \newcommand{\BsBsbar}{$\Bs$--$\Bsbar$}
-\newcommand{\mumu}{\lmu[+]\lmu[--]}
+\newcommand{\mumu}{\mup\mum}
 \newcommand{\hh}{\text{h}^\text{+}\text{h}^\text{--}}
 \newcommand{\KK}{\Kp\Km}
-\newcommand{\pipi}{\pimes[+]\pimes[-]}
-\newcommand{\Kpi}{\Kp\pimes[-]}
+\newcommand{\pipi}{\pimes[+]\pimes[--]}
+\newcommand{\Kpi}{\Kp\pimes[--]}
 \newcommand{\mumuhh}{\mumu\,\hh}
 \newcommand{\mumuKK}{\mumu\,\KK}
 \newcommand{\Bstof}[1][\text{f}]{\Bs\!\to\!{#1}}
@@ -191,6 +201,10 @@
 \newcommand{\LbtoJpsipK}{$\Lb \to \Jpsi\,\prot\,\Km$}
 \newcommand{\BstoDsmpip}{$\Bs \to \Dsmes[--]\,\pimes[+]$}
 \newcommand{\BsbartoDsppim}{$\Bsbar \to \Dsmes[+]\,\pimes[--]$}
+\newcommand{\BctoBsX}{$\Bc \to \Bs\,\text{\textit{X}}$}
+\newcommand{\BctoBspi}{$\Bc \to \Bs\,\pimes[+]$}
+\newcommand{\BctoBsJpsiKKX}{$\Bc \to \Bs(\to \JpsiKK)\,\text{\textit{X}}$}
+\newcommand{\BtoaPPbPP}{$B\to a(\to P_1\,P_2)\, b(\to P_3\,P_4)$}
 
 \newcommand{\VCKM}[1][\phantom{\dagger}]{V^{#1}_\text{CKM}}
 \newcommand{\lam}{\lambda}
@@ -282,6 +296,7 @@
 \newcommand{\cpsitr}{\cos\psitr}
 \newcommand{\cthetatr}{\cos\thetatr}
 \newcommand{\phitr}{\phi_{\text{tr}}}
+\newcommand{\EulSet}[1][]{\varphi_{#1},\theta_{#1},-\varphi_{#1}}
 \newcommand{\mBs}{m_{\Bs}}
 \newcommand{\mK}{m_{\kaon}}
 \newcommand{\mJpsi}{m_{\Jpsi}}
@@ -354,6 +369,9 @@
 \newcommand{\qpAbsAlt}{\big|\qpAlt\big|}
 \newcommand{\pqAbs}{\left|\pq\right|}
 \newcommand{\pqAbsAlt}{\big|\pqAlt\big|}
+\newcommand{\AmpSq}[2][A]{|{#1}_{#2}|^2}
+\newcommandx{\ReAmp}[4][1=A, 2=A]{\Re({#1}_{#3}^* {#2}_{#4})}
+\newcommandx{\ImAmp}[4][1=A, 2=A]{\Im({#1}_{#3}^* {#2}_{#4})}
 \newcommand{\Af}[1][\text{f}]{\mathcal{A}_{#1}}
 \newcommand{\Abarf}[1][\text{f}]{\kern 0.23em \overline{\kern -0.23em \mathcal{A}}_{#1}}
 \newcommand{\Afbar}[1][\text{f}]{\Af[\overline{#1}]}
@@ -408,3 +426,10 @@
 \newcommand{\COdd}[1][]{{\ensuremath{C_{\odd_{#1}}}}}
 \newcommand{\avgCEven}[1][]{{\ensuremath{C_{\even_{#1}}^{\text{avg}}}}}
 \newcommand{\avgCOdd}[1][]{{\ensuremath{C_{\odd_{#1}}^{\text{avg}}}}}
+
+\newcommand{\Lp}[1]{P_{#1}}
+\newcommand{\aLp}[2]{P_{#1}^{#2}}
+\newcommand{\sph}[3]{{Y_{#1}^{#2}}^{#3}}
+\newcommand{\rsph}[2]{Y_{#1,\,#2}}
+\newcommand{\Wd}[3]{{d_{#2,\,#3}^{#1}}}
+\newcommand{\WD}[4]{{D_{#2,\,#3}^{#1}}^{#4}}
