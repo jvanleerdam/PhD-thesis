@@ -36,6 +36,8 @@
 \lhead[\thepage]{\nouppercase\rightmark}
 \cfoot{}
 \usepackage[labelfont=bf,textfont=it]{caption}
+\usepackage{enumitem}
+\setlist[description]{leftmargin=0pt,style=nextline}
 
 \usepackage[ttscale=.875]{libertine}
 %\usepackage[]{fontspec}
@@ -88,6 +90,7 @@
 \renewcommand{\textminus}{\unitsp--\unitsp}
 \renewcommand{\textpm}{\unitsp±\unitsp}
 \renewcommand{\textmp}{\unitsp∓\unitsp}
+\newcommand{\textto}{\unitsp→\unitsp}
 \newcommand{\tp}{+}
 \newcommand{\tm}{--}
 \newcommand{\tpm}{±}
@@ -257,6 +260,8 @@
 \newcommand{\lamsiAbs}[1][i]{|{\lamsi[#1]}|}
 \newcommand{\lamsiSq}[1][i]{{\lamsiAbs[#1]}^2}
 \newcommand{\Cs}{C_\text{s}}
+\newcommand{\Ds}{D_\text{s}}
+\newcommand{\Ss}{S_\text{s}}
 \newcommand{\Csi}[1][i]{C_\text{s}^{#1}}
 \newcommand{\Cszero}{\Csi[\text{0}]}
 \newcommand{\Cspar}{\Csi[\parallel]}
@@ -298,8 +303,9 @@
 \newcommand{\phitr}{\phi_{\text{tr}}}
 \newcommand{\EulSet}[1][]{\varphi_{#1},\theta_{#1},-\varphi_{#1}}
 \newcommand{\mBs}{m_{\Bs}}
-\newcommand{\mK}{m_{\kaon}}
+\newcommand{\mK}{m_{\Kp}}
 \newcommand{\mJpsi}{m_{\Jpsi}}
+\newcommand{\mphi}{m_{\phimesalt}}
 \newcommand{\mKK}{m_{\text{KK}}}
 \newcommand{\mpsiK}{m_{\Jpsi\Kp}}
 \newcommand{\pJpsi}{\vec{p}_{\Jpsi}}
@@ -355,7 +361,10 @@
 \newcommand{\Delzeropar}{\Delij{\text{0}}{\parallel}}
 \newcommand{\Delzeroperp}{\Delij{\text{0}}{\perp}}
 \newcommand{\Delparperp}{\Delij{\parallel}{\perp}}
-\newcommand{\CSP}{C_\text{SP}}
+\newcommandx{\Kij}[2][1=i, 2=j]{K_{#1#2}}
+\newcommandx{\kij}[2][1=i, 2=j]{\kappa_{#1#2}}
+\newcommand{\thetaSP}{\kij[\text{P}][\text{S}]}
+\newcommand{\CSP}{\Kij[\text{P}][\text{S}]}
 
 \newcommand{\qf}{{q_\text{f}}}
 \newcommand{\qt}{q_\text{t}}
