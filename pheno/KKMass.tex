@@ -1,0 +1,101 @@
+\section{Invariant \texorpdfstring{$\KK$}{KK}-Mass Distribution}
+\label{sec:pheno_KKMass}
+
+As discussed in Section~\ref{subsec:intro_Jpsiphi_final}, the $\KK$ pair is required to have an invariant mass between 990 and
+1050\unitsp\MeV. The plot of the $\KK$-mass spectrum in Figure~\ref{fig:KKComponents} shows that the contribution of the $\phimes$
+dominates in this region, but that there are also $\fzero$ and non-resonant contributions.
+
+To simplify the analysis of the time and angular distributions, the model for the \BstoJpsiKK{} decay is integrated over the $\KK$ mass.
+This integral gives a factor for each term in Equation~\ref{eq:sqAmp}, which is, in principle, different for each combination of
+intermediate states. However, because the dependence on $\KK$ mass is approximately equal for the three \BstoJpsiphi{} states, this
+contribution can be factored out as an overall normalization and only relative factors between the $\KK$ S-wave and the \BstoJpsiphi{}
+contributions remain (see also \cite{Azfar:2010nz,LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}).
+
+Before integrating the expressions for $\mKKAmp^*\,\mKKAmp[j]$ over $\mKK$ they are multiplied by the factor $|\pJpsi|\,|\pK|$ from
+Equation~\ref{eq:diffRateAngles}. The dependence of this factor on $\mKK$ can be derived from kinematic relations and is given by
+\begin{equation}
+  |\pJpsi|\,|\pK| = \frac{\sqrt{\lambda(\mBs,\mJpsi,\mKK)\, \lambda(\mKK,\mK,\mK)}}{4\,\mBs\,\mKK}\ ,
+\end{equation}
+with
+\begin{equation}
+  \lambda(M,m_1,m_2) \equiv M^4 + m_1^4 + m_2^4 - 2\,M^2 m_1^2 - 2\,M^2 m_2^2 - 2\,m_1^2 m_2^2\ .
+\end{equation}
+
+The functions $\mKKAmp(\mKK)$ can be normalized by absorbing a constant factor into the corresponding transversity amplitude $\Ai$, such
+that the integrals for diagonal terms are given by $\int\ud\mKK\,|\pJpsi|\,|\pK|\,|\mKKAmp|^2$\textequiv1. This procedure moves the issue
+of overall normalization to the transversity amplitudes and leaves only non-trivial $\mKK$ integrals in the interference terms. These
+integrals are given by (the real and imaginary parts of)
+\begin{equation}
+  \label{eq:couplingFac}
+  \int_{\mKK^-}^{\mKK^+}\ud\mKK\,|\pJpsi|\,|\pK|\,\mKKAmp^*\,\mKKAmp[j] \equiv \Kij\, e^{-i\kij} \ ,
+\end{equation}
+where $\mKK^-$\texteq990\unitsp\MeV, $\mKK^+$\texteq1050\unitsp\MeV. The real-valued parameters $\Kij$ and $\kij$ form the $\KK$-mass
+factor for interference term $ij$. By construction, the conditions $\Kij[i][i]$\texteq1 and $\kij[i][i]$\texteq0 apply. With the
+Cauchy--Schwarz inequality, $|\int\ud x\, |A^*B|^2$\textle$\int\ud x\,|A|^2\cdot\int\ud x\,|B|^2$, it follows that 0\textle$\Kij$\textle1.
+
+Because only the magnitude of the \BstoJpsiKK{} decay amplitude is observable, the overall phase of the transversity amplitudes is
+arbitrary and only phase differences can be observed. Integrating over $\mKK$, the phases $\kij$ can be absorbed into the phase
+differences between the transversity amplitudes:
+\begin{equation}
+  \label{eq:couplingFacAmps}
+  \begin{aligned}
+    \int_{\mKK^-}^{\mKK^+}\ud\mKK\,|\pJpsi|\,|\pK|\, \Ai^*\Ai[j]\, \mKKAmp^*\,\mKKAmp[j]
+      &= \Ai^*\Ai[j]\, \Kij\, e^{-i\kij} \\
+      &= \Kij\, |\Ai|\,|\Ai[j]|\, e^{i[\arg(\Ai[j]) - \arg(\Ai) - \kij]} \ .
+  \end{aligned}
+\end{equation}
+
+The interference terms become proportional to the \emph{coupling factors} between states $i$ and $j$, $\Kij$, which are treated separately
+from the transversity amplitudes.  Although these factors can in principle be determined from the angular distributions in the
+\BstoJpsiKK{} data, their statistical uncertainties would be large. For this reason the $\Kij$ values are estimated by assuming
+phenomenological models for the $\KK$-mass shapes of the different components of the decay and performing the integrals of
+Equation~\ref{eq:couplingFac}.
+
+It is assumed that the $\KK$-mass models only depend on the resonant state of the $\KK$ system and not on the angular momentum of the
+$\JpsiKK$ system. That is, the same mass shape is used for all three angular-momentum states of the \BstoJpsiphi{} decay. See
+references~\cite{Zhang:2012zk} and \cite{LHCb-PAPER-2012-040} for a discussion of the small dependence on the orbital angular momentum of
+the $\JpsiKK$ system.
+
+Because the $\KK$-mass shapes for the three \BstoJpsiphi{} intermediate states are identical, only one non-trivial $\Kij$ factor remains.
+This factor is indicated by ``$\CSP$'', where ``P'' stands for ``P-wave'' and ``S'' for ``S-wave'', indicating the $\KK$ angular-momentum
+states for the \BstoJpsiphi{} and $\KK$ S-wave contributions, respectively.
+
+Similarly, the only remaining contribution to the phases of the transversity amplitudes is $\thetaSP$. The following phase differences are
+defined:
+\begin{equation}
+  \begin{alignedat}{2}
+    \delparzero  &\equiv \arg(\Apar)  &&- \arg(\Azero) \\
+    \delperpzero &\equiv \arg(\Aperp) &&- \arg(\Azero) \\
+    \delSperp    &\equiv \arg(\AS)    &&- \arg(\Aperp) - \thetaSP \ .
+  \end{alignedat}
+\end{equation}
+The remaining phase differences can be expressed in terms of the above three.
+
+A relativistic Breit-Wigner function (see e.g.\ reference \cite{PDG}) is used to model the $\mKK$ dependence of the $\phimes$ component of
+the $\KK$ system. The $\fzero$ contribution is modelled by a Flatt\'e function~\cite{Flatte:1976xu}. The non-resonant contribution, which
+is small compared to the $\phimes$ and $\fzero$ contributions in the 990--1050~\MeV{} mass window, is neglected in this measurement.  See
+Section~\ref{sec:ana_KKIntegrals} for the result of the $\CSP$ calculation, where also the experimental $\mKK$ resolution is taken into
+account.
+
+%\begin{description}
+%\item[Centrifugal-barrier factors]
+%The maximum orbital angular momentum in a two-body decay is limited by the linear momentum of the decay products in the rest frame of the
+%decaying particle. \cite{Blatt:1952,*VonHippel:1972fg}
+%
+%\item[$\KK$-resonance mass shape]
+%A different $\KK$-mass shape is included for each resonance of the $\KK$ system. For the $\phimes$ a relativistic Breit-Wigner shape for a
+%spin-one resonance is used, which is given by~\cite{PDG}
+%\begin{equation}
+%  \label{eq:breitWigner}
+%  \frac{1}{\mphi^2 - \mKK^2 - i\,\mphi\,\Gamma_\text{KK}(\mKK)}\ ,
+%\end{equation}
+%where $\mphi$ is the mass of the $\phimes$ meson and the mass-dependent width, $\Gamma_\text{KK}$, is given by
+%\begin{equation}
+%  \Gamma_\text{KK}(\mKK) = \Gamma_{\phimesalt}\, \left(\frac{|\pK|}{|\pK^0|}\right)^3\, \frac{\mphi}{\mKK}\, B_\phimesalt(|\pK|)\ ,
+%\end{equation}
+%where $\Gamma_{\phimesalt}$ is the width of the $\phimes$ meson, $\pK$ is the kaon three-momentum in the $\KK$ rest frame, and $\pK^0$ is
+%the kaon three-momentum in the $\KK$ rest frame at the resonance mass ($\mKK$\texteq$\mphi$).
+%
+%Flatt\'e~\cite{Flatte:1976xu}
+%
+%\end{description}
