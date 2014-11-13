@@ -142,7 +142,8 @@ Table~\ref{tab:systErrsMixDecay}.
   \end{tabular}
 \end{table}
 
-\paragraph{$\JpsiKK$-mass model: resonant backgrounds}
+\begin{description}
+\item[$\JpsiKK$-mass model: resonant backgrounds]
 Resonant backgrounds from $\Bd$ and $\Lb$ decays are subtracted by injecting simulated events with negative weights into the \BstoJpsiKK{}
 data sample, as described in Section~\ref{sec:ana_bkgSub}. Two types of uncertainties arise from this procedure: uncertainties in the
 estimates of the numbers of background events that affect the \BstoJpsiKK{} measurement and uncertainties in the distributions of the
@@ -158,7 +159,7 @@ difference in results with datasets containing reweighted and not reweighted dis
 resulting numbers are added in quadrature to the average of the yield uncertainty for the total systematics arising from resonant
 backgrounds. The total uncertainties are dominated by the results of the reweighting procedure.
 
-\paragraph{$\JpsiKK$-mass model: statistical}
+\item[$\JpsiKK$-mass model: statistical]
 Signal weights for \BstoJpsiKK{} candidates are determined with the $\JpsiKK$-mass model after a fit to the mass distribution in data
 (Section~\ref{sec:ana_bkgSub}). Statistical uncertainties in the signal and the combinatorial background mass models are propagated by
 repeating the time and angular fit five thousand times with different sets of signal weights. The sets of weights are obtained by
@@ -166,7 +167,7 @@ calculating \sweight[s] with different sets of mass-model parameters, which are 
 using the means and covariances from the mass fit. Effects on the parameter estimates from the time and angular fit are found to be
 negligible.
 
-\paragraph{$\JpsiKK$-mass model: factorization}
+\item[$\JpsiKK$-mass model: factorization]
 The $\JpsiKK$-mass model depends on the angle $\thetal$, as shown in Section~\ref{sec:ana_bkgSub}. Since the background-subtraction
 procedure relies on the absence of correlations between the mass and other variables, this dependence leads to a systematic uncertainty. A
 possible way of removing this systematic would be a background subtraction in bins of the variable $\cthetal$, which could be considered
@@ -178,7 +179,7 @@ binning is motivated by the differences in the mass distribution. The difference
 signal weights and the nominal weights are taken as a systematic uncertainty. This uncertainty is the dominating systematic for the $\Csi$
 and transversity-amplitude parameters, which emphasizes the need to reconsider the current strategy for future measurements.
 
-\paragraph{$\KK$-mass model: bin integrals}
+\item[$\KK$-mass model: bin integrals]
 The expression for the differential decay rate is integrated over the $\KK$ mass in six bins. As discussed in
 Section~\ref{sec:pheno_KKMass}, this leads to the $\CSP$ factors in the $\Jpsiphi$--$\KK$ S-wave interference terms, which represent the
 ratios of the bin integrals for the two contributions. The $\CSP$ factors depend on the $\KK$-mass models used in their calculation and a
@@ -195,7 +196,7 @@ contribution, which is modelled with a Flatt\'e function. However, the true comp
 uncertainty is evaluated by repeating the fit with $\CSP$ factors calculated with a uniform line shape in $\KK$ mass (third column in
 Table~\ref{tab:CSPFactors}). Deviations in the parameter estimates are added in quadrature to the resolution uncertainty.
 
-\paragraph{Decay-time model: resolution}
+\item[Decay-time model: resolution]
 In Section~\ref{subsec:ana_time_res} the calibration procedure for the decay-time resolution was described. Resolution parameters are
 determined for prompt background candidates with zero decay time and it is assumed that these parameter values are applicable to the
 resolution of signal candidates. The systematic uncertainty associated with this assumption is evaluated with simulated events. See
@@ -206,7 +207,7 @@ these differences a transformation between the two models is constructed, which 
 estimates of the signal-model parameters for real data. The difference in results between fits with the signal and background
 resolution models for real data is taken as a systematic uncertainty.
 
-\paragraph{Decay-time model: \BctoBsX{} decays}
+\item[Decay-time model: \BctoBsX{} decays]
 A fraction of $\Bs$ mesons in the \BstoJpsiKK{} sample originates from \BctoBsX{} decays, where \textit{X} is a charged particle or
 combination of particles, for instance a pion. The $\Bc$ meson has a mean lifetime of approximately 0.5\unitsp{}ps~\cite{PDG}, resulting in
 a decay at a significant distance from the primary vertex where the $\Bc$ is produced. Because it is assumed that the $\Bs$ is produced in
@@ -219,7 +220,7 @@ corresponding systematic uncertainty was estimated by generating pseudo experime
 generated data sample. The mean deviations in the resulting parameter estimates are taken as systematic uncertainties. Only the estimate of
 $\Gs$ is significantly affected.
 
-\paragraph{Decay-time model: reconstruction acceptance}
+\item[Decay-time model: reconstruction acceptance]
 The acceptance arising from reconstruction is modelled as a function with an exponential shape in decay time, as described in
 Section~\ref{subsec:ana_time_acc}. This model only describes the acceptance function approximately, which gives systematic uncertainties in
 the estimates of the lifetime parameters.
@@ -234,7 +235,7 @@ The resulting uncertainties dominate the systematics for the parameters $\Gs$, $
 be required for future measurements with a larger dataset. Further study is required to evaluate the exact shape of the acceptance function
 and either implement it in the PDF or use it to correct the data.
 
-\paragraph{Decay-time model: nuisance \BsBsbar{} asymmetries}
+\item[Decay-time model: nuisance \BsBsbar{} asymmetries]
 In the nominal analysis the absence of all time-independent \BsBsbar{} asymmetries is assumed. That is, the assumption is made that there
 is no asymmetry between the $\Bs$ and $\Bsbar$ decay-rate equations from the factor $1-\qf\,\Cm$ (Equation~\ref{eq:timeqfDep}), no
 production asymmetry between $\Bs$ and $\Bsbar$, and no asymmetry between the numbers of $\Bs$ and $\Bsbar$ in each tagging category. The
@@ -267,7 +268,7 @@ SS-tagged and SS-untagged candidates and vice versa indicates that factorization
 between the two efficiency estimates for each category is added in quadrature to the statistical uncertainties, which finally gives
 $\tagCatCoef[\text{OS}]$\texteq0.308\textpm0.013 and $\tagCatCoef[\text{OS}]$\texteq0.529\textpm0.016.
 
-\paragraph{Decay-angles model: resolution}
+\item[Decay-angles model: resolution]
 The finite experimental resolution of the decay angles is not accounted for in the decay model. A study of the effects of a finite
 resolution is described in reference~\cite{LHCb-ANA-2014-039}. The resolution was estimated with simulated events and found to be of the
 order 0.01\unitsp{}rad. Its effect on the parameter estimates was studied by generating pseudo experiments and smearing the values of the
@@ -288,15 +289,16 @@ of the propagation of statistical uncertainties in the acceptance, which will be
 resolution for these parameters. To get an estimate for the resolution uncertainty in the CP-violation parameters it is assumed that this
 factor of two also applies here.
 
-\paragraph{Decay-angles model: acceptance statistical}
+\item[Decay-angles model: acceptance statistical]
 A non-trivial acceptance shape in the decay angles is included in the decay model with the normalization weights that were introduced in
 Section~\ref{sec:ana_angles}. The values of the normalization weights are estimated with simulated events. Because of the finite size of
 the simulated sample the estimates are affected by statistical uncertainties, which are propagated to the final parameter estimates. The
 time and angular fit is repeated for five thousand sets of varied normalization weights, generated according to a multivariate Gaussian
 distribution. The square roots of the parameter-estimate variances are taken as systematic uncertainties.
 
-\paragraph{Decay-angles model: acceptance simulation}
+\item[Decay-angles model: acceptance simulation]
 Kinematic distributions of simulated events do not match the distributions in real data perfectly. Although corrections are applied to the
 simulated distributions before calculating the angular-acceptance weights (see Section~\ref{sec:ana_angles}), the discrepancies in the
 simulation are not fully understood and an associated systematic uncertainty remains. The size of this effect is estimated with the
 difference between the fit results with weights from a corrected and an uncorrected simulation.
+\end{description}

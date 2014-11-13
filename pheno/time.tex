@@ -67,10 +67,54 @@ given by
 \end{equation}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Common CP Violation}
+\label{subsec:pheno_time_commonCPV}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In case CP symmetry is violated equally for all intermediate states, the common parameter $\lamsi[]$\textequiv$\frac{1}{\eta_i}\lamsi$ can
+be defined, with $\phis$\texteq\tm$\arg(\lamsi[])$. The corresponding real-valued parameters in the decay-time distribution are then given
+by
+\begin{equation}
+  \label{eq:CDSCommon}
+         \Cs \equiv  \frac{1-\lamsiSq[]}{1+\lamsiSq[]}
+  \qquad \Ds \equiv -\frac{2\,\Re(\lamsi[])}{1+\lamsiSq[]}
+  \qquad \Ss \equiv  \frac{2\,\Im(\lamsi[])}{1+\lamsiSq[]}
+  \ .
+\end{equation}
+
+For states $i$ and $j$ that are both CP even or both CP odd ($\eta_i$\texteq$\eta_j$), the coefficients from
+Equations~\ref{eq:CDSPolarDep}, \ref{eq:timeDep}, and \ref{eq:timeqfDep} reduce to
+\begin{subequations}
+\label{eq:CDSPolarToCommon}
+\begin{equation}
+  \label{eq:CDSPolarToCommonEqual}
+  \Cf[ij]^+ \to         1   \qquad
+  \Cf[ij]^- \to         \Cs \qquad
+  \Df[ij]   \to \eta_i\,\Ds \qquad
+  \Sf[ij]   \to \eta_i\,\Ss \ ,
+\end{equation}
+Similarly, for $\eta_i$\texteq\tm$\eta_j$, the coefficients reduce to
+\begin{equation}
+  \label{eq:CDSPolarToCommonNotEqual}
+  \Cf[ij]^+ \to             \Cs \qquad
+  \Cf[ij]^- \to             1   \qquad
+  \Df[ij]   \to  i\,\eta_i\,\Ss \qquad
+  \Sf[ij]   \to -i\,\eta_i\,\Ds \ .
+\end{equation}
+\end{subequations}
+Notice that in this special case the coefficients for $\eta_i$\texteq$\eta_j$ are all real, the coefficients $\Cf[ij]^\pm$ for
+$\eta_i$\texteq\tm$\eta_j$ are real, and the coefficients $\Df[ij]$ and $\Sf[ij]$ for $\eta_i$\texteq\tm$\eta_j$ are imaginary. As a
+result, simultaneously flipping the signs of $\Ds$ and $\sDGs$, which is accomplished by the operations
+$\phis$\textto$\pi$\textminus$\phis$ and $\DGs$\textto\tm$\DGs$, gives the complex conjugate of the product $\timeAmp^*\timeAmp[j]$. This
+turns out to give a discrete ambiguity in the parameter values, as will be explained in Section~\ref{subsec:pheno_equations_symmetry}.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Alternative Parameterization}
 \label{subsec:pheno_time_altParam}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The coefficients of the time-dependent functions in Equation~\ref{eq:timeqfDep} are functions of $\lamsi$ and hence contain both the
 effects of CP violation in mixing and CP violation in decay. These two effects can be separated with an alternative parameterization, which
 has been implemented in the software that was used for data analysis in this measurement.

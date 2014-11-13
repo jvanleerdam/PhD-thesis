@@ -250,7 +250,7 @@ Real-valued spherical harmonics are used in the angular functions, which are def
                              \end{array}\right.
 \end{equation}
 
-The squared amplitude in the helicity basis can be expressed in a form that is similar to Equation~\ref{eq:sqAmp}:
+The squared amplitude in the helicity basis can be expressed in a form that is similar to Equation~\ref{eq:sqAmpExpand}:
 \begin{equation}
   \label{eq:sqAmpHel}
   \begin{aligned}
@@ -281,12 +281,12 @@ $h\leftrightarrow h'$ pairs, the angular functions in the helicity basis are giv
 \end{subequations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Angular Functions for \BstoJpsiKK}
+\section{Angular Functions for \texorpdfstring{\BstoJpsiKK}{Bs0->J/psi K+K-}}
 \label{sec:angularDecay_functions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Identifying particles $B$, $a$, and $b$ with the $\Bs$, the $\KK$ pair, and the $\Jpsi$, respectively, the angular dependence of the
-\BstoJpsiKK{} decay can be derived from Equations~\ref{eq:angAmpSqEval}, \ref{eq:Eultohel}, \ref{eq:sqAmpHel}, and \ref{eq:angFuncs}.  As
+\BstoJpsiKK{} decay can be derived from Equations~\ref{eq:angAmpSqEval}, \ref{eq:Eultohel}, \ref{eq:sqAmpHel}, and \ref{eq:angFuncs}. As
 discussed in Section~\ref{sec:pheno_decay}, the indices $h$ and $h'$ in Equation~\ref{eq:sqAmpHel} run over three \BstoJpsiphi{}
 polarization states and one \BstoJpsiKK{} state where the $\KK$ pair is in an S-wave configuration.
 
@@ -320,13 +320,12 @@ helicities are considered, for which $\beta$\texteq\tpm1.
       $f(\Omega) \times 16\sqrt{\pi}$      \\
       %$f(\Omega) \times \tfrac{32\pi}{9}$  \\
 
-    \hline\hline
+    \hline
 
     $\AmpSq[H]{0}$  &
     %00  &
       $4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$2\, \cos^2\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\AmpSq[H]{+}$  &
     %\tp\tp  &
@@ -334,7 +333,6 @@ helicities are considered, for which $\beta$\texteq\tpm1.
       %$\tfrac{1}{2}\, \sin^2\thetaK\, (1 \pm \cos\thetal)^2$  \\
       &
       $\qquad\quad = P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \pm \sqrt{3}\, Y_{1,\,0})$  \\
-    \hline
 
     $\AmpSq[H]{-}$  &
     %\tm{}\tm  &
@@ -342,91 +340,77 @@ helicities are considered, for which $\beta$\texteq\tpm1.
       %$\tfrac{1}{2}\, \sin^2\thetaK\, (1 \mp \cos\thetal)^2$  \\
       &
       $\qquad\quad = P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \mp \sqrt{3}\, Y_{1,\,0})$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{+}$  &
     %0\tp{} ($\Re$)  &
       $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \pm \sqrt{5}\, Y_{1,\,+1})$  \\
       %$\pm \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \cos\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{+}$  &
     %0\tp{} ($\Im$)  &
       $-2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \pm \sqrt{5}\, Y_{1,\,-1})$  \\
       %$\mp \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \sin\phihel$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{-}$  &
     %0\tm{} ($\Re$)  &
       $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \mp \sqrt{5}\, Y_{1,\,+1})$  \\
       %$\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \cos\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{-}$  &
     %0\tm{} ($\Im$)  &
       $+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \mp \sqrt{5}\, Y_{1,\,-1})$  \\
       %$\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \sin\phihel$  \\
-    \hline
 
     $\ReAmp[H][H]{+}{-}$  &
     %\tp\tm{} ($\Re$)  &
       $-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,+2}$  \\
       %$-\sin^2\thetaK\, \sin^2\thetal\, \cos2\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{+}{-}$  &
     %\tp\tm{} ($\Im$)  &
       $-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  \\
       %$-\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
-    \hline\hline
+    \hline
 
     $\AmpSq{0}$  &
     %00  &
       $4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$2\, \cos^2\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\AmpSq{\parallel}$  &
     %$\parallel\parallel$  &
       $P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} - \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  \\
       %$\sin^2\thetaK\, (1 - \sin^2\thetal\, \cos^2\phihel)$  \\
-    \hline
 
     $\AmpSq{\perp}$  &
     %$\perp\perp$  &
       $P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} + \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  \\
       %$\sin^2\thetaK\, (1 - \sin^2\thetal\, \sin^2\phihel)$  \\
-    \hline
 
     $\ReAmp{0}{\parallel}$  &
     %0$\parallel$ ($\Re$)  &
       $+2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,+1}$  \\
       %$+\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{0}{\parallel}$  &
     %0$\parallel$ ($\Im$)  &
       $\mp 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,-1}$  \\
       %$\mp \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{0}{\perp}$  &
     %0$\perp$ ($\Re$)  &
       $\pm 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,+1}$  \\
       %$\pm \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{0}{\perp}$  &
     %0$\perp$ ($\Im$)  &
       $-2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,-1}$  \\
       %$-\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{\parallel}{\perp}$  &
     %$\parallel\perp$ ($\Re$)  &
       $\pm 2\sqrt{3}\, P_2^2\, Y_{1,\,0}$  \\
       %$\pm 2\, \sin^2\thetaK\, \cos\thetal$  \\
-    \hline
 
     $\ImAmp{\parallel}{\perp}$  &
     %$\parallel\perp$ ($\Im$)  &
@@ -450,72 +434,60 @@ helicities are considered, for which $\beta$\texteq\tpm1.
       $f(\Omega) \times 16\sqrt{\pi}$      \\
       %$f(\Omega) \times \tfrac{32\pi}{9}$  \\
 
-    \hline\hline
+    \hline
 
     $\AmpSq[H]{{\text{S}}}$  &
       $4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$\tfrac{2}{3}\, \sin^2\thetal$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{{\text{S}}}$  &
       $8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{{\text{S}}}$  &
       0  \\
       %0  \\
-    \hline
 
     $\ReAmp[H][H]{+}{{\text{S}}}$  &
       $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \pm Y_{1,\,+1})$  \\
       %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \cos\phihel$ \\
-    \hline
 
     $\ImAmp[H][H]{+}{{\text{S}}}$  &
       $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \pm Y_{1,\,-1})$  \\
       %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \sin\phihel$ \\
-    \hline
 
     $\ReAmp[H][H]{-}{{\text{S}}}$  &
       $+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \mp Y_{1,\,+1})$  \\
       %$\mp \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \cos\phihel$ \\
-    \hline
 
     $\ImAmp[H][H]{-}{{\text{S}}}$  &
       $-6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \mp Y_{1,\,-1})$  \\
       %$\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \sin\phihel$ \\
-    \hline\hline
+    \hline
 
     $\AmpSq{{\text{S}}}$  &
       $4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$\tfrac{2}{3}\, \sin^2\thetal$  \\
-    \hline
 
     $\ReAmp{0}{{\text{S}}}$  &
       $8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  \\
       %$\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\ImAmp{0}{{\text{S}}}$  &
       0  \\
       %0  \\
-    \hline
 
     $\ReAmp{\parallel}{{\text{S}}}$  &
       $+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,+1}$  \\
       %$+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{\parallel}{{\text{S}}}$  &
       $\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,-1}$  \\
       %$\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{\perp}{{\text{S}}}$  &
       $\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,+1}$  \\
       %$\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{\perp}{{\text{S}}}$  &
       $+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,-1}$  \\
@@ -525,21 +497,16 @@ helicities are considered, for which $\beta$\texteq\tpm1.
 \end{table}
 
 Evaluation of the angular functions for the combinations of the \BstoJpsiphi{} states leads to Table~\ref{tab:angDistJpsiphiPY}. The first
-column of the table shows a combination of decay amplitudes and the second column the corresponding angular functions. The angular
-functions for the $\KK$ S-wave and the interference between \BstoJpsiphi{} and the $\KK$ S-wave are listed in
-Table~\ref{tab:angDistSWavePY}. All functions are multiplied by a factor 8$\pi^\text{2}$, which makes their integrals over all three angles
-equal to either one or zero.
+column of the table shows a combination of coefficients (helicity and transversity amplitudes) and the second column the corresponding
+angular functions. The angular functions for the $\KK$ S-wave and the interference between \BstoJpsiphi{} and the $\KK$ S-wave are listed
+in Table~\ref{tab:angDistSWavePY}. All functions are multiplied by a factor 8$\pi^\text{2}$, which makes their integrals over all three
+angles equal to either one or zero.
 
-The differences between contributions from $\beta$\texteq\tpm1 are distinguished with \tpm{} and \tmp{} signs in the tables. Because the
-decay of the $\Jpsi$ is not a weak process it conserves parity, which results in equal decay amplitudes for $\beta$\texteq\tp1 and
-$\beta$\texteq\tm1. Since the muon helicities are not measured in the experiment, the two contributions are added, resulting in
-cancellation of the terms with opposite sign.
-
-The top halves of the tables show the angular amplitudes and functions in the helicity basis, while the bottom halves show the amplitudes
-and functions in the transversity basis. For both bases helicity angles are used. The transversity functions are obtained by substituting
-the helicity amplitudes ($H_0$, $H_+$, and $H_-$) by combinations of transversity amplitudes ($\Azero$, $\Apar$, and $\Aperp$), after which
-the helicity functions can be combined into functions corresponding to the transversity amplitudes. The amplitude for the $\KK$ S-wave is
-the same in both bases ($H_\text{S}$\texteq$\AS$). The substitution is given by~\cite{Dighe:1995pd}
+The top halves of the tables show the angular functions in the helicity basis, while the bottom halves show the functions in the
+transversity basis. For both bases helicity angles are used. The transversity functions are obtained by substituting the helicity
+amplitudes ($H_0$, $H_+$, and $H_-$) by combinations of transversity amplitudes ($\Azero$, $\Apar$, and $\Aperp$), after which the helicity
+functions can be combined into functions corresponding to the transversity amplitudes. The amplitude for the $\KK$ S-wave is the same in
+both bases ($H_\text{S}$\texteq$\AS$). The substitution is given by~\cite{Dighe:1995pd}
 \begin{equation}
   \label{eq:helToTransAmps}
   \begin{aligned}
@@ -547,6 +514,11 @@ the same in both bases ($H_\text{S}$\texteq$\AS$). The substitution is given by~
     H_\pm &= \tfrac{1}{\sqrt{2}}(\Apar \pm \Aperp) \ .
   \end{aligned}
 \end{equation}
+
+The differences between contributions from $\beta$\texteq\tpm1 are distinguished with \tpm{} and \tmp{} signs in the tables. Because the
+decay of the $\Jpsi$ is not a weak process it conserves parity, which results in equal helicity/transversity amplitudes for
+$\beta$\texteq\tp1 and $\beta$\texteq\tm1. Since the muon helicities are not measured in the experiment, the two contributions are added,
+resulting in cancellation of the terms with opposite sign.
 
 Both Legendre polynomials and real-valued spherical harmonics can be expressed in terms of sines and cosines of the angles.
 Tables~\ref{tab:angDistJpsiphiSinCos} and \ref{tab:angDistSWaveSinCos} show the angular functions in terms of sines and cosines that
@@ -566,109 +538,93 @@ correspond to the functions in Tables~\ref{tab:angDistJpsiphiPY} and \ref{tab:an
       %$f(\Omega) \times 16\sqrt{\pi}$      &
       $f(\Omega) \times \tfrac{32\pi}{9}$  \\
 
-    \hline\hline
+    \hline
 
     $\AmpSq[H]{0}$  &
     %00  &
       %$4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $2\, \cos^2\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\AmpSq[H]{+}$  &
     %\tp\tp  &
       %$2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \pm \sqrt{3}\, Y_{1,\,0})$  &
       $\tfrac{1}{2}\, \sin^2\thetaK\, (1 \pm \cos\thetal)^2$  \\
-    \hline
 
     $\AmpSq[H]{-}$  &
     %\tm{}\tm  &
       %$2\, (P_0^0 - P_2^0)\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} \mp \sqrt{3}\, Y_{1,\,0})$  &
       $\tfrac{1}{2}\, \sin^2\thetaK\, (1 \mp \cos\thetal)^2$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{+}$  &
     %0\tp{} ($\Re$)  &
       %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \pm \sqrt{5}\, Y_{1,\,+1})$  &
       $\pm \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \cos\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{+}$  &
     %0\tp{} ($\Im$)  &
       %$-2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \pm \sqrt{5}\, Y_{1,\,-1})$  &
       $\mp \sin2\thetaK\, \sin\thetal\, (1 \pm \cos\thetal) \sin\phihel$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{-}$  &
     %0\tm{} ($\Re$)  &
       %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,+1} \mp \sqrt{5}\, Y_{1,\,+1})$  &
       $\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \cos\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{-}$  &
     %0\tm{} ($\Im$)  &
       %$+2\sqrt{\tfrac{3}{5}}\, P_2^1 (Y_{2,\,-1} \mp \sqrt{5}\, Y_{1,\,-1})$  &
       $\mp \sin2\thetaK\, \sin\thetal\, (1 \mp \cos\thetal) \sin\phihel$  \\
-    \hline
 
     $\ReAmp[H][H]{+}{-}$  &
     %\tp\tm{} ($\Re$)  &
       %$-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,+2}$  &
       $-\sin^2\thetaK\, \sin^2\thetal\, \cos2\phihel$  \\
-    \hline
 
     $\ImAmp[H][H]{+}{-}$  &
     %\tp\tm{} ($\Im$)  &
       %$-2\sqrt{\tfrac{3}{5}}\, P_2^2\, Y_{2,\,-2}$  &
       $-\sin^2\thetaK\, \sin^2\thetal\, \sin2\phihel$  \\
-    \hline\hline
+    \hline
 
     $\AmpSq{0}$  &
     %00  &
       %$4\, (P_0^0 + 2\, P_2^0)\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $2\, \cos^2\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\AmpSq{\parallel}$  &
     %$\parallel\parallel$  &
       %$P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} - \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  &
       $\sin^2\thetaK\, (1 - \sin^2\thetal\, \cos^2\phihel)$  \\
-    \hline
 
     $\AmpSq{\perp}$  &
     %$\perp\perp$  &
       %$P_2^2\, (2\, Y_{0,\,0} + \tfrac{1}{\sqrt{5}}\, Y_{2,\,0} + \sqrt{\tfrac{3}{5}}\, Y_{2,\,+2})$  &
       $\sin^2\thetaK\, (1 - \sin^2\thetal\, \sin^2\phihel)$  \\
-    \hline
 
     $\ReAmp{0}{\parallel}$  &
     %0$\parallel$ ($\Re$)  &
       %$+2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,+1}$  &
       $+\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{0}{\parallel}$  &
     %0$\parallel$ ($\Im$)  &
       %$\mp 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,-1}$  &
       $\mp \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{0}{\perp}$  &
     %0$\perp$ ($\Re$)  &
       %$\pm 2\sqrt{2}\;\sqrt{3}\, P_2^1\, Y_{1,\,+1}$  &
       $\pm \sqrt{2}\, \sin2\thetaK\, \sin\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{0}{\perp}$  &
     %0$\perp$ ($\Im$)  &
       %$-2\sqrt{2}\sqrt{\tfrac{3}{5}}\, P_2^1\, Y_{2,\,-1}$  &
       $-\frac{1}{\sqrt{2}}\, \sin2\thetaK\, \sin2\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{\parallel}{\perp}$  &
     %$\parallel\perp$ ($\Re$)  &
       %$\pm 2\sqrt{3}\, P_2^2\, Y_{1,\,0}$  &
       $\pm 2\, \sin^2\thetaK\, \cos\thetal$  \\
-    \hline
 
     $\ImAmp{\parallel}{\perp}$  &
     %$\parallel\perp$ ($\Im$)  &
@@ -691,72 +647,60 @@ correspond to the functions in Tables~\ref{tab:angDistJpsiphiPY} and \ref{tab:an
       %$f(\Omega) \times 16\sqrt{\pi}$      &
       $f(\Omega) \times \tfrac{32\pi}{9}$  \\
 
-    \hline\hline
+    \hline
 
     $\AmpSq[H]{{\text{S}}}$  &
       %$4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $\tfrac{2}{3}\, \sin^2\thetal$  \\
-    \hline
 
     $\ReAmp[H][H]{0}{{\text{S}}}$  &
       %$8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\ImAmp[H][H]{0}{{\text{S}}}$  &
       %0  &
       0  \\
-    \hline
 
     $\ReAmp[H][H]{+}{{\text{S}}}$  &
       %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \pm Y_{1,\,+1})$  &
       $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \cos\phihel$ \\
-    \hline
 
     $\ImAmp[H][H]{+}{{\text{S}}}$  &
       %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \pm Y_{1,\,-1})$  &
       $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \pm \cos\thetal)\, \sin\phihel$ \\
-    \hline
 
     $\ReAmp[H][H]{-}{{\text{S}}}$  &
       %$+6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,+1} \mp Y_{1,\,+1})$  &
       $\mp \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \cos\phihel$ \\
-    \hline
 
     $\ImAmp[H][H]{-}{{\text{S}}}$  &
       %$-6\, P_1^1\, (\tfrac{1}{\sqrt{5}}\, Y_{2,\,-1} \mp Y_{1,\,-1})$  &
       $\pm \tfrac{2}{3}\sqrt{3}\, \sin\thetaK\, \sin\thetal\, (1 \mp \cos\thetal)\, \sin\phihel$ \\
-    \hline\hline
+    \hline
 
     $\AmpSq{{\text{S}}}$  &
       %$4\, P_0^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $\tfrac{2}{3}\, \sin^2\thetal$  \\
-    \hline
 
     $\ReAmp{0}{{\text{S}}}$  &
       %$8\sqrt{3}\, P_1^0\, (Y_{0,\,0} - \tfrac{1}{\sqrt{5}}\, Y_{2,\,0})$  &
       $\tfrac{4}{3}\sqrt{3}\, \cos\thetaK\, \sin^2\thetal$  \\
-    \hline
 
     $\ImAmp{0}{{\text{S}}}$  &
       %0  &
       0  \\
-    \hline
 
     $\ReAmp{\parallel}{{\text{S}}}$  &
       %$+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,+1}$  &
       $+\tfrac{1}{3}\sqrt{6}\, \sin\thetaK\, \sin2\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{\parallel}{{\text{S}}}$  &
       %$\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,-1}$  &
       $\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \sin\phihel$  \\
-    \hline
 
     $\ReAmp{\perp}{{\text{S}}}$  &
       %$\pm 6\sqrt{2}\, P_1^1\, Y_{1,\,+1}$  &
       $\pm \tfrac{2}{3}\sqrt{6}\, \sin\thetaK\, \sin\thetal\, \cos\phihel$  \\
-    \hline
 
     $\ImAmp{\perp}{{\text{S}}}$  &
       %$+6\sqrt{2}\tfrac{1}{\sqrt{5}}\, P_1^1\, Y_{2,\,-1}$  &
