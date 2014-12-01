@@ -1,0 +1,56 @@
+\section{Maximum-Likelihood Fit}
+\label{sec:ana_fit}
+
+The fit of the decay model to the data is an \emph{unbinned maximum-likelihood fit}. A probability density function (PDF) is constructed by
+normalizing the expression for the differential decay rate, including experimental effects, by dividing by its integral over decay time and
+decay angles. A likelihood function of the PDF parameters for one $\Bs$ decay is given by the PDF at the values of time and angles for
+that decay. The likelihood function for the full sample of decays is given by the product of all individual likelihoods.
+
+Parameter values are estimated by maximizing the combined likelihood function for the sample. In practice, the negative logarithm of the
+likelihood function (NLL) is minimized to find the maximum likelihood. Instead of a product, the NLL is a sum of the contributions from
+individual decays.
+
+The shape of the NLL around the minimum can be approximated by a second order Taylor series, i.e. a parabola. Since the first derivative of
+this function vanishes at the point where the NLL reaches its minimum, the approximation for a given parameter $\mu$ can be written in the
+form
+\begin{equation}
+  \label{eq:NLLPara}
+  \text{NLL}(\mu) \approx \frac{1}{2\,\sigma_\mu^2}\, (\mu-\hat{\mu})^2 + C \ ,
+\end{equation}
+where $\hat{\mu}$ is the value of parameter $\mu$ in the minimum, $\sigma_\mu$ determines the width of the NLL shape around the minimum,
+and $C$ is the NLL value in the minimum. The width, $\sigma_\mu$, is (related to) the statistical uncertainty of the estimate of parameter
+$\mu$. The wider the NLL shape around the minimum is, the larger the value of $\sigma_\mu$ and the uncertainty are.
+
+It depends on the actual shape of the NLL how well it is approximated by a parabola away from the minimum. Important factors are
+correlations between parameters and the amount of data that is used to build the NLL. With more data the statistical uncertainties of
+the parameter estimates become smaller and, in general, the NLL becomes more parabolic within an interval of a few times the value of
+$\sigma_\mu$ around the minimum.
+
+In case the distribution of parameter estimates $\hat{\mu}$ from different measurements is described by a Gaussian shape, the shape of the
+NLL will be truly parabolic. In this case the parameter $\sigma_\mu$ is an estimate of the standard deviation of the $\hat{\mu}$
+distribution, which can be used as a measure of the statistical uncertainty of a parameter estimate. The value of $\sigma_\mu$ is
+determined from the second derivative of the NLL, which is given by $\frac{1}{\sigma_\mu^2}$.
+
+If the shape of the NLL around its minimum is not sufficiently parabolic, a different measure of the statistical uncertainty may be used.
+Commonly the (absolute) difference between the value of $\mu$ at the point where the NLL reaches a value of $\tfrac{1}{2}+C$ and
+$\hat{\mu}$ is taken as the uncertainty. In the parabolic case the NLL reaches this point at $\hat{\mu}+\sigma_\mu$ and
+$\hat{\mu}-\sigma_\mu$, which results in an uncertainty of $\sigma_\mu$, as expected. In a more general case this NLL value may be reached
+on the left and the right of $\hat{\mu}$ at different distances, which results in an asymmetric uncertainty.
+
+In some cases the shape of the NLL differs from a parabola too much to give a single estimate of the parameter value and a corresponding
+uncertainty. The simplest way to provide an estimate of the value in these cases is to specify the interval bounded by the values of $\mu$
+at a given NLL value. Common NLL values are the values that a parabola would reach at $n\cdot\sigma_\mu$ from the minimum, which are given
+by $\tfrac{1}{2}\,n^2+C$. Hence the intervals are referred to as ``$n$ sigma'' intervals.
+
+In general the NLL is a function of more than one parameter. The distribution of parameter estimates in the parabolic approximation is
+given by a multivariate Gaussian shape, which includes also correlations between the estimates. Both the uncertainties and the correlations
+of the parameter estimates are estimated from the shape of the NLL in the minimum, by determining second derivatives for all combinations
+of parameters.
+
+The parabolic shape of Equation~\ref{eq:NLLPara} for each one of the parameters is given by the minimum value of the NLL at each value of
+the parameter $\mu$. In the parabolic approximation the minimum is reached at
+\begin{equation}
+  \frac{1}{\sigma_\nu}\, (\nu-\hat{\nu})  = \rho_{\mu\nu}\, \frac{1}{\sigma_\mu}\, (\mu-\hat{\mu})
+\end{equation}
+for any other parameter $\nu$, where $\rho_{\mu\nu}$ is the correlation coefficient between the parameters $\mu$ and $\nu$. The resulting
+function of parameter $\mu$ is termed \emph{profiled NLL}, the second derivative of which is again equal to $\frac{1}{\sigma_\mu^2}$.

@@ -1,28 +1,24 @@
 \chapter{Data Analysis}
 \label{chap:ana}
 
-General overview: maximum-likelihood fit (introduce NLL), error correction for background,
-simultaneous in KK-mass bins and tagging categories
+%error correction for background,
+%simultaneous in KK-mass bins and tagging categories
 
-\section{Decay-Candidate Selection and Background}
-\label{sec:ana_bkgSub}
-show mass-fit results in $\cthetal$ bins
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.7\textwidth]{graphics/analysis/mumuMass}
-  \caption{Background-subtracted distribution of \BstoJpsiKK{} decays in $\mumu$ mass.}
-  \label{fig:mumuMass}
-\end{figure}
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.7\textwidth]{graphics/analysis/KKMass}
-  \caption{Background-subtracted distribution of \BstoJpsiKK{} decays in $\KK$ mass.}
-  \label{fig:KKMass}
-\end{figure}
+To extract the theoretical parameters that describe the \BstoJpsiKK{} decay from the experimental data, the model of decay time and decay
+angles, as discussed in Chapter~\ref{chap:pheno}, is fitted to the distribution of events in the data. Several experimental effects have to
+be taken into account in this fit. Some of these effects, for instance the uncertainty in the measurement of the decay time, are included
+by modifying the theoretical model. Backgrounds, on the other hand, are dealt with by selecting signal-like decay candidates in the data
+and by subtracting remaining background from the data after selection.
+
+This chapter deals with the preparation of experimental data (Section~\ref{sec:ana_bkgSub}) and the model that can be used to fit these
+data (Sections~\ref{sec:ana_time}--\ref{sec:ana_tagging}). Also the use of the decay model in the fit (Section~\ref{sec:ana_fit}) and in
+simulation (Section~\ref{sec:ana_sim}) are discussed.
+
+\input{analysis/fit}
+\input{analysis/bkgSub}
 
 \section{Decay Time}
 \label{sec:ana_time}
-mention reconstruction-acceptance model (linear/exponential/quadratic in time)
 
 \subsection{Resolution}
 \label{subsec:ana_time_res}
@@ -30,6 +26,7 @@ mention how to handle conditional observables for plots and toys
 
 \subsection{Acceptance}
 \label{subsec:ana_time_acc}
+mention reconstruction-acceptance model (linear/exponential/quadratic in time)
 
 \section{Decay Angles}
 \label{sec:ana_angles}
@@ -38,7 +35,8 @@ mention how to handle conditional observables for plots and toys
 \label{sec:ana_KKIntegrals}
 
 Discuss trend in phases.
-Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero$ with a Flatt\'e shape, resolution from MC.
+Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero$ with a Flatt\'e shape,
+parameters from \cite{Ablikim:2004wn}, resolution from MC.
 \begin{table}[htb]
   \centering
   \caption{S-wave--$\Jpsiphi$ coupling factors in the six $\KK$-mass bins ($\CSP^i$).}
@@ -55,22 +53,7 @@ Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero
   \end{tabular}
 \end{table}
 
-\section{Flavour Tagging}
-\label{sec:ana_tagging}
-mention how to handle conditional observables for plots and toys,
-explain why nuisance asymmetries can be ignored
-
-\begin{equation}
-  \begin{aligned}
-    \label{eq:diffRateObs}
-    \left(\frac{\ud^{4} \Gamma}{\ud t \;\ud\Omega}\right)_{\qf,\,i}^{\text{obs}}\
-      &\propto\ (1-\wTag[\qf,\,i]) \left(\avgCEven[i] + \qf\,\avgCOdd\right)\left(\even + \qf\,\odd\right) \\
-      &\qquad\quad+ \wTag[-\qf,\,i] \left(\avgCEven[i] - \qf\,\avgCOdd\right)\left(\even - \qf\,\odd\right) \\
-    &\propto\ \left[\avgCEven[i] + \qf\,\dil[i]\left(\avgCOdd[i] - \ADilWTag[i]\,\avgCEven[i]\right)\right]\even \\
-      &\qquad\quad+ \left[\avgCOdd[i] + \qf\,\dil[i]\left(\avgCEven[i] - \ADilWTag[i]\,\avgCOdd[i]\right)\right]\odd
-  \end{aligned}
-\end{equation}
-
+\input{analysis/tagging}
 
 \section{Simulation}
 \label{sec:ana_sim}

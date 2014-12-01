@@ -1,0 +1,68 @@
+\section{Flavour Tagging}
+\label{sec:ana_tagging}
+mention how to handle conditional observables for plots and toys,
+explain why nuisance asymmetries can be ignored
+
+%\begin{equation}
+%  \begin{aligned}
+%    \label{eq:diffRateObs}
+%    \left(\frac{\ud^{4} \Gamma}{\ud t \;\ud\Omega}\right)_{\qf,\,i}^{\text{obs}}\
+%      &\propto\ (1-\wTag[\qf,\,i]) \left(\avgCEven[i] + \qf\,\avgCOdd\right)\left(\even + \qf\,\odd\right) \\
+%      &\qquad\quad+ \wTag[-\qf,\,i] \left(\avgCEven[i] - \qf\,\avgCOdd\right)\left(\even - \qf\,\odd\right) \\
+%    &\propto\ \left[\avgCEven[i] + \qf\,\dil[i]\left(\avgCOdd[i] - \ADilWTag[i]\,\avgCEven[i]\right)\right]\even \\
+%      &\qquad\quad+ \left[\avgCOdd[i] + \qf\,\dil[i]\left(\avgCEven[i] - \ADilWTag[i]\,\avgCOdd[i]\right)\right]\odd
+%  \end{aligned}
+%\end{equation}
+
+\begin{equation}
+  \label{eq:diffRateObs}
+  \left(\frac{\ud^{4} \Gamma}{\ud t \;\ud\Omega}\right)_{\qf,\,i}^{\text{obs}}
+    \propto \CEven[i]\,\even + \COdd[i]\,\odd \ ,
+\end{equation}
+where $\even$ is the sum of terms in the differential decay rate that have the same sign for $\Bs$ and $\Bsbar$ decays, $\odd$ is the sum
+of terms that have opposite signs for $\Bs$ and $\Bsbar$ decays, and the coefficients $\CEven[i]$ and $\COdd[i]$ are defined by
+\begin{subequations}
+  \begin{align}
+    \CEven[i] &\equiv \avgCEven[i]
+                      + \qt^a\,\dil[i]^a\left(\avgCOdd[i] - \ADilWTag[i]^a\,\avgCEven[i] \right)
+                      + \qt^b\,\dil[i]^b\left(\avgCOdd[i] - \ADilWTag[i]^b\,\avgCEven[i] \right) \nonumber\\
+                      &\qquad\quad\
+                        + \qt^a\,\qt^b\,\dil[i]^a\,\dil[i]^b\left[(1 + \ADilWTag[i]^a\,\ADilWTag[i]^b)\,\avgCEven[i]
+                                                                  - \ADilWTag[i]^a\,\ADilWTag[i]^b\,\avgCOdd[i] \right] \\
+    \COdd[i] &\equiv \avgCOdd[i]
+                      + \qt^a\,\dil[i]^a\left(\avgCEven[i] - \ADilWTag[i]^a\,\avgCOdd[i] \right)
+                      + \qt^b\,\dil[i]^b\left(\avgCEven[i] - \ADilWTag[i]^b\,\avgCOdd[i] \right) \nonumber\\
+                      &\qquad\quad\
+                        + \qt^a\,\qt^b\,\dil[i]^a\,\dil[i]^b\left[(1 + \ADilWTag[i]^a\,\ADilWTag[i]^b)\,\avgCOdd[i]
+                                                                  - \ADilWTag[i]^a\,\ADilWTag[i]^b\,\avgCEven[i] \right]
+  \end{align}
+\end{subequations}
+In the case of one flavour tag, the differential rate is given by the sum of the $\Bs$ and $\Bsbar$ rates of the other tag, which gives
+\begin{subequations}
+  \begin{align}
+    \CEven[i] &\equiv \avgCEven[i] + \qt\,\dil[i]\left(\avgCOdd[i]  - \ADilWTag[i]\,\avgCEven[i] \right) \\
+    \COdd[i]  &\equiv \avgCOdd[i]  + \qt\,\dil[i]\left(\avgCEven[i] - \ADilWTag[i]\,\avgCOdd[i]  \right) \ .
+  \end{align}
+\end{subequations}
+
+Without \BsBsbar{} normalization asymmetries the coefficients $\avgCEven$ and $\avgCOdd$ reduce to one and zero, respectively:
+\begin{subequations}
+  \begin{align}
+    \CEven[i] &\equiv 1
+                      - \qt^a\,\dil[i]^a\,\ADilWTag[i]^a
+                      - \qt^b\,\dil[i]^b\,\ADilWTag[i]^b
+                      + \qt^a\,\qt^b\,\dil[i]^a\,\dil[i]^b\,(1 + \ADilWTag[i]^a\,\ADilWTag[i]^b) \\
+    \COdd[i] &\equiv    \qt^a\,\dil[i]^a
+                      + \qt^b\,\dil[i]^b
+                      - \qt^a\,\qt^b\,\dil[i]^a\,\dil[i]^b\,\ADilWTag[i]^a\,\ADilWTag[i]^b \ .
+  \end{align}
+\end{subequations}
+Without any asymmetries, the coefficients are given by
+\begin{subequations}
+  \begin{align}
+    \CEven[i] &\equiv 1
+                      + \qt^a\,\qt^b\,\dil[i]^a\,\dil[i]^b \\
+    \COdd[i] &\equiv    \qt^a\,\dil[i]^a
+                      + \qt^b\,\dil[i]^b \ .
+  \end{align}
+\end{subequations}
