@@ -54,3 +54,51 @@ the parameter $\mu$. In the parabolic approximation the minimum is reached at
 \end{equation}
 for any other parameter $\nu$, where $\rho_{\mu\nu}$ is the correlation coefficient between the parameters $\mu$ and $\nu$. The resulting
 function of parameter $\mu$ is termed \emph{profiled NLL}, the second derivative of which is again equal to $\frac{1}{\sigma_\mu^2}$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Fit with Weighted Decay Candidates}
+\label{subsec:ana_fit_weights}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As will be described in Section~\ref{sec:ana_bkgSub}, the time and angular distribution for \BstoJpsiKK{} signal decays is obtained by
+subtracting the background distribution from the total distribution that is observed in the data. This is accomplished by adding background
+decay-candidates to the sample that count with negative weights. In the NLL, the contribution of each decay candidate is then multiplied
+with the value of its weight.
+
+Although the position of the minimum of a weighted NLL still gives a good estimate of the values of the NLL parameters, the parameter
+uncertainties cannot be estimated directly from the shape of the NLL in its minimum any more. This can be seen by considering a fit in bins
+of a given variable, where the observed number of decays in each bin is compared to the prediction of this number by a model. The
+uncertainties in the estimates of the model parameters are now related to the uncertainties in the observed number of decays in each bin.
+
+For unweighted decays the distribution of the observed number of decays ($N$) is a Poisson distribution, for which both the mean and the
+variance are given by the expected number in the bin ($\nu$). An estimate of the expected number of decays, $\hat{\nu}$, is given by $N$
+and the corresponding uncertainty by the square root of the variance, $\sqrt{\hat{\nu}}$\texteq$\sqrt{N}$.
+
+In a fit with weighted decay candidates, where each candidate counts with a weight $w_c$, the observed number of decays is replaced by the
+sum of weights, $W$\textequiv$\sum_c w_c$. The estimate of $\nu$ is now also given by $W$, as expected, but the uncertainty is estimated by
+$\sqrt{W}$, which cannot be correct. If all weights are multiplied by a constant number, $n$, the relative uncertainty in the estimate of
+$\nu$ should not change, since no information was added to the data sample. This means that the absolute uncertainty should increase by a
+factor $n$, as $\hat{\nu}$\texteq$W$ does. If the uncertainty is estimated by $\sqrt{W}$, it only increases by a factor $\sqrt{n}$.
+
+The correct uncertainty estimate for the expected number of decays is given by the square root of $W'$\textequiv$\sum_c w_c^2$. Unlike
+$\sqrt{W}$, $\sqrt{W'}$ increases by a factor $n$ if all weights are multiplied by this common factor. To obtain this estimate of the
+uncertainty, the original estimate from the Poisson distribution should be divided by a factor $\sqrt{\alpha}$, where $\alpha$ is given by
+\begin{equation}
+  \alpha \equiv \frac{W}{W'} = \frac{\sum_c w_c}{\sum_c w_c^2} \ .
+\end{equation}
+
+In an unbinned maximum likelihood fit the correction factor $\alpha$ can be used to modify the shape of the NLL. Since the uncertainties
+are estimated from the second derivatives of the NLL, which are given by $\frac{1}{\sigma_\mu^2}$ in the parabolic case, the NLL is
+multiplied by a factor $\alpha$:
+\begin{equation}
+  \label{eq:NLLPara_alpha}
+  \text{NLL}'(\mu) \approx \frac{\alpha}{2\,\sigma_\mu^2}\, (\mu-\hat{\mu})^2 + C' \ .
+\end{equation}
+This will make the shape of the parabola around the NLL minimum wider (if $\alpha$\textlt1) or narrower (if $\alpha$\textgt1). Notice that
+this does not affect the position of the minimum, from which the parameter values are estimated.
+
+Note that whereas the factor $\alpha$ is an exact correction for the uncertainty estimate of the expected number of decays in the above
+example, it is only an approximate correction for the parameters in the NLL. The resulting uncertainties have to be checked by evaluating
+the shape of the distribution of parameter estimates in simulated experiments, as will be discussed in Sections~\ref{sec:ana_sim} and
+\ref{sec:result_paramEst}.
