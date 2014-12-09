@@ -52,19 +52,22 @@ $\Ai^*\Ai[j]\,\timeAmp^*\timeAmp[j]$ have both real and imaginary parts. Notice 
 \end{equation}
 as required by the relation $\Ai^*\Ai^{\phantom{*}}\,\timeAmp^*\timeAmp^{\phantom{*}} = |\Ai\,\timeAmp|^2$.
 
-The equivalent expression for the $\Bsbartof$ decay is obtained by changing the signs of the $\cDms$ and $\sDms$ terms and multiplying
-by a factor $\pqAbsAlt^\text{2}$ (see Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayQpSq}). Using the definitions of $\qf$ and
-$\Cm$ from Equations~\ref{eq:mixDecayDiffRateAll} and \ref{eq:CmDef}, the time dependence of the $\Bstof$ and $\Bsbartof$ decays is
-given by
+The equivalent expression for the $\Bsbartof$ decay is obtained by changing the signs of the $\cDms$ and $\sDms$ terms and multiplying by a
+factor $\pqAbsAlt^\text{2}$ (see Equations~\ref{eq:mixDecayAmps} and \ref{eq:mixDecayQpSq}). Using the definition of $\Cm$ from
+Equation~\ref{eq:CmDef}, the time dependence of the $\Bstof$ and $\Bsbartof$ decays is given by
 \begin{equation}
   \label{eq:timeqfDep}
   \begin{aligned}
     \Ai^*\Ai[j]\,\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}} =
-      \AAvConj&\AAv[{\Ai[j]}]\, \frac{1-\qf\,\Cm}{1+\Cm}\, \eGst \\
+      \AAvConj&\AAv[{\Ai[j]}]\, \frac{1-\qf\,\Cm}{1-\Cm}\, \eGst \\
           \times\Big[ &\Cf[ij]^+\,\cDGs + \qf\,\Cf[ij]^-\,\cDms \\
-                      &+ \Df[ij]\,\sDGs - \qf\,\Sf[ij]\,\sDms \Big] \ .
+                      &+ \Df[ij]\,\sDGs - \qf\,\Sf[ij]\,\sDms \Big] \ ,
   \end{aligned}
 \end{equation}
+where the expressions have become dependent on the flavour of the decaying beauty meson, $\qf$ (see Equation~\ref{eq:mixDecayDiffRateAll}).
+In Sections~\ref{sec:pheno_angles}, \ref{sec:pheno_KKMass}, and \ref{sec:pheno_equations} only the expression for the differential decay
+rate of the $\Bs$ decay will be discussed, but the dependence on $\qf$ can be reintroduced at any point by multiplying the $\cDms$ and
+$\sDms$ terms by $\qf$ and the total rate by $\frac{1-\qf\,\Cm}{1-\Cm}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,7 +120,7 @@ turns out to give a discrete ambiguity in the parameter values, as will be expla
 
 The coefficients of the time-dependent functions in Equation~\ref{eq:timeqfDep} are functions of $\lamsi$ and hence contain both the
 effects of CP violation in mixing and CP violation in decay. These two effects can be separated with an alternative parameterization, which
-has been implemented in the software that was used for data analysis in this measurement.
+has been implemented in the software that was used for data analysis in the measurement presented in this thesis.
 
 Starting again from Equation~\ref{eq:timeDepProd}, an alternative expression for the product
 $\timeAmp[i,\qf]^*\timeAmp[j,\qf]^{\phantom{*}}$ is derived by splitting the $\lamsi$ parameter into a $\qpAlt$ factor and an amplitude
@@ -156,5 +159,5 @@ Since the phases of $\qp$ and $\frac{\Abari}{\Ai}$ cannot be observed independen
 and $\Pim\,\Dm$\textminus$\Pre\,\Sm$ are observable and not the $\Pre$, $\Pmn$, $\Dm$, and $\Sm$ parameters individually. A phase
 convention can be chosen by, for example, setting $\arg(\qpAlt)$\textequiv0, which makes the phase of $\frac{\Abari}{\Ai}$ equal to the
 phase of $\lamsi$. Another choice is $\arg(\frac{\Abari[\text{0}]}{\Ai[\text{0}]})$\textequiv0, which results in
-$\arg(\qpAlt)$\texteq$\arg(\lamsi[\text{0}])$ and $\arg(\frac{\Abari}{\Ai})$\texteq$\arg(\lamsi)$\textminus$\arg(\lamsi[\text{0}])$ and
-enables a measurement of phase differences.
+$\arg(\qpAlt)$\texteq$\arg(\lamsi[\text{0}])$ and $\arg(\frac{\Abari}{\Ai})$\texteq$\arg(\lamsi)$\textminus$\arg(\lamsi[\text{0}])$ for the
+remaining parallel, perpendicular, and S-wave amplitudes. This convention directly gives a measurement of phase differences.

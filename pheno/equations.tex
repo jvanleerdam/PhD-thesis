@@ -57,10 +57,11 @@ Chapter~\ref{chap:ana}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 To indicate where the sensitivity to the different parameters in the decay model comes from, two approximations of the terms in the
-differential rate are given in Tables~\ref{tab:timeFunctionsNoCPV} and \ref{tab:timeFunctionsApprox}. The first table shows the
-time-dependent functions in the differential decay rate in the case of no CP violation. Since CP violation in the \BstoJpsiKK{} decay is
-small, this gives a good indication of how the remaining parameters appear in the decay-rate equations. Without CP violation, the
-parameters $\Cs$ and $\Ss$ are equal to zero and $\Ds$ is equal to minus one. With Equation~\ref{eq:CDSPolarToCommon}, this gives
+differential rate are given in Tables~\ref{tab:timeFunctionsNoCPV}, \ref{tab:timeFunctionsApprox}, and \ref{tab:timeFunctionsApproxEqual}.
+The first table shows the time-dependent functions in the differential decay rate in the case of no CP violation. Since CP violation in the
+\BstoJpsiKK{} decay is small, this gives a good indication of how the remaining parameters appear in the decay-rate equations. Without CP
+violation, the parameters $\Cs$ and $\Ss$ are equal to zero and $\Ds$ is equal to minus one. With Equation~\ref{eq:CDSPolarToCommon}, this
+gives
 \begin{subequations}
   \label{eq:CDSPolarToNoCPV}
   \begin{alignat}{5}
@@ -135,9 +136,12 @@ $\DGs$, which controls the difference in lifetime between the two states.
 
 The phases of the transversity amplitudes can only be determined from interference terms. The cosine of $\delparzero$ and the sine of
 $\delSperp$ appear in the untagged distribution, but tagged decay candidates are required to measure the sine of $\delparzero$ and the
-cosine of $\delSperp$. As a result, an approximate symmetry in the estimates of these parameters arises for
-$\delparzero$\textto2$\pi$\textminus$(\delparzero)$ and $\delSperp$\textto$\pi$\textminus$(\delSperp)$. Without CP violation, the parameter
-$\delperpzero$ is only determined with $\cDms$ and $\sDms$ terms and does not show a similar symmetry.
+cosine of $\delSperp$ from combinations of the remaining interference terms. As a result, the measurements of $\sin(\delparzero)$ and
+$\cos(\delSperp)$ are less precise than the measurements of $\cos(\delparzero)$ and $\sin(\delSperp)$ and an approximate symmetry in the
+estimates of these parameters arises for $\delparzero$\textto2$\pi$\textminus$(\delparzero)$ and
+$\delSperp$\textto$\pi$\textminus$(\delSperp)$, for which the values of $\cos(\delparzero)$ and $\sin(\delSperp)$ do not change. The
+parameter $\delperpzero$ is only determined with $\cDms$ and $\sDms$ terms in the approximation of Table~\ref{tab:timeFunctionsNoCPV} and
+does not show a similar symmetry.
 
 The interference term of the parallel and perpendicular states depends on both the $\delparzero$ and the $\delperpzero$ parameters:
 \begin{subequations}
@@ -150,8 +154,9 @@ The interference term of the parallel and perpendicular states depends on both t
   \end{align}
 \end{subequations}
 In these equations an approximation was used where the values of $\delparzero$ and $\delperpzero$ are approximately equal to $\pi$, which
-is justified given previous measurements of these phase differences. The combination of $\sin(\delparzero)$ and $\sin(\delperpzero)$ in
-the $\sDms$ coefficient of this term introduces a correlation between the parameters $\delparzero$ and $\delperpzero$.
+is justified given previous measurements of these phase differences (see for example \cite{LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}). The
+combination of $\sin(\delparzero)$ and $\sin(\delperpzero)$ in the $\sDms$ coefficient of this term introduces a correlation between the
+parameters $\delparzero$ and $\delperpzero$.
 
 Since the fraction of S-wave is small, the sensitivity for the parameter $\Dms$ is expected to mainly come from the ``0$\perp$'' and
 ``$\parallel\perp$'' interference terms. The $\cDms$ and $\sDms$ functions in these terms can be combined into a single sine function with
@@ -216,7 +221,7 @@ In the table, the remaining non-trivial sine and cosine functions are denoted by
   \cij{i}{j} \equiv \cos(\delta_j - \delta_i) \ .
 \end{equation}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \caption{Functions of decay time with approximations for small CP violation, small $\DGs$, and phase differences close to 0 or $\pi$.}
   \label{tab:timeFunctionsApprox}
@@ -271,11 +276,65 @@ In the table, the remaining non-trivial sine and cosine functions are denoted by
   \end{tabular}
 \end{table}
 
+\begin{table}[tbp]
+  \centering
+  \caption{Functions of decay time with approximations for small CP violation, $\phisi$\textequiv$\phis$, $\Csi$\texteq$\Cs$,
+           small $\DGs$, and phase differences close to 0 or $\pi$.}
+  \label{tab:timeFunctionsApproxEqual}
+  \renewcommand{\arraystretch}{1.7}
+  \begin{tabular}{cl}
+    \hline
+    $ij$  &  $f(t) \times e^{+\Gs\,t}$  \\
+    \hline
+    $ii$
+      &  $|\AAv|^2 \Big[
+                     1 - \tfrac{1}{2}\,\eta_i\,\DGs\,t
+                     + \Cs\,\cDms + \eta_i\,\phis\,\sDms
+                   \Big]$  \\
+    0$\parallel$
+      &  $-\magzeroAv\magparAv \Big[
+                                 1 - \tfrac{1}{2}\,\DGs\,t
+                                 + \Cs\, \cDms + \phis\, \sDms
+                               \Big]$  \\
+    0$\perp$
+      &  $+\magzeroAv\magperpAv \Big[
+                                  \tfrac{1}{2}\,\phis\,\DGs\,t
+                                  + \szeroperp\, \cDms + \sDms
+                                \Big]$  \\
+    $\parallel\perp$
+      &  $-\magparAv\magperpAv \Big[
+                                 \tfrac{1}{2}\,\phis\,\DGs\,t
+                                 - \sparperp\, \cDms + \sDms
+                               \Big]$  \\
+    0S
+      &  $-\CSP\magzeroAv\magSAv \Big[
+                                   \Cs\,\cperpS
+                                   + \tfrac{1}{2}\,\phis\,\sperpS\,\DGs\,t$ \\
+      &  $\qquad                   + (\cperpS + \szeroperp\,\sperpS) \cDms
+                                   - (\szeroperp\,\cperpS - \sperpS)\sDms
+                                 \Big]$  \\
+    $\parallel$S
+      &  $+\CSP\magparAv\magSAv \Big[
+                                  \Cs\,\cperpS
+                                  + \tfrac{1}{2}\,\phis\,\sperpS\,\DGs\,t$ \\
+      &  $\qquad                  + (\cperpS - \sparperp\,\sperpS)\cDms
+                                  + (\sparperp\,\cperpS + \sperpS)\sDms
+                                \Big]$  \\
+    $\perp$S
+      &  $+\CSP\magperpAv\magSAv \Big[
+                                   \sperpS (1 + \tfrac{1}{2}\DGs\,t)$ \\
+      &  $\qquad                   + \Cs\,\sperpS\,\cDms
+                                   - \phis\,\sperpS\,\sDms
+                                 \Big]$  \\
+    \hline
+  \end{tabular}
+\end{table}
+
 Integrating over the decay angles, the shape of the distribution of decay time is given by the sum of the diagonal terms in the
 differential rate. As can be seen in Table~\ref{tab:timeFunctionsApprox}, CP violation only affects the oscillatory terms in this
 distribution in the first-order approximation. These terms have opposite sign for $\Bs$ and $\Bsbar$ and can be isolated by taking the
-difference between the two differential rates (see also Equation~\ref{eq:timeqfDep}). For a single term, this difference is approximately
-given by
+difference between the two differential rates with $\qf$\texteq\tp1 and $\qf$\texteq\tm1 (see also Equation~\ref{eq:timeqfDep}). For a
+single term, this difference is approximately given by
 \begin{equation}
   \label{eq:timeOscill}
   \timeAmp[i,+1]^*\timeAmp[i,+1]^{\phantom{*}} - \timeAmp[i,-1]^*\timeAmp[i,-1]^{\phantom{*}}
@@ -288,9 +347,10 @@ one and not suppressed by the small value of $\DGs$ or by the effects of imperfe
 estimates of the differences between the $\phisi$ parameters, but in the ``0S'' and ``$\parallel$S'' terms also the values of
 $\Cszero$\textplus$\CsS$ and $\Cspar$\textplus$\CsS$.
 
-If identical CP violation for all intermediate states is assumed, the $\phisi$ differences vanish, but $\Cszero$\textplus$\CsS$ and
-$\Cspar$\textplus$\CsS$ reduce to 2$\Cs$. As a result, a significant part of the sensitivity for $\Cs$ (or $\lamsAbs$) comes from the
-``0S'' and ``$\parallel$S'' terms, despite the small value of the S-wave amplitude.
+Table~\ref{tab:timeFunctionsApproxEqual} shows the time dependence of the differential decay rate in the same approximation, but with the
+additional requirement that CP violation is identical for all intermediate states. In this case the $\phisi$ differences vanish, but
+$\Cszero$\textplus$\CsS$ and $\Cspar$\textplus$\CsS$ reduce to 2$\Cs$. As a result, a significant part of the sensitivity for $\Cs$ (or
+$\lamsAbs$) comes from the ``0S'' and ``$\parallel$S'' terms, despite the small value of the S-wave amplitude.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -313,10 +373,10 @@ $\delSperp$\textto$\pi$\textminus$(\delSperp)$ does not change the value of the 
 CP violation for all intermediate states. As a result, there is an alternative set of parameter values for each given set, for which the
 decay model fits the experimental data equally well.
 
-To resolve this discrete ambiguity, the measurement is performed in multiple bins of $\KK$ mass. Integrating over $\mKK$ in each bin gives
-different values for the phase $\thetaSP$, which affects the value $\delSperp$ that is measured for each bin. Comparing the behaviour of
-$\delSperp$ across the bins to what is expected from the $\KK$-mass models determines which of the two ambiguous sets of parameter values
-corresponds to the physical situation~\cite{Xie:2009fs}.
+To resolve this discrete ambiguity, the measurement is performed in multiple bins of $\KK$ mass. Integrating over $\mKK$ within each bin
+gives different values for the phase $\thetaSP$, which affects the value $\delSperp$ that is measured for each bin. Comparing the behaviour
+of $\delSperp$ across the bins to what is expected from the $\KK$-mass models determines which of the two ambiguous sets of parameter
+values corresponds to the physical situation~\cite{Xie:2009fs}.
 
 Moving through the $\phimes$ resonance from low $\mKK$ to high $\mKK$, the phase of the $\phimes\to\KK$ contribution roughly increases by
 $\pi$, while the phase of the $\fzero\to\KK$ contribution is approximately constant. As a result, the phase $\thetaSP$ is expected to
@@ -352,8 +412,10 @@ To parameterize in terms of these CP-violation observables as much as possible, 
   \end{alignedat}
 \end{equation}
 The parameters $\Csav$ and $\phisav$ are the observables measured in the angles-integrated time distribution, ignoring interference terms,
-ignoring the S-wave, and approximating the ratio $\magzeroAvSq$\,:\,$\magparAvSq$\,:\,$\magperpAvSq$ by 2\,:\,1\,:\,1. The normalization
-factors are chosen such that $\Csav$\textto$\Cs$ and $\phisav$\textto$\phis$ in the case of equal CP violation for all states.
+ignoring the S-wave, and approximating the ratio $\magzeroAvSq$\,:\,$\magparAvSq$\,:\,$\magperpAvSq$ by 2\,:\,1\,:\,1.  This last
+approximation is justified by the values reported in reference~\cite{LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}, which are given by
+$\magzeroAvSq$\textapprox0.52, $\magparAvSq$\textapprox0.23, and $\magperpAvSq$\textapprox0.25. The normalization factors are chosen such
+that $\Csav$\textto$\Cs$ and $\phisav$\textto$\phis$ in the case of equal CP violation for all states.
 
 The remaining parameters are the differences between the parameters of the different states and the parameters of the longitudinal state,
 with the exceptions of $\Delphisperpp$ and $\CsavS$. The parameter $\Delphisperpp$ is a combination of $\phisperp$\textminus$\phiszero$ and
@@ -394,3 +456,7 @@ As mentioned in Section~\ref{sec:pheno_KKMass}, the differences between the phas
 $\delparzero$, $\delperpzero$, and $\delSperp$. Both the S-wave fraction and the phase difference between the S-wave and the $\Jpsiphi$
 polarizations are measured in bins of $\KK$ mass to resolve the discrete ambiguity discussed in
 Section~\ref{subsec:pheno_equations_symmetry}: $\FSAv[,b]$ and $\delSperp[,b]$.
+
+Values of the parameters in the model are estimated by fitting the shape of the differential decay-rate equation to the \BstoJpsiKK{}
+data. To be able to describe the experimental data several experimental effects have to be added to the model that was discussed in this
+chapter. The final experimental model will be discussed in Chapter~\ref{chap:ana}.
