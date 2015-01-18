@@ -93,7 +93,7 @@
 \renewcommand{\textmp}{\unitsp∓\unitsp}
 \newcommand{\textto}{\unitsp→\unitsp}
 \newcommand{\tp}{+}
-\newcommand{\tm}{--}
+\newcommand{\tm}{{--}}
 \newcommand{\tpm}{±}
 \newcommand{\tmp}{∓}
 \renewcommand{\texttimes}{\unitsp×\unitsp}
@@ -369,8 +369,8 @@
 
 \newcommand{\qf}{{q_\mathrm{f}}}
 \newcommand{\qt}{q_\mathrm{t}}
-\newcommand{\qtOS}{{\qt^\text{OS}}}
-\newcommand{\qtSS}{{\qt^\text{SS}}}
+\newcommand{\qtOS}{{\qt^\text{o}}}
+\newcommand{\qtSS}{{\qt^\text{s}}}
 \newcommand{\qp}{\frac{q}{p}}
 \newcommand{\pq}{\frac{p}{q}}
 \newcommand{\qpAlt}{\tfrac{q}{p}}
@@ -417,16 +417,26 @@
 \newcommand{\mKKAmp}[1][i]{\mathcal{R}_{#1}}
 
 \newcommand{\tagCatCoef}[1][]{\varepsilon_{#1}}
-\newcommand{\wTag}[1][]{w_{#1}}
-\newcommand{\wTagBar}[1][]{\kern 0.07em \overline{\kern -0.07em w_{#1} \kern -0.01em} \kern 0.01em}
-\newcommand{\etaTag}[1][]{\eta_{#1}}
-\newcommand{\etaOS}[1][]{\etaTag[\text{OS}]}
-\newcommand{\etaSS}[1][]{\etaTag[\text{SS}]}
-\newcommand{\dil}[1][]{\mathcal{D}_{#1}}
+\newcommand{\wTag}[1][]{w^{#1}}
+\newcommand{\wTagBar}[1][]{{\kern 0.07em \overline{\kern -0.07em w \kern -0.01em} \kern 0.01em}^{#1}}
+\newcommand{\wTagOS}{\wTag[\text{o}]}
+\newcommand{\wTagSS}{\wTag[\text{s}]}
+\newcommand{\wTagBarOS}{\wTagBar[\text{o}]}
+\newcommand{\wTagBarSS}{\wTagBar[\text{s}]}
+\newcommand{\etaTag}[1][]{\eta^{#1}}
+\newcommand{\etaOS}{\etaTag[\text{o}]}
+\newcommand{\etaSS}{\etaTag[\text{s}]}
+\newcommandx{\pTag}[2][1=, 2=]{p_{#1}^{#2}}
+\newcommandx{\pTagBar}[2][1=, 2=]{{\kern 0.07em \overline{\kern -0.07em p \kern -0.01em} \kern 0.01em}_{#1}^{#2}}
+\newcommandx{\dil}[2][1=, 2=]{\mathcal{D}_{#1}^{#2}}
+\newcommand{\dilOS}[1][]{\dil[#1][\text{o}]}
+\newcommand{\dilSS}[1][]{\dil[#1][\text{s}]}
 \newcommand{\AProd}{\nu_\text{p}}
-\newcommand{\ANorm}{\nu_\text{N}}
+\newcommand{\ANorm}{\nu_\text{m}}
 \newcommand{\ATagEff}[1][]{\delta_{#1}}
-\newcommand{\ADilWTag}[1][]{\Delta_{#1}}
+\newcommandx{\ADilWTag}[2][1=, 2=]{\Delta_{#1}^{#2}}
+\newcommand{\ADilWTagOS}[1][]{\ADilWTag[#1][\text{o}]}
+\newcommand{\ADilWTagSS}[1][]{\ADilWTag[#1][\text{s}]}
 
 \newcommand{\Rlamb}{\Re(\lam)}
 \newcommand{\Ilamb}{\Im(\lam)}
