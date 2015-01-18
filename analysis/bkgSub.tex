@@ -243,9 +243,20 @@ expect.
   \label{fig:JpsiKKMass_DG_bkgSub}
 \end{figure}
 
-To address these issues, the double-Gaussian signal model is replaced by a double-sided Hypatia function with a symmetric
-core~\cite{Santos:2013gra}, which is designed to describe the effects of an experimental resolution that is different for each decay
-candidate. This function is defined by
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{graphics/analysis/JpsiKKMassErr}
+  \caption{Distribution of \BstoJpsiKK{} signal decays in the estimated $\JpsiKK$-mass uncertainty.}
+  \label{fig:JpsiKKMassErr}
+\end{figure}
+
+To address these issues, the double-Gaussian signal model is replaced by a more sophisticated model for the mass resolution.
+Figure~\ref{fig:JpsiKKMassErr} shows the distribution of the estimated uncertainty in the $\JpsiKK$-mass measurement for each decay. This
+distribution does not feature a structure with two sharp peaks, as would be expected for a double-Gaussian mass model, but is instead described
+by one broad peak. To describe the resulting mass distribution a double-sided Hypatia function with a symmetric core~\cite{Santos:2013gra} is
+used, which is designed to describe the effects of an experimental resolution that is different for each decay candidate.
+
+The Hypatia function is defined by
 \begin{subequations}
 \begin{equation}
   I(m) \equiv
@@ -389,12 +400,12 @@ time and angles. A problem appears in $\cthetal$, for which the mass distributio
 mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
 \begin{figure}[tbp]
   \centering
-  \hfill%
   \begin{subfigure}{0.49\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_I2_bkgSub_ctl2_lin_resid}
     \caption{}
     \label{fig:JpsiKKMass_I2_bkgSub_ctl2_lin}
   \end{subfigure}%
+  \hfill%
   \begin{subfigure}{0.49\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_I2_bkgSub_ctl04_lin_resid}
     \caption{}
@@ -413,6 +424,33 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
            (b) $|\cthetal|$\textge0.7,
            (c) 0.25\textle$|\cthetal|$\textlt0.7.}
   \label{fig:JpsiKKMass_I2_bkgSub_ctl}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMassErr_left}
+    \caption{}
+    \label{fig:JpsiKKMassErr_left}
+  \end{subfigure}%
+  \hfill%
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMassErr_right}
+    \caption{}
+    \label{fig:JpsiKKMassErr_right}
+  \end{subfigure}
+
+  \vspace*{0.02\textwidth}
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMassErr_middle}
+    \caption{}
+    \label{fig:JpsiKKMassErr_middle}
+  \end{subfigure}%
+  \caption{Distribution of \BstoJpsiKK{} signal decays in the estimated $\JpsiKK$-mass uncertainty in bins of $\cthetal$.
+           (a) $|\cthetal|$\textlt0.25,
+           (b) $|\cthetal|$\textge0.7,
+           (c) 0.25\textle$|\cthetal|$\textlt0.7.}
+  \label{fig:JpsiKKMassErr_ctlBins}
 \end{figure}
 
 \begin{figure}[p]
@@ -463,9 +501,10 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
 \end{figure}
 
 From Figure~\ref{fig:JpsiKKMass_I2_bkgSub_ctl} it is clear that the $\JpsiKK$-mass resolution for the signal depends on the value of
-$\cthetal$. Formally this means that the background-subtraction procedure does not work for the $\cthetal$ distribution. The impact of this
-effect is studied by subtracting the background with the different mass models obtained in the $\cthetal$ bins and a corresponding
-systematic uncertainty is evaluated (see Section~\ref{sec:result_syst}).
+$\cthetal$. This is also supported by Figure~\ref{fig:JpsiKKMassErr_ctlBins}, which shows that the distribution of the estimated $\JpsiKK$-mass
+uncertainty varies for the three $\cthetal$ regions. Formally this means that the procedure of background subtraction does not work for the
+$\cthetal$ distribution. The impact of this effect is studied by subtracting the background with the different mass models obtained in the
+$\cthetal$ bins and a corresponding systematic uncertainty is evaluated (see Section~\ref{sec:result_syst}).
 
 Figure~\ref{fig:obsBkgSub} shows the distributions of decay time, decay angles, $\mumu$ invariant mass, and $\KK$ invariant mass before and
 after background subtraction. The distributions before background subtraction are only shown for a $\JpsiKK$-mass window of 60\unitsp\MeV{}
@@ -476,7 +515,7 @@ Notice that the decay-time range in this plot starts at 0.3\unitsp{}ps. Even tho
 distribution of the signal is lost, this requirement improves the measurement, because it removes a significant amount of background, as
 shown in Section~\ref{subsec:ana_bkgSub_sel}.
 
-The model that was fitted to the $\mumu$-mass distribution in Figure~\ref{fig:mumuMassBkgSub} consists of the sum of two gaussian shapes,
+The model that was fitted to the $\mumu$-mass distribution in Figure~\ref{fig:mumuMassBkgSub} consists of the sum of two Gaussian shapes,
 with a polynomial that describes the enhanced tail on the left of the mass peak, which is due to photon radiation after the decay of the
 $\Jpsi$. The model for the $\KK$-mass distribution consists of a relativistic Breit-Wigner shape for the $\Jpsiphi$ contribution and a
 polynomial for the $\KK$ S-wave. From this fit, an S-wave fraction of approximately 5\% is found.
