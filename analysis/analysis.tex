@@ -21,21 +21,37 @@ simulation (Section~\ref{sec:ana_sim}) are discussed.
 
 \subsection{Resolution}
 \label{subsec:ana_time_res}
-mention how to handle conditional observables for plots and toys
+\begin{itemize}
+  \item \underline{briefly} discuss resolution model (reference to Roel)
+  \item PDFs conditional on $\sigma_t$
+\end{itemize}
 
 \subsection{Acceptance}
 \label{subsec:ana_time_acc}
-mention reconstruction-acceptance model (linear/exponential/quadratic in time)
+\begin{itemize}
+  \item trigger-acceptance model (bins in time)
+  \item how to float trigger-acceptance parameters ("Poisson distributions" in $2\times3$ categories for each bin)
+  \item reconstruction-acceptance model (linear/exponential/quadratic in time)
+\end{itemize}
 
 \section{Decay Angles}
 \label{sec:ana_angles}
+\begin{itemize}
+  \item neglecting resolution (see systematics)
+  \item acceptance described by either normalization weights or spherical harmonics
+  \item acceptance parameters determined by MC integrals
+\end{itemize}
 
 \section{\texorpdfstring{$\KK$}{KK}-Mass Integrals}
 \label{sec:ana_KKIntegrals}
 
-Discuss trend in phases.
-Nominal: $\phimes$ parameterized with a relativistic Breit-Wigner shape, $\fzero$ with a Flatt\'e shape,
-parameters from \cite{Ablikim:2004wn}, resolution from MC.
+\begin{itemize}
+  \item PDFs conditional on $\KK$-mass bin
+  \item no sensitivity to mass shape, other than bin integrals
+  \item calculation of $\CSP$ factors with different models
+        ($\fzero$ Flatt\'e parameters from \cite{Ablikim:2004wn}, resolution from MC)
+\end{itemize}
+
 \begin{table}[htb]
   \centering
   \caption{S-wave--$\Jpsiphi$ coupling factors in the six $\KK$-mass bins ($\CSP^i$).}
@@ -56,4 +72,8 @@ parameters from \cite{Ablikim:2004wn}, resolution from MC.
 
 \section{Simulation}
 \label{sec:ana_sim}
-discuss both detector simulation (with correction for kinematic distributions) and toys
+\begin{itemize}
+  \item \underline{briefly} discuss detector simulation with correction for kinematic distributions
+  \item toys: generate signal with model and background with real side-band data
+  \item candidate weights and conditional observables in toys from fit dataset
+\end{itemize}
