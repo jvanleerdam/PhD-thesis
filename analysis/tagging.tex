@@ -62,8 +62,8 @@ $\Bs\leftrightarrow\Bsbar$), the differential decay rate can be expressed as
 
 The two tagging algorithms that are used for the \BstoJpsiKK{} measurement give separate estimates of the $\Bs$ flavour and the
 corresponding wrong-tag probability. The true wrong-tag probability for $\Bs$, which is a function of the estimated probability $\etaTag$,
-is denoted by $\wTag$. Because of the $\Bs$--$\Bsbar$ asymmetries mentioned above, the probability for $\Bsbar$ decays has a different
-dependence on $\etaTag$ and is denoted by $\wTagBar$.
+is denoted by $\wTag$. Because of the $\Bs$--$\Bsbar$ tagging asymmetries mentioned above, the probability for $\Bsbar$ decays has a
+different dependence on $\etaTag$ and is denoted by $\wTagBar$.
 
 Expressions for the differential rates of different combinations of opposite-side and same-side flavour tags can be derived by multiplying
 the rates for true $\Bs$ and true $\Bsbar$ by the appropriate combinations of wrong-tag probabilities. Assuming the probabilities for the
@@ -71,7 +71,7 @@ opposite-side and same-side algorithms are uncorrelated and labelling the algori
 rates are given by
 \begin{alignat}{3}
   \label{eq:diffRateWTag}
-  \qtOS=+1;\, \qtSS=-1:  &\quad&  (1-\wTagOS)(1-\wTagSS)           &\;& (\avgCEven+\avgCOdd)(\even+\odd) & \nonumber\\*
+  \qtOS=+1;\, \qtSS=+1:  &\quad&  (1-\wTagOS)(1-\wTagSS)           &\;& (\avgCEven+\avgCOdd)(\even+\odd) & \nonumber\\*
                          &     &  +\ \wTagBarOS\, \wTagBarSS       &  & (\avgCEven-\avgCOdd)(\even-\odd) & \nonumber\\
   \qtOS=+1;\, \qtSS=-1:  &     &  (1-\wTagOS)\, \wTagSS            &  & (\avgCEven+\avgCOdd)(\even+\odd) & \nonumber\\*
                          &     &  +\ \wTagBarOS\, (1-\wTagBarSS)   &  & (\avgCEven-\avgCOdd)(\even-\odd) & \nonumber\\
@@ -240,10 +240,43 @@ and $\ADilWTag$, is described by a phenomenological model:
   \end{align}
 \end{subequations}
 where $\langle\etaTag\rangle$ is the mean value of $\etaTag$ for tagged decays. The parameters $\pTag[0]$, $\pTagBar[0]$, $\pTag[1]$,
-$\pTagBar[1]$ are are measured in the flavour-tagging calibration procedure and have different values for the opposite-side and same-side
-algorithms. The wrong-tag probabilities for untagged decays are given by $\wTag$\textequiv$\wTagBar$\textequiv0.5.
+$\pTagBar[1]$ are are measured in a flavour-tagging calibration procedure and have different values for the opposite-side and same-side
+algorithms. In the calibration procedure, which is described in Reference~\cite{LHCb-ANA-2014-039}, B-meson decays with with known
+decay-time distributions are used to measure the a priori unknown tagging parameters. The wrong-tag probabilities for untagged decays are
+given by $\wTag$\textequiv$\wTagBar$\textequiv0.5 by definition.
 
-\textit{discuss floating tagging-calibration parameters and their values}
+Because the oscillatory functions in the ``0$\perp$'' and ``$\parallel\perp$'' interference terms are not proportional to unknown
+CP-violation parameters, there is some sensitivity for the value of the tagging dilution in the \BstoJpsiKK{} data. This information is
+combined with the value measured in the tagging-calibration procedure by varying the calibration parameters in the fit, constraining them
+to the calibration values within uncertainties. These constraints are implemented by adding a parabolic term to the NLL of the form
+$\frac{1}{2\sigma_\mu^2}(\mu-\hat{\mu})^2$ for each parameter, where the parameter is denoted by $\mu$, the calibration value by
+$\hat{\mu}$, and the calibration uncertainty by $\sigma_\mu$.
+
+In practice the calibration parameters $\pTag[i]$ and $\pTagBar[i]$ are not measured directly, but rather their averages and differences,
+defined as $\tfrac{1}{2}(\pTag[i]+\pTagBar[i])$ and $\pTag[i]-\pTagBar[i]$, respectively. The values measured in the calibration
+procedure~\cite{LHCb-ANA-2014-039} and the values from the fit are shown in Table~\ref{tab:tagCalib}. The fit values are only marginally
+different from the calibration values, which indicates that the estimates of these parameters in the flavour-tagging procedure are more
+precise than the estimates from the \BstoJpsiKK{} data.
+\begin{table}[htb]
+  \centering
+  \caption{Values of tagging-calibration parameters.}
+  \label{tab:tagCalib}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabular}{ccc}
+    \hline
+    parameter                                                 &  calibration value               &  fit value  \\
+    \hline
+    $\tfrac{1}{2}(\pTag[0][\text{o}]+\pTagBar[0][\text{o}])$  &  \phantom{\tp}0.379\textpm0.004  &  \phantom{\tp}0.381\textpm0.004  \\
+    $\tfrac{1}{2}(\pTag[0][\text{s}]+\pTagBar[0][\text{s}])$  &  \phantom{\tp}0.445\textpm0.005  &  \phantom{\tp}0.446\textpm0.005  \\
+    $\tfrac{1}{2}(\pTag[1][\text{o}]+\pTagBar[1][\text{o}])$  &  \phantom{\tp}1.00\textpm0.04    &  \phantom{\tp}1.01\textpm0.03    \\
+    $\tfrac{1}{2}(\pTag[1][\text{s}]+\pTagBar[1][\text{s}])$  &  \phantom{\tp}1.00\textpm0.09    &  \phantom{\tp}0.97\textpm0.08    \\
+    $\pTag[0][\text{o}]-\pTagBar[0][\text{o}]$                &  \tp0.0140\textpm0.0012          &  \tp0.0140\textpm0.0012          \\
+    $\pTag[0][\text{s}]-\pTagBar[0][\text{s}]$                &  \tm0.0158\textpm0.0014          &  \tm0.0158\textpm0.0014          \\
+    $\pTag[1][\text{o}]-\pTagBar[1][\text{o}]$                &  \tp0.066\textpm0.012            &  \tp0.066\textpm0.012            \\
+    $\pTag[1][\text{s}]-\pTagBar[1][\text{s}]$                &  \tp0.008\textpm0.022            &  \tp0.008\textpm0.022            \\
+    \hline
+  \end{tabular}
+\end{table}
 
 \textit{discuss $\etaOS$ and $\etaSS$ distributions (adjust plot labels)}
 \begin{figure}[htbp]
