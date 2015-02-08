@@ -2,10 +2,10 @@
 \label{sec:ana_bkgSub}
 %show mass-fit results in $\cthetal$ bins
 
-While the decay model discussed in Chapter~\ref{chap:pheno} describes the \BstoJpsiKK{} signal, the time and angular distribution in the
+Whereas the decay model discussed in Chapter~\ref{chap:pheno} describes the \BstoJpsiKK{} signal, the time and angular distribution in the
 experimental data contains both signal and background decay candidates. The background distribution is subtracted from the total
-distribution in the data to be able to fit the model to the signal distribution. Since there are statistical uncertainties associated to
-both the total distribution and the subtracted background distribution, however, the resulting uncertainties in the signal-parameter
+distribution in the data to be able to fit the model to the distribution of signal decays. Since there are statistical uncertainties
+associated to both the total distribution and the subtracted background distribution, the resulting uncertainties in the signal-parameter
 estimates become larger with an increasing amount of background decay candidates. Therefore, a selection procedure is applied, designed to
 reject as many background candidates as possible without removing too many signal candidates.
 
@@ -54,7 +54,7 @@ per cent of the number of candidates selected by the biased selection. Consideri
 one per cent to the total.
 
 The method of modelling the non-trivial decay-time efficiency shape introduced by the biased HLT selections is discussed in
-Section~\ref{subsec:ana_time_acc}. Because the unbiased HLT2 selection adds only few signal candidates to the final data sample, but
+Section~\ref{subsec:ana_time_acc}. Because the unbiased HLT2 selection adds only few signal candidates to the final data sample and
 including these data complicates modelling of the efficiency significantly, only the time and angular distributions of HLT2-biased
 candidates are fitted. However, candidates selected by the unbiased HLT2 selection are used to extract the efficiency shapes from the
 \BstoJpsiKK{} data. The efficiencies of the biased selections are determined relative to the uniform efficiencies of the unbiased
@@ -97,8 +97,8 @@ background with and exponential shape. The fit yields approximately 123 thousand
 of approximately one per cent.
 
 In the rest frame of the $\Bs$, the momentum of the $\KK$ pair is approximately 1.6\unitsp\GeVc{} for signal decays. Boosting into the
-frame of the detector, approximately along the beam axis, this translates in a typical transverse momentum above 1\unitsp\GeVc. The sum of
-the transverse momentum components of two kaons that accidentally form a suitable $\KK$ vertex in combinatorial background is often not
+frame of the detector, approximately along the beam axis, this translates into a typical transverse momentum above 1\unitsp\GeVc. The sum
+of the transverse momentum components of two kaons that accidentally form a suitable $\KK$ vertex in combinatorial background is often not
 sufficient to make a transverse momentum of 1\unitsp\GeVc. As a result, requiring this value as a minimum in the offline selection removes
 about 74\% of the background, but only 6\% of the signal, with respect to the stripping selection where already a minimum of
 0.5\unitsp\GeVc{} was required. The $\JpsiKK$-mass distribution with the $\KK$ transverse momentum requirement is shown by the blue points
@@ -132,15 +132,16 @@ Figure~\ref{fig:JpsiKKMass_DG}. The latter figure shows the distribution both in
 vertical scale (left) and in the full mass range on a logarithmic vertical scale. The signal and combinatorial background contributions as
 determined in the fit are shown separately.
 
-\begin{figure}[tb]
+\begin{figure}[p]
   \centering
-  \begin{subfigure}{0.49\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_lin_resid}
     \caption{}
     \label{fig:JpsiKKMass_DG_lin}
-  \end{subfigure}%
-  \hfill%
-  \begin{subfigure}{0.49\textwidth}
+  \end{subfigure}
+
+  \vspace*{0.02\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_log_resid}
     \caption{}
     \label{fig:JpsiKKMass_DG_log}
@@ -150,7 +151,8 @@ determined in the fit are shown separately.
            (b) the full mass range on a logarithmic vertical scale.
            The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
            The model is the sum of two Gaussian shapes for the signal (shown by the red, short-dashed line)
-           and an exponential shape for combinatorial background (shown by the green, long-dashed line).}
+           and an exponential shape for combinatorial background (shown by the green, long-dashed line).
+           The panels below the distributions show the residuals of the data with respect to the model (see also text).}
   \label{fig:JpsiKKMass_DG}
 \end{figure}
 
@@ -158,8 +160,9 @@ In the areas below the $\JpsiKK$-mass distributions in Figure~\ref{fig:JpsiKKMas
 mass bin. The residual is defined as the difference in values for the data and the (average) PDF in the bin, divided by the statistical
 uncertainty of the data value. It is randomly distributed and quantifies how well the model describes the data in each bin. The residuals
 in Figure~\ref{fig:JpsiKKMass_DG_log} seem to indicate a problem with the mass model, since the PDF generally underestimates the number of
-decay candidates in the region of the signal peak, while it overestimates the number of candidates at the edges of the mass range. This
-issue is mainly caused by misidentified backgrounds and will be addressed in Section~\ref{subsec:ana_bkgSub_bkgSub}.
+decay candidates in the region of the signal peak, while it overestimates the number of candidates towards the edges of the mass range at
+5200\unitsp\MeV{} and 5550\unitsp\MeV. This issue is mainly caused by misidentified backgrounds and will be addressed in
+Section~\ref{subsec:ana_bkgSub_bkgSub}.
 
 Notice from Figures~\ref{fig:JpsiKKMassSel} and \ref{fig:JpsiKKMass_DG} that the signal candidates are concentrated in a mass window of
 approximately 60\unitsp\MeV, centred at the $\Bs$ mass, where the signal fraction is approximately 80\%. The regions to the left and the
@@ -193,7 +196,8 @@ are negative in the side bands.
 
 The \splot/\sfit{} method assumes that, in addition to the background distribution, also the signal distribution in the variables of
 interest does not depend on the $\JpsiKK$ mass. In other words, there can be no correlations between the $\JpsiKK$ mass and any other
-variable that is to be analysed, for both the signal and the background distribution (but not their sum).
+variable that is to be analysed for the signal and background distributions separately. Note that, in general, there are correlations for
+the sum of signal and background.
 
 Before fitting the distribution of signal and combinatorial-background candidates and computing \sweight[s], the contributions from other
 backgrounds are subtracted by adding decay candidates with negative weights to the data sample. Two additional backgrounds are considered,
@@ -208,6 +212,30 @@ backgrounds}.
   \label{fig:JpsiKKMass_peakBkg}
 \end{figure}
 
+\begin{figure}[p]
+  \centering
+  \begin{subfigure}{0.65\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_bkgSub_lin_resid}
+    \caption{}
+    \label{fig:JpsiKKMass_I2_lin}
+  \end{subfigure}
+
+  \vspace*{0.02\textwidth}
+  \begin{subfigure}{0.65\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_bkgSub_log_resid}
+    \caption{}
+    \label{fig:JpsiKKMass_I2_log}
+  \end{subfigure}%
+  \caption{Distribution of \BstoJpsiKK{} decay candidates in $\JpsiKK$ mass after subtracting resonant backgrounds in
+           (a) the signal mass range and
+           (b) the full mass range on a logarithmic vertical scale.
+           The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
+           The model is the sum of two Gaussian shapes for the signal (shown by the red, short-dashed line)
+           and an exponential shape for combinatorial background (shown by the green, long-dashed line).
+           The panels below the distributions show the residuals of the data with respect to the model.}
+  \label{fig:JpsiKKMass_DG_bkgSub}
+\end{figure}
+
 Figure~\ref{fig:JpsiKKMass_peakBkg} shows the sum of the reconstructed $\JpsiKK$-mass distributions for the two resonant backgrounds. They
 form a broad structure, without features that clearly distinguish these backgrounds from the signal and from combinatorial background.
 Therefore, the resonant backgrounds are subtracted by adding simulated \BdtoJpsiKstKpi{} and \LbtoJpsipK{} decay candidates to the data
@@ -220,28 +248,6 @@ to Figure~\ref{fig:JpsiKKMass_DG}, it can be seen from the residuals that the PD
 underestimates of the numbers of decay candidates in the signal region and the overestimates in the side-band regions have reduced. It
 appears, however, that this effect is still partially present. Moreover, the residuals in the signal region seem to be large than one would
 expect.
-
-\begin{figure}[tbp]
-  \centering
-  \begin{subfigure}{0.49\textwidth}
-    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_bkgSub_lin_resid}
-    \caption{}
-    \label{fig:JpsiKKMass_I2_lin}
-  \end{subfigure}%
-  \hfill%
-  \begin{subfigure}{0.49\textwidth}
-    \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_DG_bkgSub_log_resid}
-    \caption{}
-    \label{fig:JpsiKKMass_I2_log}
-  \end{subfigure}%
-  \caption{Distribution of \BstoJpsiKK{} decay candidates in $\JpsiKK$ mass after subtracting resonant backgrounds in
-           (a) the signal mass range and
-           (b) the full mass range on a logarithmic vertical scale.
-           The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
-           The model is the sum of two Gaussian shapes for the signal (shown by the red, short-dashed line)
-           and an exponential shape for combinatorial background (shown by the green, long-dashed line).}
-  \label{fig:JpsiKKMass_DG_bkgSub}
-\end{figure}
 
 \begin{figure}[tbp]
   \centering
@@ -291,15 +297,16 @@ The result of a fit with the Hypatia signal model and an exponential shape for t
 Figure~\ref{fig:JpsiKKMass_I2_bkgSub}. The improvement with the Hypatia model can be seen from the residuals, which have become smaller in
 the signal region and are more symmetrically distributed around zero in comparison to Figure~\ref{fig:JpsiKKMass_DG_bkgSub}.
 
-\begin{figure}[tbp]
+\begin{figure}[p]
   \centering
-  \begin{subfigure}{0.49\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_I2_bkgSub_lin_resid}
     \caption{}
     \label{fig:JpsiKKMass_I2_bkgSub_lin}
-  \end{subfigure}%
-  \hfill%
-  \begin{subfigure}{0.49\textwidth}
+  \end{subfigure}
+
+  \vspace*{0.02\textwidth}
+  \begin{subfigure}{0.65\textwidth}
     \includegraphics[width=\textwidth]{graphics/analysis/JpsiKKMass_I2_bkgSub_log_resid}
     \caption{}
     \label{fig:JpsiKKMass_I2_bkgSub_log}
@@ -309,7 +316,8 @@ the signal region and are more symmetrically distributed around zero in comparis
            (b) the full mass range on a logarithmic vertical scale.
            The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
            The model is the sum of an Hypatia shape for the signal (shown by the red, short-dashed line)
-           and an exponential shape for combinatorial background (shown by the green, long-dashed line).}
+           and an exponential shape for combinatorial background (shown by the green, long-dashed line).
+           The panels below the distributions show the residuals of the data with respect to the model.}
   \label{fig:JpsiKKMass_I2_bkgSub}
 \end{figure}
 
@@ -323,7 +331,9 @@ combinatorial-background decays and the weighted-likelihood correction factors (
 
 \begin{table}[p]
   \centering
-  \caption{Definition of the bins in $\KK$ invariant mass.}
+  \caption{Definition of the bins in $\KK$ invariant mass. For each bin the mass range, the numbers of signal and background candidates,
+           and the correction factors for a likelihood with weighted candidates for the 2011 and 2012 runs
+           (see Section~\ref{subsec:ana_fit_weights}) are shown.}
   \label{tab:KKBins}
   \begin{tabular}{cccccc}
     \hline
@@ -341,7 +351,9 @@ combinatorial-background decays and the weighted-likelihood correction factors (
 
 \begin{table}[p]
   \centering
-  \caption{Parameters of the $\JpsiKK$-mass model that is used for background subtraction.}
+  \caption{Parameters of the $\JpsiKK$-mass model that is used for background subtraction.
+           The subscripts on the parameters refer to the bin in $\KK$ mass (1--6),
+           the HLT2-biased/not-HLT2-biased category (b and nb, respectively), and the run period (2011 and 2012).}
   \label{tab:JpsiKKMassPars}
   \begin{tabular}{ccc}
     \hline
@@ -391,7 +403,8 @@ background subtraction is also performed separately in the four categories assoc
 signal peak is determined separately for HLT2-biased and not-HLT2-biased candidates.
 
 The final parameters of the $\JpsiKK$-mass model that were determined from the real data are listed in Table~\ref{tab:JpsiKKMassPars},
-where the exponential function for the background mass distribution is described by $e^{-\gamma m}$. The number of signal decays determined
+where the exponential function for the background mass distribution is described by $e^{-\gamma m}$, where $\gamma$ is a free parameter
+that is different for the 2011 and 2012 runs and for HLT2-biased and not-HLT2-biased candidates. The number of signal decays determined
 with this model is 96 thousand and the number of combinatorial-background decays 127 thousand.
 
 To check if the decay time and angles are not correlated with the $\JpsiKK$ mass, the mass distribution is plotted for different bins in
@@ -422,7 +435,8 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
            where the shape of the model is set to the nominal shape from Figure~\ref{fig:JpsiKKMass_I2_bkgSub}.
            (a) $|\cthetal|$\textlt0.25,
            (b) $|\cthetal|$\textge0.7,
-           (c) 0.25\textle$|\cthetal|$\textlt0.7.}
+           (c) 0.25\textle$|\cthetal|$\textlt0.7.
+           (Compare to the nominal mass distribution in Figure~\ref{fig:JpsiKKMass_I2_bkgSub})}
   \label{fig:JpsiKKMass_I2_bkgSub_ctl}
 \end{figure}
 

@@ -5,10 +5,10 @@ In Chapter~\ref{chap:pheno} the expressions for the differential decay rates of 
 variable $\qf$, which takes the value \tp1 for $\Bs$ and \tm1 for $\Bsbar$. Equation~\ref{eq:timeqfDep} in Section~\ref{sec:pheno_time}
 shows the dependence on this variable.
 
-As explained in Section~\ref{subsec:intro_LHCb_LHC}, it is experimentally not possible to determine whether the produced meson was $\Bs$
-and $\Bsbar$ for each individual decay. Instead, this meson flavour is estimated for each decay, together with a probability that the
-estimate is wrong. This \emph{flavour tag} is denoted by $\qt$, which takes the values \tp1 for a $\Bs$ estimate and \tm1 for a $\Bsbar$
-estimate. The estimate of the wrong-tag probability is denoted by $\etaTag$.
+As explained in Section~\ref{subsec:intro_LHCb_LHC}, it is experimentally not possible to unambiguously determine whether the produced
+meson was $\Bs$ and $\Bsbar$ for each individual decay. In practice, the meson flavour is estimated for each decay, together with a
+probability that the estimate is wrong. This \emph{flavour tag} is denoted by $\qt$, which takes the values \tp1 for a $\Bs$ estimate and
+\tm1 for a $\Bsbar$ estimate. The estimate of the wrong-tag probability is denoted by $\etaTag$.
 
 For either value of $\qt$ the differential rate is a sum of the rates for true $\Bs$ ($\qf$\texteq\tp1) and true $\Bsbar$
 ($\qf$\texteq\tm1), where the relative contributions depend on the wrong-tag probability. For small wrong-tag probability the two
@@ -17,7 +17,7 @@ CP-violation parameters originates (see Section~\ref{subsec:pheno_equations_appr
 opposite oscillations of true $\Bs$ and true $\Bsbar$ start to cancel, reducing the sensitivity to the CP-violation parameters.
 
 Decay candidates are assigned to different \emph{flavour-tagging categories} according to the estimate of the wrong-tag probability. For
-the main measurement the candidates are only classified as \emph{tagged} (0\textlt$\etaTag$\textle0.5) or \emph{untagged}
+the main measurement the candidates are only classified as \emph{tagged} (0\textle$\etaTag$\textlt0.5) or \emph{untagged}
 ($\etaTag$\texteq0.5). For tagged decay candidates the decay model depends on the value of $\etaTag$ for each candidate. For untagged
 candidates the flavour-tagging algorithms are unable to estimate the $\Bs$ flavour. For these candidates the wrong-tag probability is 50\%
 by definition.
@@ -237,8 +237,8 @@ The $\etaTag$ dependence of the wrong-tag probabilities for tagged decays, which
 and $\ADilWTag$, is described by a phenomenological model:
 \begin{subequations}
   \begin{align}
-    \wTag &= \pTag[0]    + \pTag[1]\,    (\etaTag-\langle\etaTag\rangle) \\
-    \wTag &= \pTagBar[0] + \pTagBar[1]\, (\etaTag-\langle\etaTag\rangle) \,
+    \wTag    &= \pTag[0]    + \pTag[1]\,    (\etaTag-\langle\etaTag\rangle) \\
+    \wTagBar &= \pTagBar[0] + \pTagBar[1]\, (\etaTag-\langle\etaTag\rangle) \,
   \end{align}
 \end{subequations}
 where $\langle\etaTag\rangle$ is the mean value of $\etaTag$ for tagged decays. The parameters $\pTag[0]$, $\pTagBar[0]$, $\pTag[1]$,

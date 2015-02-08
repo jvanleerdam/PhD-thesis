@@ -10,6 +10,7 @@ defense:
 * Hard to say what to expect from fits in narrow KK-mass window. Errors go up with respect to wide window,
   but what about the differences between one bin and four bins?
 * Jarlskog maximum 1/6/sqrt(3): why?
+* colour drag: difference in B/Bbar phase space? --> production asymmetry
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)
@@ -19,3 +20,4 @@ thesis:
 * b production mechanism
   - how much bb and single b
   - contributions from which bb diagrams?
+* mass figures with residuals Section 3.2: at the right pages to compare?
