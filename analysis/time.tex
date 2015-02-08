@@ -59,9 +59,40 @@ Section~\ref{sec:result_syst}).
 \label{subsec:ana_time_acc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
-  \item trigger-acceptance model (bins in time)
-  \item how to float trigger-acceptance parameters (``Poisson distributions'' in $2\times3$ categories for each bin)
-  \item reconstruction-acceptance model (linear/exponential/quadratic in time)
-\end{itemize}
+To account for the efficiencies of the decay-candidate reconstruction and selection processes, the expression for the differential decay
+rate (Equation~\ref{eq:diffRateAngles}) is multiplied by an acceptance function before building a PDF.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/trigTimeAcc_2011_UB}
+    \caption{}
+    \label{fig:trigAcc_2011_UB}
+  \end{subfigure}%
+  \hfill%
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/trigTimeAcc_2011_exclB}
+    \caption{}
+    \label{fig:trigAcc_2011_exclB}
+  \end{subfigure}
+
+  \vspace*{0.02\textwidth}
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/trigTimeAcc_2012_UB}
+    \caption{}
+    \label{fig:trigAcc_2012_UB}
+  \end{subfigure}%
+  \hfill%
+  \begin{subfigure}{0.49\textwidth}
+    \includegraphics[width=\textwidth]{graphics/analysis/trigTimeAcc_2012_exclB}
+    \caption{}
+    \label{fig:trigAcc_2012_exclB}
+  \end{subfigure}
+  \caption{Trigger acceptance in bins of decay time for (a, b) the 2011 run and (c, d) the 2012 run
+           and for (a, c) the HLT1-unbiased/HLT2-biased selection and (b, d) the exclusively HLT1-biased/HLT2-biased selection.
+           Notice that the lower limit on the y-axis of the HLT1-unbiased/HLT2-biased graphs is 90\%.
+           Because the absolute efficiency of the HLT1 selections is unknown, the scales of the efficiencies
+           in the graphs are given with respect to the efficiency of the HLT1-unbiased selection.}
+  \label{fig:trigAcc}
+\end{figure}
 
