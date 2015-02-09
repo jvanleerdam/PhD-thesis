@@ -11,6 +11,8 @@ defense:
   but what about the differences between one bin and four bins?
 * Jarlskog maximum 1/6/sqrt(3): why?
 * colour drag: difference in B/Bbar phase space? --> production asymmetry
+* why do we expect a different acceptance for 2011 and 2012?
+* how is reconstruction-acceptance beta determined (real data + MC?)
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)

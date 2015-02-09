@@ -59,8 +59,89 @@ Section~\ref{sec:result_syst}).
 \label{subsec:ana_time_acc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To account for the efficiencies of the decay-candidate reconstruction and selection processes, the expression for the differential decay
-rate (Equation~\ref{eq:diffRateAngles}) is multiplied by an acceptance function before building a PDF.
+To account for the efficiencies of the decay-candidate reconstruction and selection processes, the PDF is multiplied by an acceptance
+function and re-normalized to create a new PDF. The acceptance is is modelled as a product of two functions of decay time and one function
+of decay angles. The angular part will be discussed in Section~\ref{sec:ana_angles}. This section describes the two decay-time functions.
+
+\subsubsection{Track-Reconstruction Acceptance}
+The first part of the non-trivial acceptance in decay time originates from an inefficiency in the reconstruction of particle tracks. This
+efficiency decreases for increasing distance between the track and the proton beams. Since the distance between the primary and secondary
+vertex and, therefore, the decay time are correlated with the distance between the four \BstoJpsiKK{} tracks and the beams, the efficiency
+also decreases with increasing decay time.
+
+In the measurement presented here the track-reconstruction acceptance is modelled by an exponential function in \emph{true} decay time. The
+advantage of this model is that its implementation in the model of the decay-time distribution is straightforward. An exponential function
+can be absorbed in the $\eGst$ factor of the differential decay rate (Equation~\ref{eq:angCoefs}):
+\begin{equation}
+  \eGst \longrightarrow e^{\beta\,t}\,\eGst = e^{-(\Gs-\beta)\,t} \equiv e^{-\Gs^\text{eff}\,t}\ ,
+\end{equation}
+where $\beta$ is the parameter that quantifies the rate at which the efficiency changes as a function of decay time. The parameter
+$\Gs^\text{eff}$\textequiv$\Gs$\textminus$\beta$ can now be included in the model in the place of the parameter $\Gs$.
+
+The parameter $\beta$ has been determined by a combination of studies with real and simulated data~\cite{LHCb-ANA-2014-039}. Because of
+changes in the online reconstruction algorithms between the 2011 and 2012 runs and the different proton-collision energies in these
+periods, the corresponding values of $\beta$ are evaluated separately: $\beta_\text{2011}$\texteq\mbox{\tm0.0090\textpm0.0022\unitsp\invps}
+and $\beta_\text{2012}$\texteq\mbox{\tm0.0124\textpm0.0019\unitsp\invps}. These values have to be compared with
+$\Gs$\textapprox0.66\unitsp\invps.
+
+Although there is no sensitivity in the \BstoJpsiKK{} data to the parameters $\Gs$, $\beta_\text{2011}$, and $\beta_\text{2012}$
+separately, the value of $\Gs^\text{eff}$ can be determined in the fit of decay time separately for the 2011 and 2012 periods.
+Reparameterizing, there is sensitivity for the combinations $\Gs$\textminus$\tfrac{1}{2}(\beta_\text{2011}$\textplus$\beta_\text{2012})$
+and $\beta_\text{2012}$\textminus$\beta_\text{2011}$.
+
+To combine the information on the difference between the two $\beta$ values with the externally determined values, the $\beta$ parameters
+are varied with constraints in the time and angular fit. These constraints are implemented by adding a parabolic term to the NLL of the
+form $\frac{1}{2\hat{\sigma}^2}(\beta-\hat{\beta})^2$ for each parameter, where the external value is denoted by $\hat{\beta}$ and the
+external uncertainty by $\hat{\sigma}$. Because these external constraints are much tighter than the constraints from the \BstoJpsiKK{}
+data, the values that are estimated in the fit are comparable to the external values:
+$\beta_\text{2011}$\texteq\mbox{\tm0.0086\textpm0.0021\unitsp\invps} and
+$\beta_\text{2012}$\texteq\mbox{\tm0.0127\textpm0.0018\unitsp\invps}.
+
+There are some limitations to this model of the track-reconstruction acceptance. The model is implemented for true decay time, whereas the
+external values of the $\beta$ parameters were evaluated with the measured decay time. In this measurement, this is assumed to be a good
+approximation, because the time scale of the variations in the model is much larger than the resolution. That is,
+$\beta^{-1}$\textapprox\mbox{\tenpow{2}\unitsp{}ps}\textgg\mbox{0.05\unitsp{}ps}.
+
+Also the model itself is an approximation. As was shown in reference~\cite{LHCb-ANA-2014-039}, the shape of the acceptance is better
+described by the function 1\textplus$\beta\,t$\textplus$\beta'\,t^2$ than by $e^{\beta\,t}$\textapprox1\textplus$\beta\,t$. A systematic
+uncertainty in the parameter estimates corresponding to the assumption of the shape $e^{\beta\,t}$ is estimated in
+Section~\ref{sec:result_syst}.
+
+\subsubsection{Trigger Acceptance}
+As described in Section~\ref{subsec:ana_bkgSub_sel}, there are also trigger requirements that introduce non-trivial acceptance effects in
+decay time. The shapes of the acceptance functions corresponding to the decay-time biasing trigger categories are determined relative to
+the shapes of the unbiased categories, which have a uniform acceptance function.
+
+The shape of the trigger acceptance is described in bins of decay time. For each bin, numbers of decays are counted in the different
+trigger categories to determine the relative efficiency in the bin. To also include information on the exponential shape of the decay in
+the resulting binned acceptance function, the decay counts are varied in the fit of decay time and angles.
+
+Since originally only the shape of the differential decay rate in time and angles is determined in the fit, additional terms need to be
+included in the NLL to count decays in the different trigger categories. For unweighted decays the PDF for the number of decays in a
+category would be a Poisson distribution, which is proportional to $\nu^n\,e^{-\nu}$, where $n$ is the observed number of decays and $\nu$
+is the parameter for the expected number of decays. This PDF would give an additional NLL term of $\nu$\textminus$n\,\ln\nu$. However,
+because each decay candidate is counted with its signal weight, this term is modified to obtain the correct uncertainty on the parameter
+$\nu$ from a maximum-likelihood fit.
+
+Instead of only replacing the variable $n$ in the Poissonian NLL term by the sum of the decay-candidate weights, the term is also
+multiplied by weight factor:
+\begin{equation}
+  \frac{\sum w}{\sum w^2}\left( \nu - \ln\nu\,\sum w \right)\ ,
+\end{equation}
+where $\sum w$ is the sum of the decay weights and $\sum w^2$ the sum of the squared decay weights. This function reaches its minimum at
+$\nu$\texteq$\sum w$, so the estimated value for $\nu$ in a maximum-likelihood fit with only this function would be the sum of the decay
+weights. The inverse of the second derivative of the function, from which the uncertainty in $\nu$ is estimated, is given by $\sum w^2$
+instead of $\sum w$ for an unmodified Poisson term. The former number is equal to the variance that is expected when counting weighted
+decay candidates.
+
+\begin{itemize}
+  \item describe trigger categories and efficiency parameters
+  \item using all categories (6) vs merging categories (4 or 5)
+  \item short description of resulting acceptance functions (plots): $\longrightarrow$ Roel
+\end{itemize}
+
+%Since only decay candidates that are selected by the HLT2-biased trigger line are used for the fit of decay time and angles, only the
+%trigger-acceptance functions for the HLT1-unbiased/HLT2-biased and exclusively-HLT1-biased/HLT2-biased combinations are required.
 
 \begin{figure}[htbp]
   \centering
@@ -89,8 +170,8 @@ rate (Equation~\ref{eq:diffRateAngles}) is multiplied by an acceptance function 
     \label{fig:trigAcc_2012_exclB}
   \end{subfigure}
   \caption{Trigger acceptance in bins of decay time for (a, b) the 2011 run and (c, d) the 2012 run
-           and for (a, c) the HLT1-unbiased/HLT2-biased selection and (b, d) the exclusively HLT1-biased/HLT2-biased selection.
-           Notice that the lower limit on the y-axis of the HLT1-unbiased/HLT2-biased graphs is 90\%.
+           and for (a, c) the HLT1-unbiased/HLT2-biased selection and (b, d) the exclusively-HLT1-biased/HLT2-biased selection.
+           Notice that the efficiency range of the HLT1-unbiased/HLT2-biased graphs is 90--100\%.
            Because the absolute efficiency of the HLT1 selections is unknown, the scales of the efficiencies
            in the graphs are given with respect to the efficiency of the HLT1-unbiased selection.}
   \label{fig:trigAcc}
