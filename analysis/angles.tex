@@ -194,8 +194,10 @@ Assuming the time and angular acceptance functions factorize and writing the fun
 of angular terms (see Sections~\ref{sec:pheno_angles} and \ref{sec:pheno_equations}), the PDF can be expressed as
 \begin{equation}
   \label{eq:obsPDFNormSum}
-  P^\text{obs}(t,\Omega) = \efft\,\effa\, \frac{p(t,\Omega)}{\sum_k \int\ud t\, \efft f_t(t) \int\ud\Omega\, \effa f_{a,k}(\Omega)}
+  P^\text{obs}(t,\Omega) = \efft\,\effa\, \frac{p(t,\Omega)}{\sum_k \int\ud t\, \efft f_{t,k}(t) \int\ud\Omega\, \effa f_{a,k}(\Omega)}\ ,
 \end{equation}
+where $f_{t,k}(t)$ and $f_{a,k}(\Omega)$ are the time and angular functions of a term $k$ in the differential decay rate, respectively (see
+Equation~\ref{eq:timeqfDep} and Table~\ref{tab:angDist}).
 
 If the angular acceptance function does not contain any free parameters, the factor $\effa$ in Equation~\ref{eq:obsPDFNormSum} becomes a
 constant term in the minimization of the NLL (see also Section~\ref{sec:ana_fit}) and can be ignored. The angular acceptance function then
@@ -214,7 +216,8 @@ with a corresponding estimate from simulated events
   E\left( \tfrac{1}{E_a}\, \xi_k \right)
       = \frac{1}{N^\text{obs}}\, \sum_{e=1}^{N^\text{obs}}\frac{f_{a,k}(\Omega_e)}{P^\text{gen}(\Omega_e|t_e)}\ .
 \end{equation}
-The estimated values of the normalization weights are given in Table~\ref{tab:angNormWeights}.
+The estimated values of the normalization weights are given in Table~\ref{tab:angNormWeights}. The largest correlations between these
+estimates are found between the ``00'' weight and the ``$\parallel\parallel$'' and ``$\perp\perp$'' weights; -68\% and -69\%, respectively.
 \begin{table}[htbp]
   \centering
   \caption{Values of the normalization weights of the angular acceptance function.
@@ -238,8 +241,45 @@ The estimated values of the normalization weights are given in Table~\ref{tab:an
   \end{tabular}
 \end{table}
 
-\emph{to do:}
-\begin{itemize}
-  \item \emph{check signs in table}
-  \item \emph{describe conversion between weights and basis coefficients}
-\end{itemize}
+For a uniform angular acceptance function, the expression for the acceptance weights reduces to
+\begin{equation}
+  \tfrac{1}{E_a}\, \xi_k = \int\ud\Omega\,f_{a,k}(\Omega)\ .
+\end{equation}
+This integral evaluates to 1 for the ``diagonal'' terms ``00'', ``$\parallel\parallel$'', ``$\perp\perp$'', and ``SS'' and vanishes for the
+remaining interference terms. The values of the acceptance weights confirm that the acceptance function is close to being uniform.
+
+Since the full set of basis-function coefficients contains all the information on the angular acceptance function, the acceptance weights
+can be expressed in terms of the coefficients. Because the weights only contain the information that is required for the PDF normalization
+integral, the set of weights does not completely specify the acceptance function and the transformation from weights to coefficients is
+ambiguous. That is, there is an infinitely large set of acceptance functions that yields a given set of normalization weights.
+
+Expressions for the acceptance weights in terms of basis coefficients are found by expressing the decay-rate functions $f_{a,k}$ in terms
+of basis functions. The integral of Equation~\ref{eq:angNormWeightDef} can then be expressed as a sum of the basis-function integrals in
+Equation~\ref{eq:angEffCoefDef}. The resulting expressions for the acceptance weights are given by
+\begin{equation}
+  \label{eq:angCoefToWeight}
+  \begin{alignedat}{2}
+    2\sqrt{\pi}\; &\xi_{\text{00}} &
+      &= c_{000} - \tfrac{1}{\sqrt{5}} c_{020} + \tfrac{2}{5} c_{200} - \tfrac{2}{5\sqrt{5}} c_{220} \\
+    2\sqrt{\pi}\; &\xi_{\parallel\parallel} &
+      &= \tfrac{1}{2}\,(2 c_{000} + \tfrac{1}{\sqrt{5}} c_{020} - \sqrt{\tfrac{3}{5}} c_{022} - \tfrac{2}{5} c_{200}
+         - \tfrac{1}{5\sqrt{5}} c_{220} + \tfrac{1}{5}\sqrt{\tfrac{3}{5}} c_{222}) \\
+    2\sqrt{\pi}\; &\xi_{\perp\perp} &
+      &= \tfrac{1}{2}\,(2 c_{000} + \tfrac{1}{\sqrt{5}} c_{020} + \sqrt{\tfrac{3}{5}} c_{022} - \tfrac{2}{5} c_{200}
+         - \tfrac{1}{5\sqrt{5}} c_{220} - \tfrac{1}{5}\sqrt{\tfrac{3}{5}} c_{222}) \\
+    2\sqrt{\pi}\; &\xi_{\text{0}\parallel} &
+      &= -\tfrac{3}{32}\sqrt{\tfrac{6}{5}}\pi\, (c_{121} - \tfrac{1}{4} c_{321} - \tfrac{5}{128} c_{521} - \ldots) \\
+    2\sqrt{\pi}\; &\xi_{\text{0}\perp} &
+      &= +\tfrac{3}{32}\sqrt{\tfrac{6}{5}}\pi\, (c_{12\,-1} - \tfrac{1}{4} c_{32\,-1} - \tfrac{5}{128} c_{52\,-1} - \ldots) \\
+    2\sqrt{\pi}\; &\xi_{\parallel\perp} &
+      &= \sqrt{\tfrac{3}{5}}\, (c_{02\,-2} - \tfrac{1}{5} c_{22\,-2}) \\
+    2\sqrt{\pi}\; &\xi_{\text{SS}} &
+      &= c_{000} - \tfrac{1}{\sqrt{5}}\,c_{020} \\
+    2\sqrt{\pi}\; &\xi_{\text{0S}} &
+      &= \tfrac{2}{\sqrt{3}}\, (c_{100} - \tfrac{1}{\sqrt{5}} c_{120}) \\
+    2\sqrt{\pi}\; &\xi_{\parallel\text{S}} &
+      &= -\tfrac{3}{8}\sqrt{\tfrac{2}{5}}\pi\, (c_{021} - \tfrac{1}{8} c_{221} - \tfrac{1}{64} c_{421} - \ldots) \\
+    2\sqrt{\pi}\; &\xi_{\perp\text{S}} &
+      &= -\tfrac{3}{8}\sqrt{\tfrac{2}{5}}\pi\, (c_{02\,-1} - \tfrac{1}{8} c_{22\,-1} - \tfrac{1}{64} c_{42\,-1} - \ldots) \ .
+  \end{alignedat}
+\end{equation}
