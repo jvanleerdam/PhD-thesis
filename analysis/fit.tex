@@ -19,7 +19,7 @@ form
 \end{equation}
 where $\hat{\mu}$ is the value of parameter $\mu$ in the minimum, $\sigma_\mu$ determines the width of the NLL shape around the minimum,
 and $C$ is the NLL value in the minimum. The width, $\sigma_\mu$, is (related to) the statistical uncertainty of the estimate of parameter
-$\mu$. The wider the NLL shape around the minimum is, the larger the value of $\sigma_\mu$ and the uncertainty are.
+$\mu$. The wider the NLL shape around the minimum is, the larger the value of $\sigma_\mu$ and thus the uncertainty are.
 
 It depends on the actual shape of the NLL how well it is approximated by a parabola away from the minimum. Important factors are
 correlations between parameters and the amount of data that is used to build the NLL. With more data the statistical uncertainties of
@@ -44,7 +44,7 @@ by $\tfrac{1}{2}\,n^2+C$. Hence the intervals are referred to as ``$n$ sigma'' i
 
 In general the NLL is a function of more than one parameter. The distribution of parameter estimates in the parabolic approximation is
 given by a multivariate Gaussian shape, which includes also correlations between the estimates. Both the uncertainties and the correlations
-of the parameter estimates are estimated from the shape of the NLL in the minimum, by determining second derivatives for all combinations
+of the parameter estimates are estimated from the shape of the NLL in the minimum, by determining second derivatives for all pairs
 of parameters.
 
 The parabolic shape of Equation~\ref{eq:NLLPara} for each one of the parameters is given by the minimum value of the NLL at each value of
@@ -62,12 +62,12 @@ function of parameter $\mu$ is termed \emph{profiled NLL}, the second derivative
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As will be described in Section~\ref{sec:ana_bkgSub}, the time and angular distribution for \BstoJpsiKK{} signal decays is obtained by
-subtracting the background distribution from the total distribution that is observed in the data. This is accomplished by adding background
-decay-candidates to the sample that count with negative weights. In the NLL, the contribution of each decay candidate is then multiplied
-with the value of its weight.
+subtracting the background distribution from the distribution that is observed in the data. This is accomplished by adding background
+decay-candidates to the sample with negative weights. In the NLL, the contribution of each decay candidate is then multiplied with the
+value of its weight.
 
 Although the position of the minimum of a weighted NLL still gives a good estimate of the values of the NLL parameters, the parameter
-uncertainties cannot be estimated directly from the shape of the NLL in its minimum any more. This can be seen by considering a fit in bins
+uncertainties cannot be estimated directly from the shape of the NLL at its minimum any more. This can be seen by considering a fit in bins
 of a given variable, where the observed number of decays in each bin is compared to the prediction of this number by a model. The
 uncertainties in the estimates of the model parameters are now related to the uncertainties in the observed number of decays in each bin.
 

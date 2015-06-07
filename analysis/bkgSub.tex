@@ -15,14 +15,14 @@ reject as many background candidates as possible without removing too many signa
 \label{subsec:ana_bkgSub_sel}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The decay-candidate selection procedure is briefly described here. See reference~\cite{Aaij:2015} for a detailed discussion.
+The decay-candidate selection procedure was introduced in Section~\ref{subsec:intro_LHCb_Jpsiphi} and is briefly described in the context
+of the \BstoJpsiKK{} decay here. See reference~\cite{Aaij:2015} for a detailed discussion.
 
 As described in Section~\ref{subsec:intro_LHCb_Jpsiphi}, the first selection requirements are applied in the L0 trigger, which only selects
-events with hits in the LHCb muon stations and particles with a sufficiently high (transverse) momentum. From the events that remain, the
-HLT reconstructs and selects $\mumu$ pairs that are likely to originate from a $\Jpsi\to\mumu$ decay. Offline, the resulting
-$\Jpsi\to\mumu$ candidates are matched to $\KK$ pairs to form \BstoJpsiKK{} decay candidates. The four tracks these candidates consist of
-are required to be compatible with a $\Bs$ that was produced in the associated primary vertex and decayed at a decay time above a given
-threshold.
+events with hits in the muon stations and particles with a sufficiently high (transverse) momentum. From the events that remain, the HLT
+reconstructs and selects $\mumu$ pairs that are likely to originate from a $\Jpsi\to\mumu$ decay. Offline, the resulting $\Jpsi\to\mumu$
+candidates are matched to $\KK$ pairs to form \BstoJpsiKK{} decay candidates. The four tracks these candidates consist of are required to
+be compatible with a $\Bs$ that was produced in the associated primary vertex and decayed at a decay time above a given threshold.
 
 In both HLT1 and HLT2 there are two different types of selections applied. The first type does not use any information on the distance that
 the $\Bs$ travelled before it decayed and the second type does. Requiring a minimum flight distance reduces the fraction of
@@ -85,7 +85,7 @@ the figure shows only a part of the mass range.
 
 For \BstoJpsiKK{} signal candidates this distribution is a peak around the value of the $\Bs$ mass of approximately 5367\unitsp\MeV. The
 width of this peak is determined by the experimental resolution on the $\JpsiKK$-mass measurement. The background is mainly combinatorial
-and follows an exponential distribution, which decays slowly across the considered mass range. Because of the obvious difference in
+and follows an exponential distribution, which decreases slowly across the considered mass range. Because of the obvious difference in
 distributions of $\JpsiKK$ mass for the signal and the background, this variable can be used to statistically separate the two
 contributions.
 
@@ -108,8 +108,8 @@ To estimate the position of the $\Bs$ decay vertex and the kinematics of the par
 are determined from a fit. The fit takes the position of the primary vertex, the muon and kaon tracks, and the corresponding experimental
 uncertainties as inputs and minimizes a $\chi^2$ function for the position of the decay vertex and its perpendicular distance to the flight
 path of the $\Bs$, which should be equal to zero. The value of the $\chi^2$ function in its minimum is a measure of the quality of the fit,
-i.e. of how well the four reconstructed particles form a $\Bs$ decay vertex. The fit will in general be good for signal candidates, which
-results in small values for the $\chi^2$ function.
+i.e. of how well the four reconstructed particles form a $\Bs$ decay vertex. The fit will, in general, be good for signal candidates, which
+results in small values of the $\chi^2$ function.
 
 Requiring a $\chi^2$ smaller than five times the number of degrees of freedom in the vertex fit removes about 75\% of the background that
 remains after requiring a minimum $\KK$ transverse momentum of 1\unitsp\GeVc. Approximately 8\% of the remaining signal is lost. The
@@ -152,13 +152,13 @@ determined in the fit are shown separately.
            The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
            The model is the sum of two Gaussian shapes for the signal (shown by the red, short-dashed line)
            and an exponential shape for combinatorial background (shown by the green, long-dashed line).
-           The panels below the distributions show the residuals of the data with respect to the model (see also text).}
+           The panels below the distributions show the pulls of the data with respect to the model (see also text).}
   \label{fig:JpsiKKMass_DG}
 \end{figure}
 
-In the areas below the $\JpsiKK$-mass distributions in Figure~\ref{fig:JpsiKKMass_DG} the corresponding \emph{residuals} are shown for each
-mass bin. The residual is defined as the difference in values for the data and the (average) PDF in the bin, divided by the statistical
-uncertainty of the data value. It is randomly distributed and quantifies how well the model describes the data in each bin. The residuals
+In the areas below the $\JpsiKK$-mass distributions in Figure~\ref{fig:JpsiKKMass_DG} the corresponding \emph{pulls} are shown for each
+mass bin. The pull is defined as the difference in values for the data and the (average) PDF in the bin, divided by the statistical
+uncertainty of the data value. It is randomly distributed and quantifies how well the model describes the data in each bin. The pulls
 in Figure~\ref{fig:JpsiKKMass_DG_log} seem to indicate a problem with the mass model, since the PDF generally underestimates the number of
 decay candidates in the region of the signal peak, while it overestimates the number of candidates towards the edges of the mass range at
 5200\unitsp\MeV{} and 5550\unitsp\MeV. This issue is mainly caused by misidentified backgrounds and will be addressed in
@@ -186,7 +186,7 @@ Because the definitions of the signal and side-band regions are rather arbitrary
 bulk of the signal decay candidates have a reconstructed $\JpsiKK$ mass in a region of approximately 60\unitsp\MeV{} around the $\Bs$ mass,
 the tails of the signal mass distribution stretch beyond this mass window. Moreover, at the edges of the signal window the contribution of
 background is larger than in the centre. To take these features of the mass distribution into account and estimate the contribution of
-combinatorial background in the most optimal way, the candidate weights are not binary, but take a different value at each point in
+combinatorial background in the most optimal way, the candidate weights are not binary, but take a different value as a function of the
 $\JpsiKK$ mass.
 
 The weights for subtracting combinatorial background are computed with the \splot/\sfit{} technique~\cite{Pivk:2004ty,*Xie:2009rka}, which
@@ -232,21 +232,21 @@ backgrounds}.
            The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
            The model is the sum of two Gaussian shapes for the signal (shown by the red, short-dashed line)
            and an exponential shape for combinatorial background (shown by the green, long-dashed line).
-           The panels below the distributions show the residuals of the data with respect to the model.}
+           The panels below the distributions show the pulls of the data with respect to the model.}
   \label{fig:JpsiKKMass_DG_bkgSub}
 \end{figure}
 
 Figure~\ref{fig:JpsiKKMass_peakBkg} shows the sum of the reconstructed $\JpsiKK$-mass distributions for the two resonant backgrounds. They
 form a broad structure, without features that clearly distinguish these backgrounds from the signal and from combinatorial background.
 Therefore, the resonant backgrounds are subtracted by adding simulated \BdtoJpsiKstKpi{} and \LbtoJpsipK{} decay candidates to the data
-sample with negative weights that represent the amount of real resonant-background data, in total approximately seven thousand candidates.
-Uncertainties in the numbers of background candidates and their distributions lead to systematic uncertainties in the final parameter
-estimates, as will be discussed in Section~\ref{sec:result_syst}.
+sample with negative weights that represent the estimated amount of real resonant-background data, in total approximately seven thousand
+candidates.  Uncertainties in the numbers of background candidates and their distributions lead to systematic uncertainties in the final
+parameter estimates, as will be discussed in Section~\ref{sec:result_syst}.
 
 The $\JpsiKK$-mass distribution after subtracting the two resonant backgrounds is shown in Figure~\ref{fig:JpsiKKMass_DG_bkgSub}. Comparing
-to Figure~\ref{fig:JpsiKKMass_DG}, it can be seen from the residuals that the PDF follows the data more closely. The systematic
+to Figure~\ref{fig:JpsiKKMass_DG}, it can be seen from the pulls that the PDF follows the data more closely. The systematic
 underestimates of the numbers of decay candidates in the signal region and the overestimates in the side-band regions have reduced. It
-appears, however, that this effect is still partially present. Moreover, the residuals in the signal region seem to be large than one would
+appears, however, that this effect is still partially present. Moreover, the pulls in the signal region seem to be large than one would
 expect.
 
 \begin{figure}[tbp]
@@ -260,7 +260,7 @@ To address these issues, the double-Gaussian signal model is replaced by a more 
 Figure~\ref{fig:JpsiKKMassErr} shows the distribution of the estimated uncertainty in the $\JpsiKK$-mass measurement for each decay. This
 distribution does not feature a structure with two sharp peaks, as would be expected for a double-Gaussian mass model, but is instead described
 by one broad peak. To describe the resulting mass distribution a double-sided Hypatia function with a symmetric core~\cite{Santos:2013gra} is
-used, which is designed to describe the effects of an experimental resolution that is different for each decay candidate.
+used, which is designed to describe the effects of an experimental resolution that varies from decay candidate to decay candidate.
 
 The Hypatia function is defined by
 \begin{subequations}
@@ -294,7 +294,7 @@ Hypatia model is smaller than in the double-Gaussian model, for which the mean, 
 functions were free parameters.
 
 The result of a fit with the Hypatia signal model and an exponential shape for the combinatorial background is shown in
-Figure~\ref{fig:JpsiKKMass_I2_bkgSub}. The improvement with the Hypatia model can be seen from the residuals, which have become smaller in
+Figure~\ref{fig:JpsiKKMass_I2_bkgSub}. The improvement with the Hypatia model can be seen from the pulls, which have become smaller in
 the signal region and are more symmetrically distributed around zero in comparison to Figure~\ref{fig:JpsiKKMass_DG_bkgSub}.
 
 \begin{figure}[p]
@@ -317,7 +317,7 @@ the signal region and are more symmetrically distributed around zero in comparis
            The black points show the distribution of the data and the blue, solid line shows a model that was fitted to the data.
            The model is the sum of an Hypatia shape for the signal (shown by the red, short-dashed line)
            and an exponential shape for combinatorial background (shown by the green, long-dashed line).
-           The panels below the distributions show the residuals of the data with respect to the model.}
+           The panels below the distributions show the pulls of the data with respect to the model.}
   \label{fig:JpsiKKMass_I2_bkgSub}
 \end{figure}
 
