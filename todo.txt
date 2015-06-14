@@ -12,6 +12,7 @@ defense:
 * Jarlskog maximum 1/6/sqrt(3): why?
 * colour drag: difference in B/Bbar phase space? --> production asymmetry
 * why do we expect a different acceptance for 2011 and 2012?
+* what is causing the reconstruction-acceptance (VELO, algorithms?)
 * how is reconstruction-acceptance beta determined (real data + MC?)
 * How do we (Diego) generate background for toys again?!
 * Which bins in conditional observables were used in the toys?

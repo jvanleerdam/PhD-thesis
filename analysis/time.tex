@@ -16,9 +16,12 @@ reconstruction processes, which will be discussed in Section~\ref{subsec:ana_tim
 The uncertainty in the decay-time measurement causes a difference between the measured decay time and the true decay time. This difference
 is a random variable and the resulting measured time distribution is a smeared version of the underlying true distribution. For the
 oscillatory $\cDms$ and $\sDms$ functions in the differential decay rate this smearing causes a decrease, or \emph{dilution}, of the
-oscillation amplitude. As described in Section~\ref{subsec:pheno_equations_approx}, the main sensitivity for the CP-violation parameters
-originates from the oscillation terms and hence a diluted oscillation amplitude reduces the statistical precision of the estimates for
-these parameters.
+oscillation amplitude.
+
+Not accounting for the effect of a finite resolution would lead to biases in the estimates of the parameters that describe the oscillation,
+towards a vanishing amplitude. As described in Section~\ref{subsec:pheno_equations_approx}, the main sensitivity for the CP-violation
+parameters originates from the oscillation terms and hence a diluted oscillation amplitude reduces the statistical precision of the
+estimates for these parameters if resolution effects are modelled.
 
 For each decay the decay-time uncertainty is estimated by propagating the uncertainties in the positions of the primary and secondary
 vertices and particle momenta, as discussed in Section~\ref{subsec:intro_LHCb_Jpsiphi}. The distribution of this estimate ($\sigmat$) is
@@ -47,10 +50,10 @@ depends quadratically on $\sigmat$. The width of the first Gaussian PDF is appro
 Gaussian PDF is roughly a factor two larger.
 
 The double-Gaussian model is based on and validated with both simulated \BstoJpsiKK{} decays and prompt background decay candidates. Since
-all tracks of prompt background candidates originate from the primary vertex, their ``true'' decay time is equal to zero and the
-distribution of measured decay times is essentially the resolution model. Studies of the model and its parameters are described in detail
-in references~\cite{Aaij:2015} and \cite{LHCb-ANA-2014-039}. The values of the resolution parameters are fixed in the fit of decay time and
-angles. Uncertainties in the parameter values are propagated after the fit and accounted for as systematic uncertainties (see
+all tracks of prompt background candidates can be assumed to originate from the primary vertex, their ``true'' decay time is equal to zero
+and the distribution of measured decay times is essentially the resolution model. Studies of the model and its parameters are described in
+detail in references~\cite{Aaij:2015} and \cite{LHCb-ANA-2014-039}. The values of the resolution parameters are fixed in the fit of decay
+time and angles. Uncertainties in the parameter values are propagated after the fit and accounted for as systematic uncertainties (see
 Section~\ref{sec:result_syst}).
 
 
@@ -65,9 +68,9 @@ of decay angles. The angular part will be discussed in Section~\ref{sec:ana_angl
 
 \subsubsection{Track-Reconstruction Acceptance}
 The first part of the non-trivial acceptance in decay time originates from an inefficiency in the reconstruction of particle tracks. This
-efficiency decreases for increasing distance between the track and the proton beams. Since the distance between the primary and secondary
-vertex and, therefore, the decay time are correlated with the distance between the four \BstoJpsiKK{} tracks and the beams, the efficiency
-also decreases with increasing decay time.
+efficiency decreases for increasing perpendicular distance between the track and the proton beams. Since the distance between the primary
+and secondary vertex and, therefore, the decay time are correlated with the distance between the four \BstoJpsiKK{} tracks and the beams,
+the efficiency also decreases with increasing decay time.
 
 In the measurement presented here the track-reconstruction acceptance is modelled by an exponential function in \emph{true} decay time. The
 advantage of this model is that its implementation in the model of the decay-time distribution is straightforward. An exponential function
@@ -102,9 +105,9 @@ external values of the $\beta$ parameters were evaluated with the measured decay
 approximation, because the time scale of the variations in the model is much larger than the resolution. That is,
 $\beta^{-1}$\textapprox\mbox{\tenpow{2}\unitsp{}ps}\textgg\mbox{0.05\unitsp{}ps}.
 
-Also the model itself is an approximation. As was shown in reference~\cite{LHCb-ANA-2014-039}, the shape of the acceptance is better
-described by the function 1\textplus$\beta\,t$\textplus$\beta'\,t^2$ than by $e^{\beta\,t}$\textapprox1\textplus$\beta\,t$. A systematic
-uncertainty in the parameter estimates corresponding to the assumption of the shape $e^{\beta\,t}$ is estimated in
+In addition, the model itself is an approximation. As was shown in reference~\cite{LHCb-ANA-2014-039}, the shape of the acceptance is
+better described by the function 1\textplus$\beta\,t$\textplus$\beta'\,t^2$ than by $e^{\beta\,t}$\textapprox1\textplus$\beta\,t$. A
+systematic uncertainty in the parameter estimates corresponding to the assumption of the shape $e^{\beta\,t}$ is estimated in
 Section~\ref{sec:result_syst}.
 
 \subsubsection{Trigger Acceptance}

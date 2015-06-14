@@ -5,15 +5,19 @@ Also the measurement of the decay angles has a finite precision and is affected 
 effects in decay time directly affect the amplitude of the measured decay-time oscillation and, therefore, the estimates of the
 CP-violation parameters, the effect of angular resolution are indirect and expected to be smaller. Because a convolution of the angular
 functions in the decay model with a resolution function would be far from trivial, angular resolution is not included in the model of the
-decay. However, resolution effects cannot be neglected and introduce systematic uncertainties in the final parameter estimates (see
-Section~\ref{sec:result_syst}).
+decay. However, resolution effects cannot be entirely neglected and do introduce systematic uncertainties in the final parameter estimates
+(see Section~\ref{sec:result_syst}).
 
-The acceptance as a function of decay angles is included in the decay model. Its shape is shown in Figure~\ref{fig:angAcc}. The figure
-shows the acceptance function for each of three angles, integrated over the two remaining angles. The data points are sums of simulated
-decays, weighted by the inverse of the PDF that was used to generate the decays at each point in decay angles. This results in the ratio of
-the observed distribution including acceptance effects and the generated distribution. The shape of this ratio in the decay angles is given
-by the shape of the angular acceptance function. In essence this is also how the acceptance function for the decay model, represented by
-the blue line, is determined.
+The acceptance as a function of decay angles is included in the decay model. It can either be modelled as a function or by so called
+\emph{normalization weights}, as will be described in Sections~\ref{subsec:ana_angles_param} and \ref{subsec:ana_angles_weights},
+respectively. The shape of the acceptance function is determined from simulated decays, for which the observed angular distribution
+including acceptance effects can be compared to the original distribution that was generated.
+
+The shape of the angular acceptance function is shown in Figure~\ref{fig:angAcc}. The figure shows the acceptance function for each of
+three angles, integrated over the two remaining angles. The data points are sums of simulated decays, weighted by the inverse of the PDF
+that was used to generate the decays at each point in decay angles. This results in the ratio of the observed distribution including
+acceptance effects and the generated distribution. The shape of this ratio in the decay angles is given by the shape of the angular
+acceptance function. In essence this is also how the acceptance function for the decay model, represented by the blue line, is determined.
 
 \begin{figure}[tbp]
   \centering
@@ -45,7 +49,9 @@ the blue line, is determined.
   \label{fig:angAcc}
 \end{figure}
 
-The ratio of observed and generated angular PDFs can be written as
+Following the above reasoning, the observed angular shape of simulated decays, after detector simulation and selection, can be expressed as
+the generated shape multiplied by the acceptance function. Normalizing these two shapes to obtain the observed and generated PDFs, the
+ratio of the two distributions can be written as
 \begin{equation}
   \begin{aligned}
     \frac{P^\text{obs}(\Omega|t)}{P^\text{gen}(\Omega|t)}
