@@ -96,30 +96,30 @@ of the observed and generated PDFs suffices to determine the shape of the functi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The function $\effa$ is represented in Figure~\ref{fig:angAcc} by the blue line. For this figure, it is parameterized in terms of Legendre
-polynomials and real-valued spherical harmonics, $\Lp{i}(\cthetaK)\,\rsph{l}{m}(\cthetal,\phihel)$ (see also
+polynomials and real-valued spherical harmonics, $\Lp{j}(\cthetaK)\,\rsph{l}{m}(\cthetal,\phihel)$ (see also
 Section~\ref{sec:angularDecay_squareAmp}, Equations~\ref{eq:PYdef} and \ref{eq:realYdef}). These functions form an orthogonal basis of
 functions of the three decay angles.
 
 In principle an arbitrary function is expressed as an infinite sum of basis functions, but in practice the relatively uniform acceptance
 function can be described by a limited number of contributions. The function $\Lp{0}\,\rsph{0}{0}$ is a constant and would be the only
-contribution for a truly uniform acceptance function. A few higher-order functions up to $i$\texteq4, $l$\texteq4, and $m$\texteq2 are
+contribution for a truly uniform acceptance function. A few higher-order functions up to $j$\texteq4, $l$\texteq4, and $m$\texteq2 are
 included to describe the shape shown in Figure~\ref{fig:angAcc}. Even higher orders represent faster changes in the acceptance function and
 can be omitted for this slowly-changing shape.
 
 The coefficients of the basis functions, which specify the shape of the acceptance function, are determined from the simulated
 \BstoJpsiKK{} decays that were used for Figure~\ref{fig:angAcc}. Expressing the acceptance function as
 \begin{equation}
-  \effa = \sum_{i,l,m} c_{ilm}\,b_{ilm}(\Omega)\ ,
+  \effa = \sum_{j,l,m} c_{jlm}\,b_{jlm}(\Omega)\ ,
 \end{equation}
 the coefficients are defined as
 \begin{equation}
   \label{eq:angEffCoefDef}
-  c_{ilm} \equiv (i+\tfrac{1}{2}) \int\ud\Omega\,b_{ilm}(\Omega)\,\effa\ ,
+  c_{jlm} \equiv (j+\tfrac{1}{2}) \int\ud\Omega\,b_{jlm}(\Omega)\,\effa\ ,
 \end{equation}
-where $b_{ilm}$ is a basis function and $c_{ilm}$ the corresponding coefficient. The normalization factor $i+\tfrac{1}{2}$ arises from
-the fact that Legendre polynomials are orthogonal, but not orthonormal:
+where $b_{jlm}$ is a basis function and $c_{jlm}$ the corresponding coefficient. The normalization factor $j+\tfrac{1}{2}$ arises from the
+fact that Legendre polynomials are orthogonal, but not orthonormal:
 \begin{equation}
-  \int\ud\cthetaK\,\Lp{i}(\cthetaK)\cdot\Lp{i}(\cthetaK) = \frac{1}{i+\tfrac{1}{2}}\ .
+  \int\ud\cthetaK\,\Lp{j}(\cthetaK)\cdot\Lp{j}(\cthetaK) = \frac{1}{j+\tfrac{1}{2}}\ .
 \end{equation}
 
 The integral in Equation~\ref{eq:angEffCoefDef} is calculated by means of Monte Carlo integration, using the simulated decays. A constant
@@ -137,31 +137,32 @@ Equation~\ref{eq:angEffCoefDef} can be expressed as
 \begin{equation}
   \label{eq:angAccInt}
   \begin{split}
-    \tfrac{1}{E_a}\, c_{ilm} &= \int\ud t\, \frac{P^\text{obs}(t)}{\meffa(t)}
-                                \cdot (i+\tfrac{1}{2}) \int\ud\Omega\,b_{ilm}(\Omega)\, \effa \\
-                             &= (i+\tfrac{1}{2}) \int\ud t\, \ud\Omega\; \frac{P^\text{obs}(t)}{\meffa(t)}\,
-                                b_{ilm}(\Omega)\, \meffa(t)\, \frac{P^\text{obs}(\Omega|t)}{P^\text{gen}(\Omega|t)} \\
-                             &= (i+\tfrac{1}{2}) \int\ud t\, \ud\Omega\; P^\text{obs}(t,\Omega)\,
-                                \frac{b_{ilm}(\Omega)}{P^\text{gen}(\Omega|t)} \ .
+    \tfrac{1}{E_a}\, c_{jlm} &= \int\ud t\, \frac{P^\text{obs}(t)}{\meffa(t)}
+                                \cdot (j+\tfrac{1}{2}) \int\ud\Omega\,b_{jlm}(\Omega)\, \effa \\
+                             &= (j+\tfrac{1}{2}) \int\ud t\, \ud\Omega\; \frac{P^\text{obs}(t)}{\meffa(t)}\,
+                                b_{jlm}(\Omega)\, \meffa(t)\, \frac{P^\text{obs}(\Omega|t)}{P^\text{gen}(\Omega|t)} \\
+                             &= (j+\tfrac{1}{2}) \int\ud t\, \ud\Omega\; P^\text{obs}(t,\Omega)\,
+                                \frac{b_{jlm}(\Omega)}{P^\text{gen}(\Omega|t)} \ .
   \end{split}
 \end{equation}
 The value of this integral is estimated with a sum over simulated decays:
 \begin{equation}
-  E\left( \tfrac{1}{E_a}\, c_{ilm} \right)
-      = (i + \tfrac{1}{2})\, \frac{1}{N^\text{obs}}\, \sum_{e=1}^{N^\text{obs}}\frac{b_{ilm}(\Omega_e)}{P^\text{gen}(\Omega_e|t_e)}
+  E\left( \tfrac{1}{E_a}\, c_{jlm} \right)
+      = (j + \tfrac{1}{2})\, \frac{1}{N^\text{obs}}\, \sum_{e=1}^{N^\text{obs}}\frac{b_{jlm}(\Omega_e)}{P^\text{gen}(\Omega_e|t_e)}
   \label{eq:angEffCoefEst}
 \end{equation}
 Since the ``mean acceptance'' is a constant equal for all coefficients, this factor can be ignored for the shape of the acceptance
 function. The values of the coefficients that were used for the function in Figure~\ref{fig:angAcc} are specified in
-Table~\ref{tab:angEffCoefs}.
+Table~\ref{tab:angEffCoefs}. Note that, although not shown in the table, there are correlations between these estimates.
 \begin{table}[htbp]
   \centering
-  \caption{Values of the coefficients of the angular acceptance function that were used for the function shown in Figure~\ref{fig:angAcc}.
-           The specified values are estimates of the quantity $\tfrac{1}{E_a}\, c_{ilm}$ (Equation~\ref{eq:angEffCoefEst}).}
+  \caption{Values of the coefficients of the angular acceptance function that were used for the function shown in Figure~\ref{fig:angAcc},
+           obtained from simulated \BstoJpsiKK{} decays.
+           The specified values are estimates of the quantity $\tfrac{1}{E_a}\, c_{jlm}$ (Equation~\ref{eq:angEffCoefEst}).}
   \label{tab:angEffCoefs}
   \begin{tabular}{ccc}
     \hline
-    coefficient ($ilm$)  &  value  &  statistical uncertainty  \\
+    coefficient ($jlm$)  &  value  &  statistical uncertainty  \\
     \hline
     000  &   3.5767  &  0.0011  \\
     020  &  +0.1535  &  0.0030  \\
@@ -175,9 +176,9 @@ Table~\ref{tab:angEffCoefs}.
 
 For a uniform acceptance function, $\effa$\texteq$\meffa$\texteq constant, and Equation~\ref{eq:angAccInt} reduces to
 \begin{equation}
-  \tfrac{1}{E_a}\, c_{ilm} = (i+\tfrac{1}{2}) \int\ud\Omega\,b_{ilm}(\Omega)\ .
+  \tfrac{1}{E_a}\, c_{jlm} = (j+\tfrac{1}{2}) \int\ud\Omega\,b_{jlm}(\Omega)\ .
 \end{equation}
-This integral is only non-zero for $i$\texteq$l$\texteq$m$\texteq0, for which $\tfrac{1}{E_a}\,c_{000}$\texteq2$\sqrt{\pi}$\textapprox3.54.
+This integral is only non-zero for $j$\texteq$l$\texteq$m$\texteq0, for which $\tfrac{1}{E_a}\,c_{000}$\texteq2$\sqrt{\pi}$\textapprox3.54.
 Table~\ref{tab:angEffCoefs} shows that the acceptance function is not too far from being uniform.
 
 
@@ -259,7 +260,7 @@ can be expressed in terms of the coefficients. Because the weights only contain 
 integral, the set of weights does not completely specify the acceptance function and the transformation from weights to coefficients is
 ambiguous. That is, there is an infinitely large set of acceptance functions that yields a given set of normalization weights.
 
-Expressions for the acceptance weights in terms of basis coefficients are found by expressing the decay-rate functions $f_{a,k}$ in terms
+Expressions for the acceptance weights in terms of basis coefficients are derived by expressing the decay-rate functions $f_{a,k}$ in terms
 of basis functions. The integral of Equation~\ref{eq:angNormWeightDef} can then be expressed as a sum of the basis-function integrals in
 Equation~\ref{eq:angEffCoefDef}. The resulting expressions for the acceptance weights are given by
 \begin{equation}
