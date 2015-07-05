@@ -1,57 +1,44 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.7.15)  22 SEP 2014 07:52
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2014.5.5)  5 JUL 2015 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **b-d-triangle.tex
 (./b-d-triangle.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 54 languages loaded.
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/standalone/s
-tandalone.cls
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2012/09/15 v1.1b Class to compile TeX sub-files stan
 dalone
-
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/oberdiek/i
-fluatex.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/oberdiek/i
-fpdf.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/ifxetex/if
-xetex.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkey
-val.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xk
-eyval.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 \XKV@depth=\count80
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/xkeyval/ke
-yval.tex)))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/xkeyval/keyval.tex)))
 \sa@internal=\count81
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/standalone/s
-tandalone.cfg
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/standalone/standalone.cfg
 File: standalone.cfg 2012/09/15 v1.1b Default configuration file for 'standalon
 e' class
-)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/article
-.cls
+) (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/size11.
-clo
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count82
@@ -68,27 +55,22 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \sa@box=\box26
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/graphics/col
-or.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/latexconfig/
-color.cfg
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: xetex.def on input line 130.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/xelatex/xetex-def/
-xetex.def
-File: xetex.def 2013/04/29 v0.96 LaTeX color/graphics driver for XeTeX (RRM/JK)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2014/04/07 v0.99 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolo
-r.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/latexconfig/
-color.cfg
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -102,30 +84,24 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsm
-ath.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/amsmath/amst
-ext.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsg
-en.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsb
-sy.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/amsmath/amso
-pn.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -166,93 +142,73 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/xltxtra/xltx
-tra.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/xltxtra/xltxtra.sty
 Package: xltxtra 2010/09/20 v0.5e Improvements for the "XeLaTeX" format
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/fontspec/fon
-tspec.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTeX
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/exp
-l3.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3n
-ames.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3b
-ootstrap.sty
-Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
 )
-Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
-)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/etex-pkg/ete
-x.sty
+Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+) (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count102
 )
-Package: expl3 2013/07/12 v4544 L3 Experimental code bundle wrapper
+Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3b
-asics.sty
-Package: l3basics 2013/07/09 v4521 L3 Basic definitions
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2014/01/04 v4642 L3 Basic definitions
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3e
-xpan.sty
-Package: l3expan 2013/07/09 v4521 L3 Argument expansion
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2014/01/04 v4642 L3 Argument expansion
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3t
-l.sty
-Package: l3tl 2013/04/24 v4482 L3 Token lists
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/12/27 v4625 L3 Token lists
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3s
-eq.sty
-Package: l3seq 2013/05/26 v4500 L3 Sequences and stacks
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3i
-nt.sty
-Package: l3int 2013/04/24 v4482 L3 Integers
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/08/02 v4583 L3 Integers
 \c_max_int=\count103
 \l_tmpa_int=\count104
 \l_tmpb_int=\count105
 \g_tmpa_int=\count106
 \g_tmpb_int=\count107
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3q
-uark.sty
-Package: l3quark 2013/07/09 v4521 L3 Quarks
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2013/12/14 v4623 L3 Quarks
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3p
-rg.sty
-Package: l3prg 2013/04/24 v4482 L3 Control structures
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2014/01/04 v4642 L3 Control structures
 \g__prg_map_int=\count108
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3c
-list.sty
-Package: l3clist 2013/05/26 v4500 L3 Comma separated lists
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3t
-oken.sty
-Package: l3token 2013/04/24 v4482 L3 Experimental token manipulation
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3p
-rop.sty
-Package: l3prop 2013/01/09 v4423 L3 Property lists
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/12/14 v4623 L3 Property lists
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3m
-sg.sty
-Package: l3msg 2013/01/08 v4412 L3 Messages
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/07/28 v4581 L3 Messages
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3f
-ile.sty
-Package: l3file 2013/05/01 v4483 L3 File and I/O operations
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/10/13 v4596 L3 File and I/O operations
 \l_iow_line_count_int=\count109
 \l__iow_target_count_int=\count110
 \l__iow_current_line_int=\count111
 \l__iow_current_word_int=\count112
 \l__iow_current_indentation_int=\count113
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3s
-kip.sty
-Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \c_zero_dim=\dimen112
 \c_max_dim=\dimen113
 \l_tmpa_dim=\dimen114
@@ -272,15 +228,13 @@ Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3k
-eys.sty
-Package: l3keys 2013/07/12 v4544 L3 Experimental key-value interfaces
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count114
 \l_keys_choice_int=\count115
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3f
-p.sty
-Package: l3fp 2013/07/09 v4521 L3 Floating points
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2014/01/04 v4642 L3 Floating points
 \c__fp_leading_shift_int=\count116
 \c__fp_middle_shift_int=\count117
 \c__fp_trailing_shift_int=\count118
@@ -291,18 +245,16 @@ Package: l3fp 2013/07/09 v4521 L3 Floating points
 \c__fp_Bigg_middle_shift_int=\count123
 \c__fp_Bigg_trailing_shift_int=\count124
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3b
-ox.sty
-Package: l3box 2013/04/24 v4482 L3 Experimental boxes
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/07/28 v4581 L3 Experimental boxes
 \c_empty_box=\box29
 \l_tmpa_box=\box30
 \l_tmpb_box=\box31
 \g_tmpa_box=\box32
 \g_tmpb_box=\box33
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3c
-offins.sty
-Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 \l__coffin_internal_box=\box34
 \l__coffin_internal_dim=\dimen118
 \l__coffin_offset_x_dim=\dimen119
@@ -323,19 +275,16 @@ Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen126
 \l__coffin_display_y_dim=\dimen127
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3c
-olor.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3color.sty
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3l
-uatex.sty
-Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
 \g__cctab_allocate_int=\count125
 \g__cctab_stack_int=\count126
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3c
-andidates.sty
-Package: l3candidates 2013/07/09 v4521 L3 Experimental additions to l3kernel
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen128
 \l__box_bottom_dim=\dimen129
 \l__box_left_dim=\dimen130
@@ -353,9 +302,9 @@ Package: l3candidates 2013/07/09 v4521 L3 Experimental additions to l3kernel
 \l__coffin_scaled_total_height_dim=\dimen141
 \l__coffin_scaled_width_dim=\dimen142
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/l3packages/x
-parse/xparse.sty
-Package: xparse 2013/07/12 v4544 L3 Experimental document command parser
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/l3packages/xparse/xparse.
+sty
+Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count127
 \l__xparse_m_args_int=\count128
 \l__xparse_mandatory_args_int=\count129
@@ -370,13 +319,11 @@ Package: xparse 2013/07/12 v4544 L3 Experimental document command parser
 \l_fontspec_tmpc_dim=\dimen145
 Variant \tl_gset:cV already defined; not changing it on line 69
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/fontspec/fon
-tspec-patches.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec-patches
+.sty
 Package: fontspec-patches 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLa
 TeX
-
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/fixltx2
-e.sty
+ (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
@@ -397,59 +344,48 @@ LaTeX Info: Redefining \- on input line 33.
 . Defining document command \liningnums with arg. spec. 'm' on line 132.
 .................................................
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/fontspec/fon
-tspec-xetex.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec-xetex.s
+ty
 Package: fontspec-xetex 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTe
 X
-
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/fontenc
-.sty
+ (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1enc
-.def
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1enc.def
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
 LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
 
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmr
-.fd
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmr.fd
 File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/xelatex/xunicode/x
-unicode.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/tipa/t3enc.d
-ef
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 .
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lms
-s.fd
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 \tipaTiiicode=\count135
 \tipasavetokens=\toks21
 \tipachecktokens=\toks22
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/graphics/gra
-phicx.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/graphics/gra
-phics.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/graphics/tri
-g.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/latexconfig/
-graphics.cfg
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: xetex.def on input line 91.
@@ -568,11 +504,10 @@ LaTeX Info: Redefining \itshape on input line 2087.
 LaTeX Info: Redefining \slshape on input line 2092.
 LaTeX Info: Redefining \scshape on input line 2097.
 LaTeX Info: Redefining \upshape on input line 2102.
+ (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/fontspec/fon
-tspec.cfg)))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/realscripts/
-realscripts.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/realscripts/realscripts.s
+ty
 Package: realscripts 2013/03/18 v0.3c Access OpenType subscripts and superscrip
 ts
 .................................................
@@ -619,9 +554,7 @@ ts
 . line 143.
 .................................................
 \subsupersep=\dimen148
-)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/metalogo/met
-alogo.sty
+) (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/metalogo/metalogo.sty
 Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
 \xl@everylogo=\toks23
 \xl@@everylogo=\toks24
@@ -630,14 +563,11 @@ LaTeX Info: Redefining \LaTeX on input line 202.
 LaTeX Info: Redefining \LaTeXe on input line 219.
 )
 \xxt@tempbox=\box44
-)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/li
-bertine.sty
-Package: libertine 2013/02/13 (Bob Tennent) Supports Libertine and Biolinum fon
+) (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/libertine.sty
+Package: libertine 2014/02/19 (Bob Tennent) Supports Libertine and Biolinum fon
 ts for all LaTeX engines.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/textcom
-p.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -652,8 +582,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/ts1enc.
-def
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 266.
@@ -721,24 +650,24 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 \g__file_internal_ior=\read1
 Requested font "[LinLibertine_R.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 \g_fontspec_family_LinLibertine_int=\count137
 Requested font "[LinLibertine_RB.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_RB.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_RB.otf
 Requested font "[LinLibertine_RI.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_RI.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_RI.otf
 Requested font "[LinLibertine_RBI.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_RBI.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_RBI.otf
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LinLibertine(0)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
+. , Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
 . BoldFont = *_RB, BoldItalicFont = *_RBI, ].
 . 
 . This font family consists of the following shapes:
@@ -785,28 +714,28 @@ um;+lnum;+smcp;+smcp;"
 .................................................
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 Requested font "[LinBiolinum_R.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_R.otf
 \g_fontspec_family_LinBiolinum_int=\count138
 Requested font "[LinBiolinum_RB.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_RB.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_RB.otf
 Requested font "[LinBiolinum_RI.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_RI.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_RI.otf
 Requested font "[LinBiolinum_RBO.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_RBO.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_RBO.otf
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LinBiolinum(0)' created for font 'LinBiolinum' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced, } , Scale = 1, UprightFont = *_R , ItalicFont = *_RI
-. , BoldFont = *_RB , BoldItalicFont = *_RBO , ].
+. , Numbers = {Monospaced, } , Scale = 1, UprightFont = *_R , ItalicFont =
+. *_RI , BoldFont = *_RB , BoldItalicFont = *_RBO , ].
 . 
 . This font family consists of the following shapes:
 . 
@@ -855,17 +784,17 @@ tnum;+smcp;+smcp;"
 . 
 . Font family 'LinLibertine(0)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
+. , Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
 . BoldFont = *_RB, BoldItalicFont = *_RBI, ].
 . 
 . This font family consists of the following shapes:
 .................................................
 Requested font "[LinLibertine_RZ.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_RZ.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_RZ.otf
 Requested font "[LinLibertine_RZI.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_RZI.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_RZI.otf
 
 *************************************************
 * fontspec warning: "icu-feature-not-exist-in-font"
@@ -884,7 +813,7 @@ ic/libertine/LinLibertine_RZI.otf
 . 
 . Font family 'LinLibertine(1)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
+. , Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
 . BoldFont = *_RZ, BoldItalicFont = *_RZI, ].
 . 
 . This font family consists of the following shapes:
@@ -934,7 +863,7 @@ um;+smcp;+smcp;"
 . 
 . Font family 'LinLibertine(2)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,OldStyle}, UprightFont = *_R, ItalicFont = *_RI,
+. , Numbers = {Monospaced,OldStyle}, UprightFont = *_R, ItalicFont = *_RI,
 . BoldFont = *_RB, BoldItalicFont = *_RBI, ].
 . 
 . This font family consists of the following shapes:
@@ -984,20 +913,20 @@ um;+onum;+smcp;+smcp;"
 . 
 . Font family 'LinLibertine(0)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
+. , Numbers = {Monospaced,Lining}, UprightFont = *_R, ItalicFont = *_RI,
 . BoldFont = *_RB, BoldItalicFont = *_RBI, ].
 . 
 . This font family consists of the following shapes:
 .................................................
 Requested font "[LinLibertine_DR.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_DR.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_DR.otf
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LinLibertine(3)' created for font 'LinLibertine' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced,Lining}, UprightFont = *_DR, ItalicFont = *_RI,
+. , Numbers = {Monospaced,Lining}, UprightFont = *_DR, ItalicFont = *_RI,
 . BoldFont = *_RB, BoldItalicFont = *_RBI, ].
 . 
 . This font family consists of the following shapes:
@@ -1042,8 +971,8 @@ um;+lnum;+smcp;+smcp;"
 . 
 . Font family 'LinBiolinum(0)' created for font 'LinBiolinum' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced, } , Scale = 1, UprightFont = *_R , ItalicFont = *_RI
-. , BoldFont = *_RB , BoldItalicFont = *_RBO, ].
+. , Numbers = {Monospaced, } , Scale = 1, UprightFont = *_R , ItalicFont =
+. *_RI , BoldFont = *_RB , BoldItalicFont = *_RBO, ].
 . 
 . This font family consists of the following shapes:
 .................................................
@@ -1052,8 +981,8 @@ um;+lnum;+smcp;+smcp;"
 . 
 . Font family 'LinBiolinum(1)' created for font 'LinBiolinum' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced, OldStyle} , Scale = 1, UprightFont = *_R , ItalicFont
-. = *_RI , BoldFont = *_RB , BoldItalicFont = *_RBO , ].
+. , Numbers = {Monospaced, OldStyle} , Scale = 1, UprightFont = *_R ,
+. ItalicFont = *_RI , BoldFont = *_RB , BoldItalicFont = *_RBO , ].
 . 
 . This font family consists of the following shapes:
 . 
@@ -1102,23 +1031,23 @@ tnum;+onum;+smcp;+smcp;"
 . 
 . Font family 'LinBiolinum(0)' created for font 'LinBiolinum' with options [
 . Ligatures = TeX , Extension = .otf , SmallCapsFeatures={Letters=SmallCaps} ,
-. Numbers = {Monospaced} , Scale = 1, UprightFont = *_R , ItalicFont = *_RI ,
-. BoldFont = *_RB , BoldItalicFont = *_RBO , ].
+. , Numbers = {Monospaced} , Scale = 1, UprightFont = *_R , ItalicFont = *_RI
+. , BoldFont = *_RB , BoldItalicFont = *_RBO , ].
 . 
 . This font family consists of the following shapes:
 .................................................
 Requested font "[LinLibertine_M.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_M.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_M.otf
 Requested font "[LinLibertine_MB.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_MB.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_MB.otf
 Requested font "[LinLibertine_MO.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_MO.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_MO.otf
 Requested font "[LinLibertine_MBO.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_MBO.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_MBO.otf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1150,8 +1079,8 @@ ic/libertine/LinLibertine_MBO.otf
 . This font family consists of the following shapes:
 .................................................
 Requested font "[LinBiolinum_K.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_K.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_K.otf
 \g_fontspec_family_LinBiolinum_K_int=\count139
 .................................................
 . fontspec info: "defining-font"
@@ -1165,8 +1094,8 @@ ic/libertine/LinBiolinum_K.otf
 . <->"[LinBiolinum_K.otf]/ICU:script=latn;language=DFLT;"
 .................................................
 Requested font "[LinLibertine_I.otf]/ICU" at 10.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_I.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_I.otf
 \g_fontspec_family_LinLibertine_I_int=\count140
 .................................................
 . fontspec info: "defining-font"
@@ -1179,8 +1108,8 @@ ic/libertine/LinLibertine_I.otf
 . * 'normal' with NFSS spec.:
 . <->"[LinLibertine_I.otf]/ICU:script=latn;language=DFLT;"
 .................................................
-LaTeX Info: Redefining \oldstylenums on input line 419.
-LaTeX Info: Redefining \liningnums on input line 420.
+LaTeX Info: Redefining \oldstylenums on input line 457.
+LaTeX Info: Redefining \liningnums on input line 458.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1316,333 +1245,342 @@ LaTeX Info: Redefining \liningnums on input line 420.
 . <->s*[1]"[LinBiolinum_RBO.otf]/ICU:script=latn;language=DFLT;+pnum;+smcp;"
 .................................................
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/Li
-nLibertine_R.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/Li
-nBiolinum_R.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/Li
-nBiolinum_K.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/Li
-nLibertine_I.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/libertine/LK
-ey.tex))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/frontend
-layer/tikz.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclay
-er/pgf.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/utilitie
-s/pgfrcs.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfutil-common.tex
-\pgfutil@everybye=\toks25
-)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfutil-latex.def
-\pgfutil@abb=\box45
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/LinLibertine_R.
+tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/LinBiolinum_R.t
+ex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/LinBiolinum_K.t
+ex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/LinLibertine_I.
+tex) (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/libertine/LKey.tex))
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/ms/everyshi.
-sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/frontendlayer/tikz.st
+y (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-c
+ommon.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
+
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-c
+ommon-lists.tex))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-l
+atex.def
+\pgfutil@abb=\box45
+ (/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfrcs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfrcs.co
+de.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclay
-er/pgfcore.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/systemla
-yer/pgfsys.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.st
+y
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.st
+y
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.
+code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfkeys.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.c
+ode.tex
 \pgfkeys@pathtoks=\toks26
 \pgfkeys@temptoks=\toks27
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfkeysfiltered.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeysfi
+ltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen149
-\pgf@y=\dimen150
-\pgf@xa=\dimen151
-\pgf@ya=\dimen152
-\pgf@xb=\dimen153
-\pgf@yb=\dimen154
-\pgf@xc=\dimen155
-\pgf@yc=\dimen156
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count141
 \c@pgf@countb=\count142
 \c@pgf@countc=\count143
 \c@pgf@countd=\count144
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgf.cfg
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-xetex.def on input line 900.
+Driver file for pgf: pgfsys-xetex.def
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsys-xetex.def
-File: pgfsys-xetex.def 2010/02/16  (rcs-revision 1.3)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-
+xetex.def
+File: pgfsys-xetex.def 2013/07/16  (rcs-revision 1.9)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-
+dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2013/08/28  (rcs-revision 1.12)
+
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-
+common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsys-common-pdf-via-dvi.def
-File: pgfsys-common-pdf-via-dvi.def 2008/05/19  (rcs-revision 1.7)
+\pgfsys@objnum=\count145
 )))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count145
-\pgfsyssoftpath@bigbuffer@items=\count146
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsyss
+oftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count146
+\pgfsyssoftpath@bigbuffer@items=\count147
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/system
-layer/pgfsysprotocol.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsysp
+rotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.
+code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmath.code.tex
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathcalc.code.tex
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathutil.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathparser.code.tex
-\pgfmath@dimen=\dimen157
-\pgfmath@count=\count147
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.t
+ex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathcalc.co
+de.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathutil.co
+de.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathparser.
+code.tex
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count148
 \pgfmath@box=\box46
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.code.tex
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.basic.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.trigonometric.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.random.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.comparison.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.base.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.round.code.tex)
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfunctions.misc.code.tex)))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/math/p
-gfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count148
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.basic.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.trigonometric.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.random.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.comparison.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.base.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.round.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.misc.code.tex)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctio
+ns.integerarithmetics.code.tex)))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfloat.c
+ode.tex
+\c@pgfmathroundto@lastzeros=\count149
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen158
-\pgf@picmaxx=\dimen159
-\pgf@picminy=\dimen160
-\pgf@picmaxy=\dimen161
-\pgf@pathminx=\dimen162
-\pgf@pathmaxx=\dimen163
-\pgf@pathminy=\dimen164
-\pgf@pathmaxy=\dimen165
-\pgf@xx=\dimen166
-\pgf@xy=\dimen167
-\pgf@yx=\dimen168
-\pgf@yy=\dimen169
-\pgf@zx=\dimen170
-\pgf@zy=\dimen171
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorep
+oints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen172
-\pgf@path@lasty=\dimen173
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorep
+athconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen174
-\pgf@shorten@start@additional=\dimen175
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorep
+athusage.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcores
+copes.code.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box47
 \pgf@hbox=\box48
 \pgf@layerbox@main=\box49
-\pgf@picture@serial@count=\count149
+\pgf@picture@serial@count=\count150
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen176
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreg
+raphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen178
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen177
-\pgf@pt@y=\dimen178
-\pgf@pt@temp=\dimen179
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoret
+ransformations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorequick.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreq
+uick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoreobjects.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreo
+bjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorep
+athprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorea
+rrows.code.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen182
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen180
-\pgf@sys@shading@range@num=\count150
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcores
+hade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count151
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorei
+mage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoree
+xternal.code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box50
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorel
+ayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoret
+ransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/basicl
-ayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorep
+atterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/module
-s/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulesh
+apes.code.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
 \pgfnodeparttextbox=\box51
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/module
-s/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulepl
+ot.code.tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/compatib
-ility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen181
-\pgf@nodesepend=\dimen182
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp
+-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/compatib
-ility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp
+-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/utilitie
-s/pgffor.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/pgf/utilitie
-s/pgfkeys.sty
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgfkeys.code.tex))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/utilit
-ies/pgffor.code.tex
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen183
-\pgffor@skip=\dimen184
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
-))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/fronte
-ndlayer/tikz/tikz.code.tex
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/librar
-ies/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count151
-\pgfplotmarksize=\dimen185
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.c
+ode.tex))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.t
+ex))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.co
+de.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.t
+ex)
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/
+tikz.code.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibrar
+yplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count152
+\pgfplotmarksize=\dimen188
 )
-\tikz@lastx=\dimen186
-\tikz@lasty=\dimen187
-\tikz@lastxsaved=\dimen188
-\tikz@lastysaved=\dimen189
-\tikzleveldistance=\dimen190
-\tikzsiblingdistance=\dimen191
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikzleveldistance=\dimen193
+\tikzsiblingdistance=\dimen194
 \tikz@figbox=\box52
-\tikz@tempbox=\box53
-\tikztreelevel=\count152
-\tikznumberofchildren=\count153
-\tikznumberofcurrentchild=\count154
-\tikz@fig@count=\count155
+\tikz@figbox@bg=\box53
+\tikz@tempbox=\box54
+\tikz@tempbox@bg=\box55
+\tikztreelevel=\count153
+\tikznumberofchildren=\count154
+\tikznumberofcurrentchild=\count155
+\tikz@fig@count=\count156
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/module
-s/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count156
-\pgfmatrixcurrentcolumn=\count157
-\pgf@matrix@numberofcolumns=\count158
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulema
+trix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count157
+\pgfmatrixcurrentcolumn=\count158
+\pgf@matrix@numberofcolumns=\count159
 )
-\tikz@expandcount=\count159
+\tikz@expandcount=\count160
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/fronte
-ndlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/fronte
-ndlayer/tikz/libraries/tikzlibraryintersections.code.tex
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/librar
-ies/pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count160
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryintersections.code.tex
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibrar
+yintersections.code.tex
+\pgf@intersect@solutions=\count161
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/fronte
-ndlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/librar
-ies/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen192
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibrar
+yarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen195
 ))
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/generic/pgf/fronte
-ndlayer/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/preview/prev
-iew.sty
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/preview/preview.sty
 Package: preview 2010/02/14 11.86 (AUCTeX/preview-latex)
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/preview/prti
-ghtpage.def
-\PreviewBorder=\dimen193
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen196
 )
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/preview/prti
-ghtpage.def)
-\pr@snippet=\count161
-\pr@box=\box54
-\pr@output=\toks34
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/preview/prtightpage.def)
+\pr@snippet=\count162
+\pr@box=\box56
+\pr@output=\toks37
 ) (./b-d-triangle.aux)
 \openout1 = `b-d-triangle.aux'.
 
@@ -1663,23 +1601,21 @@ LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/tipa/t3cmr.f
-d
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
 
-(/localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.
-fd
+(/home/jeroen/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 25.
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 10.95pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1754,106 +1690,97 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/LinLibertine(4)/bx/n on input line
  25.
- ABD: EveryShipout initializing macros
+
+ABD: EveryShipout initializing macros
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 26.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 10.95pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_R.otf
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 Requested font "cmmi10" at 10.95pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmmi10.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 Requested font "cmmi8" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmmi8.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 Requested font "cmmi6" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmmi6.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 Requested font "cmsy10" at 10.95pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmsy10.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 Requested font "cmsy8" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmsy8.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 Requested font "cmsy6" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmsy6.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 Requested font "cmex10" at 10.95pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmex10.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 Requested font "cmex8" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/am
-sfonts/cmextra/cmex8.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextr
+a/cmex8.tfm
 Requested font "cmex7" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/am
-sfonts/cmextra/cmex7.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextr
+a/cmex7.tfm
 Requested font "cmr8" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmr8.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 Requested font "cmr6" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmr6.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 49.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_R.otf
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 Requested font "[LinLibertine_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 5.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinLibertine_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinLibertine_R.otf
 Requested font "cmmi9" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmmi9.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 Requested font "cmsy9" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmsy9.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 Requested font "cmex9" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/am
-sfonts/cmextra/cmex9.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextr
+a/cmex9.tfm
 Requested font "cmex7" at 5.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/am
-sfonts/cmextra/cmex7.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextr
+a/cmex7.tfm
 Requested font "cmr9" at 9.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/tfm/public/cm
-/cmr9.tfm
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 54.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 8.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `EU1/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 54.
 Requested font "[LinBiolinum_R.otf]/ICU:script=latn;language=DFLT;mapping=tex-t
 ext;+tnum;" at 6.0pt
- -> /localstore/bfys/jleerdam/local/texlive/2013/texmf-dist/fonts/opentype/publ
-ic/libertine/LinBiolinum_R.otf
+ -> /home/jeroen/local/texlive/2013/texmf-dist/fonts/opentype/public/libertine/
+LinBiolinum_R.otf
 Preview: Tightpage -65536 -65536 65536 65536
-[1] (./b-d-triangle.aux) ) 
-Here is how much of TeX's memory you used:
- 33824 strings out of 494460
- 735918 string characters out of 6155615
- 595029 words of memory out of 5000000
- 36656 multiletter control sequences out of 15000+600000
- 9072 words of font info for 63 fonts, out of 8000000 for 9000
- 808 hyphenation exceptions out of 8191
- 56i,11n,56p,629b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
+[1] [1
 
-Output written on b-d-triangle.pdf (1 page).
+] [2] (./b-d-triangle.aux) ) 
+Here is how much of TeX's memory you used:
+ 34686 strings out of 493918
+ 745219 string characters out of 6145480
+ 634510 words of memory out of 5000000
+ 37553 multiletter control sequences out of 15000+600000
+ 9072 words of font info for 63 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 55i,11n,56p,10453b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on b-d-triangle.pdf (3 pages).
