@@ -45,8 +45,8 @@ The D-matrix for each of the two-body decays is expressed in terms of a real-val
 where $j$ is the spin of the decaying particle, $m$ the projection of the spin in the direction of the z axis, $n$ the projection of the
 spin in the positive direction of the helicity axis. The Euler angles that specify the rotation of the spin projection are $\varphi$,
 $\theta$, and $\varphi'$. The angles $\theta$ and $\varphi$ are equal to the spherical coordinates in the mother-particle rest frame, while
-the angle $\varphi'$ rotates the coordinate system of a decay product around the helicity axis. In the \emph{Jacob-Wick} convention
-$\varphi'$ is chosen to be equal to \tm$\varphi$, resulting in
+the angle $\varphi'$ rotates the coordinate system of a decay product around the helicity axis. In the \emph{Jacob-Wick}
+convention~\cite{Jacob:1959at} $\varphi'$ is chosen to be equal to \tm$\varphi$, resulting in
 \begin{equation}
   \label{eq:DdefJW}
   \WD{j}{m}{n}{}(\varphi,\theta,-\varphi) = \Wd{j}{m}{n}(\theta)\, e^{-i(m-n)\varphi}\ .
@@ -54,13 +54,13 @@ $\varphi'$ is chosen to be equal to \tm$\varphi$, resulting in
 
 A boost along the helicity axis does not affect the spin projections along this axis. Therefore, the projection of the spin of a decay
 product along the helicity axis in the centre-of-mass frame of its production is equal to the spin projection in the z direction of the
-coordinate system in its rest frame. As a result, this projection relates the spins the decays that are described in the two frames.
+coordinate system in its rest frame. As a result, this projection relates the spins of the decays that are described in the two frames.
 
 To define angles that are consistent with the helicity angles in Figure~\ref{fig:helAngles}, the coordinate system of particle $b$ is
 rotated by 180\textdegree{} around the $\mathrm{y}_b$ axis, as shown in Figure~\ref{fig:helFormFrames}b. This operation introduces an
-additional D-matrix, which represents the amplitude for a rotation with $\theta$\texteq$\pi$ and the other two Euler angles arbitrary, but
-equal. The spin projection in the $\mathrm{z}_b$ direction goes from \tm$\lambda_b$ to \tp$\lambda_b$, where $\lambda_b$ is the helicity of
-particle $b$ in the $B$ rest frame. Using the d-matrix property
+additional D-matrix, which represents the amplitude for a rotation with $\theta$\texteq$\pi$ and arbitrary, but equal remaining Euler
+angles. The spin projection in the $\mathrm{z}_b$ direction goes from \tm$\lambda_b$ to \tp$\lambda_b$, where $\lambda_b$ is the helicity
+of particle $b$ in the $B$ rest frame. Using the d-matrix property
 $\Wd{j}{m}{n}(\pi)$\texteq$(\text{\tm1})^{j\text{\tm}n}\,\delta_{m,\text{\tm}n}$, this D-matrix can be written as
 \begin{equation}
   \WD{j_b}{-\lambda_b}{\lambda_b}{*}(\gamma,\pi,\gamma)
@@ -68,9 +68,9 @@ $\Wd{j}{m}{n}(\pi)$\texteq$(\text{\tm1})^{j\text{\tm}n}\,\delta_{m,\text{\tm}n}$
       = (-1)^{j_b-\lambda_b}\ .
 \end{equation}
 
-Identifying the particles $P_1$ and $P_3$ with the particles $\Kp$ and $\lmu[+]$, respectively, the angle
-$\theta_a$ corresponds to $\thetaK$ and the angle $\theta_b$ to $\thetal$. The angle $\phihel$ is given by the sum of $\varphi_a$ and
-$\varphi_b$, as shown in Figure~\ref{fig:helFormFrames}c.
+Identifying the particles $P_1$ and $P_3$ with $\Kp$ and $\lmu[+]$, respectively, the angle $\theta_a$ corresponds to $\thetaK$ and the
+angle $\theta_b$ to $\thetal$. The angle $\phihel$ is given by the sum of $\varphi_a$ and $\varphi_b$, as shown in
+Figure~\ref{fig:helFormFrames}c.
 
 Combining the D-matrices for the three decays, the factor $\angAmp[]$ in Equation~\ref{eq:decayAmp} is given by
 \begin{equation}
@@ -87,9 +87,9 @@ Combining the D-matrices for the three decays, the factor $\angAmp[]$ in Equatio
 \end{equation}
 where $\Omega_p$ is a shorthand notation for the set of Euler angles in the decay of particle $p$ and the factors
 $\sqrt{\frac{2j+1}{4\pi}}$ are normalization factors for the two-particle states in the $B$, $a$, and $b$ decays. The index $h$ runs over
-intermediate helicity states, for which the particles have definite helicities. The final expressions for helicity states will be combined
+the intermediate helicity states, for which the particles have definite helicities. The final expressions for helicity states will be combined
 into expressions for the transversity states of Equation~\ref{eq:decayAmp}. Notice that the spins and helicities of particles $B$ and 1--4
-do not depend on the intermediate state, since these particles are external and their spin state is, in principle, observable.
+do not depend on the intermediate state, since these particles are external and their spin state is thus, in principle, observable.
 
 Concentrating only on the case where particle $B$ is a spinless particle, $j_B$, $\lambda_B$, and $\lambda_a$\textminus$\lambda_b$ are
 equal to zero. As a result, the D-matrix corresponding to the $B$ decay reduces to $\WD{0}{0}{0}{*}$\texteq1, which makes the decay
@@ -240,7 +240,7 @@ upper index is equal to zero:
 \begin{equation}
     \sph{j}{0}{}(\theta,\phi) = \sqrt{\tfrac{2j+1}{4\pi}}\ \Lp{j}(\cos\theta)\ .
 \end{equation}
-Real-valued spherical harmonics are used in the angular functions, which are defined by
+In the implementation of the angular functions real-valued spherical harmonics are used, which are defined by
 \begin{equation}
   \label{eq:realYdef}
   \rsph{j}{m}(\theta,\phi) = \left\{\begin{array}{cl}
