@@ -19,7 +19,7 @@ form
 \end{equation}
 where $\hat{\mu}$ is the value of parameter $\mu$ in the minimum, $\sigma_\mu$ determines the width of the NLL shape around the minimum,
 and $C$ is the NLL value in the minimum. The width, $\sigma_\mu$, is (related to) the statistical uncertainty of the estimate of parameter
-$\mu$. The wider the NLL shape around the minimum is, the larger the value of $\sigma_\mu$ and thus the uncertainty are.
+$\mu$. The wider the NLL shape around the minimum, the larger the value of $\sigma_\mu$ and thus the uncertainty.
 
 It depends on the actual shape of the NLL how well it is approximated by a parabola away from the minimum. Important factors are
 correlations between parameters and the amount of data that is used to build the NLL. With more data the statistical uncertainties of
@@ -37,23 +37,24 @@ $\hat{\mu}$ is taken as the uncertainty. In the parabolic case the NLL reaches t
 $\hat{\mu}-\sigma_\mu$, which results in an uncertainty of $\sigma_\mu$, as expected. In a more general case this NLL value may be reached
 on the left and the right of $\hat{\mu}$ at different distances, which results in an asymmetric uncertainty.
 
-In some cases the shape of the NLL differs from a parabola too much to give a single estimate of the parameter value and a corresponding
-uncertainty. The simplest way to provide an estimate of the value in these cases is to specify the interval bounded by the values of $\mu$
-at a given NLL value. Common NLL values are the values that a parabola would reach at $n\cdot\sigma_\mu$ from the minimum, which are given
-by $\tfrac{1}{2}\,n^2+C$. Hence the intervals are referred to as ``$n$ sigma'' intervals.
+In some cases the shape of the NLL differs from a parabola too much to give a meaningful single estimate of the parameter value and a
+corresponding uncertainty. The simplest way to provide an estimate of the value in these cases is to specify the interval bounded by the
+values of $\mu$ at a given NLL value. Common NLL values are the values that a parabola would reach at $n\cdot\sigma_\mu$ from the minimum,
+which are given by $\tfrac{1}{2}\,n^2+C$. Hence the intervals are referred to as ``$n$ sigma'' intervals.
 
 In general the NLL is a function of more than one parameter. The distribution of parameter estimates in the parabolic approximation is
 given by a multivariate Gaussian shape, which includes also correlations between the estimates. Both the uncertainties and the correlations
 of the parameter estimates are estimated from the shape of the NLL in the minimum, by determining second derivatives for all pairs
 of parameters.
 
-The parabolic shape of Equation~\ref{eq:NLLPara} for each one of the parameters is given by the minimum value of the NLL at each value of
-the parameter $\mu$. In the parabolic approximation the minimum is reached at
+The parabolic shape of Equation~\ref{eq:NLLPara} for a parameter $\mu$ is given by the minimum of the NLL at each $\mu$ value. In the
+parabolic approximation the minimum for a given value of $\mu$ is reached at
 \begin{equation}
-  \frac{1}{\sigma_\nu}\, (\nu-\hat{\nu})  = \rho_{\mu\nu}\, \frac{1}{\sigma_\mu}\, (\mu-\hat{\mu})
+  \frac{1}{\sigma_{\nu_i}}\, (\nu_i-\hat{\nu}_i)  = \rho_{\mu\nu_i}\, \frac{1}{\sigma_\mu}\, (\mu-\hat{\mu})
 \end{equation}
-for any other parameter $\nu$, where $\rho_{\mu\nu}$ is the correlation coefficient between the parameters $\mu$ and $\nu$. The resulting
-function of parameter $\mu$ is termed \emph{profiled NLL}, the second derivative of which is again equal to $\frac{1}{\sigma_\mu^2}$.
+for all the other parameters $\nu_i$, where $\rho_{\mu\nu_i}$ is the correlation coefficient between the parameters $\mu$ and $\nu_i$. The
+resulting function of parameter $\mu$ is termed \emph{profiled NLL}, the second derivative of which is again equal to
+$\frac{1}{\sigma_\mu^2}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
