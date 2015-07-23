@@ -232,18 +232,18 @@
 \end{sidewaystable}
 
 Parameter estimates from the three CP-violation parameterizations are listed in Tables~\ref{tab:result_paramEst_nominal_polarDep},
-\ref{tab:result_paramEst_nominal_lamb_phi}, and \ref{tab:result_paramEst_nominal_phi}. Correlations between the main parameters of the
-$\phis$/$\lamsAbs$ parameterization are shown in Table~\ref{tab:result_paramEst_correlations}. The first column contains the estimates of
-the parameter values and the second column the estimates of the statistical uncertainties. The parameter values form the point in the
-parameter space at which the likelihood function is at its maximum value. Most of the uncertainties are estimated by the inverse of the
-second derivative of the NLL at this point. For cases where the NLL deviates too much from a parabolic shape, asymmetric uncertainties are
-determined from the points where the function reaches a value of 0.5 (``one sigma'') or parameter intervals with the points where it
-reaches 4.5 (``three sigma'').
+\ref{tab:result_paramEst_nominal_lamb_phi}, and \ref{tab:result_paramEst_nominal_phi}. The first column contains the estimates of the
+parameter values and the second column the estimates of the statistical uncertainties. The parameter values form the point in the parameter
+space at which the likelihood function is at its maximum value (see Section~\ref{sec:ana_fit}). Most of the uncertainties are estimated by
+the inverse of the second derivative of the negative log-likelihood function (NLL) at this point. For cases where the NLL deviates too much
+from a parabolic shape, asymmetric uncertainties are determined from the ``one-sigma'' and ``three-sigma'' parameter intervals (see also
+Section~\ref{sec:ana_fit}). Correlations between the main parameters of the $\phisi$/$\Csi$ parameterization are shown in
+Table~\ref{tab:result_paramEst_correlations}. 
 
-To indicate the meaning of the parameter uncertainties, the last two columns in the parameter tables show the mean and width of the
-parameter pull distribution in ten thousand pseudo experiments. The experiments were generated at the maximum-likelihood point, except for
-the difference between the S-wave phase and the \BstoJpsiphi{} phase in the first $\KK$-mass interval. This parameter was generated at
-$\delSperp[\text{1}]=2.2$~rad to get the expected ordering of phases differences across the $\KK$-mass intervals (see also
+To indicate the meaning of the parameter uncertainties, the mean and width of the parameter pull distribution in ten thousand pseudo
+experiments is shown in the last two columns of the parameter tables. The experiments were generated at the maximum-likelihood point,
+except for the difference between the S-wave phase and the \BstoJpsiphi{} phase in the first $\KK$-mass interval. This parameter was
+generated at $\delSperp[\text{1}]=2.2$~rad to get the expected ordering of phases differences across the $\KK$-mass intervals (see also
 Section~\ref{sec:ana_KKIntegrals} and Figures~\ref{fig:NLL_polarDep_transPhases_SWave} and \ref{fig:parDists_SWavePhases}).
 
 The pull parameters are only shown for parameters with a pull distribution that resembles a Gaussian shape. If the value and uncertainty of
@@ -259,17 +259,18 @@ will not be investigated further and estimates of parameter values and uncertain
 Estimates of all CP-violation parameters are compatible with no CP violation and also with the naive Standard Model prediction
 $\phisav$\texteq\tm2$\bs$\mbox{\textapprox\tm0.037\unitsp{}rad}, $\Delphisi$\texteq0, $\Csi$\texteq0. Assuming the six \BstoJpsiphi{}
 CP-violation parameter values are drawn from a multivariate Gaussian distribution with a zero mean and the appropriate width, the
-probability to find values further from zero than the measurement is only 97\%. Comparing with $\phisav$\texteq\tm2$\bs$ instead of
+probability to find values further from zero than the measurement is 97\%. Comparing with $\phisav$\texteq\tm2$\bs$ instead of
 $\phisav$\texteq0, this probability is even 99.9\%. On the other hand, the probability to find values further from the naive Standard Model
 prediction for the two S-wave parameters, $\DelphisS$ and $\CsavS$, is only 2\%. This low probability is driven by the two-sigma deviation
 from zero of $\CsavS$ and the fact that the deviations in $\DelphisS$ and $\CsavS$ are both positive, while there is a negative correlation
 between the parameter estimates.
 
 As expected, the value of $\phis$ in the $\phis$/$\lamsAbs$ and $\phis$/$\lamsAbs$\texteq1 parameterizations
-(\tm0.06\textpm0.05\unitsp{}rad) are similar to the value of $\phisav$\texteq\tm0.05\textpm0.05\unitsp{}rad. The parameter $\Cs$,
-however, is a combination of the parameters $\Csav$ and $\CsavS$. Its estimated value in the $\phis$/$\lamsAbs$ parameterization is
-0.038\textpm0.019, which makes the estimated value of $\lamsAbs$\textapprox1\textminus$\Cs$ equal to 0.963\textpm0.019. Since the estimates
-of $\phis$ and $\lamsAbs$ are almost uncorrelated, the effect of assuming $\lamsAbs$\texteq1 on the $\phis$ estimate is negligible.
+(\tm0.06\textpm0.05\unitsp{}rad) are similar to the value of $\phisav$\texteq\tm0.05\textpm0.05\unitsp{}rad in the $\phisi$/$\Csi$ model.
+The parameter $\Cs$, however, is a combination of the parameters $\Csav$ and $\CsavS$. Its estimated value in the $\phis$/$\lamsAbs$
+parameterization is 0.038\textpm0.019, which makes the estimated value of $\lamsAbs$\textapprox1\textminus$\Cs$ equal to 0.963\textpm0.019.
+Since the estimates of $\phis$ and $\lamsAbs$ are almost uncorrelated, the effect of assuming $\lamsAbs$\texteq1 on the $\phis$ estimate is
+negligible.
 
 \begin{figure}[tb]
   \centering
@@ -295,8 +296,8 @@ of $\phis$ and $\lamsAbs$ are almost uncorrelated, the effect of assuming $\lams
     \caption{}
   \end{subfigure}
 
-  \caption{Log-likelihood scans of the CP-violating phases: (a) $\phisav$, (b) $\Delphispara$, (c) $\Delphisperpp$, and (d) $\DelphisS$.
-           See text for details.}
+  \caption{Log-likelihood scans of the CP-violating phases (a) $\phisav$, (b) $\Delphispara$, (c) $\Delphisperpp$, and (d) $\DelphisS$
+           in the $\phisi$/$\Csi$ model. See text for details.}
   \label{fig:NLL_CPV_phases}
 \end{figure}
 
@@ -323,8 +324,8 @@ of $\phis$ and $\lamsAbs$ are almost uncorrelated, the effect of assuming $\lams
     \caption{}
   \end{subfigure}
 
-  \caption{Log-likelihood scans of the asymmetries from CP violation in mixing and in decay:
-           (a) $\Csav$, (b) $\DelCspara$, (c) $\DelCsperp$, and (d) $\CsavS$.
+  \caption{Log-likelihood scans of the asymmetries from CP violation in mixing and in decay
+           (a) $\Csav$, (b) $\DelCspara$, (c) $\DelCsperp$, and (d) $\CsavS$ in the $\phisi$/$\Csi$ model. 
            See text for details.}
   \label{fig:NLL_CPV_mixDecay}
 \end{figure}
@@ -341,7 +342,7 @@ of $\phis$ and $\lamsAbs$ are almost uncorrelated, the effect of assuming $\lams
     \caption{}
   \end{subfigure}
 
-  \caption{Log-likelihood scans of (a) $\phis$ and (b) $\lamsAbs$. See text for details.}
+  \caption{Log-likelihood scans of (a) $\phis$ and (b) $\lamsAbs$ in the $\phis$/$\lamsAbs$ model. See text for details.}
   \label{fig:NLL_CPV_phisLamsAbs}
 \end{figure}
 
@@ -362,7 +363,7 @@ the parameter are summarized by the mean and width listed in Tables~\ref{tab:res
 \ref{tab:result_paramEst_nominal_phi}.
 
 In the $\phisi$ parameter estimates there are no significant biases, but widths of the pull distributions indicate that the uncertainties
-are overestimated. For the $\phisav$ and $\phis$ parameters the widths are different from one by only a few per cent, but for the
+are somewhat overestimated. For the $\phisav$ and $\phis$ parameters the widths are different from one by only a few per cent, but for the
 $\Delphispara$ and $\Delphisperpp$ parameters this is around ten per cent.
 
 The uncertainties of the $\DelCspara$ and $\DelCsperp$ parameters are overestimated by a few per cent. While the width of the $\Csav$ pull
@@ -411,20 +412,24 @@ As discussed in Section~\ref{subsec:intro_Jpsiphi_decay}, predictions for the de
 $\Gs$\textapprox$\Gd$\texteq0.6583\textpm0.0030\unitsp\invps{} and $\DGs$\texteq0.087\textpm0.021\unitsp\invps{}. The estimates of these
 parameters are almost identical for the three different CP-violation parameterizations and statistically compatible with the predictions.
 
-The values obtained for $\Dms$ are compatible with the most precise measurement of this parameter,
-$\Dms$\texteq17.768\textpm0.024\unitsp\invps~\cite{LHCb-PAPER-2013-006}. The three estimates of the value and uncertainty of $\Dms$ are
-different due to correlations with the $\Csav$/$\lamsAbs$ and $\delperpzero$ parameters. For the $\phisi$/$\Csi$ and
-$\phis$/$\lamsAbs$\texteq1 parameterizations the estimates of the values of these parameters are very similar. Fixing the value of
-$\lamsAbs$ does make the uncertainties with the $\phis$/$\lamsAbs$\texteq1 parameterization smaller, because of the correlations with this
-parameter. With the $\phis$/$\lamsAbs$ model the parameter values change. Because the shape of the NLL depends on the parameter values, the
-uncertainty estimates also change and become even smaller for $\Dms$ and $\delperpzero$.
+Also the parameter $\Dms$ can be estimated in the \BstoJpsiKK{} measurement, because of the interference between the different angular
+momentum states (see Section~\ref{sec:pheno_equations}, in particular Table~\ref{tab:timeFunctionsNoCPV}).  The values obtained for $\Dms$
+are compatible with the most precise measurement of this parameter,
+$\Dms$\texteq17.768\textpm0.024\unitsp\invps~\cite{LHCb-PAPER-2013-006}.
+
+The three estimates of the value and uncertainty of $\Dms$ are different due to correlations with the $\Csav$/$\lamsAbs$ and $\delperpzero$
+parameters. For the $\phisi$/$\Csi$ and $\phis$/$\lamsAbs$\texteq1 parameterizations the estimates of the values of these parameters are
+very similar. Fixing the value of $\lamsAbs$ does make the uncertainties with the $\phis$/$\lamsAbs$\texteq1 parameterization smaller,
+because of the correlations with this parameter. With the $\phis$/$\lamsAbs$ model the parameter values change. Because the shape of the
+NLL depends on the parameter values, the uncertainty estimates also change and become even smaller for $\Dms$ and $\delperpzero$.
 
 The means and widths of the lifetime pull distributions for the $\phis$/$\lamsAbs$(\texteq1) models are as expected. In the $\phisi$/$\Csi$
 model the $\DGs$ estimate develops a small bias of approximately five per cent of the statistical uncertainty.
 
-Estimates for the transversity amplitudes yield fractions of 52\% for the longitudinal \BstoJpsiphi{} polarization and 25\% for the
-perpendicular polarization, which leaves 23\% for the parallel polarization. The fraction of $\KK$ S-wave varies from approximately 40\% in
-the first $\KK$-mass interval to approximately 1\% in the two central intervals. The total S-wave fraction is approximately 4\%.
+Estimates for the transversity amplitudes yield fractions of 52\% for the longitudinal \BstoJpsiphi{} polarization ($\magzeroAvSq$) and
+25\% for the perpendicular polarization ($\magperpAvSq$), which leaves 23\% for the parallel polarization ($\magparAvSq$). The fraction of
+$\KK$ S-wave varies from approximately 40\% in the first $\KK$-mass interval to approximately 1\% in the two central intervals. The total
+S-wave fraction is approximately 4\%.
 
 The NLLs of $\magzeroAvSq$ and $\magperpAvSq$ are parabolic, but the estimate of $\magperpAvSq$ is biased by about 14\% of its statistical
 uncertainty. The NLLs and distributions of the S-wave fractions are asymmetric, because these parameters cannot assume negative values. At
@@ -513,7 +518,8 @@ fractions are closest to zero.
   \caption{Distributions of the phases of the S-wave amplitudes in pseudo experiments in the six $\KK$-mass intervals
            (maximum of the likelihood with polarization-dependent CP violation):
            (a) 990--1008\unitsp\MeV, (b) 1008--1016\unitsp\MeV, (c) 1016--1020\unitsp\MeV,
-           (d) 1020--1024\unitsp\MeV, (c) 1024--1032\unitsp\MeV, and (f) 1032--1050\unitsp\MeV.}
+           (d) 1020--1024\unitsp\MeV, (c) 1024--1032\unitsp\MeV, and (f) 1032--1050\unitsp\MeV.
+           Notice the change in horizontal scale between (a), (b), (c) and (d), (e), (f).}
   \label{fig:parDists_SWavePhases}
 \end{figure}
 
