@@ -1,6 +1,5 @@
 \section{Decay-Candidate Selection and Background}
 \label{sec:ana_bkgSub}
-%show mass-fit results in $\cthetal$ bins
 
 Whereas the decay model discussed in Chapter~\ref{chap:pheno} describes the \BstoJpsiKK{} signal, the time and angular distribution in the
 experimental data contains both signal and background decay candidates. The background distribution is subtracted from the total
@@ -157,18 +156,18 @@ determined in the fit are shown separately.
 \end{figure}
 
 In the areas below the $\JpsiKK$-mass distributions in Figure~\ref{fig:JpsiKKMass_DG} the corresponding \emph{pulls} are shown for each
-mass bin. The pull is defined as the difference in values for the data and the (average) PDF in the bin, divided by the statistical
-uncertainty of the data value. It is randomly distributed and quantifies how well the model describes the data in each bin. The pulls
-in Figure~\ref{fig:JpsiKKMass_DG_log} seem to indicate a problem with the mass model, since the PDF generally underestimates the number of
-decay candidates in the region of the signal peak, while it overestimates the number of candidates towards the edges of the mass range at
-5200\unitsp\MeV{} and 5550\unitsp\MeV. This issue is mainly caused by misidentified backgrounds and will be addressed in
-Section~\ref{subsec:ana_bkgSub_bkgSub}.
+mass interval. The pull is defined as the difference in values for the data and the (average) PDF in the interval, divided by the
+statistical uncertainty of the data value. It is expected to be distributed according to a normal distribution and quantifies how well the
+model describes the data in each interval. The pulls in Figure~\ref{fig:JpsiKKMass_DG_log} seem to indicate a problem with the mass model,
+since the PDF generally underestimates the number of decay candidates in the region of the signal peak, while it overestimates the number
+of candidates towards the edges of the mass range at 5200\unitsp\MeV{} and 5550\unitsp\MeV. This issue is mainly caused by misidentified
+backgrounds and will be addressed in Section~\ref{subsec:ana_bkgSub_bkgSub}.
 
 Notice from Figures~\ref{fig:JpsiKKMassSel} and \ref{fig:JpsiKKMass_DG} that the signal candidates are concentrated in a mass window of
 approximately 60\unitsp\MeV, centred at the $\Bs$ mass, where the signal fraction is approximately 80\%. The regions to the left and the
 right of this \emph{signal window} are called mass \emph{side bands} and contain mainly background candidates. The candidates in the side
-bands are used to estimate the time and angular distribution of the combinatorial background and subtract this from the total distribution
-in the signal window to obtain the signal distribution. This procedure is described in the following section.
+bands are used to estimate the time and angular distribution of the combinatorial background and to subtract this from the total
+distribution in the signal window to obtain the signal distribution. This procedure is described in the following section.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,8 +190,8 @@ $\JpsiKK$ mass.
 
 The weights for subtracting combinatorial background are computed with the \splot/\sfit{} technique~\cite{Pivk:2004ty,*Xie:2009rka}, which
 takes the $\JpsiKK$-mass distributions of the signal and the background as inputs. The resulting candidate weights are called
-\emph{\sweight[s]}, which are larger than one in the centre of the signal peak and gradually become smaller away from the peak until they
-are negative in the side bands.
+\emph{\sweight[s]}, which are larger than one in the centre of the signal peak and gradually become smaller away from the peak and finally
+become negative in the side bands.
 
 The \splot/\sfit{} method assumes that, in addition to the background distribution, also the signal distribution in the variables of
 interest does not depend on the $\JpsiKK$ mass. In other words, there can be no correlations between the $\JpsiKK$ mass and any other
@@ -245,7 +244,7 @@ parameter estimates, as will be discussed in Section~\ref{sec:result_syst}.
 
 The $\JpsiKK$-mass distribution after subtracting the two resonant backgrounds is shown in Figure~\ref{fig:JpsiKKMass_DG_bkgSub}. Comparing
 to Figure~\ref{fig:JpsiKKMass_DG}, it can be seen from the pulls that the PDF follows the data more closely. The systematic
-underestimates of the numbers of decay candidates in the signal region and the overestimates in the side-band regions have reduced. It
+underestimates of the numbers of decay candidates in the signal region and the overestimates in the side-band regions have been reduced. It
 appears, however, that this effect is still partially present. Moreover, the pulls in the signal region seem to be large than one would
 expect.
 
@@ -322,22 +321,23 @@ the signal region and are more symmetrically distributed around zero in comparis
 \end{figure}
 
 Studies of the $\JpsiKK$-mass shape of signal decays have shown that it depends on the $\KK$ invariant mass. Therefore, the parameters of
-the mass model are determined separately in the $\KK$-mass bins that are also used in the final time and angular model to determine the
-trend in the difference between the $\Jpsiphi$ and $\KK$ S-wave phases (see Section~\ref{subsec:pheno_equations_symmetry}). Combinatorial
-background is subtracted separately for each bin.
+the mass model are determined separately in the $\KK$-mass intervals that are also used in the final time and angular model to determine
+the trend in the difference between the $\Jpsiphi$ and $\KK$ S-wave phases (see Section~\ref{subsec:pheno_equations_symmetry}).
+Combinatorial background is subtracted separately for each interval.
 
-The $\KK$-mass bins are defined in Table~\ref{tab:KKBins}. In addition to the binning, the table also lists the final numbers of signal and
-combinatorial-background decays and the weighted-likelihood correction factors (see Section~\ref{subsec:ana_fit_weights}) for each bin.
+The $\KK$-mass intervals are defined in Table~\ref{tab:KKBins}. In addition to this binning, the table also lists the final numbers of
+signal and combinatorial-background decays and the weighted-likelihood correction factors (see Section~\ref{subsec:ana_fit_weights}) for
+each interval.
 
 \begin{table}[p]
   \centering
-  \caption{Definition of the bins in $\KK$ invariant mass. For each bin the mass range, the numbers of signal and background candidates,
+  \caption{Definition of the intervals in $\KK$ invariant mass. For each interval, the numbers of signal and background candidates,
            and the correction factors for a likelihood with weighted candidates for the 2011 and 2012 runs
            (see Section~\ref{subsec:ana_fit_weights}) are shown.}
   \label{tab:KKBins}
   \begin{tabular}{cccccc}
     \hline
-    bin  &  range [\MeV]          &  signal [\tenpow{3}]  &  comb. bkg. [\tenpow{3}]  &  $\alpha_{2011}$  &  $\alpha_{2012}$  \\
+    int.  &  range [\MeV]          &  signal [\tenpow{3}]  &  comb. bkg. [\tenpow{3}]  &  $\alpha_{2011}$  &  $\alpha_{2012}$  \\
     \hline
     1    &  \phantom{0}990--1008  &  \phantom{0}2         &  23                          &  0.42          &  0.39             \\
     2    &  1008--1016            &  10                   &  15                          &  0.79          &  0.76             \\
@@ -352,7 +352,7 @@ combinatorial-background decays and the weighted-likelihood correction factors (
 \begin{table}[p]
   \centering
   \caption{Parameters of the $\JpsiKK$-mass model that is used for background subtraction.
-           The subscripts on the parameters refer to the bin in $\KK$ mass (1--6),
+           The subscripts on the parameters refer to the interval in $\KK$ mass (1--6),
            the HLT2-biased/not-HLT2-biased category (b and nb, respectively), and the run period (2011 and 2012).}
   \label{tab:JpsiKKMassPars}
   \begin{tabular}{ccc}
@@ -407,10 +407,10 @@ where the exponential function for the background mass distribution is described
 that is different for the 2011 and 2012 runs and for HLT2-biased and not-HLT2-biased candidates. The number of signal decays determined
 with this model is 96 thousand and the number of combinatorial-background decays 127 thousand.
 
-To check if the decay time and angles are not correlated with the $\JpsiKK$ mass, the mass distribution is plotted for different bins in
-time and angles. A problem appears in $\cthetal$, for which the mass distributions are shown in the bins $|\cthetal|$\textlt0.25,
-0.25\textle$|\cthetal|$\textlt0.7, and $|\cthetal|$\textge0.7 in Figure~\ref{fig:JpsiKKMass_I2_bkgSub_ctl}. In all three cases the nominal
-mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
+To check whether the decay time and decay angles are correlated with the $\JpsiKK$ mass, the mass distribution is plotted for different
+intervals in time and angles. A correlation appears when considering $\cthetal$, for which the mass distributions are shown in the
+intervals $|\cthetal|$\textlt0.25, 0.25\textle$|\cthetal|$\textlt0.7, and $|\cthetal|$\textge0.7 in
+Figure~\ref{fig:JpsiKKMass_I2_bkgSub_ctl}. In all three cases the nominal mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
 \begin{figure}[tbp]
   \centering
   \begin{subfigure}{0.49\textwidth}
@@ -431,8 +431,9 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
     \caption{}
     \label{fig:JpsiKKMass_I2_bkgSub_ctl13}
   \end{subfigure}%
-  \caption{Distribution of \BstoJpsiKK{} decay candidates in $\JpsiKK$ mass after subtracting resonant backgrounds in bins of $\cthetal$,
-           where the shape of the model is set to the nominal shape from Figure~\ref{fig:JpsiKKMass_I2_bkgSub}.
+  \caption{Distribution of \BstoJpsiKK{} decay candidates in $\JpsiKK$ mass after subtracting resonant backgrounds
+           in intervals of $\cthetal$, where the shape of the model is set to the nominal shape
+           from Figure~\ref{fig:JpsiKKMass_I2_bkgSub}.
            (a) $|\cthetal|$\textlt0.25,
            (b) $|\cthetal|$\textge0.7,
            (c) 0.25\textle$|\cthetal|$\textlt0.7.
@@ -460,7 +461,7 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
     \caption{}
     \label{fig:JpsiKKMassErr_middle}
   \end{subfigure}%
-  \caption{Distribution of \BstoJpsiKK{} signal decays in the estimated $\JpsiKK$-mass uncertainty in bins of $\cthetal$.
+  \caption{Distribution of \BstoJpsiKK{} signal decays in the estimated $\JpsiKK$-mass uncertainty in intervals of $\cthetal$.
            (a) $|\cthetal|$\textlt0.25,
            (b) $|\cthetal|$\textge0.7,
            (c) 0.25\textle$|\cthetal|$\textlt0.7.}
@@ -515,10 +516,10 @@ mass model from Figure~\ref{fig:JpsiKKMass_I2_bkgSub} is shown.
 \end{figure}
 
 From Figure~\ref{fig:JpsiKKMass_I2_bkgSub_ctl} it is clear that the $\JpsiKK$-mass resolution for the signal depends on the value of
-$\cthetal$. This is also supported by Figure~\ref{fig:JpsiKKMassErr_ctlBins}, which shows that the distribution of the estimated $\JpsiKK$-mass
-uncertainty varies for the three $\cthetal$ regions. Formally this means that the procedure of background subtraction does not work for the
-$\cthetal$ distribution. The impact of this effect is studied by subtracting the background with the different mass models obtained in the
-$\cthetal$ bins and a corresponding systematic uncertainty is evaluated (see Section~\ref{sec:result_syst}).
+$\cthetal$. This is also supported by Figure~\ref{fig:JpsiKKMassErr_ctlBins}, which shows that the distribution of the estimated
+$\JpsiKK$-mass uncertainty varies for the three $\cthetal$ regions. Formally this implies that the procedure of background subtraction does
+not fully work for the $\cthetal$ distribution. The impact of this effect is studied by subtracting the background with the different mass
+models obtained in the $\cthetal$ intervals and a corresponding systematic uncertainty is evaluated (see Section~\ref{sec:result_syst}).
 
 Figure~\ref{fig:obsBkgSub} shows the distributions of decay time, decay angles, $\mumu$ invariant mass, and $\KK$ invariant mass before and
 after background subtraction. The distributions before background subtraction are only shown for a $\JpsiKK$-mass window of 60\unitsp\MeV{}

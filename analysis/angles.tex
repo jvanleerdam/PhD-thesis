@@ -43,7 +43,7 @@ acceptance function. In essence this is also how the acceptance function for the
            The angular acceptance function is integrated over the two remaining angles in each of the figures.
            The blue line represents a parameterization of the function in terms of Legendre polynomials for $\cthetaK$
            and real-valued spherical harmonics for $\cthetal$ and $\phihel$.
-           The data points are obtained by a sum over simulated decays, which are weighted by the value of the PDF that was used to
+           The data points are obtained by a sum over simulated decays, which are weighted by the inverse value of the PDF that was used to
            generate the decays at each point in decay angles.
            Notice that the vertical scale of these figures does not start at zero.}
   \label{fig:angAcc}
@@ -211,8 +211,8 @@ constant term in the minimization of the NLL (see also Section~\ref{sec:ana_fit}
 only remains in the normalization integral $\int\ud\Omega\, \effa f_{a,k}(\Omega)$. This integral is very similar to the integral in
 Equation~\ref{eq:angEffCoefDef} and can be estimated in the same way (Equations~\ref{eq:angAccInt} and \ref{eq:angEffCoefEst}).
 
-This procedure leads to the definition of \emph{normalization weights}, which were first described in \cite{duPree:2010}. The weights are
-determined for each term in the differential decay rate and are defined by
+This procedure leads to the definition of \emph{normalization weights}, as described in \cite{duPree:2010}. The weights are determined for
+each term in the differential decay rate and are defined by
 \begin{equation}
   \label{eq:angNormWeightDef}
   \xi_k \equiv \int\ud\Omega\, \effa f_{a,k}(\Omega)\ ,
