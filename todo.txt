@@ -17,13 +17,17 @@ defense:
 * How do we (Diego) generate background for toys again?!
 * Which bins in conditional observables were used in the toys?
 * What should I have done with contrained parameters in toys (fixed them now)?
+* interference terms in KK-mass plot?! (why would you see interference if you integrate over angles?)
+* why does the even states to the light state and the odd states to the heavy state?
+* dilution weights in oscillation plot: optimal?
+* resultaten voor de drie verschillende modellen: verklaar verschillen/overeenkomsten.
+* do you really expect phi_s^av ~ phi_s, or is this because Deltaphi_s^i ~ 0?
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)
 * reference for Lorentz invariance -> CPT invariance in QFT (Section 1.1.1)
-* update resolution plots in intro: LHCB-CERN-LHCB-DP-2014-002-001
-* interference terms in KK-mass plot?!
 * b production mechanism
   - how much bb and single b
   - contributions from which bb diagrams?
 * mass figures with residuals Section 3.2: at the right pages to compare?
+* x-axis labels of pull distributions in results chapter should read "pull"
