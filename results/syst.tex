@@ -268,30 +268,9 @@ $\tagCatCoef[\text{OS}]$\texteq0.5291\textpm0.0018.
 Defining tagging efficiencies for the OS and SS categories implicitly assumes factorization for these categories.  That is, the efficiency
 for doubly-tagged candidates is given by $\tagCatCoef[\text{OS}]\,\tagCatCoef[\text{SS}]$, the efficiency for candidates only tagged by the
 OS algorithms by $\tagCatCoef[\text{OS}]$\,(1\textminus$\tagCatCoef[\text{SS}]$), and so on. Calculating the OS efficiency separately for
-SS-tagged and SS-untagged candidates and vice versa indicates that factorization is not perfect. To account for this half of the difference
-between the two efficiency estimates for each category is added in quadrature to the statistical uncertainties, which finally gives
-$\tagCatCoef[\text{OS}]$\texteq0.308\textpm0.013 and $\tagCatCoef[\text{OS}]$\texteq0.529\textpm0.016.
-
-\item[Decay-angles model: resolution]
-The finite experimental resolution of the decay angles is not accounted for in the decay model. A study of the effects of a finite
-resolution is described in reference~\cite{LHCb-ANA-2014-039}. The resolution was estimated with simulated events and found to be of the
-order 0.01\unitsp{}rad. Its effect on the parameter estimates was studied by generating pseudo experiments and smearing the values of the
-decay angles according to the resolution distributions found in the simulation. Effects were quantified by the distribution of the
-difference in pull values for the fit results with and without angle smearing for each pseudo experiment. The mean and the width of the
-pull-difference distribution are multiplied by the statistical uncertainty from the real-data fit for each parameter and added in
-quadrature to obtain the systematic uncertainty associated to decay-angle resolution.
-
-Unfortunately the study of angular resolution was only performed for the $\phis$/$\lamsAbs$ parameterization. Therefore, the systematic
-uncertainties for the CP-violation parameters in the remaining two models have to be estimated in a different way. The systematic
-for $\phisav$ is taken to be equal to the estimate for $\phis$. The parameter $\Csav$ appears in similar terms of the PDF as $\phisav$ and,
-therefore, the systematic for $\Csav$ is also estimated to be equal to the systematic of $\phis$.
-
-The parameters that describe the differences between the $\phisi$ and $\Csi$ parameters are measured from the interference terms in the
-PDF, as are the phase differences $\delparzero$ and $\delperpzero$. To estimate the effect of decay-angle resolution on the CP-violation
-parameters, the effects of decay-angle resolution and decay-angle acceptance are compared for $\delparzero$ and $\delperpzero$. The impact
-of the propagation of statistical uncertainties in the acceptance, which will be described next, is roughly half of the impact of
-resolution for these parameters. To get an estimate for the resolution uncertainty in the CP-violation parameters it is assumed that this
-factor of two also applies here.
+SS-tagged and SS-untagged candidates and vice versa indicates that factorization is not perfect. To account for this, half of the
+difference between the two efficiency estimates for each category is added in quadrature to the statistical uncertainties, which finally
+gives $\tagCatCoef[\text{OS}]$\texteq0.308\textpm0.013 and $\tagCatCoef[\text{OS}]$\texteq0.529\textpm0.016.
 
 \item[Decay-angles model: acceptance statistical]
 A non-trivial acceptance shape in the decay angles is included in the decay model with the normalization weights that were introduced in
@@ -305,4 +284,25 @@ Kinematic distributions of simulated events do not match the distributions in re
 simulated distributions before calculating the angular-acceptance weights (see \cite{LHCb-ANA-2014-039}), the discrepancies in the
 simulation are not fully understood and an associated systematic uncertainty remains. The size of this effect is estimated with the
 difference between the fit results with weights from a corrected and an uncorrected simulation.
+
+\item[Decay-angles model: resolution]
+The finite experimental resolution of the decay angles is not accounted for in the decay model. A study of the effects of a finite
+resolution is described in reference~\cite{LHCb-ANA-2014-039}. The resolution was estimated with simulated events and found to be of the
+order 0.01\unitsp{}rad. Its effect on the parameter estimates was studied by generating pseudo experiments and smearing the values of the
+decay angles according to the resolution distributions found in the simulation. Effects were quantified by the distribution of the
+difference in pull values for the fit results with and without angle smearing for each pseudo experiment. The mean and the width of the
+pull-difference distribution are multiplied by the statistical uncertainty from the real-data fit for each parameter and added in
+quadrature to obtain the systematic uncertainty associated to decay-angle resolution.
+
+The study of angular resolution was only performed for the $\phis$/$\lamsAbs$ parameterization. Therefore, the systematic uncertainties for
+the CP-violation parameters in the other two models are estimated in a different way. The systematic for $\phisav$ is taken to be equal to
+the estimate for $\phis$. The parameter $\Csav$ appears in similar terms of the PDF as $\phisav$ and, therefore, the systematic for $\Csav$
+is also estimated to be equal to the systematic of $\phis$.
+
+The parameters that describe the differences between the $\phisi$ and $\Csi$ parameters are measured from the interference terms in the
+PDF, as are the phase differences $\delparzero$ and $\delperpzero$. To estimate the effect of decay-angle resolution on the CP-violation
+parameters, the effects of decay-angle resolution and decay-angle acceptance are compared for $\delparzero$ and $\delperpzero$. For these
+phase differences, the impact of the propagation of statistical uncertainties in the acceptance is roughly half of the impact of
+resolution. To get an estimate for the resolution uncertainty in the CP-violation parameters it is assumed that the same factor of two
+applies.
 \end{description}
