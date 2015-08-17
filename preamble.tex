@@ -35,6 +35,10 @@
 \rhead[\nouppercase\leftmark]{\thepage}
 \lhead[\thepage]{\nouppercase\rightmark}
 \cfoot{}
+\newcommand{\defaultchaptermark}[1]{\markboth{\chaptername\ \thechapter. \ #1}{}}
+\newcommand{\defaultsectionmark}[1]{\markright{\thesection. \ #1}}
+\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
+\renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
 \usepackage[labelfont=bf,textfont=it]{caption}
 \usepackage{enumitem}
 \setlist[description]{leftmargin=0pt,style=nextline}

@@ -16,6 +16,12 @@
 \include{analysis/analysis}
 \include{results/results}
 
+\renewcommand{\chaptermark}[1]{\markboth{Conclusions}{Conclusions}}
+\renewcommand{\sectionmark}[1]{\markright{Conclusions}}
+\include{conclusion/conclusion}
+\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
+\renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
+
 \appendix
 \include{angularDecay/angularDecay}
 %\include{syst/syst}
