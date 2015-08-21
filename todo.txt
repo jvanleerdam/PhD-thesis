@@ -22,6 +22,7 @@ defense:
 * dilution weights in oscillation plot: optimal?
 * resultaten voor de drie verschillende modellen: verklaar verschillen/overeenkomsten.
 * do you really expect phi_s^av ~ phi_s, or is this because Deltaphi_s^i ~ 0?
+* numbers of tagged and untagged events?
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)
