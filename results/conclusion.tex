@@ -37,22 +37,55 @@ Section~\ref{sec:result_paramEst}, all results are statistically compatible with
 \end{table}
 
 For some parameters the systematic uncertainty is comparable to or even larger than the statistical uncertainty. With roughly a factor ten
-increase in number of decay candidates this would be true for all parameters, which creates a need for improvement of the systematics.
+increase in number of decay candidates this would be true for all parameters, which creates a need for reduction of the systematics.
 
-It is possible to reduce some of the largest systematic errors by implementing different
-data-analysis methods, in particular for the handling of background and including the decay-time acceptance.
+A systematic with a significant contribution for most of the CP-violation parameters (Tables~\ref{tab:systErrsPhases} and
+\ref{tab:systErrsMixDecay}) is the uncertainty from decay-angle resolution. If this effect is going to be included as a systematic
+uncertainty in further measurements, the study of the resolution and its effect on the parameter estimates will have to be improved.
+Instead of describing the resolution separately for the three decay angles, a multidimensional resolution function can be constructed to
+include correlations. Further studies can also evaluate the effect on all parameters of the $\phisi$/$\Csi$ model.
 
-A possible way of reducing the systematic from the dependence of the $\JpsiKK$-mass model on $\cthetal$ would be a background subtraction
-in intervals of this variable. Alternatively, introducing the estimate of the uncertainty in the $\JpsiKK$-mass measurement in both the
-mass and time/angular models could provide a way to describe the correlations between mass and angles.
+When the systematic from angular resolution resolution becomes dominating, the possibility of including this effect in the model of decay
+time and angles must be considered. It will be challenging to implement this, since not all functions can be analytically convolved with
+the angular functions in the expression for the differential decay rate. Either functions should be found for which this is possible or
+numerical convolution methods should be explored.
 
-The systematic uncertainty resulting from \BctoBsX{} decays could be reduced by including a component for this contribution in the
-resolution model for the decay time.
+Also uncertainties in the angular acceptance contribute to the systematics of the CP-violation parameters. The statistical component of
+these uncertainties can be reduced by generating more simulated decays. However, this will only emphasize the fact that the simulation does
+not perfectly describe real decays. If the simulation is to be used for future measurements, it has to be improved to provide a more
+accurate description of the production, decay, and detection of particles in LHCb events.
 
-The uncertainties from decay-time reconstruction acceptance dominate the systematics for the parameters $\Gs$, $\DGs$, and $\Dms$. For this
-reason a different approach may be required for future measurements with a larger dataset. Further study is required to evaluate the exact
-shape of the acceptance function and either implement it in the PDF or use it to correct the data.
+Another potential method of obtaining the angular acceptance would be to study detection efficiencies in real data particles and decays for
+which the underlying physics description is known. This is also an option for the reconstruction component of the decay-time
+acceptance, which dominates the systematic uncertainties of the $\Bs$-lifetime parameters (Table~\ref{tab:systErrsLifetime}). For the
+latter the shape of the acceptance function is already partially determined with real data.
 
-Angular acceptance statistical: more simulated decays.\\
-Angular acceptance simulation: understand what is going on in the simulation.\\
-Angular resolution: Do a better job of estimating resolution (also correlations between angles), finally include resolution in model.
+An improved description of the reconstruction decay-time acceptance is already available and was used here to evaluate a systematic
+uncertainty and in reference~\cite{LHCb-PAPER-2014-059} as the nominal description. Although this method provides a better description of
+the acceptance shape, it still introduces the dominant systematic uncertainties on the lifetime parameters and further study of this
+acceptance effect is required for further measurements.
+
+Removing the uncertainty from decay-time acceptance leaves only the effect of \BctoBsX{} decays for the parameter $\Gs$. This uncertainty
+could be reduced by including a component for this contribution in the resolution model for the decay time, since these are real
+\BstoJpsiKK{} decays with a modified decay-time measurement. Remaining uncertainties would then originate from the estimates of the number
+of contributing \BctoBsX{} decays and the shape of the resolution component.
+
+Dominating contributions to systematic uncertainties for some of the CP-violation parameters and all of the transversity amplitudes
+(Table~\ref{tab:systErrsAmps}) are the uncertainties introduced by the model of $\JpsiKK$ mass. The part originating from resonant
+backgrounds can be reduced by improving the accuracy of the description of the distributions of these backgrounds in the relevant
+variables. This can be achieved by improving the simulation of background decays, exploiting analyses of these background distributions in
+real data, or a combination of these methods.
+
+The dominant $\JpsiKK$-mass systematics, however, originate from the background-subtraction procedure. A possible way of reducing the
+systematic from the non-factorization of the mass and time/angles models would be background subtraction in intervals of $\cthetal$, as was
+done in this analysis to evaluate the systematic uncertainties. Alternatively, introducing the estimate of the uncertainty in the
+$\JpsiKK$-mass measurement in both the models could provide a way to describe the correlations between mass and angles. This could be
+implemented in combination with a background-subtraction procedure, but an alternative is to fit unweighted \BstoJpsiKK{} decays with a
+five-dimensional model of mass, decay time, and decay angles.
+
+In addition to reducing systematic uncertainties, the precision of the CP-violation measurement can potentially be improved by reducing the
+number of wrong flavour tags. Given a wrong-tag probability of 40\%, a 10\% improvement of this value gives almost a factor two increase in
+the effective number of perfectly tagged decays (see also Section~\ref{subsec:ana_tagging_impl}). Improvements of the flavour-tagging
+procedure may include the use of more sophisticated (multivariate) techniques to select and analyse tagging particles, the development of
+additional tagging algorithms, and an improved understanding of the properties of particles that are created in association with $\Bs$
+mesons.
