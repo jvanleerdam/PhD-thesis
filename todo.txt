@@ -23,12 +23,9 @@ defense:
 * resultaten voor de drie verschillende modellen: verklaar verschillen/overeenkomsten.
 * do you really expect phi_s^av ~ phi_s, or is this because Deltaphi_s^i ~ 0?
 * numbers of tagged and untagged events?
+* b production mechanism
+  - how much bb (250 microbarn?) and single b
+  - contributions from which bb diagrams?
 
 thesis:
 * reference for Yukawa interaction (Section 1.1.1)
-* reference for Lorentz invariance -> CPT invariance in QFT (Section 1.1.1)
-* b production mechanism
-  - how much bb and single b
-  - contributions from which bb diagrams?
-* mass figures with residuals Section 3.2: at the right pages to compare?
-* x-axis labels of pull distributions in results chapter should read "pull"
