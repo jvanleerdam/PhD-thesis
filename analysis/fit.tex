@@ -6,9 +6,9 @@ normalizing the expression for the differential decay rate, including experiment
 decay angles. A likelihood function of the PDF parameters for one $\Bs$ decay is given by the PDF at the values of time and angles for
 that decay. The likelihood function for the full sample of decays is given by the product of all individual likelihoods.
 
-Parameter values are estimated by maximizing the combined likelihood function for the sample. In practice, the negative logarithm of the
-likelihood function (NLL) is minimized to find the maximum likelihood. Instead of a product, the NLL is a sum of the contributions from
-individual decays.
+Parameter values are estimated by maximizing the likelihood function for the sample. In practice, the negative logarithm of the likelihood
+function (NLL) is minimized to find the maximum likelihood. Instead of a product, the NLL is a sum of the contributions from individual
+decays.
 
 The shape of the NLL around the minimum can be approximated by a second order Taylor series, i.e. a parabola. Since the first derivative of
 this function vanishes at the point where the NLL reaches its minimum, the approximation for a given parameter $\mu$ can be written in the
@@ -21,10 +21,9 @@ where $\hat{\mu}$ is the value of parameter $\mu$ in the minimum, $\sigma_\mu$ d
 and $C$ is the NLL value in the minimum. The width, $\sigma_\mu$, is (related to) the statistical uncertainty of the estimate of parameter
 $\mu$. The wider the NLL shape around the minimum, the larger the value of $\sigma_\mu$ and thus the uncertainty.
 
-It depends on the actual shape of the NLL how well it is approximated by a parabola away from the minimum. Important factors are
-correlations between parameters and the amount of data that is used to build the NLL. With more data the statistical uncertainties of
-the parameter estimates become smaller and, in general, the NLL becomes more parabolic within an interval of a few times the value of
-$\sigma_\mu$ around the minimum.
+It depends on the actual shape of the NLL how well it is approximated by a parabola away from the minimum. An important factor is the
+number of decays that is used to build the NLL. With more data the statistical uncertainties of the parameter estimates become smaller and,
+in general, the NLL becomes more parabolic within an interval of a few times the value of $\sigma_\mu$ around the minimum.
 
 In case the distribution of parameter estimates $\hat{\mu}$ from different measurements is described by a Gaussian shape, the shape of the
 NLL will be truly parabolic. In this case the parameter $\sigma_\mu$ is an estimate of the standard deviation of the $\hat{\mu}$
