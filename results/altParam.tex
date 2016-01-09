@@ -17,11 +17,13 @@ with the nominal model with fixed trigger-acceptance parameters yields $\Gs$\tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Currently, the most precise estimate of $\Dms$ is given by 17.768\textpm0.024\unitsp\invps{} and comes from an LHCb analysis of
-\BstoDsmpip{} decays~\cite{LHCb-PAPER-2013-006}. This estimate can be used to constrain the value of $\Dms$ in the \BstoJpsiKK{} fit, as
-was done for previous measurements~\cite{LHCb-PAPER-2011-021,*LHCb-ANA-2011-036,LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}. The constraint is
-implemented by adding a parabolic term to the NLL.
+\BstoDsmpip{} decays~\cite{LHCb-PAPER-2013-006}. This estimate can be combined with the estimate from the \BstoJpsiKK{} data, as
+was done for previous measurements~\cite{LHCb-PAPER-2011-021,*LHCb-ANA-2011-036,LHCb-PAPER-2013-002,*LHCb-ANA-2012-067}.
+The external measurement is represented by an additional parabolic term in the NLL, using the same procedure as for the external
+measurements of the reconstruction-acceptance parameters (Section~\ref{subsec:ana_time_acc}) and the tagging calibration parameters
+(Section~\ref{subsec:ana_tagging_impl}).
 
-The value of the $\Dms$ constraint is about one standard deviation larger than the nominal-fit estimate
+The value of the external $\Dms$ constraint is about one standard deviation larger than the nominal-fit estimate
 ($\Dms$\texteq17.697\textpm0.062\unitsp\invps) and its uncertainty is a factor 2.6 smaller. As a result, the estimates of the parameters
 that are correlated to $\Dms$ are expected to deviate from the nominal result. Especially the estimate of $\delperpzero$, for which the
 correlation with $\Dms$ is 70\%, will be significantly affected.
@@ -198,7 +200,7 @@ becomes too uncertain and is fixed to zero.
 
 \begin{table}[htbp]
   \centering
-  \caption{Tagging categories and estimates of the corresponding dilution factors from the fit without tagging-calibration constraints
+  \caption{Tagging categories and estimates of the corresponding dilution factors from the fit without external calibration constraints
            (Table~\ref{tab:result_4TagCats_polarDep}).}
   \label{tab:result_4TagCats_polarDep_dilution}
   \begin{tabular}{llll}
@@ -228,7 +230,7 @@ becomes too uncertain and is fixed to zero.
 \begin{table}[htbp]
   \centering
   \caption{Results of a fit with four tagging categories for OS tags and four tagging categories for SS tags.
-           Tagging-dilution factors are varied independently for the categories, without constraints.}
+           Tagging-dilution factors are varied independently for the categories, without external calibration constraints.}
   \label{tab:result_4TagCats_polarDep}
   \begin{tabular}{lllll}
     \hline

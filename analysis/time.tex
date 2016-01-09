@@ -92,13 +92,19 @@ separately, the value of $\Gs^\text{eff}$ can be determined in the fit of decay 
 Reparameterizing, there is sensitivity for the combinations $\Gs$\textminus$\tfrac{1}{2}(\beta_\text{2011}$\textplus$\beta_\text{2012})$
 and $\beta_\text{2012}$\textminus$\beta_\text{2011}$.
 
-To combine the information on the difference between the two $\beta$ values with the externally determined values, the $\beta$ parameters
-are varied with constraints in the time and angular fit. These constraints are implemented by adding a parabolic term to the NLL of the
-form $\frac{1}{2\hat{\sigma}^2}(\beta-\hat{\beta})^2$ for each parameter, where the external value is denoted by $\hat{\beta}$ and the
-external uncertainty by $\hat{\sigma}$. Because these external constraints are much tighter than the constraints from the \BstoJpsiKK{}
-data, the values that are estimated in the fit are comparable to the external values:
-$\beta_\text{2011}$\texteq\mbox{\tm0.0086\textpm0.0021\unitsp\invps} and
-$\beta_\text{2012}$\texteq\mbox{\tm0.0127\textpm0.0018\unitsp\invps}.
+To include the external information on the $\beta$ values, the likelihood function of the \BstoJpsiKK{} model and data is multiplied by two
+Gaussian likelihoods that represent the external measurements. For each parameter this gives an additional parabolic term in the NLL of the
+form $\frac{1}{2\hat{\sigma}^2}(\beta-\hat{\beta})^2$, where the external estimate of $\beta$ is denoted by $\hat{\beta}$ and the estimated
+uncertainty by $\hat{\sigma}$.
+
+This procedure pulls the $\beta$ estimates towards the externally determined values, effectively constraining them. Because the external
+constraints are much tighter than the constraints from the \BstoJpsiKK{} data, the values that are finally estimated in the fit are
+comparable to the external values:
+\begin{equation*}
+  \beta_\text{2011} = -0.0086\pm0.0021\unitsp\text{\invps}
+  \quad\text{and}\quad
+  \beta_\text{2012} = -0.0127\pm0.0018\unitsp\text{\invps}\ .
+\end{equation*}
 
 There are some limitations to this model of the track-reconstruction acceptance. The model is implemented for true decay time, whereas the
 external values of the $\beta$ parameters were evaluated with the measured decay time. In this measurement, this is assumed to be a good
