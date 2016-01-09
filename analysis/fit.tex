@@ -34,13 +34,13 @@ the second derivative of the NLL, which is given by $\frac{1}{\sigma_\mu^2}$.
 
 If the shape of the NLL around its minimum is not sufficiently parabolic, the value of $\sigma_\mu$ and the interval defined by the values
 $\hat{\mu}$\textpm$\sigma_\mu$ are still well defined, but may not provide the desired measure of the uncertainty in the parameter
-estimate.  In general, the value of $\sigma_\mu$ is not an estimate of the $\hat{\mu}$ standard deviation and the confidence interval does
-not have a coverage of 68\%.
+estimate.  In general, the value of $\sigma_\mu$ is not a good estimate of the $\hat{\mu}$ standard deviation and the confidence interval
+does not have a coverage of 68\%.
 
 A more general confidence interval with a coverage of approximately 68\% can be constructed with the values of $\mu$ at the points where
 the NLL reaches a value of $\tfrac{1}{2}+C$. In the parabolic case the NLL reaches this point at $\hat{\mu}$\textpm$\sigma_\mu$, which
 results in the expected Gaussian confidence interval with corresponding uncertainty $\sigma_\mu$. In a more general case this NLL value
-may be reached at different distances on the left and the right of $\hat{\mu}$, which results in an asymmetric uncertainty.
+may be reached at different distances below and above the value of $\hat{\mu}$, which results in an asymmetric uncertainty.
 
 If the NLL has multiple minima or a very broad, shallow minimum, a point estimate of the parameter value is not representative for the
 $\hat{\mu}$ distribution and the estimate is usually represented by confidence intervals only. A straightforward way of constructing these
@@ -48,15 +48,16 @@ intervals is to determine the points between which the NLL is smaller than a cer
 NLL values to use are the values that a parabola would reach at $n\cdot\sigma_\mu$ from the minimum, which are given by
 $\tfrac{1}{2}\,n^2+C$. Hence the intervals are referred to as ``$n$ sigma'' intervals.
 
-In general the NLL is a function of multiple parameters. Estimates of the value and uncertainty for an individual parameter, $\mu$, are
-obtained by minimizing the NLL with respect to all other parameters for each value of $\mu$ and applying the techniques discussed above.
-The likelihood function corresponding to the resulting NLL for $\mu$ is called a \emph{profile likelihood}.
+In general the NLL is a function of multiple parameters, which are estimated by the values that minimize this multivariate function.  The
+uncertainty for an individual parameter, $\mu$, can be obtained by minimizing the NLL with respect to all other parameters for each value
+of $\mu$ and applying the techniques discussed above. The likelihood function corresponding to the resulting NLL for $\mu$ is called a
+\emph{profile likelihood}.
 
 In the Gaussian case, the distribution of parameter estimates is given by a multivariate Gaussian shape. A covariance matrix containing the
 standard deviations and correlation coefficients of the parameter estimates takes the place of $\sigma_\mu^2$ in Equation~\ref{eq:NLLPara}.
 The elements of the (inverse) covariance matrix are estimated by the second-order partial derivatives of the NLL in the minimum for all
-pairs of parameters. For the profile likelihood, the minimum of the NLL for a given value of a parameter $\mu$ in all other parameters,
-$\nu_i$, is reached at
+pairs of parameters. Constructing the profile likelihood for parameter $\mu$, the minimum of the NLL in all other parameters, $\nu_i$, for
+a given $\mu$ value is reached at
 \begin{equation}
   \frac{1}{\sigma_{\nu_i}}\, (\nu_i-\hat{\nu}_i)  = \rho_{\mu\nu_i}\, \frac{1}{\sigma_\mu}\, (\mu-\hat{\mu})\ ,
 \end{equation}
@@ -106,7 +107,7 @@ multiplied by a factor $\alpha$:
 This will make the shape of the parabola around the NLL minimum wider (if $\alpha$\textlt1) or narrower (if $\alpha$\textgt1). Notice that
 this does not affect the position of the minimum, from which the parameter values are estimated.
 
-Note that whereas the factor $\alpha$ is an exact correction for the uncertainty estimate of the expected number of decays in the above
-example, it is only an approximate correction for the parameters in the NLL. The resulting uncertainties have to be checked by evaluating
-the shape of the distribution of parameter estimates in simulated experiments, as will be discussed in Sections~\ref{sec:ana_sim} and
-\ref{sec:result_paramEst}.
+Note that this procedure was designed to correct the uncertainty estimates for parameter distributions with a variance that scales with the
+observed number of decays. In other cases the correctness of the obtained results is not guaranteed. The resulting uncertainties are
+verified by evaluating the shape of the distribution of parameter estimates in simulated experiments, as will be discussed in
+Sections~\ref{sec:ana_sim} and \ref{sec:result_paramEst}.
