@@ -1,7 +1,18 @@
-%%BoundingBox: -8 0 123 75 
-%%HiResBoundingBox: -8 0 122.57008 74.71962 
+\documentclass[11pt]{standalone}
+\usepackage{color}
+\usepackage[cmyk]{xcolor}
+\usepackage{feynmp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{libertine}
+\DeclareGraphicsRule{*}{mps}{*}{}
 
-\begin{fmffile}{graphics/intro/box1/box1} 
+\newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
+\newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+
+\begin{document}
+\sffamily
+\begin{fmffile}{./box1}
   \fmfframe(19,3)(17,3){
     \begin{fmfgraph*}(115,75)
       \fmfbottom{i1,d1,o1}%dummy vertex
@@ -22,3 +33,4 @@
     \end{fmfgraph*}
   }
 \end{fmffile}
+\end{document}

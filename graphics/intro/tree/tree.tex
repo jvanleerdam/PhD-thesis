@@ -1,7 +1,18 @@
-%%BoundingBox: -5 0 121 170 
-%%HiResBoundingBox: -5 0 120.57008 169.36447 
+\documentclass[11pt]{standalone}
+\usepackage{color}
+\usepackage[cmyk]{xcolor}
+\usepackage{feynmp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{libertine}
+\DeclareGraphicsRule{*}{mps}{*}{}
 
-\begin{fmffile}{graphics/intro/tree/tree}
+\newcommand{\Bs}{\text{B}_\text{s}^\text{0}}
+\newcommand{\Bsbar}{\kern 0.06em \overline{\kern -0.06em \Bs \kern -0.32em} \kern 0.32em}
+
+\begin{document}
+\sffamily
+\begin{fmffile}{./tree}
   \fmfframe(17,-25)(31,-25){
     \begin{fmfgraph*}(115,170)
       \fmfstraight
@@ -18,10 +29,11 @@
       \fmf{fermion,tension=0.5,label.side=left,label=s}{i2,v1}
       \fmf{plain,right=0.2}{i2,i3}
       \fmf{plain,left=0.2,label=$\Bs$}{i2,i3}
-      \fmf{plain,right=0.2,label=$\phimesalt$}{o1,o2}
+      \fmf{plain,right=0.2}{o1,o2}
       \fmf{plain,left=0.2}{o1,o2}
-      \fmf{plain,right=0.2,label=$\Jpsi$}{o3,o4}
+      \fmf{plain,right=0.2}{o3,o4}
       \fmf{plain,left=0.2}{o3,o4}
     \end{fmfgraph*}
   }
 \end{fmffile}
+\end{document}

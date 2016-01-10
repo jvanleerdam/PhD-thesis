@@ -1,4 +1,4 @@
-% graphics/intro/box2/box2.mp -- do not edit, generated automatically by thesis.tex
+% ./box2.mp -- do not edit, generated automatically by box2.tex
 input feynmp
 require_RCS_revision "1.30";
 beginchar(1, 115*1.0pt#, 75*1.0pt#, 0);
