@@ -34,4 +34,22 @@
 \bibliographystyle{references/LHCb}
 \bibliography{references/thesis,references/LHCb,references/LHCb-DP,references/LHCb-PAPER,references/LHCb-CONF}
 
+\renewcommand{\thechapter}{S}
+\renewcommand{\chaptermark}[1]{\markboth{Summary}{Summary}}
+\renewcommand{\sectionmark}[1]{\markright{Summary}}
+\include{summary/summary}
+
+\renewcommand{\thechapter}{S}
+\renewcommand{\chaptermark}[1]{\markboth{Samenvatting}{Samenvatting}}
+\renewcommand{\sectionmark}[1]{\markright{Samenvatting}}
+\include{summary/samenvatting}
+
+\renewcommand{\thechapter}{A}
+\renewcommand{\chaptermark}[1]{\markboth{Acknowledgements}{Acknowledgements}}
+\renewcommand{\sectionmark}[1]{\markright{Acknowledgements}}
+\include{acknowledgements/acknowledgements}
+
+\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
+\renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
+
 \end{document}
