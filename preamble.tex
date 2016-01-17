@@ -35,7 +35,9 @@
 \rhead[\nouppercase\leftmark]{\thepage}
 \lhead[\thepage]{\nouppercase\rightmark}
 \cfoot{}
-\newcommand{\defaultchaptermark}[1]{\markboth{\chaptername\ \thechapter. \ #1}{}}
+\makeatletter
+\newcommand{\defaultchaptermark}[1]{\markboth{\@chapapp\ \thechapter. \ #1}{}}
+\makeatother
 \newcommand{\defaultsectionmark}[1]{\markright{\thesection. \ #1}}
 \renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
 \renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}

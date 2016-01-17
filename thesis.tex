@@ -16,6 +16,10 @@
 \include{analysis/analysis}
 \include{results/results}
 
+\makeatletter
+\patchcmd{\@makechapterhead}{\@chapapp\space \thechapter}{\@chapapp}{}{}
+\makeatother
+
 \renewcommand{\thechapter}{C}
 \renewcommand{\chaptermark}[1]{\markboth{Conclusions}{Conclusions}}
 \renewcommand{\sectionmark}[1]{\markright{Conclusions}}
@@ -24,8 +28,10 @@
 \renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
 
 \appendix
+\renewcommand{\chaptermark}[1]{\markboth{Appendix. \ #1}{}}
 \include{angularDecay/angularDecay}
 %\include{syst/syst}
+\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
 
 %\end{linenumbers}
 
