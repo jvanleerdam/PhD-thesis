@@ -115,13 +115,21 @@ polarizations for an optimal measurement~\cite{Dighe:1995pd,Dighe:1998vk}, as wi
   \centering
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics{graphics/intro/tree/tree}
+    \begin{tikzpicture}
+      \node[anchor=south]{\includegraphics[clip=true, trim=0mm 3mm 0mm 3mm]{graphics/intro/tree/tree}};
+      \node[anchor=west] at (1.95, 3.17) {\sffamily$\Jpsi$};
+      \node[anchor=west] at (1.95, 0.75) {\sffamily$\phimesalt$};
+    \end{tikzpicture}
     \caption{}
     \label{fig:decay_tree}
   \end{subfigure}%
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics{graphics/intro/penguin/penguin}
+    \begin{tikzpicture}
+      \node[anchor=south]{\includegraphics[clip=true, trim=0mm 3mm 0mm 3mm]{graphics/intro/penguin/penguin}};
+      \node[anchor=west] at (1.95, 3.17) {\sffamily$\Jpsi$};
+      \node[anchor=west] at (1.95, 0.75) {\sffamily$\phimesalt$};
+    \end{tikzpicture}
     \caption{}
     \label{fig:decay_penguin}
   \end{subfigure}
