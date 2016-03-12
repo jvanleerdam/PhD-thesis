@@ -1236,6 +1236,17 @@ FUNCTION {unpublished}
   fin.entry
 }
 
+FUNCTION {private}
+{ output.bibitem
+  format.authors "author" output.check
+  format.btitle "title" output.check
+  blank.sep
+  "(private communication)" output
+  note output
+  format.date output
+  fin.entry
+}
+
 FUNCTION {default.type} { misc }
 
 MACRO {jan} {"Jan."}
