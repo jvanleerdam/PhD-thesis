@@ -2,7 +2,6 @@
 *.log
 *.aux
 *.toc
-thesis.pdf
 contents.pdf
 *.out
 *.bbl
