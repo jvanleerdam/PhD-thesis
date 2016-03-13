@@ -5,6 +5,14 @@
 \frontmatter
 
 \include{title/title}
+
+\renewcommand{\chaptermark}[1]{\markboth{Acknowledgements}{Acknowledgements}}
+\renewcommand{\sectionmark}[1]{\markright{Acknowledgements}}
+\include{acknowledgements/acknowledgements}
+
+\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
+\renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
+
 %\layout{}
 \tableofcontents
 
@@ -33,7 +41,6 @@
 %\include{syst/syst}
 \renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
 
-
 \backmatter
 \addcontentsline{toc}{chapter}{References}
 \bibliographystyle{references/LHCb}
@@ -48,14 +55,6 @@
 \renewcommand{\chaptermark}[1]{\markboth{Samenvatting}{Samenvatting}}
 \renewcommand{\sectionmark}[1]{\markright{Samenvatting}}
 \include{summary/samenvatting}
-
-\renewcommand{\thechapter}{A}
-\renewcommand{\chaptermark}[1]{\markboth{Acknowledgements}{Acknowledgements}}
-\renewcommand{\sectionmark}[1]{\markright{Acknowledgements}}
-\include{acknowledgements/acknowledgements}
-
-\renewcommand{\chaptermark}[1]{\defaultchaptermark{#1}}
-\renewcommand{\sectionmark}[1]{\defaultsectionmark{#1}}
 
 %\end{linenumbers}
 
